@@ -8,8 +8,8 @@ Jan:
 
 
 
-Lorenz:
-
+Lorenz: 3
+3
 
 
 Ernad:
