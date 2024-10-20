@@ -4,16 +4,16 @@ z.b 2 3 1,5
 = 6,5
 
 
-Jan: 3
+Jan: 5
 
 
 
-Lorenz: 3
+Lorenz: 4,5
 
 
 
-Ernad:
+Ernad: 1
 
 
 
-Mario Solomun:
+Mario Solomun: 0
