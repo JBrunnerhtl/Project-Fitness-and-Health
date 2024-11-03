@@ -4,11 +4,11 @@ z.b 2 3 1,5
 = 6,5
 
 
-Jan: 5
+Jan: 8
 
 
 
-Lorenz: 4,5
+Lorenz: 7
 
 
 
