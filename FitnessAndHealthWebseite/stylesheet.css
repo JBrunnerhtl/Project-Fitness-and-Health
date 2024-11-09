@@ -1,0 +1,183 @@
+.Top{
+
+    background: black;
+    background-size: auto;
+    text-align: justify-all;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.TopButtons {
+    background: black;
+    color: yellow;
+    font-family: Arial, Serif;
+    border-style: hidden;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to right, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: right bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 0.75s ease, color 1s ease; /* Übergang der Hintergrundposition */
+}
+
+.TopButtons:hover {
+    background-position: left bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
+
+}
+
+
+
+.vertikalLine{
+    width: 3px;
+    height: 100%;
+    margin: 0px 10px;
+    background-color: yellow;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+.MainPage.picture{
+    max-width: 100%;
+
+}
+.images{
+
+
+    padding: 150px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.headersTop{
+    color: yellow;
+    font-weight: bold;
+    font-family: Arial, serif;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+
+
+
+
+.svg{
+
+    width: 80px;
+    height: 80px;
+
+
+}
+
+
+.horizontalYellowLine{
+    width: 100%;
+    height: 1px;
+    background-color: yellow;
+}
+
+.logo{
+    display: flex;
+    padding: 0px;
+    top: 10px;
+}
+
+
+.listObjectsAboutUs{
+    font-size: 20px;
+    color: yellow;
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+.homeButton-wrapper {
+    width: 20px;  /* Erhöhe die Breite des Buttons */
+    height: 20px; /* Erhöhe die Höhe des Buttons */
+    display: inline-block;
+    position: relative;
+}
+
+.homeButton {
+    background-image: url("icones/iconizer-bxs-home.svg");
+    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
+    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+
+}
+
+
+
+.homeButton:hover {
+    transition: background-color 0.75s ease, color 1s ease;
+    background-image: url("icones/bxs-home.svg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.logoInAboutUs{
+    float: right;
+
+    padding: 10em;
+
+}
+td.borderStyle{
+    border-right: 5px solid black;
+    padding-right: 20px;
+    padding-left: 30px;
+
+}
+
+.headersInAboutUs{
+    text-align: center;
+    color: yellow;
+    font-family: "Colonna MT", serif;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+
+.quote{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(204, 153, 0, 0.8);
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.quote2{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
