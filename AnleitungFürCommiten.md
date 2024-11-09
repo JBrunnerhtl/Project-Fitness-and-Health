@@ -14,5 +14,5 @@ Ich möchte keine Zip-Ordner mehr, sondern normale Ordner in unserem Repository 
 
 Falls Fragen auftauchen, schreiben Sie mir bitte.
 
-Mit freundlichen Grüßen,  
+Mit freundlichen Grüßen  
 Jan Brunner
