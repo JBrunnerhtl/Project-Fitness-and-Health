@@ -12,7 +12,7 @@ Lorenz: 7
 
 
 
-Ernad: 0
+Ernad: 1
 
 
 
