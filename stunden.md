@@ -16,4 +16,4 @@ Ernad: 1
 
 
 
-Mario Solomun: 0
+Mario: 1
