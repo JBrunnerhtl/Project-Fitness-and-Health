@@ -145,12 +145,8 @@ html, body{
     padding: 10em;
 
 }
-td.borderStyle{
-    border-right: 5px solid black;
-    padding-right: 20px;
-    padding-left: 30px;
 
-}
+
 
 .headersInAboutUs{
     text-align: center;
@@ -181,3 +177,72 @@ td.borderStyle{
     text-transform: uppercase;
 }
 
+pre.aboutUsFontStyle
+{
+    font-family: Arial, Serif;
+
+}
+.borderStyle
+{
+    border: 5px solid lightgrey;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+/* Animation für das Einfliegen von links (Bilder) */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation für das Einfliegen von rechts (Texte) */
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stile für die Bilder */
+td img {
+    animation: slideInFromLeft 3s ease-out;
+    /* Leichte Verzögerung hinzufügen, wenn gewünscht */
+}
+
+/* Stile für die Text-Spalten */
+td + td {
+    animation: slideInFromRight 3s ease-out;
+    /* Leichte Verzögerung hinzufügen, wenn gewünscht */
+}
+
+/* Animation für den weichen, verschwommenen Rand */
+@keyframes blurBorder {
+    from {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0); /* Startzustand: unsichtbar */
+    }
+    to {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 1.5); /* Zielzustand: weicher Schatten */
+    }
+}
+
+/* Stil für die Zellen mit animierter, verschwommener Border */
+td.borderStyle {
+    animation: blurBorder 4s ease-out;
+    padding: 20px; /* Padding hinzufügen für besseren Abstand */
+}
+
+pre.textInAboutUs
+{
+    color: white;
+    font-family: Arial, Serif;
+}
