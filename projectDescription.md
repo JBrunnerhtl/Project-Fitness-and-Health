@@ -26,12 +26,12 @@ Wir alle sind an diesem Thema interessiert. Es verfolgt einen sinnvollen Zweck, 
 - **Über-uns-Seite**
 - **Ernährung**
   - Verschiedene Ernährungsformen
-- **Fitness**
+- **Trainingspläne**
   - Calisthenics-Übungen
   - Geräte-Übungen im Fitnessstudio (Gerätebeschreibung)
   - Cardio-Übungen
 - **Shop für Fitnessartikel** diesen kann man in der Zukunft so ausbauen, das man die Artikel, dann wirklich verkauft, derzeit kann man sie nur anschauen.
-- **Trainingsplan** (mit individueller Anpassung für Kunden)
+
 
 
 ## Erfolgsfaktoren
