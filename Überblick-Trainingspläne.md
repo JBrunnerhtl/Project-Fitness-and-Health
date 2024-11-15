@@ -13,3 +13,24 @@ Unser Ziel ist es, Trainingspläne für Calisthenics, Geräte im Fitnessstudio u
   - Brust
   - Bauch
   - Beine
+
+
+# ENGLISH
+Our goal is to provide training plans for calisthenics, gym equipment, and cardio that target all major muscle groups and can be customized individually.
+
+**Recommended Training Plans**
+Ready-made plans are provided here, designed to promote balanced muscle development.
+
+**Customizability**
+All plans can be individually customized by the user. The muscles listed below can, of course, be adjusted as needed.
+
+**Targeted Training**
+Each plan specifically focuses on the following muscles:
+
+- Back
+- Shoulders
+- Biceps
+- Triceps
+- Chest
+- Abs
+- Legs
