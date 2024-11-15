@@ -32,7 +32,11 @@ Wir alle sind an diesem Thema interessiert. Es verfolgt einen sinnvollen Zweck, 
   - Cardio-Übungen
 - **Shop für Fitnessartikel** diesen kann man in der Zukunft so ausbauen, das man die Artikel dann wirklich verkauft, derzeit kann man sie nur anschauen.
 
-
+## Meilensteine
+- About Us Seite fertig 22.11.2024
+- Mainpage fertig Ende November
+- Trainingspläne und Ernährungsseite fertig Ende Dezember.
+- Ende Semester feinschlife durchgesetzt. Ein Beispiel dazu wäre CSS Erweiturng durch Transition.
 
 ## Erfolgsfaktoren
 - Disziplin
