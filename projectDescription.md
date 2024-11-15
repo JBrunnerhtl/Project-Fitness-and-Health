@@ -22,15 +22,15 @@ Wir alle sind an diesem Thema interessiert. Es verfolgt einen sinnvollen Zweck, 
 - Unvollständige Webseite
 
 ## Aufbau der Webseite
-- Die Startseite enthält eine minimalistische Gestaltung mit Buttons und Bildern, die auf andere Seiten der Webseite verlinken. Die Bilder werden regelmäßig aktualisiert.
-- **Über-uns-Seite**
+- Die Startseite enthält eine minimalistische Gestaltung mit Buttons und abwechselnden Motivationssprüchen, die auf andere Seiten der Webseite verlinken.
+- **Über-uns-Seite** hier erzählen wir kurz über uns.
 - **Ernährung**
-  - Verschiedene Ernährungsformen
+  - Verschiedene Ernährungsformen. Wie ernährt man sich richtig
 - **Trainingspläne**
   - Calisthenics-Übungen
   - Geräte-Übungen im Fitnessstudio (Gerätebeschreibung)
   - Cardio-Übungen
-- **Shop für Fitnessartikel** diesen kann man in der Zukunft so ausbauen, das man die Artikel, dann wirklich verkauft, derzeit kann man sie nur anschauen.
+- **Shop für Fitnessartikel** diesen kann man in der Zukunft so ausbauen, das man die Artikel dann wirklich verkauft, derzeit kann man sie nur anschauen.
 
 
 
