@@ -225,29 +225,26 @@ td + td {
     /* Leichte Verzögerung hinzufügen, wenn gewünscht */
 }
 
-/* Animation für den weichen, verschwommenen Rand */
-@keyframes blurBorder {
-    from {
-        box-shadow: 0 0 0px rgba(0, 0, 0, 0); /* Startzustand: unsichtbar */
-    }
-    to {
-        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 1.5); /* Zielzustand: weicher Schatten */
-    }
-}
-
-/* Stil für die Zellen mit animierter, verschwommener Border */
-td.borderStyle {
-    animation: blurBorder 4s ease-out;
-    padding: 20px; /* Padding hinzufügen für besseren Abstand */
-}
-
-pre.textInAboutUs
+button.styleForButtonInAboutUs
 {
-    color: white;
-    font-family: Arial, Serif;
+    border: 3px solid white;
+    padding: 0px;
+    background-color: black;
 }
 
+img.styleForImageInAboutUs
+{
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+    overflow: auto;
+}
 
+div.styleForDivInAboutUs
+{
+    padding: 0px;
+    margin: 0px;
+}
 
 
 
