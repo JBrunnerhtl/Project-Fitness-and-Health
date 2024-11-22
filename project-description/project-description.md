@@ -12,14 +12,14 @@
 Wir alle sind an diesem Thema interessiert. Es verfolgt einen sinnvollen Zweck, da wir uns mit Fitness und Gesundheit beschäftigen möchten. Zudem wollen wir unser Wissen erweitern und unsere Fähigkeiten in HTML und CSS verbessern.
 
 ## Projektziele
-- Verbesserung der Fähigkeiten in HTML und CSS
-- Planung eines Projekts sowie dessen Leitung und Durchführung
-- Förderung von Teamarbeit und Teamfähigkeit
-- Umgang mit GitHub
+- Sich von anderen Fitness Webseiten abheben.
+- Einen Mehrwert bieten.
+- Ein Farbschema einhalten
+- Strukturierte Webseite
 
 ## Nicht-Ziele
-- Konflikte im Team
-- Unvollständige Webseite
+- Keine schön gestaltete Webseite
+
 
 ## Aufbau der Webseite
 - Die Startseite enthält eine minimalistische Gestaltung mit Buttons und abwechselnden Motivationssprüchen, die auf andere Seiten der Webseite verlinken.
