@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel ="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns</title>
 </head>
-<body style="background-color: black">
+<body style="background-color: black; overflow: auto">
 
 
         <div class =".homeButton-wrapper" style="background-color: black">
@@ -14,18 +15,42 @@
 
 
 
-    <section>
-        <h2 class ="headersInAboutUs">Wer sind wir</h2>
-    </section>
 
-    <div class = "styleForDivInAboutUs">
-        <button class = "styleForButtonInAboutUs">
-            <img src="icones/JanBild.png" alt = "Jan pricture" class = "styleForImageInAboutUs">
-            <pre>
-                Jan Brunner
-                Projektleiter
-            </pre>
-        </button>
-    </div>
+        <h2 class ="headersInAboutUs">Wer sind wir</h2>
+
+    <table id = "tableInAboutUs">
+        <tr style = "width: 100%; overflow: auto">
+            <td class = "styleForTdInAboutUsLeftPicture" style = "width: 15%">
+
+                <button class = "styleForButtonInAboutUsLeft">
+                    <img src="icones/JanBild.png" alt = "Jan picture" class = "styleForImageInAboutUs">
+                    <pre class = "styleForPreInAboutUs">
+Jan Brunner
+Projektleiter
+                    </pre>
+                </button>
+
+            </td>
+            <td class = "styleForTdInAboutUsRightText">
+
+                    <pre class = "styleForPreInAboutUs">
+                        Mein Name ist Jan Brunner und ich bin der Projektleiter dieses Projektes.
+                        Derzeit besuche ich den zweiten Jahrgang der HTL Leonding im Zweig Informatik.
+                        Meine Hobbys sind Tischtennis, Kraftsport und Programmieren.
+                    </pre>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
 </body>
 </html>
