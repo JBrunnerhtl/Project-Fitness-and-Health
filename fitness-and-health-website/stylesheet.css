@@ -159,16 +159,34 @@ html, body{
     margin-bottom: 50px;
 }
 
-
-
-.quote{
+.headLine {
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    transform: translateY(-50%);
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px rgba(204, 153, 0, 0.8);
     text-transform: uppercase;
-    line-height: 1;
-    font-size: 40px;
+    font-size: 300%;
     font-weight: bold;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    animation: flyIn 2s ease-out forwards;
+}
+@keyframes flyIn {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .quote2{
@@ -293,5 +311,13 @@ td.styleForTdInAboutUsRightText
     text-align: left;
 
 }
+
+#headlinetrans{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
 
 
