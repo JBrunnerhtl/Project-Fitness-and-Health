@@ -253,7 +253,19 @@ button.styleForButtonInAboutUsLeft {
 
 }
 
-
+button.styleForButtonInAboutUsRight
+{
+    border: 3px solid white;
+    padding: 0%;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    color: black;
+    animation: slideInFromLeft 3s forwards;
+    transition: color 3s, border 3s;
+    margin-right: 20%;
+}
 
 
 button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover {
@@ -309,6 +321,7 @@ td.styleForTdInAboutUsRightText
 {
 
     text-align: left;
+
 
 }
 
