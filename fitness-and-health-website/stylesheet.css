@@ -196,10 +196,36 @@ html, body{
     color: #555;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInM 4s ease-in-out forwards;
+    animation: flyInFromLeft 4s ease-in-out forwards;
 }
 
-@keyframes flyInM {
+.quote3{
+    position: absolute;
+    right: -100%;
+    margin: 5%;
+    text-align: right;
+    color: #555;
+    text-transform: uppercase;
+    font-family: "Georgia";
+    animation: flyInFromRight 4s ease-in-out forwards;
+
+}
+
+@keyframes flyInFromRight {
+    0%{
+        right: -100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        right: 50%;
+        opacity: 1;
+        transform: translate(50%, 50%);
+    }
+}
+@keyframes flyInFromLeft {
     0% {
         left: -100%;
         opacity: 0;
@@ -208,7 +234,7 @@ html, body{
         opacity: 1;
     }
     100% {
-        left: 30%;
+        left: 50%;
         opacity: 1;
         transform: translate(-50%, -50%);
     }
