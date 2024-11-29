@@ -171,9 +171,9 @@ html, body{
     font-size: 300%;
     font-weight: bold;
     opacity: 0;
-    transition: all 1s ease-in-out;
     animation: flyIn 2s ease-out forwards;
 }
+
 @keyframes flyIn {
     0% {
         left: -100%;
@@ -190,9 +190,28 @@ html, body{
 }
 
 .quote2{
-    text-align: center;
-    color: black;
+    position: absolute;
+    left: -100%;
+    text-align: left;
+    color: #555;
     text-transform: uppercase;
+    font-family: "Georgia";
+    animation: flyInM 4s ease-in-out forwards;
+}
+
+@keyframes flyInM {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 30%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
@@ -328,9 +347,27 @@ td.styleForTdInAboutUsRightText
 #headlinetrans{
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 20vh;
     width: 100%;
 }
+
+#titleNutrition
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 3%
+
+}
+
+#titleNutritionText
+{
+ text-align: center;
+    font-family: Arial, Serif;
+    font-size:2rem;
+}
+
+
 
 
 
