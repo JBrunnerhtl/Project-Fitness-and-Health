@@ -3,13 +3,18 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    padding-top: 3%
+    padding-top: 0%
 
 }
 
 #titleNutritionText
 {
     text-align: center;
-    font-family: Arial, Serif;
-    font-size:2rem;
+    color: yellow;
+    font-family: "Colonna MT", serif;
+    font-size: 5rem;
+}
+
+body{
+    background-color: black
 }
