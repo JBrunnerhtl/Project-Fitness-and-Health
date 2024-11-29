@@ -77,10 +77,6 @@ html, body{
     font-size: 50px;
 }
 
-
-
-
-
 .svg{
 
     width: 80px;
@@ -103,60 +99,13 @@ html, body{
 }
 
 
-.listObjectsAboutUs{
-    font-size: 20px;
-    color: yellow;
-    font-weight: bold;
-    font-family: Arial, serif;
-}
-.homeButton-wrapper {
-    width: 20px;  /* Erhöhe die Breite des Buttons */
-    height: 20px; /* Erhöhe die Höhe des Buttons */
-    display: inline-block;
+
+
+#headlinetrans{
     position: relative;
-}
-
-.homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
-    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
-    background-repeat: no-repeat;
-    background-color: black;
-    border-style: hidden;
-    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
-
-}
-
-
-
-.homeButton:hover {
-    transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
-    background-repeat: no-repeat;
-}
-
-
-
-
-.logoInAboutUs{
-    float: right;
-
-    padding: 10em;
-
-}
-
-
-
-.headersInAboutUs{
-    text-align: center;
-    color: yellow;
-    font-family: "Colonna MT", serif;
-    font-size: 50px;
-    font-weight: bold;
-    background-color: black;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    overflow: hidden;
+    height: 20vh;
+    width: 100%;
 }
 
 .headLine {
@@ -258,114 +207,6 @@ td + td {
     /* Leichte Verzögerung hinzufügen, wenn gewünscht */
 }
 
-button.styleForButtonInAboutUsLeft {
-    border: 3px solid white;
-    padding: 0%;
-    background-color: black;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    color: black;
-    animation: slideInFromLeft 3s forwards;
-    transition: color 3s, border 3s;
-    margin-left: 20%;
-
-}
-
-button.styleForButtonInAboutUsRight
-{
-    border: 3px solid white;
-    padding: 0%;
-    background-color: black;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    color: black;
-    animation: slideInFromLeft 3s forwards;
-    transition: color 3s, border 3s;
-    margin-right: 20%;
-}
-
-
-button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover {
-    color: white;
-    border: 4px solid yellow;
-}
-
-
-
-img.styleForImageInAboutUs
-{
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-    overflow: auto;
-    animation: slideInFromLeft 3s forwards;
-}
-
-
-
-pre.styleForPreInAboutUs {
-
-    margin: 0%;
-    font-size: 100%;
-
-    font-family: Arial, serif;
-    width: 100%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    animation: slideInFromLeft 3s forwards;
-    color: white;
-    font-family: Arial, serif;
-}
-
-
-
-
-table#tableInAboutUs
-{
-    table-layout: fixed;
-    width: 100%;
-}
-
-
-td.styleForTdInAboutUsLeftPicture
-{
-
-    text-align: left;
-
-}
-
-td.styleForTdInAboutUsRightText
-{
-
-    text-align: left;
-
-
-}
-
-#headlinetrans{
-    position: relative;
-    overflow: hidden;
-    height: 20vh;
-    width: 100%;
-}
-
-#titleNutrition
-{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 3%
-
-}
-
-#titleNutritionText
-{
- text-align: center;
-    font-family: Arial, Serif;
-    font-size:2rem;
-}
 
 
 
