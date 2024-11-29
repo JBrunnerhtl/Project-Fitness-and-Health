@@ -47,4 +47,4 @@ Wir alle sind an diesem Thema interessiert. Es verfolgt einen sinnvollen Zweck, 
 - 18.10.2024
 
 ## Projektende
-- Ende des ersten Semesters
+- 14.2.2025
