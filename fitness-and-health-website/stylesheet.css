@@ -16,6 +16,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .TopButtons {
@@ -59,7 +60,6 @@ html, body{
 
 }
 .images{
-
 
     padding: 150px;
     position: relative;
@@ -108,18 +108,16 @@ html, body{
 }
 
 .headLine {
-    position: absolute;
+
     top: 10%;
-    left: -100%;
-    transform: translateY(-50%);
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px rgba(204, 153, 0, 0.8);
     text-transform: uppercase;
     font-size: 300%;
     font-weight: bold;
-    opacity: 0;
-    animation: flyIn 2s ease-out forwards;
+
+    <!--animation: flyIn 2s ease-out forwards;-->
 }
 
 @keyframes flyIn {
@@ -142,34 +140,69 @@ html, body{
     left: -100%;
     text-align: left;
     color: #555;
+    overflow: hidden;
+    white-space: nowrap;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromLeft 4s ease-in-out forwards;
+    animation: flyInFromLeft 10s ease-in-out forwards;
 }
 
 .quote3{
     position: absolute;
     right: -100%;
     margin: 5%;
+    top: 70%;
     text-align: right;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: "Georgia";
+    animation: flyInFromRight 10s ease-in-out forwards;
+
+}
+.quote4{
+    position: absolute;
+    left: -100%;
+    top: 60%;
+    margin: 5%;
+    text-align: left;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: "Georgia";
+    animation: flyInFromLeft 10s ease-in-out forwards;
+}
+
+.quote5{
+    position: absolute;
+    right: -100%;
+    top: 45%;
+    margin: 5%;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
     color: #555;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromRight 4s ease-in-out forwards;
-
+    animation: flyInFromRight 10s ease-in-out forwards;
 }
+
 
 @keyframes flyInFromRight {
     0%{
         right: -100%;
         opacity: 0;
     }
-    50% {
-        opacity: 1;
-    }
-    100% {
+    20%,80% {
         right: 50%;
         opacity: 1;
+        transform: translate(50%, 50%);
+    }
+    100% {
+        right: 150%;
+        opacity: 0;
         transform: translate(50%, 50%);
     }
 }
@@ -178,16 +211,19 @@ html, body{
         left: -100%;
         opacity: 0;
     }
-    50% {
-        opacity: 1;
-    }
-    100% {
+    20%,80% {
         left: 50%;
         opacity: 1;
         transform: translate(-50%, -50%);
     }
-}
 
+    100% {
+        left: 150%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+
+}
 
 .borderStyle
 {
@@ -196,41 +232,12 @@ html, body{
     border-collapse: collapse;
 }
 
-/* Animation für das Einfliegen von links (Bilder) */
-@keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
-/* Animation für das Einfliegen von rechts (Texte) */
-@keyframes slideInFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
-/* Stile für die Bilder */
-td img {
-    animation: slideInFromLeft 3s ease-out;
-    /* Leichte Verzögerung hinzufügen, wenn gewünscht */
-}
 
-/* Stile für die Text-Spalten */
-td + td {
-    animation: slideInFromRight 3s ease-out;
-    /* Leichte Verzögerung hinzufügen, wenn gewünscht */
-}
+
+
+
 .homeButton-wrapper {
     width: 20px;  /* Erhöhe die Breite des Buttons */
     height: 20px; /* Erhöhe die Höhe des Buttons */
