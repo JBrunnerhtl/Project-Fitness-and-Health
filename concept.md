@@ -10,7 +10,7 @@
 
 ---
 
-## About Us
+## About Us 
 
 - **Inhalt:**
     - Ein Bild von jedem Mitarbeiter.
