@@ -1,0 +1,47 @@
+.homeButton-wrapper {
+    width: 20px;  /* Erhöhe die Breite des Buttons */
+    height: 20px; /* Erhöhe die Höhe des Buttons */
+    display: inline-block;
+    position: relative;
+}
+
+.homeButton {
+    background-image: url("icones/iconizer-bxs-home.svg");
+    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
+    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+
+}
+
+.homeButton:hover {
+    transition: background-color 0.75s ease, color 1s ease;
+    background-image: url("icones/bxs-home.svg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+
+h1.styleForHeader
+{
+    color: yellow;
+    text-align: center;
+    font-size: 75px;
+    text-decoration: underline;
+    font-family: Arial, serif;
+    animation: slideInFromBottom 4s forwards;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
