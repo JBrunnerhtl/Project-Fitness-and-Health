@@ -1,10 +1,12 @@
-#title {
-    font-size: 40px;
+#title
+{
+    font-size: 350%;
     font-family: Arial, sans-serif;
     color: yellow;
     text-align: center;
 }
 
-body {
+body
+{
     background-color: black;
 }

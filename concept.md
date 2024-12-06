@@ -36,6 +36,7 @@
 
 - **Ideen für individuelle Pläne:**
     - **Zielgruppen:**
+    - schauen dass wir die gängisten Einschränkungen erwähnen
         - Physisch eingeschränkte Personen.
         - Verletzte.
         - Altersgruppen.
