@@ -143,8 +143,9 @@ html, body{
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
+    transform: translateX(0);
     font-family: "Georgia";
-    animation: flyInFromLeft 10s ease-in-out forwards;
+
 }
 
 .quote3{
@@ -155,10 +156,11 @@ html, body{
     text-align: right;
     color: #555;
     overflow: hidden;
+    transform: translateX(0);
     white-space: nowrap;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromRight 10s ease-in-out forwards;
+
 
 }
 .quote4{
@@ -167,12 +169,13 @@ html, body{
     top: 60%;
     margin: 5%;
     text-align: left;
+    transform: translateX(0);
     color: #555;
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromLeft 10s ease-in-out forwards;
+
 }
 
 .quote5{
@@ -184,9 +187,10 @@ html, body{
     overflow: hidden;
     white-space: nowrap;
     color: #555;
+    transform: translateX(0);
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromRight 10s ease-in-out forwards;
+
 }
 
 
@@ -224,6 +228,32 @@ html, body{
     }
 
 }
+
+
+
+
+
+.quote2:nth-of-type(4n-3) {
+    animation: flyInFromLeft 8s infinite ease-in-out forwards;
+    animation-delay: 0s;
+}
+.quote3:nth-of-type(4n-2) {
+    animation: flyInFromRight 8s infinite ease-in-out forwards;
+    animation-delay: 2s;
+}
+.quote4:nth-of-type(4n-1) {
+    animation: flyInFromLeft 8s infinite ease-in-out forwards;
+    animation-delay: 4s;
+}
+.quote5:nth-of-type(4n) {
+    animation: flyInFromRight 8s infinite ease-in-out forwards;
+    animation-delay: 6s;
+}
+
+
+
+
+
 
 .borderStyle
 {
