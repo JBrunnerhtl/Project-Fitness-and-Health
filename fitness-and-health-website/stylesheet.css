@@ -145,7 +145,7 @@ html, body{
     text-transform: uppercase;
     transform: translateX(0);
     font-family: "Georgia";
-    animation: flyInFromLeft 7s ease-in-out forwards;
+
 }
 
 .quote3{
@@ -160,7 +160,7 @@ html, body{
     white-space: nowrap;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromRight 10s ease-in-out forwards;
+
 
 }
 .quote4{
@@ -175,7 +175,7 @@ html, body{
     white-space: nowrap;
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromLeft 9s ease-in-out forwards;
+
 }
 
 .quote5{
@@ -190,7 +190,7 @@ html, body{
     transform: translateX(0);
     text-transform: uppercase;
     font-family: "Georgia";
-    animation: flyInFromRight 8s ease-in-out forwards;
+
 }
 
 
