@@ -233,76 +233,30 @@ html, body{
 }
 
 
+.set1.quote2 { animation: flyInFromLeft 10s linear ; animation-delay: 0s; }
+.set1.quote3 { animation: flyInFromRight 10s linear; animation-delay: 1s; }
+.set1.quote4 { animation: flyInFromLeft 10s linear; animation-delay: 2s; }
+.set1.quote5 { animation: flyInFromRight 10s linear; animation-delay: 3s; }
 
 
+.set2.quote2 { animation: flyInFromLeft 10s linear; animation-delay: 14s; }
+.set2.quote3 { animation: flyInFromRight 10s linear; animation-delay: 15s; }
+.set2.quote4 { animation: flyInFromLeft 10s linear; animation-delay: 16s; }
+.set2.quote5 { animation: flyInFromRight 10s linear; animation-delay: 17s; }
 
-.quote2 h2:nth-of-type(1) {
-    animation: flyInFromLeft 8s infinite ease-in-out forwards;
-    animation-delay: 0s;
-}
-.quote3:nth-of-type(1) {
-    animation: flyInFromRight 8s infinite ease-in-out forwards;
-    animation-delay: 2s;
-}
-/*.quote4:nth-of-type(1) {
-    animation: flyInFromLeft 8s infinite ease-in-out forwards;
-    animation-delay: 4s;
-}
-.quote5:nth-of-type(1) {
-    animation: flyInFromRight 8s infinite ease-in-out forwards;
-    animation-delay: 6s;
-}
 
-.quote2:nth-of-type(4n-3) {
-    animation: flyInFromLeft 8s infinite ease-in-out forwards;
-    animation-delay: 12s;
-}
-.quote3:nth-of-type(4n-2) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 14s;
-}
-.quote4:nth-of-type(4n-1) {
-    animation: flyInFromLeft 12s infinite ease-in-out forwards;
-    animation-delay: 16s;
-}
-.quote5:nth-of-type(4n) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 18s;
-}
+.set3.quote2 { animation: flyInFromLeft 10s linear; animation-delay: 28s; }
+.set3.quote3 { animation: flyInFromRight 10s linear; animation-delay: 29s; }
+.set3.quote4 { animation: flyInFromLeft 10s linear; animation-delay: 30s; }
+.set3.quote5 { animation: flyInFromRight 10s linear; animation-delay: 31s; }
 
-.quote2:nth-of-type(4n-3) {
-    animation: flyInFromLeft 12s infinite ease-in-out forwards;
-    animation-delay: 24s;
-}
-.quote3:nth-of-type(4n-2) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 26s;
-}
-.quote4:nth-of-type(4n-1) {
-    animation: flyInFromLeft 12s infinite ease-in-out forwards;
-    animation-delay: 28s;
-}
-.quote5:nth-of-type(4n) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 30s;
-}
 
-.quote2:nth-of-type(4n-3) {
-    animation: flyInFromLeft 12s infinite ease-in-out forwards;
-    animation-delay: 36s;
-}
-.quote3:nth-of-type(4n-2) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 38s;
-}
-.quote4:nth-of-type(4n-1) {
-    animation: flyInFromLeft 12s infinite ease-in-out forwards;
-    animation-delay: 40s;
-}
-.quote5:nth-of-type(4n) {
-    animation: flyInFromRight 12s infinite ease-in-out forwards;
-    animation-delay: 42s;
-}*/
+.set4.quote2 { animation: flyInFromLeft 10s linear; animation-delay: 42s; }
+.set4.quote3 { animation: flyInFromRight 10s linear; animation-delay: 43s; }
+.set4.quote4 { animation: flyInFromLeft 10s linear; animation-delay: 44s; }
+.set4.quote5 { animation: flyInFromRight 10s linear; animation-delay: 45s; }
+
+
 
 
 
