@@ -67,6 +67,9 @@ html, body{
 
 }
 
+.MainPage{
+
+}
 .headersTop{
     color: yellow;
     font-weight: bold;
@@ -233,22 +236,73 @@ html, body{
 
 
 
-.quote2:nth-of-type(4n-3) {
+.quote2 h2:nth-of-type(1) {
     animation: flyInFromLeft 8s infinite ease-in-out forwards;
     animation-delay: 0s;
 }
-.quote3:nth-of-type(4n-2) {
+.quote3:nth-of-type(1) {
     animation: flyInFromRight 8s infinite ease-in-out forwards;
     animation-delay: 2s;
 }
-.quote4:nth-of-type(4n-1) {
+/*.quote4:nth-of-type(1) {
     animation: flyInFromLeft 8s infinite ease-in-out forwards;
     animation-delay: 4s;
 }
-.quote5:nth-of-type(4n) {
+.quote5:nth-of-type(1) {
     animation: flyInFromRight 8s infinite ease-in-out forwards;
     animation-delay: 6s;
 }
+
+.quote2:nth-of-type(4n-3) {
+    animation: flyInFromLeft 8s infinite ease-in-out forwards;
+    animation-delay: 12s;
+}
+.quote3:nth-of-type(4n-2) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 14s;
+}
+.quote4:nth-of-type(4n-1) {
+    animation: flyInFromLeft 12s infinite ease-in-out forwards;
+    animation-delay: 16s;
+}
+.quote5:nth-of-type(4n) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 18s;
+}
+
+.quote2:nth-of-type(4n-3) {
+    animation: flyInFromLeft 12s infinite ease-in-out forwards;
+    animation-delay: 24s;
+}
+.quote3:nth-of-type(4n-2) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 26s;
+}
+.quote4:nth-of-type(4n-1) {
+    animation: flyInFromLeft 12s infinite ease-in-out forwards;
+    animation-delay: 28s;
+}
+.quote5:nth-of-type(4n) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 30s;
+}
+
+.quote2:nth-of-type(4n-3) {
+    animation: flyInFromLeft 12s infinite ease-in-out forwards;
+    animation-delay: 36s;
+}
+.quote3:nth-of-type(4n-2) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 38s;
+}
+.quote4:nth-of-type(4n-1) {
+    animation: flyInFromLeft 12s infinite ease-in-out forwards;
+    animation-delay: 40s;
+}
+.quote5:nth-of-type(4n) {
+    animation: flyInFromRight 12s infinite ease-in-out forwards;
+    animation-delay: 42s;
+}*/
 
 
 
