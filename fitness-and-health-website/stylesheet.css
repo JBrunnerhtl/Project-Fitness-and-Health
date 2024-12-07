@@ -17,7 +17,10 @@ html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-image: url('icones/background-image-white.jpeg');
+    background-size: cover;
 }
+
 
 .TopButtons {
     background: black;
@@ -67,9 +70,7 @@ html, body{
 
 }
 
-.MainPage{
 
-}
 .headersTop{
     color: yellow;
     font-weight: bold;
@@ -141,7 +142,7 @@ html, body{
 .quote2{
     position: absolute;
     left: -100%;
-    text-align: left;
+    text-align: center;
     color: #555;
     overflow: hidden;
     white-space: nowrap;
@@ -156,7 +157,7 @@ html, body{
     right: -100%;
     margin: 5%;
     top: 70%;
-    text-align: right;
+    text-align: center;
     color: #555;
     overflow: hidden;
     transform: translateX(0);
@@ -171,7 +172,7 @@ html, body{
     left: -100%;
     top: 60%;
     margin: 5%;
-    text-align: left;
+    text-align: center;
     transform: translateX(0);
     color: #555;
     overflow: hidden;
@@ -186,7 +187,7 @@ html, body{
     right: -100%;
     top: 45%;
     margin: 5%;
-    text-align: right;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     color: #555;
@@ -196,6 +197,10 @@ html, body{
 
 }
 
+.quotes{
+    align-items: center;
+
+}
 
 @keyframes flyInFromRight {
     0%{
@@ -205,12 +210,12 @@ html, body{
     3%,20% {
         right: 50%;
         opacity: 1;
-        transform: translate(50%, 50%);
+        transform: translateX(50%);
     }
     22%,100% {
         right: 150%;
         opacity: 0;
-        transform: translate(50%, 50%);
+        transform: translateX(50%);
     }
 }
 @keyframes flyInFromLeft {
@@ -221,13 +226,13 @@ html, body{
     3%,20% {
         left: 50%;
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 
     22%,100% {
         left: 150%;
         opacity: 0;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 
 }
