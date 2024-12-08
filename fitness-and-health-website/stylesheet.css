@@ -17,6 +17,9 @@ html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
+}
+.index{
     background-image: url('icones/background-image-white.jpeg');
     background-size: cover;
 }
@@ -155,9 +158,8 @@ html, body{
 .quote3{
     position: absolute;
     right: -100%;
-    margin: 5%;
-    top: 70%;
-    text-align: center;
+    margin-top: 5%;
+
     color: #555;
     overflow: hidden;
     transform: translateX(0);
@@ -170,9 +172,7 @@ html, body{
 .quote4{
     position: absolute;
     left: -100%;
-    top: 60%;
-    margin: 5%;
-    text-align: center;
+    margin-top: 10%;
     transform: translateX(0);
     color: #555;
     overflow: hidden;
@@ -185,9 +185,7 @@ html, body{
 .quote5{
     position: absolute;
     right: -100%;
-    top: 45%;
-    margin: 5%;
-    text-align: center;
+    margin-top: 15%;
     overflow: hidden;
     white-space: nowrap;
     color: #555;
@@ -198,8 +196,9 @@ html, body{
 }
 
 .quotes{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
 }
 
 @keyframes flyInFromRight {
@@ -244,22 +243,22 @@ html, body{
 .set1.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 3s; }
 
 
-.set2.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 20s; }
-.set2.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 21s; }
-.set2.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 22s; }
-.set2.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 23s; }
+.set2.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 18s; }
+.set2.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 19s; }
+.set2.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 20s; }
+.set2.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 21s; }
 
 
-.set3.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 40s; }
-.set3.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 41s; }
-.set3.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 42s; }
-.set3.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 43s; }
+.set3.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 36s; }
+.set3.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 37s; }
+.set3.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 38s; }
+.set3.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 39s; }
 
 
-.set4.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 58s; }
-.set4.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 59s; }
-.set4.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 60s; }
-.set4.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 61s; }
+.set4.quote2 { animation: flyInFromLeft 72s linear infinite; animation-delay: 54s; }
+.set4.quote3 { animation: flyInFromRight 72s linear infinite; animation-delay: 55s; }
+.set4.quote4 { animation: flyInFromLeft 72s linear infinite; animation-delay: 56s; }
+.set4.quote5 { animation: flyInFromRight 72s linear infinite; animation-delay: 57s; }
 
 
 
