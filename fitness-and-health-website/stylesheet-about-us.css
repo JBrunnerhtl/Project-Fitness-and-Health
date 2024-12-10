@@ -1,0 +1,139 @@
+h2.headersInAboutUs
+{
+    font-family: Arial, serif;
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+}
+
+img.styleForImgInAboutUs
+{
+    width: 100%;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.homeButton-wrapper {
+    width: 20px;  /* Erhöhe die Breite des Buttons */
+    height: 20px; /* Erhöhe die Höhe des Buttons */
+    display: inline-block;
+    position: relative;
+}
+
+.homeButton {
+    background-image: url("icones/iconizer-bxs-home.svg");
+    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
+    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+
+}
+
+.homeButton:hover {
+    transition: background-color 0.75s ease, color 1s ease;
+    background-image: url("icones/bxs-home.svg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+
+button.styleForButtonInAboutUsLeft
+{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 3s border;
+
+    animation: slideInFromRight 5s forwards;
+}
+
+
+button.styleForButtonInAboutUsRight
+{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 3s border;
+
+    animation: slideInFromLeft 5s forwards;
+}
+button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
+{
+    border: 3px solid yellow;
+}
+
+p.styleForPInAboutUs
+{
+    color: white;
+    font-family: Arial, serif;
+    font-size: medium;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+
+
+}
+
+table.tableStyleInAboutUs
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+
+}
+p.styleForPInAboutUsWritingTextLeft
+{
+    color: white;
+    font-family: Arial, serif;
+    font-size: larger;
+    padding-left: 5%;
+    text-align: left;
+    animation: slideInFromRight 5s forwards;
+}
+
+
+p.styleForPInAboutUsWritingTextRight
+{
+    color: white;
+    font-family: Arial, serif;
+    font-size: larger;
+    padding-right: 5%;
+    text-align: right;
+    animation: slideInFromLeft 5s forwards;
+}
+
+td.heightAndWidthForTdInAboutUs
+{
+    width: 15%;
+}
+
+
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
