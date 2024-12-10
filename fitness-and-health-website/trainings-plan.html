@@ -5,13 +5,24 @@
     <title>Trainingsplan</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheet-training-plans.css">
-</head>
 <body>
-<div class =".homeButton-wrapper" style="background-color: black">
-    <button onclick="document.location='index.html'" class ="homeButton"></button>
+<div class="homeButton-wrapper">
+    <button onclick="document.location='index.html'" class="homeButton"></button>
 </div>
-<div class = ".title">
-    <p id ="title">Trainingspläne</p>
+<div>
+    <p id="title">Trainingspläne</p>
+</div>
+<div class="plan-container">
+    <div class="plan-box" onclick="document.location='aeltere.html'">
+        <h3>Ältere</h3>
+    </div>
+    <div class="plan-box" onclick="document.location='beeintraechtigte.html'">
+        <h3>Beeinträchtigte</h3>
+    </div>
+    <div class="plan-box" onclick="document.location='normal.html'">
+        <h3>Normal</h3>
+        <p>oder mehr Gewicht</p>
+    </div>
 </div>
 </body>
 </html>

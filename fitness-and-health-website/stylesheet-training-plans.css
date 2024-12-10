@@ -1,12 +1,50 @@
-#title
-{
-    font-size: 350%;
+body {
+    background-color: black;
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: yellow;
-    text-align: center;
 }
 
-body
-{
-    background-color: black;
+#title {
+    font-size: 3.5rem;
+    color: yellow;
+    text-align: center;
+    margin-top: 20px;
 }
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.plan-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.plan-box:hover {
+    transform: scale(1.1);
+    background-color: gray;
+}
+
+.plan-box h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.plan-box p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
