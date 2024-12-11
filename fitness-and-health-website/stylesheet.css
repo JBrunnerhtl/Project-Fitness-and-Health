@@ -72,7 +72,11 @@ html, body{
 
 
 }
+.MainPage{
+    display: flex;
+    flex-direction: column;
 
+}
 
 .headersTop{
     color: yellow;
@@ -307,7 +311,38 @@ html, body{
     background-repeat: no-repeat;
 }
 
+.pictureContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    animation: occor 3s linear;
+}
+.pictureOfMan{
+    margin-top: 20%;
+    max-width: 150%;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.7;
 
+}
+.h2onSite{
+    position: absolute;
+    top: 20%;
+    font-size: 200%;
+
+}
+
+@keyframes occor {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 
