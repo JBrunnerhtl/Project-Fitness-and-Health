@@ -1,20 +1,134 @@
-#titleNutrition
-{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 0%
 
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #D3D3D3;
+    line-height: 1.6;
 }
 
-#titleNutritionText
-{
+#logo-nutrition{
+    margin-left: auto;
+    margin-right: 3%;
+}
+.content {
+    padding: 5%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #FFD700 0%, #121212 100%);
+    color: #121212;
     text-align: center;
-    color: yellow;
-    font-family: "Colonna MT", serif;
-    font-size: 5rem;
+    padding: 4rem 5%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-body{
-    background-color: black
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #121212;
+    background: #FFD700;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    border-bottom: 0.125rem solid #FFD700;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    color: #FFD700;
+}
+
+.nutrition-intro,
+.recommendations,
+.balanced-diet,
+.rules {
+    margin-bottom: 2rem;
+}
+
+.nutrition-intro ul,
+.recommendations ul,
+.balanced-diet ul,
+.rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nutrition-intro ul li,
+.recommendations ul li,
+.balanced-diet ul li,
+.rules ul li {
+    margin-bottom: 1rem;
+    background: #1E1E1E;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.nutrition-intro ul li strong,
+.recommendations ul li strong,
+.balanced-diet ul li strong,
+.rules ul li strong {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 5%;
+    background-color: #FFD700;
+    color: #121212;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
 }

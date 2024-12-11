@@ -4,7 +4,7 @@ Auf unserer **Ernährung-Seite** geht es darum, wie eine gesunde Ernährung auss
 
 - **Was ist eine gesunde Ernährung?**  
   Wir erklären, was eine ausgewogene Ernährung ausmacht und welche Anteile an Nährstoffen wie Eiweiß, Kohlenhydraten und Fetten empfohlen werden. Außerdem zeigen wir, wie viele Kalorien man täglich essen sollte, um sein Gewicht zu halten.
-
+  
 - **Bulking und Cutting**  
   Dann sprechen wir über *Bulking* und *Cutting*:  
   - Beim **Bulking** geht man in einen Kalorienüberschuss, das heißt, man isst mehr Kalorien als der tägliche Bedarf (der Erhaltungsbedarf), um Gewicht zuzunehmen und Muskeln aufzubauen.
