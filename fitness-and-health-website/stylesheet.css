@@ -312,26 +312,21 @@ html, body{
 
 .pictureContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     height: 100%;
-    position: relative;
     animation: occor 3s linear;
+
 }
 .pictureOfMan{
     margin-top: 20%;
-    max-width: 150%;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    left: 50%;
     border-radius: 10px;
     opacity: 0.7;
 
 }
 .h2onSite{
-    position: absolute;
-    top: 20%;
-    font-size: 200%;
-
+    margin-top: 20%;
 }
 
 @keyframes occor {
