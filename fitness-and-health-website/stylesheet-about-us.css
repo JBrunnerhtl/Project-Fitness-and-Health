@@ -14,7 +14,7 @@ img.styleForImgInAboutUs
     margin: 0;
 }
 
-.homeButton-wrapper {
+.homeButtonWrapper {
     width: 20px;  /* Erhöhe die Breite des Buttons */
     height: 20px; /* Erhöhe die Höhe des Buttons */
     display: inline-block;

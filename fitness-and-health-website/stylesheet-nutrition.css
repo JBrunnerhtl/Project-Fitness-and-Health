@@ -1,5 +1,11 @@
 
 
+.logoNutrition{
+    display: flex;
+    padding: 0px;
+    top: 10px;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -9,16 +15,20 @@ body {
     line-height: 1.6;
 }
 
-#logo-nutrition{
+#logoNutrition{
     margin-left: auto;
     margin-right: 3%;
 }
+
 .content {
     padding: 5%;
     max-width: 90%;
     margin: 0 auto;
 }
 
+#top{
+    height: 100%;
+}
 .hero {
     background: linear-gradient(135deg, #FFD700 0%, #121212 100%);
     color: #121212;
@@ -53,24 +63,24 @@ main h2 {
     color: #FFD700;
 }
 
-.nutrition-intro,
+.nutritionIntro,
 .recommendations,
-.balanced-diet,
+.balancedDiet,
 .rules {
     margin-bottom: 2rem;
 }
 
-.nutrition-intro ul,
+.nutritionIntro ul,
 .recommendations ul,
-.balanced-diet ul,
+.balancedDiet ul,
 .rules ul {
     list-style-type: none;
     padding: 0;
 }
 
-.nutrition-intro ul li,
+.nutritionIntro ul li,
 .recommendations ul li,
-.balanced-diet ul li,
+.balancedDiet ul li,
 .rules ul li {
     margin-bottom: 1rem;
     background: #1E1E1E;
@@ -79,9 +89,9 @@ main h2 {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
-.nutrition-intro ul li strong,
+.nutritionIntro ul li strong,
 .recommendations ul li strong,
-.balanced-diet ul li strong,
+.balancedDiet ul li strong,
 .rules ul li strong {
     color: #FFD700;
     font-weight: bold;

@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 html, body{
     margin: 0;
@@ -267,10 +266,6 @@ html, body{
 
 
 
-
-
-
-
 .borderStyle
 {
     border: 5px solid lightgrey;
@@ -279,26 +274,21 @@ html, body{
 }
 
 
-
-
-
-
-
-.homeButton-wrapper {
-    width: 20px;  /* Erhöhe die Breite des Buttons */
-    height: 20px; /* Erhöhe die Höhe des Buttons */
+.homeButtonWrapper {
+    width: 20px;
+    height: 20px;
     display: inline-block;
     position: relative;
 }
 
 .homeButton {
     background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
-    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
+    padding: 20px;
+    margin: 10px;
     background-repeat: no-repeat;
     background-color: black;
     border-style: hidden;
-    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+    background-size: contain;
 
 }
 
