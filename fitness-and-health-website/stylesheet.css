@@ -16,7 +16,7 @@ html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
+    background-color: #121212;
 }
 .index{
 
@@ -149,7 +149,7 @@ html, body{
     position: absolute;
     left: -100%;
     text-align: center;
-    color: #555;
+    color: whitesmoke;
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
@@ -163,7 +163,7 @@ html, body{
     right: -100%;
     margin-top: 5%;
 
-    color: #555;
+    color: whitesmoke;
     overflow: hidden;
     transform: translateX(0);
     white-space: nowrap;
@@ -177,7 +177,7 @@ html, body{
     left: -100%;
     margin-top: 10%;
     transform: translateX(0);
-    color: #555;
+    color: whitesmoke;
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
@@ -191,7 +191,7 @@ html, body{
     margin-top: 15%;
     overflow: hidden;
     white-space: nowrap;
-    color: #555;
+    color: whitesmoke;
     transform: translateX(0);
     text-transform: uppercase;
     font-family: "Georgia";
@@ -202,6 +202,7 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 @keyframes flyInFromRight {
@@ -446,6 +447,7 @@ a.styleForEmailInMain:hover
     margin-top: 23%;
     border: 1px solid black;
     margin-left: 5%;
+    margin-right: 3%;
     padding: 1%;
     background-color: darkgray;
     border-radius: 20px;
@@ -456,8 +458,8 @@ a.styleForEmailInMain:hover
 }
 .h2Box{
     display: inline-block;
-    padding: 2%;
-
+    margin-bottom: 10%;
+    position: relative;
 }
 @keyframes occor {
     0%{
