@@ -312,6 +312,104 @@ html, body{
 
 .pictureContainer{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    animation: occor 3s linear;
+}
+.pictureOfMan{
+    margin-top: 20%;
+    max-width: 150%;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.7;
+
+}
+.h2onSite{
+    position: absolute;
+    top: 20%;
+    font-size: 200%;
+
+}
+
+@keyframes occor {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+table#tableInMain
+{
+    background-color: black;
+    width: 100%;
+    margin-top: 10%;
+}
+p#\@InTableInMain
+{
+    color: white;
+    font-weight: bold;
+    font-family: Calibri, serif;
+    font-size: larger;
+}
+p.normalTextInTableInMain
+{
+    color: yellow;
+    font-family: Calibri, serif;
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
+    transition: color 1s;
+}
+
+p.normalTextInTableInMain:hover
+{
+    color: white;
+    animation: 3s changeColorAndSize forwards;
+}
+
+@keyframes changeColorAndSize {
+    from
+    {
+
+        font-size: larger;
+    }
+    to
+    {
+
+        font-size: larger;
+    }
+}
+
+td.tdInMain
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a.styleForEmailInMain
+{
+    color: yellow;
+    font-family: Calibri, serif;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a.styleForEmailInMain:hover
+{
+    color: white;
+    animation: 3s changeColorAndSize infinite;
+}
+
+
+.pictureContainer{
+    display: flex;
     justify-content: left;
 
     animation: occor 3s linear;
@@ -376,8 +474,5 @@ html, body{
 }
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(50px); }
-    100% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0)}
 }
-
-
-
