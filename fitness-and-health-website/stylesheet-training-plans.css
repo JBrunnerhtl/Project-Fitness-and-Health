@@ -2,49 +2,105 @@ body {
     background-color: black;
     margin: 0;
     font-family: Arial, sans-serif;
+    color: white;
+}
+
+.homeButton-wrapper {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.homeButton {
+    background-image: url("icones/iconizer-bxs-home.svg");
+    padding: 20px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain;
+}
+
+.homeButton:hover {
+    transition: background-color 0.75s ease, color 1s ease;
+    background-image: url("icones/bxs-home.svg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, yellow 0%, black 100%);
+    color: black;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
 }
 
 #title {
     font-size: 3.5rem;
-    color: yellow;
-    text-align: center;
-    margin-top: 20px;
+    color: black;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.plan-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.plan-box {
-    width: 200px;
-    height: 200px;
-    border: 2px solid white;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.plan-box:hover {
-    transform: scale(1.1);
-    background-color: gray;
-}
-
-.plan-box h3 {
-    margin: 0;
+.hero p {
     font-size: 1.5rem;
+    margin: 0;
 }
 
-.plan-box p {
-    margin: 5px 0 0;
-    font-size: 1rem;
+.plans {
+    margin-bottom: 20px;
 }
 
+.plans h2 {
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+.plans p {
+    margin-bottom: 10px;
+}
+
+.plans ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plans ul li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 0, 0.5);
+}
+
+.plans ul li strong {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
