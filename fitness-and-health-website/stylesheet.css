@@ -345,3 +345,64 @@ html, body{
 
 
 
+table#tableInMain
+{
+    background-color: black;
+    width: 100%;
+
+}
+p#\@InTableInMain
+{
+    color: white;
+    font-weight: bold;
+    font-family: Calibri, serif;
+    font-size: larger;
+}
+p.normalTextInTableInMain
+{
+    color: yellow;
+    font-family: Calibri, serif;
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
+    transition: color 1s;
+}
+
+p.normalTextInTableInMain:hover
+{
+    color: white;
+    animation: 3s changeColorAndSize forwards;
+}
+
+@keyframes changeColorAndSize {
+    from
+    {
+
+        font-size: larger;
+    }
+    to
+    {
+
+        font-size: larger;
+    }
+}
+
+td.tdInMain
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a.styleForEmailInMain
+{
+    color: yellow;
+    font-family: Calibri, serif;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a.styleForEmailInMain:hover
+{
+    color: white;
+    animation: 3s changeColorAndSize infinite;
+}
