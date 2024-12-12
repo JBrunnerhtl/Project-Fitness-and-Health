@@ -26,9 +26,7 @@ body {
     margin: 0 auto;
 }
 
-#top{
-    height: 100%;
-}
+
 .hero {
     background: linear-gradient(135deg, #FFD700 0%, #121212 100%);
     color: #121212;
