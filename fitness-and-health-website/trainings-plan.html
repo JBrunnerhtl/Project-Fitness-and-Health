@@ -2,27 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trainingsplan</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Trainingspläne</title>
     <link rel="stylesheet" type="text/css" href="stylesheet-training-plans.css">
+</head>
 <body>
 <div class="homeButton-wrapper">
     <button onclick="document.location='index.html'" class="homeButton"></button>
 </div>
-<div>
-    <p id="title">Trainingspläne</p>
+<div class="content">
+    <header class="hero">
+        <h1 id="title">Trainingspläne</h1>
+        <p>Individuelle Trainingspläne für ältere Menschen und Personen mit Beeinträchtigungen, um Gesundheit und Wohlbefinden zu fördern.</p>
+    </header>
+    <main>
+        <section class="plans">
+            <h2>Pläne für ältere Menschen</h2>
+            <p>Sanfte Übungen, um Mobilität, Kraft und Wohlbefinden zu verbessern:</p>
+            <ul>
+                <li><strong>Gelenkfreundliches Training:</strong> Schonende Bewegungen, um die Gelenke zu entlasten.</li>
+                <li><strong>Balance-Übungen:</strong> Fördert die Standfestigkeit und Sturzprophylaxe.</li>
+                <li><strong>Leichtes Krafttraining:</strong> Unterstützt den Erhalt der Muskelgesundheit.</li>
+            </ul>
+        </section>
+        <section class="plans">
+            <h2>Pläne für beeinträchtigte Menschen</h2>
+            <p>Individuell angepasste Übungen, die verschiedene Einschränkungen berücksichtigen:</p>
+            <ul>
+                <li><strong>Stuhlübungen:</strong> Übungen, die im Sitzen durchgeführt werden können.</li>
+                <li><strong>Mobilitätstraining:</strong> Hilft, die Bewegungsfreiheit zu verbessern.</li>
+                <li><strong>Individuelle Anpassungen:</strong> Programme, die speziell auf die Bedürfnisse abgestimmt sind.</li>
+            </ul>
+        </section>
+    </main>
 </div>
-<div class="plan-container">
-    <div class="plan-box" onclick="document.location='aeltere.html'">
-        <h3>Ältere</h3>
-    </div>
-    <div class="plan-box" onclick="document.location='beeintraechtigte.html'">
-        <h3>Beeinträchtigte</h3>
-    </div>
-    <div class="plan-box" onclick="document.location='normal.html'">
-        <h3>Normal</h3>
-        <p>oder mehr Gewicht</p>
-    </div>
-</div>
+<footer>
+    <p>&copy; 2024 Fitness und Gesundheit. Alle Rechte vorbehalten.</p>
+</footer>
 </body>
 </html>
