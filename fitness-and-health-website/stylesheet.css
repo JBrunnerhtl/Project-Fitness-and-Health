@@ -313,22 +313,47 @@ html, body{
 .pictureContainer{
     display: flex;
     justify-content: left;
-    height: 100%;
+
     animation: occor 3s linear;
 
 }
 .pictureOfMan{
     margin-top: 20%;
-    height: 50%;
+    width: 45%;
     left: 50%;
-    border-radius: 10px;
-    opacity: 0.7;
+    border-radius: 30% 70% 70% 30% / 30% 22% 78% 70%;
+    opacity: 0.8;
 
+    transition: transform 1s ease, box-shadow 1s ease, border-radius 1s ease;
+    box-shadow: 0 4px 15px black/* Sanfter Schatten */
+}
+
+.pictureOfMan:hover{
+    transform: scale(1.1);
 }
 .h2onSite{
-    margin-top: 20%;
-}
 
+    margin-bottom: 1%;
+    font-family: Georgia;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.h2onSite:hover {
+    color: red;
+}
+.textContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 23%;
+    border: 1px solid black;
+    margin-left: 5%;
+}
+.h2Box{
+    display: inline-block;
+    padding: 2%;
+    padding-top: 0%;
+}
 @keyframes occor {
     0%{
         opacity: 0;
