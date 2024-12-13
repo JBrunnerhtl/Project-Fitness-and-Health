@@ -13,6 +13,32 @@ body {
     line-height: 1.6;
 }
 
+.logo{
+    display: flex;
+    padding: 0px;
+    top: 10px;
+}
+
+.homeButton {
+    background-image: url("icones/iconizer-bxs-home.svg");
+    padding: 20px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain;
+    float: left;
+
+}
+
+.homeButton:hover {
+    transition: background-color 0.75s ease, color 1s ease;
+    background-image: url("icones/bxs-home.svg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+
+
 #logoNutrition{
     margin-left: auto;
     margin-right: 3%;
@@ -74,7 +100,7 @@ main h2 {
     padding: 0;
 }
 
-.nutritionIntro ul li,
+.   nutritionIntro ul li,
 .recommendations ul li,
 .balancedDiet ul li,
 .rules ul li {

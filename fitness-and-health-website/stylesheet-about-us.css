@@ -29,8 +29,9 @@ img.styleForImgInAboutUs
     background-color: black;
     border-style: hidden;
     background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
-
 }
+
+
 
 .homeButton:hover {
     transition: background-color 0.75s ease, color 1s ease;
