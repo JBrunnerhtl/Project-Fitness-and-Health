@@ -28,3 +28,10 @@ Halte diese Position 20-30 Sekunden und wiederhole mit dem anderen Bein.
 Mach das 3-4 Mal pro Seite.
 
 - Knochenschwund
+Bei Knochenschwund ist es wichtig die Knochenstärke zu erhalten, das Sturzrisiko zu senken und die Muskulatur zu stärken
+1. Gehen
+Warum: Regelmäßiges Gehen ist eine einfache und effektive Belastungsübung, die die Knochen stärkt, vor allem in den Beinen, Hüften und der Wirbelsäule.
+Wie oft: 30 Minuten pro Tag, an 5 Tagen in der Woche
+2. Treppensteigen
+Warum: Treppensteigen erhöht die Belastung auf die Beinknochen und stärkt die Hüften.
+Tipp: Beginne mit wenigen Stufen und steigere dich langsam.
