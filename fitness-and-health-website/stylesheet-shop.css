@@ -25,7 +25,7 @@
 .top{
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
 
@@ -33,7 +33,7 @@
 }
 h1.styleForHeader
 {
-    flex-grow: 1;
+    flex-grow: 1.5;
     color: yellow;
     text-align: center;
     font-size: 75px;
@@ -58,6 +58,7 @@ h1.styleForHeader
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .item1{
     padding: 3%;
