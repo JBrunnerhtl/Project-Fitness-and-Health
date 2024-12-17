@@ -22,15 +22,7 @@
     background-color: yellow;
     background-repeat: no-repeat;
 }
-.top{
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-
-
-}
 h1.styleForHeader
 {
     flex-grow: 1.5;
@@ -53,7 +45,24 @@ h1.styleForHeader
     }
 
 }
+.Top{
 
+    background: black;
+    background-size: auto;
+    text-align: justify-all;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+    display: flex;
+    padding: 0px;
+    top: 10px;
+}
 .shop-items{
     display: flex;
     justify-content: space-evenly;
