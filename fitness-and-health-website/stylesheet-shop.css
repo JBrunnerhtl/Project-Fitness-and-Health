@@ -4,6 +4,12 @@
     display: inline-block;
     position: relative;
 }
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #121212;
+}
 
 .homeButton {
     background-image: url("icones/iconizer-bxs-home.svg");
@@ -43,6 +49,40 @@ h1.styleForHeader
         transform: translateY(0);
         opacity: 1;
     }
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+
+.vertikalLine{
+    width: 3px;
+    height: 100%;
+    margin: 0px 10px;
+    background-color: yellow;
+
+}
+.TopButtons{
+    background: black;
+    color: yellow;
+    font-family: Arial, serif;
+    border-style: hidden;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to right, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: right bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 0.75s ease, color 1s ease; /* Übergang der Hintergrundposition */
+}
+
+.TopButtons:hover {
+    background-position: left bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
 
 }
 .Top{
