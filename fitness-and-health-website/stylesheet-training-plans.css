@@ -36,7 +36,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #333333 0%, yellow 100%);
+    background: linear-gradient(1deg, #FFD700 0%, #1E1E1E 100%);
     color: black;
     text-align: center;
     padding: 40px;
