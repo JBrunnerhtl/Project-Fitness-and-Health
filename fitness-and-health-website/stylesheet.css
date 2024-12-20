@@ -1,4 +1,4 @@
-.Top {
+nav.Top {
 
     background: black;
     background-size: auto;
@@ -52,7 +52,7 @@ html, body{
     background-color: yellow;
 
 }
-.container{
+.costum-container{
     display: flex;
     align-items: center;
     height: 50px;
@@ -100,7 +100,8 @@ html, body{
     background-color: yellow;
 }
 
-.logo{
+nav.logo{
+    max-width: none ;
     display: flex;
     padding: 0px;
     top: 10px;
