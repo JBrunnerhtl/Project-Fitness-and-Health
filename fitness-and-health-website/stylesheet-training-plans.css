@@ -3,20 +3,30 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+
 }
 
+.toFixflex{
 
+}
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
 }
 .homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
     padding: 20px;
+    width: 20%;
+    height: 20%;
     margin: 10px;
     background-repeat: no-repeat;
     background-color: black;
     border-style: hidden;
     background-size: contain;
+}
+.picture{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .sidebar {
