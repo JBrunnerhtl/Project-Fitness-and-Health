@@ -5,13 +5,10 @@ body {
     color: white;
 }
 
-.homeButton-wrapper {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    position: relative;
-}
 
+.homeButton-wrapper:hover .sidebar {
+    transform: translateX(90%); /* Slide the sidebar into view */
+}
 .homeButton {
     background-image: url("icones/iconizer-bxs-home.svg");
     padding: 20px;
@@ -22,11 +19,14 @@ body {
     background-size: contain;
 }
 
-.homeButton:hover {
-    transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
-    background-repeat: no-repeat;
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: transform 1s ease-in-out;
 }
 
 .content {
