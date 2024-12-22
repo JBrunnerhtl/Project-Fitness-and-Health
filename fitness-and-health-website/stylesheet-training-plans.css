@@ -7,7 +7,7 @@ body {
 }
 
 .toFixflex{
-
+    justify-items: left;
 }
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
@@ -23,9 +23,8 @@ body {
     background-size: contain;
 }
 .picture{
-    width: 50%;
+    width: 50%; !important;
     height: auto;
-    display: block;
     margin-bottom: 20px;
 }
 
