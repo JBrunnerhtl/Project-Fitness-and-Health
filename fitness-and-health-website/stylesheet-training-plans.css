@@ -3,26 +3,49 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+
 }
 
-
+.toFixflex{
+    justify-items: left;
+}
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
 }
+.nav-link .icon {
+    width: 20%;
+    height: auto;
+}
+.nav-link{
+
+}
 .homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
     padding: 20px;
+    width: 20%;
+    height: 20%;
     margin: 10px;
     background-repeat: no-repeat;
     background-color: black;
     border-style: hidden;
     background-size: contain;
 }
+.picture{
+    width: 70%; !important;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover{
+    transition: background-color 0.75s ease, color 1s ease;
+
+    background-color: darkgray;
+    background-repeat: no-repeat;
+}
 
 .sidebar {
     position: fixed;
     top: 0;
-    background-color: black;
+    background-color: #1E1E1E;
     left: -250px;
     width: 250px;
     height: 100%;
