@@ -129,3 +129,33 @@ footer p {
     text-align: justify;
     color: #D3D3D3;
 }
+
+li.li-items-in-sidebar
+{
+    border: 3px solid transparent;
+    margin-left: 5%;
+    transition: border 1s ease;
+}
+
+li.li-items-in-sidebar:hover
+{
+    border: 3px solid yellow;
+}
+
+
+a.text-in-sidebar
+{
+    color: white;
+    font-size: large;
+    font-family: Arial, serif;
+    transition: color 1s ease;
+
+}
+
+a.text-in-sidebar:hover
+{
+    color: yellow;
+}
+
+
+
