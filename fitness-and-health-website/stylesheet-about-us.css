@@ -4,6 +4,7 @@ h2.headersInAboutUs
     font-size: 50px;
     color: yellow;
     text-align: center;
+    clear: left;
 }
 
 img.styleForImgInAboutUs
@@ -12,31 +13,63 @@ img.styleForImgInAboutUs
     background-color: black;
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
 
-.homeButtonWrapper {
-    width: 20px;  /* Erhöhe die Breite des Buttons */
-    height: 20px; /* Erhöhe die Höhe des Buttons */
-    display: inline-block;
-    position: relative;
+.toFixflex{
+    justify-items: left;
 }
+.homeButton-wrapper:hover .sidebar {
+    transform: translateX(90%); /* Slide the sidebar into view */
+}
+.nav-link .icon {
+    width: 20%;
+    height: auto;
+}
+.nav-link{
 
+}
 .homeButton {
+    padding: 20px;
+    width: 20%;
+    height: 20%;
+    margin: 10px;
     background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
-    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
     background-repeat: no-repeat;
     background-color: black;
     border-style: hidden;
-    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+    background-size: contain;
 
+
+    .homeButton-wrapper {
+        width: 20px;  /* Erhöhe die Breite des Buttons */
+        height: 20px; /* Erhöhe die Höhe des Buttons */
+        display: inline-block;
+        position: relative;
+    }
+}
+.picture{
+    width: 70%; !important;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.homeButton:hover {
+.nav-link:hover{
     transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
+
+    background-color: darkgray;
     background-repeat: no-repeat;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: #1E1E1E;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    z-index: 2;
 }
 
 button.styleForButtonInAboutUsLeft
@@ -136,4 +169,30 @@ td.heightAndWidthForTdInAboutUs
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+li.li-items-in-sidebar
+{
+    margin-left: 5%;
+}
+
+
+
+
+a.text-in-sidebar
+{
+    color: white;
+    font-size: large;
+    font-family: Arial, serif;
+
+    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
+}
+
+a.text-in-sidebar:hover
+{
+    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
 }
