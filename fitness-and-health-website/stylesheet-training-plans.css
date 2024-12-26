@@ -164,15 +164,10 @@ footer p {
 
 li.li-items-in-sidebar
 {
-    border: 3px solid transparent;
     margin-left: 5%;
-    transition: border 1s ease;
 }
 
-li.li-items-in-sidebar:hover
-{
-    border: 3px solid yellow;
-}
+
 
 
 a.text-in-sidebar
@@ -180,14 +175,19 @@ a.text-in-sidebar
     color: white;
     font-size: large;
     font-family: Arial, serif;
-    transition: color 1s ease;
 
+    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
 }
 
 a.text-in-sidebar:hover
 {
-    background-color: black;
-    color: yellow;
+    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
 }
+
+
 
 
