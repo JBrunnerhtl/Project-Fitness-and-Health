@@ -6,7 +6,12 @@ html, body{
     background-color: #121212;
 }
 
-
+.shop-picture{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    object-fit: cover;
+}
 
 .vertikalLine{
     width: 3px;
@@ -33,7 +38,12 @@ html, body{
 
 
 }
-
+.fixed-top-bar{
+    position: fixed;
+    top: 0;
+    background-color: #121212;
+    z-index: 999;
+}
 .MainPage{
     display: flex;
     flex-direction: column;
@@ -46,6 +56,8 @@ html, body{
     text-decoration: underline;
     font-family: Arial, serif;
     text-align: center;
+
+
 }
 
 .headersTop{
