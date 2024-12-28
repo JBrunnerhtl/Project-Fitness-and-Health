@@ -6,12 +6,7 @@ html, body{
     background-color: #121212;
 }
 
-.shop-picture{
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    object-fit: cover;
-}
+
 
 .vertikalLine{
     width: 3px;
@@ -60,7 +55,12 @@ html, body{
 
 
 }
-
+.image-container{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
 .headersTop{
     color: yellow;
     font-weight: bold;
@@ -70,7 +70,37 @@ html, body{
     font-size: 50px;
 }
 
+.image-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+.image-text{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: flyFromBottom 4s ease-in-out forwards ;
+
+}
+@keyframes flyFromBottom{
+    0%{
+        top: 100%;
+        opacity: 0;
+    }
+
+    100%{
+        top: 40%;
+        opacity: 1;
+    }
+}
+.picture-header{
+    font-size: 4rem !important;
+}
 
 .horizontalYellowLine{
     width: 100%;
