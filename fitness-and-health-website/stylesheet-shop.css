@@ -35,6 +35,8 @@ html, body{
 }
 .fixed-top-bar{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     background-color: #121212;
     z-index: 999;
@@ -71,9 +73,16 @@ html, body{
 }
 
 .image-container img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    margin-top: 7%;
+    width: 85%;
+    height: 50%;
+    border-radius: 3%;
+
+}
+.shopping-cart{
+    color: yellow;
+    text-align: right;
+    margin-right: 2%;
 }
 
 .image-text{
@@ -100,6 +109,8 @@ html, body{
 }
 .picture-header{
     font-size: 4rem !important;
+    color: yellow;
+
 }
 
 .horizontalYellowLine{
