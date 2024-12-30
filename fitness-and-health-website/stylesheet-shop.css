@@ -57,6 +57,16 @@ html, body{
 
 
 }
+
+.inputSearch{
+    width: 10%;
+    height: 5%;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-size: 100%;
+    border-radius: 5%;
+
+}
 .image-container{
     position: relative;
     width: 100%;
@@ -69,7 +79,8 @@ html, body{
     font-family: Arial, serif;
     font-style: normal;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 50%;
+    margin-left: 80% !important;
 }
 
 .image-container img{
@@ -82,7 +93,8 @@ html, body{
 .shopping-cart{
     color: yellow;
     text-align: right;
-    margin-right: 2%;
+    margin-left: 50%;
+    margin-right: 0;
 }
 
 .image-text{
