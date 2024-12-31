@@ -55,7 +55,6 @@ html, body{
     font-family: Arial, serif;
     text-align: center;
 
-
 }
 
 .inputSearch{
@@ -67,6 +66,7 @@ html, body{
     border-radius: 5%;
 
 }
+
 .image-container{
     position: relative;
     width: 100%;
