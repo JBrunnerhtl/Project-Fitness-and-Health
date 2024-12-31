@@ -1,48 +1,11 @@
-.Top {
 
-    background: black;
-    background-size: auto;
-    text-align: justify-all;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    flex: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: #121212;
 }
-.index{
 
-    background-size: cover;
-}
-
-
-.TopButtons {
-    background: black;
-    color: yellow;
-    font-family: Arial, serif;
-    border-style: hidden;
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    background-image: linear-gradient(to right, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
-    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
-    background-position: right bottom; /* Startet den Hintergrund ganz rechts */
-    transition: background-position 0.75s ease, color 1s ease; /* Übergang der Hintergrundposition */
-}
-
-.TopButtons:hover {
-    background-position: left bottom; /* Bewegt den Farbverlauf nach links */
-    color: black; /* Ändert die Textfarbe auf Schwarz */
-
-}
 
 
 .vertikalLine{
@@ -52,7 +15,7 @@ html, body{
     background-color: yellow;
 
 }
-.container{
+.custom-container{
     display: flex;
     align-items: center;
     height: 50px;
@@ -66,26 +29,101 @@ html, body{
 
     padding: 150px;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 
 
+}
+.fixed-top-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    background-color: #121212;
+    z-index: 999;
+    width: 100%;
 }
 .MainPage{
     display: flex;
     flex-direction: column;
 
 }
+.page_header{
+    font-size: 400%;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Arial, serif;
+    text-align: center;
 
+}
+
+.inputSearch{
+    width: 10%;
+    height: 5%;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-size: 100%;
+    border-radius: 5%;
+
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
 .headersTop{
     color: yellow;
     font-weight: bold;
     font-family: Arial, serif;
     font-style: normal;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 50%;
+    margin-left: 80% !important;
 }
 
+.image-container img{
+    margin-top: 7%;
+    width: 85%;
+    height: 50%;
+    border-radius: 3%;
 
+}
+.shopping-cart{
+    color: yellow;
+    text-align: right;
+    margin-left: 50%;
+    margin-right: 0;
+}
+
+.image-text{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: flyFromBottom 4s ease-in-out forwards ;
+
+}
+@keyframes flyFromBottom{
+    0%{
+        top: 100%;
+        opacity: 0;
+    }
+
+    100%{
+        top: 40%;
+        opacity: 1;
+    }
+}
+.picture-header{
+    font-size: 4rem !important;
+    color: yellow;
+
+}
 
 .horizontalYellowLine{
     width: 100%;
@@ -103,7 +141,7 @@ html, body{
 
 #headlinetrans{
     position: relative;
-    overflow: hidden;
+
     height: 20vh;
     width: 100%;
     font-family: Arial, sans-serif;
@@ -124,58 +162,96 @@ html, body{
 
 
 
-.homeButton-wrapper {
-    width: 20px;  /* Erhöhe die Breite des Buttons */
-    height: 20px; /* Erhöhe die Höhe des Buttons */
-    display: inline-block;
-    position: relative;
-}
+
 html, body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+
     background-color: #121212;
 }
 
-.homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px; /* Erhöhe das Padding für einen größeren Button */
-    margin: 10px;  /* Behalte einen kleineren Abstand nach außen */
-    background-repeat: no-repeat;
-    background-color: black;
-    border-style: hidden;
-    background-size: contain; /* Bild wird skaliert, um in den Button zu passen */
+.toFixflex{
+    justify-items: left;
+}
+.homeButton-wrapper:hover .sidebar {
+    transform: translateX(90%); /* Slide the sidebar into view */
+}
+.nav-link .icon {
+    width: 20%;
+    height: auto;
+}
+.nav-link{
 
 }
-
-.homeButton:hover {
-    transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
+.homeButton {
+    padding: 20px;
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    background-image: url("icones/iconizer-bxs-home.svg");
     background-repeat: no-repeat;
+    background-color: #121212;
+    border-style: hidden;
+    background-size: contain;
+
+
+    .homeButton-wrapper {
+        width: 20px;  /* Erhöhe die Breite des Buttons */
+        height: 20px; /* Erhöhe die Höhe des Buttons */
+        display: inline-block;
+        position: relative;
+    }
+}
+.picture{
+    width: 70%; !important;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover{
+    transition: background-color 0.75s ease, color 1s ease;
+
+    background-color: darkgray;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: #1E1E1E;
+    left: -250px;
+    width: 250px;
+    z-index: 1050;
+    height: 100%;
+    transition: transform 1s ease-in-out;
 }
 
 h1.styleForHeader
 {
     flex-grow: 1.5;
+    clear: left;
     color: yellow;
     text-align: center;
     font-size: 75px;
     text-decoration: underline;
     font-family: Arial, serif;
-    animation: slideInFromBottom 4s forwards;
+
 }
 
-@keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+
+
+.img-compress {
+        object-fit: contain;
+        height: 150px;
+        width: 100%;
     }
 
+
+.card {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -186,6 +262,7 @@ h1.styleForHeader
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    clear: left;
 }
 .item1{
     padding: 3%;
@@ -219,4 +296,30 @@ h1.styleForHeader
 }
 .search{
     left: 90%;
+}
+
+li.li-items-in-sidebar
+{
+    margin-left: 5%;
+}
+
+
+
+
+a.text-in-sidebar
+{
+    color: white;
+    font-size: large;
+    font-family: Arial, serif;
+
+    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
+}
+
+a.text-in-sidebar:hover
+{
+    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
 }
