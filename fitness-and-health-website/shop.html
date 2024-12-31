@@ -10,7 +10,7 @@
 </head>
 <body class="index">
 
-<div class="fixed-top-bar">
+<div class="fixed-top-bar navbar navbar-expand-lg navbar-dark">
     <div class="homeButton-wrapper position-relative" style = "float: left;">
         <button class="homeButton"></button>
         <div class="sidebar d-flex flex-column p-4" style="background-color: black; border-right: 3px solid yellow">
@@ -24,8 +24,14 @@
         </div>
     </div>
     <h1 class="page_header">Shop</h1>
-    <!--<img src="icones/shopping-cart.png" class="shopping-cart" title="Warenkorb">-->
-    <input type="text" id="searchInput" placeholder="..." class="inputSearch">
+    <form class="d-flex">
+    <button class="btn btn-outline-light" type="submit">
+        <i class="bi-cart-fill me-1"></i>
+        Cart
+        <span class="badge bg-light text-black ms-1 rounded-pill">0</span>
+    </button>
+    </form>
+
 
 </div>
 
