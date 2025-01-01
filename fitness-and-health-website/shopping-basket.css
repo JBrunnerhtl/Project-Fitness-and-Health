@@ -1,0 +1,112 @@
+
+html body
+{
+    background: black;
+}
+
+.toFixflex{
+    justify-items: left;
+}
+.homeButton-wrapper:hover .sidebar {
+    transform: translateX(90%); /* Slide the sidebar into view */
+}
+.nav-link .icon {
+    width: 20%;
+    height: auto;
+}
+.nav-link{
+
+}
+.homeButton {
+    padding: 20px;
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    background-image: url("icones/iconizer-bxs-home.svg");
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: hidden;
+    background-size: contain;
+
+
+    .homeButton-wrapper {
+        width: 20px;  /* Erhöhe die Breite des Buttons */
+        height: 20px; /* Erhöhe die Höhe des Buttons */
+        display: inline-block;
+        position: relative;
+    }
+}
+.picture{
+    width: 70%; !important;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover{
+    transition: background-color 0.75s ease, color 1s ease;
+
+    background-color: darkgray;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    left: -250px;
+    width: 250px;
+    z-index: 1050;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+
+li.li-items-in-sidebar
+{
+    margin-left: 5%;
+}
+
+
+
+
+a.text-in-sidebar
+{
+    color: white;
+    font-size: large;
+    font-family: Arial, serif;
+
+    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
+    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
+    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
+    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
+}
+
+a.text-in-sidebar:hover
+{
+    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
+    color: black; /* Ändert die Textfarbe auf Schwarz */
+}
+
+h1.header-in-shopping-basket
+{
+    color: yellow;
+    font-weight: bold;
+    font-family: Arial, serif;
+    font-style: normal;
+    font-size: xxx-large;
+    text-align: center;
+    animation: 2s opacity-and-fly-in-from-bottom forwards;
+}
+
+@keyframes opacity-and-fly-in-from-bottom {
+    from
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
