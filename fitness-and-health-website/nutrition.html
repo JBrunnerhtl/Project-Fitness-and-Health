@@ -1,75 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet-nutrition.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <title>Ernährung</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet-nutrition.css">
 </head>
 <body>
 
-
-
-    <div style ="background-color: black">
-        <button style ="float: left" onclick="document.location='index.html'" class ="homeButton"></button>
-        <img id="logoNutrition" class="logo" src="icones/LOGO_05-remove.png" width=80 height=80 alt="Logo">
+<header class="sticky-top bg-black text-light">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <button class="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="sidebar d-flex flex-column p-4">
+                    <ul class="nav flex-column">
+                        <li class="nav-item li-items-in-sidebar"><a href="index.html" class="nav-link text-in-sidebar">Startseite</a></li>
+                        <li class="nav-item li-items-in-sidebar"><a href="shop.html" class="nav-link text-in-sidebar">Shop</a></li>
+                        <li class="nav-item li-items-in-sidebar"><a href="nutrition.html" class="nav-link text-in-sidebar">Ernährung</a></li>
+                        <li class="nav-item li-items-in-sidebar"><a href="about-us.html" class="nav-link text-in-sidebar">Über uns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8 text-center">
+                <h1 class="display-4">Nutrition</h1>
+            </div>
+        </div>
     </div>
+</header>
 
-
-    <div class="content">
-        <header class="hero">
-            <h1>Gesunde Ernährung</h1>
-            <p>Alles, was Sie wissen müssen, um eine ausgewogene und gesunde Ernährung zu erreichen.</p>
-        </header>
-        <main>
-            <section class="nutritionIntro">
+<main class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <section>
                 <h2>Was ist eine gesunde Ernährung?</h2>
                 <p>Eine gesunde Ernährung bedeutet, den Körper mit den richtigen Mengen an Nährstoffen zu versorgen, die er für Energie, Wachstum und Regeneration benötigt. Sie besteht aus einer ausgewogenen Kombination der drei Hauptnährstoffe:</p>
                 <ul>
-                    <li><strong>Eiweiße (Proteine):</strong> Bausteine des Körpers, wichtig für den Muskelaufbau und die Zellreparatur.</li>
-                    <li><strong>Kohlenhydrate:</strong> Hauptenergiequelle für den Alltag und körperliche Aktivitäten.</li>
-                    <li><strong>Fette:</strong> Wichtig für die Aufnahme von Vitaminen, die Hormonproduktion und Gehirnfunktion.</li>
+                    <li><strong>Eiweiße (Proteine):</strong> Sie sind die Bausteine des Körpers und wichtig für den Muskelaufbau und die Zellreparatur.</li>
+                    <li><strong>Kohlenhydrate:</strong> Sie liefern die Hauptenergiequelle für den Alltag und intensive körperliche Aktivitäten.</li>
+                    <li><strong>Fette:</strong> Sie sind wichtig für die Aufnahme von Vitaminen, die Hormonproduktion und eine gute Gehirnfunktion.</li>
+                </ul>
+                <p><strong>Empfehlungen:</strong></p>
+                <ul>
+                    <li>Etwa 45–65 % der täglichen Kalorien sollten aus Kohlenhydraten stammen.</li>
+                    <li>10–35 % aus Eiweiß.</li>
+                    <li>20–35 % aus Fetten.</li>
+                </ul>
+                <p>Die Kalorienzufuhr sollte auf den täglichen Bedarf abgestimmt sein, der je nach Alter, Geschlecht, Gewicht, Aktivitätslevel und Zielen variiert. Durchschnittlich liegt der tägliche Kalorienbedarf bei:</p>
+                <ul>
+                    <li>Frauen: 1.800–2.200 kcal</li>
+                    <li>Männer: 2.200–2.800 kcal</li>
                 </ul>
             </section>
-            <section class="recommendations">
-                <h2>Empfehlungen</h2>
-                <ul>
-                    <li>Etwa <strong>45–65</strong> % der täglichen Kalorien sollten aus Kohlenhydraten stammen.</li>
-                    <li><strong>10–35 %</strong> aus Eiweiß.</li>
-                    <li><strong>20–35 %</strong> aus Fetten.</li>
-                </ul>
-                <p>Der tägliche Kalorienbedarf liegt im Durchschnitt bei:</p>
-                <ul>
-                    <li><strong>Frauen:</strong> 1.800–2.200 kcal</li>
-                    <li><strong>Männer:</strong> 2.200–2.800 kcal</li>
-                </ul>
-            </section>
-            <section class="balancedDiet">
-                <h2>Was ist eine ausgewogene Ernährung?</h2>
-                <p>Eine ausgewogene Ernährung umfasst alle wichtigen Nährstoffe in den richtigen Mengen, um den Körper gesund und leistungsfähig zu halten. Sie umfasst:</p>
-                <ul>
-                    <li><strong>Kohlenhydrate:</strong> Vollkornprodukte, Kartoffeln, Obst, Gemüse.</li>
-                    <li><strong>Proteine:</strong> Fleisch, Fisch, Eier, Hülsenfrüchte, Milchprodukte.</li>
-                    <li><strong>Fette:</strong> Avocados, Nüsse, Olivenöl, fetter Fisch.</li>
-                    <li><strong>Vitamine und Mineralstoffe:</strong> Obst, Gemüse, Nüsse, Samen.</li>
-                    <li><strong>Wasser:</strong> 2–3 Liter pro Tag.</li>
-                </ul>
-            </section>
-            <section class="rules">
-                <h2>Grundregeln für eine ausgewogene Ernährung</h2>
-                <ul>
-                    <li><strong>Vielfalt</strong>: Verschiedene Lebensmittelgruppen täglich essen.</li>
-                    <li><strong>Portionen</strong>: Richtige Mengen, um Über- oder Unterernährung zu vermeiden.</li>
-                    <li><strong>Frische Produkte</strong>: Unverarbeitete Lebensmittel bevorzugen.</li>
-                    <li><strong>Ausgewogenheit</strong>: Kein Makronährstoff sollte übermäßig konsumiert werden.</li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Fitness und Gesundheit. Alle Rechte vorbehalten.</p>
-        </footer>
-    </div>
 
+            <section>
+                <h2>Was ist eine ausgewogene Ernährung?</h2>
+                <p>Eine ausgewogene Ernährung bedeutet, dass alle wichtigen Nährstoffe in den richtigen Mengen aufgenommen werden, um den Körper gesund und leistungsfähig zu halten. Sie umfasst:</p>
+                <ul>
+                    <li><strong>Kohlenhydrate:</strong> Hauptenergiequelle, besonders wichtig für Gehirn und Muskeln.
+                        <ul>
+                            <li>Beispiele: Vollkornprodukte, Kartoffeln, Obst, Gemüse.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Proteine:</strong> Benötigt für Wachstum, Reparatur von Gewebe und Muskelaufbau.
+                        <ul>
+                            <li>Beispiele: Fleisch, Fisch, Eier, Hülsenfrüchte, Milchprodukte.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fette:</strong> Essenziell für die Energieversorgung, den Zellaufbau und die Hormonproduktion.
+                        <ul>
+                            <li>Beispiele: Avocados, Olivenöl, Nüsse, Samen.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Vitamine und Mineralstoffe:</strong> Wichtig für das Immunsystem, den Stoffwechsel und andere Körperfunktionen.
+                        <ul>
+                            <li>Beispiele: Obst, Gemüse, Nüsse, Samen.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Wasser:</strong> Unerlässlich für alle Körperfunktionen, wie die Regulierung der Körpertemperatur und den Transport von Nährstoffen.
+                        <ul>
+                            <li>Empfehlung: 2–3 Liter pro Tag.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Grundregeln für eine ausgewogene Ernährung</strong></p>
+                <ul>
+                    <li>Vielfalt: Jeden Tag verschiedene Lebensmittelgruppen essen.</li>
+                    <li>Portionen: Achte auf die richtige Menge, um Über- oder Unterernährung zu vermeiden.</li>
+                    <li>Frische Produkte: Frische und unverarbeitete Lebensmittel bevorzugen.</li>
+                    <li>Ausgewogenheit: Keiner der drei Makronährstoffe (Kohlenhydrate, Proteine, Fette) sollte übermäßig oder zu wenig konsumiert werden.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Bulking und Cutting</h2>
+                <p>Beide Strategien werden häufig im Fitnessbereich eingesetzt, um bestimmte Ziele zu erreichen:</p>
+                <h3>Bulking:</h3>
+                <p>Beim Bulking wird der Körper in einen Kalorienüberschuss versetzt, indem man mehr Kalorien zu sich nimmt als verbraucht. Ziel ist es, Gewicht zuzunehmen und Muskelmasse aufzubauen.</p>
+                <p><strong>Empfohlene Lebensmittel beim Bulking:</strong></p>
+                <ul>
+                    <li>Haferflocken (ca. 68 kcal pro 100 g)</li>
+                    <li>Reis (ca. 130 kcal pro 100 g gekocht)</li>
+                    <li>Hähnchenbrust (ca. 165 kcal pro 100 g)</li>
+                    <li>Lachs (ca. 206 kcal pro 100 g)</li>
+                    <li>Nüsse wie Mandeln (ca. 576 kcal pro 100 g)</li>
+                </ul>
+                <h3>Cutting:</h3>
+                <p>Beim Cutting geht es darum, Gewicht zu reduzieren, indem man weniger Kalorien zu sich nimmt als der Körper benötigt. Dabei soll möglichst viel Muskelmasse erhalten bleiben.</p>
+                <p><strong>Empfohlene Lebensmittel beim Cutting:</strong></p>
+                <ul>
+                    <li>Zucchini (ca. 17 kcal pro 100 g)</li>
+                    <li>Brokkoli (ca. 34 kcal pro 100 g)</li>
+                    <li>Magerquark (ca. 67 kcal pro 100 g)</li>
+                    <li>Hähnchenbrust (ca. 165 kcal pro 100 g)</li>
+                    <li>Linsen (ca. 116 kcal pro 100 g gekocht)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Was sind Makronährstoffe?</h2>
+                <p>Makronährstoffe sind die Grundbausteine unserer Ernährung. Jeder von ihnen hat eine spezifische Rolle:</p>
+                <ul>
+                    <li><strong>Kohlenhydrate:</strong> Hauptenergiequelle des Körpers.
+                        <ul>
+                            <li>Beispiele: Vollkornprodukte, Kartoffeln, Obst, Gemüse.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Eiweiße:</strong> Notwendig für den Aufbau und Erhalt von Muskeln sowie für die Reparatur von Gewebe.
+                        <ul>
+                            <li>Beispiele: Fleisch, Fisch, Eier, Hülsenfrüchte, Milchprodukte.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fette:</strong> Essenziell für die Energieversorgung, den Zellaufbau und die Hormonproduktion.
+                        <ul>
+                            <li>Beispiele: Avocados, Olivenöl, Nüsse, Samen.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Eine ausgewogene Kombination dieser Nährstoffe unterstützt die allgemeine Gesundheit, fördert die Fitness und hilft, persönliche Ziele wie Muskelaufbau oder Fettabbau zu erreichen.</p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-black text-light text-center py-3">
+    <p>&copy; 2024 Nutrition Website. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

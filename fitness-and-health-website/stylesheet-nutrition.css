@@ -1,183 +1,19 @@
-.logoNutrition{
-    display: flex;
-    padding: 0px;
-    top: 10px;
-}
-
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #D3D3D3;
-    line-height: 1.6;
-}
-
-.logo{
-    display: flex;
-    padding: 0px;
-    top: 10px;
-}
-
-.homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px;
-    margin: 10px;
-    background-repeat: no-repeat;
     background-color: black;
-    border-style: hidden;
-    background-size: contain;
-    float: left;
-
-}
-
-.homeButton:hover {
-    transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
-    background-repeat: no-repeat;
-}
-
-
-#logoNutrition{
-    margin-left: auto;
-    margin-right: 3%;
-}
-
-.content {
-    padding: 5%;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-
-.hero {
-    background: linear-gradient(1deg, #FFD700 0%, #121212 100%);
-    color: #121212;
-    text-align: center;
-    padding: 4rem 5%;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-.hero h1 {
-    font-size: 2.5rem;
     margin: 0;
-    color: #121212;
-    background: #FFD700;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-main h2 {
-    font-size: 1.8rem;
-    border-bottom: 0.125rem solid #FFD700;
-    padding-bottom: 0.5rem;
-    margin-top: 2rem;
-    color: #FFD700;
-}
-
-.nutritionIntro,
-.recommendations,
-.balancedDiet,
-.rules {
-    margin-bottom: 2rem;
-}
-
-.nutritionIntro ul,
-.recommendations ul,
-.balancedDiet ul,
-.rules ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.   nutritionIntro ul li,
-.recommendations ul li,
-.balancedDiet ul li,
-.rules ul li {
-    margin-bottom: 1rem;
-    background: #1E1E1E;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
-}
-
-.nutritionIntro ul li strong,
-.recommendations ul li strong,
-.balancedDiet ul li strong,
-.rules ul li strong {
-    color: #FFD700;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 5%;
-    background-color: #FFD700;
-    color: #121212;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    main h2 {
-        font-size: 1.3rem;
-    }
-}
-
-.toFixflex{
-    justify-items: left;
-}
 .homeButton-wrapper:hover .sidebar {
-    transform: translateX(90%); /* Slide the sidebar into view */
+    transform: translateX(250px);
 }
+
 .nav-link .icon {
     width: 20%;
     height: auto;
 }
-.nav-link{
 
-}
 .homeButton {
     padding: 20px;
     width: 20%;
@@ -185,64 +21,62 @@ footer p {
     margin: 10px;
     background-image: url("icones/iconizer-bxs-home.svg");
     background-repeat: no-repeat;
-    background-color: #121212;
+    background-color: black;
     border-style: hidden;
     background-size: contain;
-
-
-    .homeButton-wrapper {
-        width: 20px;  /* Erhöhe die Breite des Buttons */
-        height: 20px; /* Erhöhe die Höhe des Buttons */
-        display: inline-block;
-        position: relative;
-    }
-}
-.picture{
-    width: 70%; !important;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.nav-link:hover{
-    transition: background-color 0.75s ease, color 1s ease;
-
-    background-color: darkgray;
-    background-repeat: no-repeat;
 }
 
 .sidebar {
     position: fixed;
     top: 0;
-    background-color: #1E1E1E;
     left: -250px;
     width: 250px;
     height: 100%;
-    transition: transform 1s ease-in-out;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+    padding-top: 60px;
 }
 
-
-li.li-items-in-sidebar
-{
-    margin-left: 5%;
-}
-
-
-
-
-a.text-in-sidebar
-{
+.nav-link {
     color: white;
-    font-size: large;
-    font-family: Arial, serif;
-
-    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
-    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
-    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
-    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
+    text-decoration: none;
+    margin-bottom: 15px;
 }
 
-a.text-in-sidebar:hover
-{
-    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
-    color: black; /* Ändert die Textfarbe auf Schwarz */
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li ul {
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 960px;
+}
+
+@media (max-width: 768px) {
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
