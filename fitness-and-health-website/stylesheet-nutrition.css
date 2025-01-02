@@ -42,16 +42,16 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: black; /* Background set to black */
+    background-color: black;
     border-right: 3px solid yellow;
-    transition: transform 1s ease-in-out; /* Slower transition */
+    transition: transform 1s ease-in-out;
     z-index: 999;
 }
 
-/* Show sidebar only when hovering over the menu button */
+
 .menu-button:hover + .sidebar,
 .sidebar:hover {
-    transform: translateX(250px); /* Slide out on hover */
+    transform: translateX(250px);
 }
 
 .sidebar ul {
@@ -75,7 +75,7 @@ body {
     transition: background-position 0.5s ease, color 0.5s ease;
     padding: 10px;
     display: block;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .text-in-sidebar:hover {
