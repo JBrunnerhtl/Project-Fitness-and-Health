@@ -33,6 +33,11 @@ html, body{
 
 
 }
+.top-search-products{
+    display: flex;
+    flex-direction: column;
+
+}
 .fixed-top-bar{
     position: fixed;
     display: flex;
