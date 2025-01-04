@@ -118,3 +118,9 @@ body {
 .section ul li, .section ol li {
     margin-bottom: 10px;
 }
+
+.footer {
+    text-align: center;
+    font-size: 1em;
+    color: yellow;
+}
