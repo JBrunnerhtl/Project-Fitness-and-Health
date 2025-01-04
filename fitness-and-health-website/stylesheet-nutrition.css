@@ -72,7 +72,7 @@ body {
     background-image: linear-gradient(to left, yellow 50%, black 50%);
     background-size: 200% 100%;
     background-position: left bottom;
-    transition: background-position 0.5s ease, color 0.5s ease;
+    transition: background-position 1s ease, color 1s ease;
     padding: 10px;
     display: block;
     text-decoration: none;
