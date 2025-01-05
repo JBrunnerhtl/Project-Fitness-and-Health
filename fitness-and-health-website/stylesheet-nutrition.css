@@ -119,6 +119,10 @@ body {
     margin-bottom: 10px;
 }
 
+.section strong {
+    color: yellow;
+}
+
 footer.footer {
     text-align: center;
     font-size: 16px;
