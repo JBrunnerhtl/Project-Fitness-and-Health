@@ -119,8 +119,16 @@ body {
     margin-bottom: 10px;
 }
 
-.footer {
+footer.footer {
     text-align: center;
-    font-size: 1em;
+    font-size: 16px;
     color: yellow;
+    background-color: #121212;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid yellow;
+}
+
+footer.footer p {
+    margin: 0;
 }
