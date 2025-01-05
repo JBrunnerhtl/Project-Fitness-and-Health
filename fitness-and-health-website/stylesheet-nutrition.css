@@ -17,8 +17,19 @@ body {
     border-bottom: 3px solid yellow;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Adjust content to both ends */
     padding: 10px 20px;
     z-index: 1000;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
 }
 
 .menu-button {
