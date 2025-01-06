@@ -137,7 +137,7 @@ h1.header-in-shopping-basket
 }
 
 .menu-button {
-    font-size: 24px;
+    font-size: 2em;
     color: yellow;
     cursor: pointer;
 }
@@ -164,11 +164,12 @@ h1.header-in-shopping-basket
 .logo-wrapper {
     display: flex;
     align-items: center;
+    margin-right: 1.5em;
 }
 
 .logo {
-    height: 40px; /* Adjust size as needed */
-    width: auto;
+    height: 3.5em;
+    width: 3.5em;
 }
 
 .title {
