@@ -212,3 +212,20 @@ h1.header-in-shopping-basket
     background-position: right bottom;
     color: black;
 }
+
+footer.footer {
+    text-align: center;
+    font-size: 16px;
+    color: yellow;
+    background-color: #121212;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid yellow;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.footer p {
+    margin: 0;
+}
