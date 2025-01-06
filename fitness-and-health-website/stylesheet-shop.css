@@ -89,13 +89,17 @@ html, body{
     margin-left: 80% !important;
 }
 
-.image-container img{
-    margin-top: 7%;
+.carousel-item img {
+    max-height: 40em;
     width: 85%;
-    height: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 9%;
     border-radius: 3%;
-
 }
+
+
 .shopping-cart{
     color: yellow;
     text-align: right;
