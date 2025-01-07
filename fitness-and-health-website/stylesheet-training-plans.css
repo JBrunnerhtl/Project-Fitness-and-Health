@@ -5,12 +5,28 @@ body {
     color: white;
 }
 
-/* Card-Stil */
 .card {
     border: 2px solid yellow;
     background-color: black;
+    text-align: center;
     color: white;
+    width: 30rem;
+    height: 20rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card .card-title {
+    font-size: 2rem;
+}
+
+.card .card-text {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.d-flex {
+    gap: 12rem;
 }
 
 .card:hover {
@@ -27,8 +43,8 @@ body {
 }
 
 .card .btn-primary:hover {
-    background-color: darkorange;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .toFixflex {
