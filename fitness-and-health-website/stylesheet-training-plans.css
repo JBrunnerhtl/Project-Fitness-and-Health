@@ -1,4 +1,3 @@
-/* Allgemeiner Body-Stil */
 body {
     background-color: black;
     margin: 0;
@@ -8,37 +7,36 @@ body {
 
 /* Card-Stil */
 .card {
-    border: 2px solid yellow; /* Gelbe Umrandung */
-    background-color: black; /* Schwarzer Hintergrund */
-    color: white; /* Textfarbe Weiß */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation für Transform und Box-Shadow */
+    border: 2px solid yellow;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Karte leicht vergrößern bei Hover */
-    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.7); /* Gelber Schatten bei Hover */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.7);
 }
 
-/* Button innerhalb der Card */
+
 .card .btn-primary {
-    background-color: yellow; /* Gelber Hintergrund für den Button */
-    color: black; /* Schwarze Schrift */
-    border: none; /* Kein Rand */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Sanfte Übergänge bei Hover */
+    background-color: yellow;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .card .btn-primary:hover {
-    background-color: darkorange; /* Dunkleres Gelb/Orange bei Hover */
-    color: white; /* Weiße Schrift bei Hover */
+    background-color: darkorange;
+    color: white;
 }
 
-/* Styling für den Rest der Seite bleibt unverändert */
 .toFixflex {
     justify-items: left;
 }
 
 .homeButton-wrapper:hover .sidebar {
-    transform: translateX(90%); /* Slide the sidebar into view */
+    transform: translateX(90%);
 }
 
 .nav-link .icon {
