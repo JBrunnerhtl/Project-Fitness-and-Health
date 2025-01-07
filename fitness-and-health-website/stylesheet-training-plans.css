@@ -1,24 +1,51 @@
+/* Allgemeiner Body-Stil */
 body {
     background-color: black;
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-
 }
 
-.toFixflex{
+/* Card-Stil */
+.card {
+    border: 2px solid yellow; /* Gelbe Umrandung */
+    background-color: black; /* Schwarzer Hintergrund */
+    color: white; /* Textfarbe Weiß */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation für Transform und Box-Shadow */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Karte leicht vergrößern bei Hover */
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.7); /* Gelber Schatten bei Hover */
+}
+
+/* Button innerhalb der Card */
+.card .btn-primary {
+    background-color: yellow; /* Gelber Hintergrund für den Button */
+    color: black; /* Schwarze Schrift */
+    border: none; /* Kein Rand */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Sanfte Übergänge bei Hover */
+}
+
+.card .btn-primary:hover {
+    background-color: darkorange; /* Dunkleres Gelb/Orange bei Hover */
+    color: white; /* Weiße Schrift bei Hover */
+}
+
+/* Styling für den Rest der Seite bleibt unverändert */
+.toFixflex {
     justify-items: left;
 }
+
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
 }
+
 .nav-link .icon {
     width: 20%;
     height: auto;
 }
-.nav-link{
 
-}
 .homeButton {
     padding: 20px;
     width: 20%;
@@ -29,24 +56,23 @@ body {
     background-color: black;
     border-style: hidden;
     background-size: contain;
-
+}
 
 .homeButton-wrapper {
-        width: 20px;  /* Erhöhe die Breite des Buttons */
-        height: 20px; /* Erhöhe die Höhe des Buttons */
-        display: inline-block;
-        position: relative;
+    width: 20px;  /* Erhöhe die Breite des Buttons */
+    height: 20px; /* Erhöhe die Höhe des Buttons */
+    display: inline-block;
+    position: relative;
 }
-}
-.picture{
-    width: 70%; !important;
+
+.picture {
+    width: 70%;
     height: auto;
     margin-bottom: 20px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transition: background-color 0.75s ease, color 1s ease;
-
     background-color: darkgray;
     background-repeat: no-repeat;
 }
@@ -76,7 +102,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
 }
-
 
 #title {
     font-size: 3.5rem;
@@ -162,32 +187,21 @@ footer p {
     color: #D3D3D3;
 }
 
-li.li-items-in-sidebar
-{
+li.li-items-in-sidebar {
     margin-left: 5%;
 }
 
-
-
-
-a.text-in-sidebar
-{
+a.text-in-sidebar {
     color: white;
     font-size: large;
     font-family: Arial, serif;
-
-    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
-    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
-    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
-    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
+    background-image: linear-gradient(to left, yellow 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 1s ease, color 1s ease;
 }
 
-a.text-in-sidebar:hover
-{
-    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
-    color: black; /* Ändert die Textfarbe auf Schwarz */
+a.text-in-sidebar:hover {
+    background-position: right bottom;
+    color: black;
 }
-
-
-
-
