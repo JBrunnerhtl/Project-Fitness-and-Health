@@ -108,27 +108,24 @@ body {
 }
 
 .hero {
-    background: linear-gradient(1deg, #FFD700 0%, #1E1E1E 100%);
     color: black;
     text-align: center;
-    padding: 40px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
 }
 
 #title {
     font-size: 3.5rem;
-    color: black;
-    background-color: yellow;
+    color: yellow;
     padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid yellow;
+
 }
 
 .hero p {
     font-size: 1.5rem;
+    color: white;
     margin: 0;
 }
 
