@@ -2,11 +2,10 @@
 html, body{
     margin: 0;
     padding: 0;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     background-color: #121212;
 }
 .index{
-
     background-size: cover;
 }
 
