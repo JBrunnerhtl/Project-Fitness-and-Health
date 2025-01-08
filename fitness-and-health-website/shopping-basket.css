@@ -66,9 +66,6 @@ li.li-items-in-sidebar
     margin-left: 5%;
 }
 
-
-
-
 a.text-in-sidebar
 {
     color: white;
@@ -94,7 +91,8 @@ h1.header-in-shopping-basket
     font-family: Arial, serif;
     font-style: normal;
     font-size: xxx-large;
-    text-align: center;
+    left: 50%;
+    margin-right: 45%;
     animation: 2s opacity-and-fly-in-from-bottom forwards;
 }
 
@@ -113,15 +111,14 @@ h1.header-in-shopping-basket
 
 
 .top-bar {
-    position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
     background-color: black;
     border-bottom: 3px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+
     padding: 10px 20px;
     z-index: 1000;
 }
@@ -154,12 +151,6 @@ h1.header-in-shopping-basket
     z-index: 999;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px;
-}
 
 .logo-wrapper {
     display: flex;
@@ -195,7 +186,7 @@ h1.header-in-shopping-basket
     margin-left: 5%;
 }
 
-.text-in-sidebar {
+.text-in-sidebar{
     color: white;
     font-size: large;
     font-family: Arial, serif;
