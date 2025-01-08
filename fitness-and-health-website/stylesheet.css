@@ -1,22 +1,8 @@
-nav.Top {
-
-    background: black;
-    background-size: auto;
-    text-align: justify-all;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    flex: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 
 html, body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden !important;
     background-color: #121212;
 }
 .index{
@@ -24,27 +10,10 @@ html, body{
     background-size: cover;
 }
 
-
-.TopButtons {
-    background: black;
-    color: yellow;
-    font-family: Arial, serif;
-    border-style: hidden;
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    background-image: linear-gradient(to right, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
-    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
-    background-position: right bottom; /* Startet den Hintergrund ganz rechts */
-    transition: background-position 0.75s ease, color 1s ease; /* Übergang der Hintergrundposition */
+* {
+    box-sizing: border-box;
 }
 
-.TopButtons:hover {
-    background-position: left bottom; /* Bewegt den Farbverlauf nach links */
-    color: black; /* Ändert die Textfarbe auf Schwarz */
-
-}
 
 
 .vertikalLine{
@@ -102,12 +71,7 @@ html, body{
     background-color: yellow;
 }
 
-nav.logo{
-    max-width: none ;
-    display: flex;
-    padding: 0px;
-    top: 10px;
-}
+
 
 
 
@@ -121,7 +85,7 @@ nav.logo{
 
 .headLine {
 
-    top: 10%;
+    padding-top: 8%;
     text-align: center;
     color: yellow;
     text-shadow: 2px 2px 5px rgba(204, 153, 0, 0.8);
@@ -406,6 +370,22 @@ a.styleForEmailInMain:hover
     display: flex;
     animation: occor 3s linear;
 
+}
+.navbar {
+    background-color: #333333; /* Dunkles Grau */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+    margin-bottom: 20%;
+}
+
+.navbar-nav .nav-link img {
+    filter: invert(1); /* Macht schwarze Icons weiß, sodass sie sichtbar sind */
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Priorität vor anderen Elementen */
 }
 .pictureOfMan{
     margin-top: 20%;
