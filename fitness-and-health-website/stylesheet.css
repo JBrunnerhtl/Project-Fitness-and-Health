@@ -175,9 +175,9 @@ h2 {
 
 .quotes {
 
-    height: 250px;
+    position: relative;
+    height: 250px; /* Höhe der Zitate */
     overflow: hidden;
-    margin-bottom: 0;
 }
 
 @keyframes flyInFromRight {
@@ -281,12 +281,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0;
     height: 100%;
     position: relative;
     animation: occor 3s linear;
 }
 .pictureOfMan{
-    margin-top: 20%;
+    
     max-width: 150%;
     height: 100%;
     width: 100%;
@@ -296,7 +297,7 @@ h2 {
 }
 .h2onSite{
     position: absolute;
-    top: 20%;
+    margin-top: 0;
     font-size: 200%;
 
 }
@@ -420,11 +421,11 @@ a.styleForEmailInMain
 .textContent{
     display: flex;
     flex-direction: column;
-    margin-top: 23%;
+    margin-top: 7%;
     border: 1px solid black;
     margin-left: 5%;
     margin-right: 3%;
-    padding: 1%;
+
     background-color: darkgray;
     border-radius: 20px;
     overflow: visible;
