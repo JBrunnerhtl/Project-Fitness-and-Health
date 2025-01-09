@@ -430,7 +430,7 @@ a.styleForEmailInMain
 }
 .textContent{
     margin-top: 8%;
-
+    font-size: 110%;
 }
 .h2Box{
     display: inline-block;
