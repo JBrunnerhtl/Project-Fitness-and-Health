@@ -165,17 +165,19 @@ p{
     color: yellow;
 }
 
-footer {
+footer.footer {
     text-align: center;
-    padding: 10px;
-    background-color: yellow;
-    color: black;
-    margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 16px;
+    color: yellow;
+    background-color: #121212;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid yellow;
 }
 
-footer p {
+footer.footer p {
     margin: 0;
+    color: yellow;
 }
 
 .explanation {
