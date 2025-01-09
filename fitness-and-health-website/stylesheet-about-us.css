@@ -20,11 +20,12 @@ button.styleForButtonInAboutUsLeft
 {
     background-color: black;
     padding: 0px;
-    margin: 0px;
+
     border: 3px solid white;
     border-radius: 10px;
     transition: 3s border;
-
+    margin-bottom: 5%;
+    margin-top: 5%;
     animation: slideInFromRight 5s forwards;
 }
 
@@ -33,11 +34,12 @@ button.styleForButtonInAboutUsRight
 {
     background-color: black;
     padding: 0px;
-    margin: 0px;
+
     border: 3px solid white;
     border-radius: 10px;
     transition: 3s border;
-
+    margin-top: 5%;
+    margin-bottom: 5%;
     animation: slideInFromLeft 5s forwards;
 }
 button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
@@ -49,7 +51,7 @@ p.styleForPInAboutUs
 {
     color: white;
     font-family: Arial, serif;
-    font-size: medium;
+    font-size: larger;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0;
