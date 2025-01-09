@@ -110,6 +110,16 @@ html, body{
     }
 }
 
+.headerOfText{
+    color: bisque;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
 h2 {
     position: absolute;
     text-align: center;
@@ -287,7 +297,7 @@ h2 {
     animation: occor 3s linear;
 }
 .pictureOfMan{
-    
+
     max-width: 150%;
     height: 100%;
     width: 100%;
@@ -394,7 +404,7 @@ a.styleForEmailInMain
     z-index: 1000; /* Priorität vor anderen Elementen */
 }
 .pictureOfMan{
-    margin-top: 20%;
+    margin-top: 5%;
     width: 45%;
     left: 50%;
     border-radius: 30% 70% 70% 30% / 30% 22% 78% 70%;
@@ -419,18 +429,7 @@ a.styleForEmailInMain
     font-size: 2.01rem;
 }
 .textContent{
-    display: flex;
-    flex-direction: column;
-    margin-top: 7%;
-    border: 1px solid black;
-    margin-left: 5%;
-    margin-right: 3%;
-
-    background-color: darkgray;
-    border-radius: 20px;
-    overflow: visible;
-    word-wrap: break-word;
-    
+    margin-top: 8%;
 
 }
 .h2Box{
