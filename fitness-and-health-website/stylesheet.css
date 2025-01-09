@@ -352,17 +352,13 @@ td.tdInMain
 
 a.styleForEmailInMain
 {
-    color: yellow;
+    color: white;
     font-family: Calibri, serif;
-    text-decoration: none;
-    transition: color 1s;
+    text-decoration: underline;
+
 }
 
-a.styleForEmailInMain:hover
-{
-    color: white;
-    animation: 3s changeColorAndSize infinite;
-}
+
 
 
 .pictureContainer{
@@ -447,4 +443,18 @@ a.styleForEmailInMain:hover
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(50%); }
     100% { opacity: 1; transform: translateY(0)}
+}
+
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+
+}
+
+a.textInNavBar:hover
+{
+
+    color: yellow;
 }
