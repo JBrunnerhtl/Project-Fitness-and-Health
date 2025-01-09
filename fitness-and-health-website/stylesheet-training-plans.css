@@ -90,7 +90,7 @@ p{
 }
 
 .nav-link:hover {
-    transition: background-color 0.75s ease, color 1s ease;
+    transition: background-color 0.74s ease, color 1s ease;
     background-color: darkgray;
     background-repeat: no-repeat;
 }
