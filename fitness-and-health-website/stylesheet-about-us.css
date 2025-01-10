@@ -224,4 +224,26 @@ td.heightAndWidthForTdInAboutUs
     color: black;
 }
 
+a.hover-effects
+{
+    font-size: medium;
+
+}
+
+a.hover-effects:hover
+{
+    animation: 0.5s change-font-size forwards;
+}
+
+@keyframes change-font-size {
+    from
+    {
+        font-size: medium;
+
+    }
+    to
+    {
+        font-size: large;
+    }
+}
 
