@@ -239,7 +239,6 @@ h1.styleForHeader
 
 
 
-
 .shop-items{
     display: flex;
     justify-content: space-evenly;
@@ -366,7 +365,9 @@ a.text-in-sidebar:hover
     margin-left: 2.5em;
 }
 
-
+.changeColor{
+    filter: invert(1);
+}
 
 a.textInNavBar
 {
