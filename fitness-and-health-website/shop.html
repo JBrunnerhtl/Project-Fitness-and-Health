@@ -8,36 +8,47 @@
     <link rel="stylesheet" type="text/css" href="stylesheet-shop.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="index">
 
-<div class="fixed-top-bar navbar navbar-expand-lg navbar-dark">
-    <div class="menu-button-wrapper">
-        <div class="menu-button">
-            <span>☰</span>
-        </div>
-        <div class="sidebar">
-            <ul>
-                <li class="li-items-in-sidebar"><a href="index.html" class="text-in-sidebar">Startseite</a></li>
-                <li class="li-items-in-sidebar"><a href="shop.html" class="text-in-sidebar">Shop</a></li>
-                <li class="li-items-in-sidebar"><a href="nutrition.html" class="text-in-sidebar">Ernährung</a></li>
-                <li class="li-items-in-sidebar"><a href="trainings-plan.html" class="text-in-sidebar">Training</a></li>
-                <li class="li-items-in-sidebar"><a href="about-us.html" class="text-in-sidebar">Über uns</a></li>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="icones/new-logo-blue.png" alt="Home" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="shop.html">
+                        <img src="icones/bx-shopping-bag.svg" alt="Shop" width="20" height="20" > Shop
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="nutrition.html">
+                        <img src="icones/bx-baguette.svg" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="trainings-plan.html">
+                        <img src="icones/bx-run.svg" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="about-us.html">
+                        <img src="icones/bxs-group.svg" alt="Über uns" width="20" height="20"> Über uns
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
-
-    <h1 class="page-header">Shop</h1>
-    <form class="d-flex">
-    <button class="btn btn-outline-light" type = "submit" onclick="event.preventDefault(); document.location = 'shopping-basket.html'">
-        <img src="icones/shopping-cart.png">
-        Cart
-        <span class="badge bg-black text-white ms-1 rounded-pill">0</span>
-    </button>
-    </form>
-
-
-</div>
+</nav>
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style = "pointer-events: none;">
     <div class="carousel-inner">

@@ -381,3 +381,18 @@ a.text-in-sidebar:hover
     align-items: center;
     margin-left: 2.5em;
 }
+
+
+
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+    background-color: black;
+}
+
+a.textInNavBar:hover
+{
+    color: #118ab2;
+}
