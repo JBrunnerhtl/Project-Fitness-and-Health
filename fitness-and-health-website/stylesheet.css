@@ -106,7 +106,9 @@ html, body{
 
     padding-top: 8%;
     text-align: center;
-    color: #118ab2;
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     // text-shadow: 2px 2px 5px ;
     text-transform: uppercase;
     font-size: 300%;
@@ -479,14 +481,31 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-    transition: color 1s ease-in-out;
+
+
+}
+
+@keyframes transition-color-in-nav {
+    from
+    {
+        background: black;
+
+    }
+    to
+    {
+        background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+        -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+        -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    }
 
 }
 
 a.textInNavBar:hover
 {
-    color: #118ab2;
+    animation: 0.5s transition-color-in-nav forwards;
 }
+
+
 
 a.hover-effects
 {
@@ -515,4 +534,12 @@ a.hover-effects:hover
     .headLine{
         margin-top: 9%;
     }
+}
+
+
+h5.text-in-fotter
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
 }
