@@ -38,16 +38,7 @@ html, body{
     flex-direction: column;
 
 }
-.fixed-top-bar{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    background-color: #121212;
-    z-index: 999;
-    width: 100%;
-    border-bottom: 5px solid yellow;
-}
+
 .MainPage{
     display: flex;
     flex-direction: column;
@@ -117,7 +108,12 @@ html, body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 }
-
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Priorität vor anderen Elementen */
+}
 .picture-header{
     font-size: 4rem !important;
     color: yellow;
@@ -175,13 +171,7 @@ html, body{
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
 }
-.nav-link .icon {
-    width: 20%;
-    height: auto;
-}
-.nav-link{
 
-}
 .homeButton {
     padding: 20px;
     width: 20%;
@@ -207,12 +197,6 @@ html, body{
     margin-bottom: 20px;
 }
 
-.nav-link:hover{
-    transition: background-color 0.75s ease, color 1s ease;
-
-    background-color: darkgray;
-    background-repeat: no-repeat;
-}
 
 .sidebar {
     position: fixed;
@@ -252,7 +236,6 @@ h1.styleForHeader
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 
 
@@ -382,17 +365,39 @@ a.text-in-sidebar:hover
     margin-left: 2.5em;
 }
 
-
+.changeColor{
+    filter: invert(1);
+}
 
 a.textInNavBar
 {
     color: white;
     font-size: large;
-    transition: color 1s ease-in-out;
-    background-color: black;
+
+
+}
+
+@keyframes transition-color-in-nav {
+    from
+    {
+        background: black;
+
+    }
+    to
+    {
+        background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+        -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+        -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    }
+
 }
 
 a.textInNavBar:hover
 {
-    color: #118ab2;
+    animation: 0.5s transition-color-in-nav forwards;
+}
+a.hover-effects
+{
+    font-size: medium;
+
 }

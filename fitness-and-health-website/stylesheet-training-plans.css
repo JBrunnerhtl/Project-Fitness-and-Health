@@ -18,7 +18,23 @@ body {
 .card .card-title {
     font-size: 2rem;
 }
-
+.changeColor{
+    filter: invert(1);
+}
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+}
+a.textInNavBar:hover
+{
+    color: #118ab2;
+}
+a.hover-effects
+{
+    font-size: medium;
+}
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
@@ -307,4 +323,12 @@ a.text-in-sidebar:hover {
 .text-in-sidebar:hover {
     background-position: right bottom;
     color: black;
+}
+
+
+h5.text-in-fotter
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
 }

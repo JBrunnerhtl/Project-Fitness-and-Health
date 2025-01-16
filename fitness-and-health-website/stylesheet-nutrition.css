@@ -83,6 +83,41 @@ body {
     margin-left: 5%;
 }
 
+.changeColor{
+    filter: invert(1);
+}
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+
+
+}
+
+@keyframes transition-color-in-nav {
+    from
+    {
+        background: black;
+
+    }
+    to
+    {
+        background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+        -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+        -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    }
+
+}
+
+a.textInNavBar:hover
+{
+    animation: 0.5s transition-color-in-nav forwards;
+}
+a.hover-effects
+{
+    font-size: medium;
+
+}
 .text-in-sidebar {
     color: white;
     font-size: large;
@@ -176,4 +211,11 @@ a.hover-effects:hover
     {
         font-size: large;
     }
+}
+
+h5.text-in-fotter
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
 }
