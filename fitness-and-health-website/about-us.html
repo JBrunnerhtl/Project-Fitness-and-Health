@@ -7,29 +7,42 @@
     <link rel="stylesheet" type="text/css" href="stylesheet-about-us.css">
     <title>Über uns</title>
 </head>
-<body class="bg-black text-white" style="overflow-x: hidden; padding: 0; margin-top: 8%; overflow-y: auto">
+<body style = "background-color: black; overflow-x: hidden">
 
-<!-- Top Bar -->
-<div class="top-bar d-flex justify-content-between align-items-center px-4 py-3">
-    <div class="menu-button-wrapper">
-        <div class="menu-button">
-            <span>☰</span>
-        </div>
-        <div class="sidebar">
-            <ul class="list-unstyled">
-                <li class="li-items-in-sidebar"><a href="index.html" class="text-in-sidebar">Startseite</a></li>
-                <li class="li-items-in-sidebar"><a href="shop.html" class="text-in-sidebar">Shop</a></li>
-                <li class="li-items-in-sidebar"><a href="nutrition.html" class="text-in-sidebar">Ernährung</a></li>
-                <li class="li-items-in-sidebar"><a href="trainings-plan.html" class="text-in-sidebar">Training</a></li>
-                <li class="li-items-in-sidebar"><a href="about-us.html" class="text-in-sidebar">Über uns</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="icones/new-logo-blue.png" alt="Home" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="shop.html">
+                        <img src="icones/bx-shopping-bag.svg" alt="Shop" width="20" height="20"> Shop
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="nutrition.html">
+                        <img src="icones/bx-baguette.svg" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="trainings-plan.html">
+                        <img src="icones/bx-run.svg" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="about-us.html">
+                        <img src="icones/bxs-group.svg" alt="Über uns" width="20" height="20"> Über uns
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
-    <h1 class="title text-center">Wer sind wir</h1>
-    <div class="logo-wrapper">
-        <img src="icones/LOGO_05-remove.png" alt="Logo" class="logo img-fluid">
-    </div>
-</div>
+</nav>
 
 <!-- Team Members Section -->
 <div class="container mt-5">
@@ -110,7 +123,7 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4" style = "color: yellow">Unsere Welt</h5>
+                    <h5 class="text-uppercase mb-4" style = "color: #118ab2">Unsere Welt</h5>
 
                     <ul class="list-unstyled mb-4">
                         <li>
@@ -133,7 +146,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4" style = "color: yellow">Karriere</h5>
+                    <h5 class="text-uppercase mb-4" style = "color: #118ab2">Karriere</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -145,7 +158,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4" style = "color: yellow">Kontaktiere uns</h5>
+                    <h5 class="text-uppercase mb-4" style = "color: #118ab2">Kontaktiere uns</h5>
 
                     <div class="form-outline form-white mb-4">
                         <a href = "mailto:brunnerjan1102@gmail.com" class = "styleForEmailInMain hover-effects" style = "color: white">Klicke hier</a>
@@ -155,7 +168,7 @@
                 </div>
                 <!--Grid column-->
                 <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="icones/LOGO_05-remove.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                    <img src="icones/new-logo-blue.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
                 </div>
             </div>
             <!--Grid row-->

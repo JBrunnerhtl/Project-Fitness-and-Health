@@ -23,7 +23,7 @@ button.styleForButtonInAboutUsLeft
 
     border: 3px solid white;
     border-radius: 10px;
-    transition: 3s border;
+    transition: 1s border;
     margin-bottom: 5%;
     margin-top: 5%;
     animation: slideInFromRight 5s forwards;
@@ -37,14 +37,14 @@ button.styleForButtonInAboutUsRight
 
     border: 3px solid white;
     border-radius: 10px;
-    transition: 3s border;
+    transition: 1s border;
     margin-top: 5%;
     margin-bottom: 5%;
     animation: slideInFromLeft 5s forwards;
 }
 button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
 {
-    border: 3px solid yellow;
+    border: 3px solid #118ab2;
 }
 
 p.styleForPInAboutUs
@@ -245,5 +245,18 @@ a.hover-effects:hover
     {
         font-size: large;
     }
+}
+
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+
+}
+
+a.textInNavBar:hover
+{
+    color: #118ab2;
 }
 
