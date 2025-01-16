@@ -82,7 +82,24 @@ body {
 .li-items-in-sidebar {
     margin-left: 5%;
 }
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+}
+.changeColor{
+    filter: invert(1);
+}
+a.textInNavBar:hover
+{
+    color: #118ab2;
+}
+a.hover-effects
+{
+    font-size: medium;
 
+}
 .text-in-sidebar {
     color: white;
     font-size: large;

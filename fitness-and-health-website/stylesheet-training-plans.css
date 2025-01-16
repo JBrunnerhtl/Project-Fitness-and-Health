@@ -27,6 +27,14 @@ a.textInNavBar
     font-size: large;
     transition: color 1s ease-in-out;
 }
+a.textInNavBar:hover
+{
+    color: #118ab2;
+}
+a.hover-effects
+{
+    font-size: medium;
+}
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
