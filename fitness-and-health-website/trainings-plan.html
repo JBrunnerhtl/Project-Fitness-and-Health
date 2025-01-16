@@ -10,26 +10,40 @@
 </head>
 <body>
 
-<div class="top-bar">
-    <div class="menu-button-wrapper">
-        <div class="menu-button">
-            <span>☰</span>
-        </div>
-        <div class="sidebar">
-            <ul>
-                <li class="li-items-in-sidebar"><a href="index.html" class="text-in-sidebar">Startseite</a></li>
-                <li class="li-items-in-sidebar"><a href="shop.html" class="text-in-sidebar">Shop</a></li>
-                <li class="li-items-in-sidebar"><a href="nutrition.html" class="text-in-sidebar">Ernährung</a></li>
-                <li class="li-items-in-sidebar"><a href="trainings-plan.html" class="text-in-sidebar">Training</a></li>
-                <li class="li-items-in-sidebar"><a href="about-us.html" class="text-in-sidebar">Über uns</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="icones/new-logo-blue.png" alt="Home" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar"  href="shop.html">
+                        <img src="icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> Shop
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="nutrition.html">
+                        <img src="icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="trainings-plan.html">
+                        <img src="icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="about-us.html">
+                        <img src="icones/bxs-group.svg"  class="changeColor" alt="Über uns" width="20" height="20"> Über uns
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
-    <h1 class="title">Trainingspläne</h1>
-    <div class="logo-wrapper">
-        <img src="icones/LOGO_05-remove.png" alt="Logo" class="logo">
-    </div>
-</div>
+</nav>
 
 <div class="content" style="clear: left">
     <header class="hero">

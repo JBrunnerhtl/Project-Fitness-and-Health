@@ -18,7 +18,15 @@ body {
 .card .card-title {
     font-size: 2rem;
 }
-
+.changeColor{
+    filter: invert(1);
+}
+a.textInNavBar
+{
+    color: white;
+    font-size: large;
+    transition: color 1s ease-in-out;
+}
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
