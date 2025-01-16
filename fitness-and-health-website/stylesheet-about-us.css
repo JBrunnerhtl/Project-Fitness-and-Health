@@ -275,3 +275,13 @@ a.textInNavBar:hover
     animation: 0.5s transition-color-in-nav forwards;
 }
 
+.changeColor{
+    filter: invert(1);
+}
+
+h5.text-in-fotter
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+}
