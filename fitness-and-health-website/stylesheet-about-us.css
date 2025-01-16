@@ -44,7 +44,9 @@ button.styleForButtonInAboutUsRight
 }
 button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
 {
-    border: 3px solid #118ab2;
+    border: 3px solid #AFD9FE;
+
+
 }
 
 p.styleForPInAboutUs
