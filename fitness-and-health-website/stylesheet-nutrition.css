@@ -1,7 +1,6 @@
 /* General Styles */
 body {
     background-color: black;
-    color: white;
     font-family: Arial, serif;
     margin: 0;
     padding: 0;
@@ -60,7 +59,6 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: black;
     border-right: 3px solid yellow;
     transition: transform 1s ease-in-out;
     z-index: 999;
@@ -90,8 +88,6 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-
-
 }
 
 @keyframes transition-color-in-nav {
@@ -116,7 +112,12 @@ a.textInNavBar:hover
 a.hover-effects
 {
     font-size: medium;
-
+}
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Priorität vor anderen Elementen */
 }
 .text-in-sidebar {
     color: white;
