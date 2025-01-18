@@ -336,6 +336,40 @@
     To do that we need javascript, so we have to wait. This is just a comment to remember this idea.
     -->
     <p style="text-align: center; color: white; margin: 0; background-color: black"><button><-</button>Page 1 <button>-></button></p>
+
+    <div class="container mt-5">
+        <div class="form-container mx-auto" style="max-width: 500px;">
+            <h2 class="text-center text-dark">Gesundheitsformular</h2>
+            <form>
+
+                <div class="mb-3">
+                    <label for="problem" class="form-label text-dark">Gesundheitliches Problem</label>
+                    <input type="text" class="form-control" id="problem" placeholder="Beschreibe dein Problem" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="max-price" class="form-label text-dark">Maximaler Preis</label>
+                    <input type="number" class="form-control" id="max-price" placeholder="z. B. 100" min="0" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="category" class="form-label text-dark">Kategorie</label>
+                    <select class="form-select" id="category" required>
+                        <option value="" disabled selected>Wähle eine Kategorie</option>
+                        <option value="medizin">Medizin</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="ernährung">Ernährung</option>
+                    </select>
+                </div>
+
+                <!-- Absenden -->
+                <button type="submit" class="btn btn-custom w-100">Absenden</button>
+            </form>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
