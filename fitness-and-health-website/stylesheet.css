@@ -49,7 +49,6 @@ html, body{
     width: 80px;
     height: 80px;
 
-
 }
 
 
@@ -449,8 +448,6 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-
-
 }
 
 @keyframes transition-color-in-nav {
