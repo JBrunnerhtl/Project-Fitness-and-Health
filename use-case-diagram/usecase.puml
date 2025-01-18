@@ -1,5 +1,15 @@
 @startuml
-actor Benutzer as "👤 Benutzer"
+actor Kunde as "👤 Kunde"
+
+rectangle "Unsere Webseite" {
+  usecase Trainingsplaene as "Trainingspläne empfangen"
+  usecase Ernaehrungsplaene as "Ernährungspläne empfangen"
+  usecase AmazonLink as "Auf Amazon gelinkt werden"
+}
+
+Kunde --> Trainingsplaene
+Kunde --> Ernaehrungsplaene
+Kunde --> AmazonLink
 
 
 
