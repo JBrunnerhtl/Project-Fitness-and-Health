@@ -1,85 +1,13 @@
-/* General Styles */
+
+
 body {
+    font-family: Arial, sans-serif;
     background-color: black;
-    font-family: Arial, serif;
     margin: 0;
     padding: 0;
+    color: #A2D2FF;
 }
 
-/* Sticky Top Bar */
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    border-bottom: 3px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjust content to both ends */
-    padding: 10px 20px;
-    z-index: 1000;
-}
-
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 1.5em;
-}
-
-.logo {
-    height: 3.5em;
-    width: 3.5em;
-}
-
-.menu-button {
-    font-size: 2.5em;
-    color: yellow;
-    cursor: pointer;
-}
-
-.menu-button-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
-}
-
-.title {
-    flex: 1;
-    text-align: center;
-    font-size: 3em;
-    color: yellow;
-    margin: 0;
-}
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    border-right: 3px solid yellow;
-    transition: transform 1s ease-in-out;
-    z-index: 999;
-}
-
-
-.menu-button:hover + .sidebar,
-.sidebar:hover {
-    transform: translateX(250px);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px;
-}
-
-.li-items-in-sidebar {
-    margin-left: 5%;
-}
 
 .changeColor{
     filter: invert(1);
@@ -98,7 +26,7 @@ a.textInNavBar
     }
     to
     {
-        background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+            background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
         -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
         -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     }
@@ -119,23 +47,9 @@ a.hover-effects
     width: 100%;
     z-index: 1000; /* Priorität vor anderen Elementen */
 }
-.text-in-sidebar {
-    color: white;
-    font-size: large;
-    font-family: Arial, serif;
-    background-image: linear-gradient(to left, yellow 50%, black 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: background-position 1s ease, color 1s ease;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
 
-.text-in-sidebar:hover {
-    background-position: right bottom;
-    color: black;
-}
+
+
 
 /* Main Content */
 .container {
@@ -144,52 +58,11 @@ a.hover-effects
     padding-right: 20px;
 }
 
-.section {
-    margin-bottom: 40px;
-}
 
-.section h2 {
-    color: yellow;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
 
-.section h3 {
-    color: yellow;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
 
-.section p, .section ul, .section ol {
-    font-size: 16px;
-    line-height: 1.6;
-}
 
-.section ul, .section ol {
-    padding-left: 20px;
-}
 
-.section ul li, .section ol li {
-    margin-bottom: 10px;
-}
-
-.section strong {
-    color: yellow;
-}
-
-footer.footer {
-    text-align: center;
-    font-size: 16px;
-    color: yellow;
-    background-color: #121212;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 3px solid yellow;
-}
-
-footer.footer p {
-    margin: 0;
-}
 
 a.hover-effects
 {
@@ -216,7 +89,55 @@ a.hover-effects:hover
 
 h5.text-in-fotter
 {
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: #A2D2FF;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+.table {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Quicksand', 'Arial', sans-serif;
+    color: #A2D2FF;
+}
+
+.card th, .card td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.card th {
+    background-color: #A2D2FF;
+    color: white;
+}
+
+.card .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #2f2f2f;
 }
