@@ -141,3 +141,8 @@ h1, h2 {
 .card .table-striped tbody tr:nth-of-type(odd) {
     background-color: #2f2f2f;
 }
+
+h1.title-nutrition
+{
+    font-size: xxx-large;
+}

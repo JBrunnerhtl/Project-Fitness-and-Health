@@ -133,36 +133,9 @@ td.heightAndWidthForTdInAboutUs
 
 
 
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    border-bottom: 3px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjust content to both ends */
-    padding: 10px 20px;
-    z-index: 1000;
-}
 
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 1.5em;
-}
 
-.logo {
-    height: 3.5em;
-    width: 3.5em;
-}
 
-.menu-button {
-    font-size: 2.5em;
-    color: yellow;
-    cursor: pointer;
-}
 
 .menu-button-wrapper {
     display: flex;
@@ -286,4 +259,14 @@ h5.text-in-fotter
     background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
     -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+}
+
+h1.h1-in-about-us
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    text-align: center;
+    font-size: xxx-large;
+    font-family: 'Quicksand';
 }
