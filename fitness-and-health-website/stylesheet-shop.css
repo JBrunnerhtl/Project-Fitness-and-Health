@@ -6,15 +6,6 @@ html, body{
     background-color: #121212;
 }
 
-
-
-.vertikalLine{
-    width: 3px;
-    height: 100%;
-    margin: 0px 10px;
-    background-color: yellow;
-
-}
 .custom-container{
     display: flex;
     align-items: center;
@@ -155,9 +146,6 @@ html, body{
 <!--animation: flyIn 2s ease-out forwards;-->
 }
 
-
-
-
 html, body{
     margin: 0;
     padding: 0;
@@ -165,9 +153,6 @@ html, body{
     background-color: #121212;
 }
 
-.toFixflex{
-    justify-items: left;
-}
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%); /* Slide the sidebar into view */
 }
@@ -196,7 +181,6 @@ html, body{
     height: auto;
     margin-bottom: 20px;
 }
-
 
 .sidebar {
     position: fixed;

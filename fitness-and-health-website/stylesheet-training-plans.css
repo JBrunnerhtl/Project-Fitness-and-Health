@@ -63,9 +63,6 @@ a.hover-effects
     color: black;
 }
 
-.toFixflex {
-    justify-items: left;
-}
 
 .homeButton-wrapper:hover .sidebar {
     transform: translateX(90%);
