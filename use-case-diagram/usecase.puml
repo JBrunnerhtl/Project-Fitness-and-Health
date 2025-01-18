@@ -1,0 +1,6 @@
+@startuml
+actor Benutzer as "👤 Benutzer"
+
+
+
+@enduml
