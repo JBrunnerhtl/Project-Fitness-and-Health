@@ -394,3 +394,17 @@ a.hover-effects
     position: relative;
     width: 100%;
 }
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-custom {
+    background-color: #BDE0FE;
+    color: #000;
+}
+.btn-custom:hover {
+    background-color: #A9D0F8;
+}
