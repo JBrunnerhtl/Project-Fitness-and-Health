@@ -408,3 +408,9 @@ a.hover-effects
 .btn-custom:hover {
     background-color: #A9D0F8;
 }
+h5.text-in-fotter
+{
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
+    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+}
