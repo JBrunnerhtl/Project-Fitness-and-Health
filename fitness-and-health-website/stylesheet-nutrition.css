@@ -1,132 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
-
+/* Global Styles */
 body {
-    font-family: merriweather,sans-serif;
+    font-family: 'Merriweather', sans-serif;
     background-color: black;
     margin: 0;
     padding: 0;
     color: #A2D2FF;
 }
 
-
-.changeColor{
+.changeColor {
     filter: invert(1);
 }
-a.textInNavBar
-{
+
+a.textInNavBar {
     color: white;
     font-size: large;
 }
 
-@keyframes transition-color-in-nav {
-    from
-    {
-        background: black;
-
-    }
-    to
-    {
-            background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-        -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-        -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
-    }
-
+a.textInNavBar:hover {
+    color: #A2D2FF;
+    transition: color 0.3s ease;
 }
 
-a.textInNavBar:hover
-{
-    animation: 0.5s transition-color-in-nav forwards;
-}
-a.hover-effects
-{
-    font-size: medium;
-}
 .navbar-fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Priorität vor anderen Elementen */
+    z-index: 1000;
 }
 
-
-
-
-/* Main Content */
-.container {
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-
-
-
-
-
-a.hover-effects
-{
-    font-size: medium;
-
-}
-
-a.hover-effects:hover
-{
-    animation: 0.5s change-font-size forwards;
-}
-
-@keyframes change-font-size {
-    from
-    {
-        font-size: medium;
-
-    }
-    to
-    {
-        font-size: large;
-    }
-}
-
-h5.text-in-fotter
-{
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav-link {
+/* Hero Section */
+.title-nutrition {
+    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
+    font-weight: bold;
     color: #A2D2FF;
 }
 
-.nav-link.active {
-    text-decoration: underline;
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
 }
 
-h1, h2 {
-    font-weight: bold;
-}
-
+/* Card Styles */
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    padding: 0;
+
 }
 
 .card-body {
-    padding: 20px;
-}
-
-
-.table {
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.title {
-    font-family: 'Quicksand', 'Arial', sans-serif;
-    color: #A2D2FF;
+    padding: 15px;
+    overflow-x: hidden;
 }
 
 .card th, .card td {
@@ -143,12 +71,7 @@ h1, h2 {
     background-color: #2f2f2f;
 }
 
-h1.title-nutrition
-{
-    font-size: xxx-large;
-}
-
-
+/* Form Styles */
 .form-container {
     background-color: #fff;
     border-radius: 10px;
@@ -165,12 +88,68 @@ h1.title-nutrition
 .btn-custom {
     background-color: #BDE0FE;
     color: #000;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .btn-custom:hover {
     background-color: #A9D0F8;
+    transition: background-color 0.3s ease;
 }
 
-.list-group-item {
-    border: none;
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h5.text-in-fotter {
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2D2FF;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsiveness */
+.container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-container, .explanation-container {
+        margin-bottom: 20px;
+    }
+
+    h1.title-nutrition {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+
+.table {
+    margin-bottom: 0;
+    word-break: break-word;
+    min-width: 100%;
 }
