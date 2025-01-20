@@ -11,7 +11,7 @@
 </head>
 <body style="background-color: black; overflow: auto; margin: 0; padding: 0;">
 <!-- Sticky Top Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black" >
     <div class="container-fluid">
 
             <img src="icones/new-logo-gredient.png" alt="Home" width="50" height="50">
@@ -56,6 +56,66 @@
     <h1 class="title-nutrition title"  >Ernährungspläne</h1>
     <p class="text-light lead">Individuelle Empfehlungen für ältere Menschen und Menschen mit Behinderungen.</p>
 </section>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Column with Form -->
+        <div class="col-md-6">
+            <div class="form-container mx-auto" style="max-width: 500px;">
+                <h2 class="text-center text-dark">Ernährungsformular</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="weight" class="form-label text-dark">Gewicht (kg)</label>
+                        <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="height" class="form-label text-dark">Größe (cm)</label>
+                        <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="activity-level" class="form-label text-dark">Aktivitätslevel</label>
+                        <select class="form-select" id="activity-level" required>
+                            <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
+                            <option value="low">Niedrig</option>
+                            <option value="moderate">Mittel</option>
+                            <option value="high">Hoch</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="disabilities" class="form-label text-dark">Weitere Einschränkungen</label>
+                        <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-custom w-100">Absenden</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Column with Explanation -->
+        <div class="col-md-6">
+            <div class="explanation-container bg-light p-4 rounded">
+                <h3 class="text-dark mb-3">Wie funktioniert es?</h3>
+                <p class="text-muted">
+                    Dieses Formular hilft Ihnen, personalisierte Ernährungspläne zu erstellen:
+                </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item bg-transparent">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
+                    <li class="list-group-item bg-transparent">2. Wählen Sie Ihr Aktivitätslevel</li>
+                    <li class="list-group-item bg-transparent">3. Teilen Sie uns weitere Einschränkungen mit</li>
+                </ul>
+                <p class="text-muted">
+                    Nach dem Absenden erstellen wir einen maßgeschneiderten Ernährungsplan, der auf Ihre Bedürfnisse abgestimmt ist.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container my-5">
     <!-- Diabetes -->

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 h2.headersInAboutUs
 {
     font-family: Arial, serif;
@@ -132,7 +133,12 @@ td.heightAndWidthForTdInAboutUs
 }
 
 
-
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Priorität vor anderen Elementen */
+}
 
 
 
