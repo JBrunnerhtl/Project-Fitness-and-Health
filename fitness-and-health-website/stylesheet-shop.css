@@ -416,3 +416,20 @@ h5.text-in-fotter
     -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
 }
+@media (max-width: 768px) {
+    .form-container, .explanation-container {
+        margin-bottom: 20px;
+    }
+
+    h1.title-nutrition {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
