@@ -1,51 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* Global Styles */
 body {
+    font-family: 'Merriweather', sans-serif;
     background-color: black;
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
+    padding: 0;
+    color: #A2D2FF;
 }
 
-.top-bar {
+.changeColor {
+    filter: invert(1);
+}
+
+a.textInNavBar {
+    color: white;
+    font-size: large;
+}
+
+a.textInNavBar:hover {
+    color: #A2D2FF;
+    transition: color 0.3s ease;
+}
+
+.navbar-fixed {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background-color: black;
-    border-bottom: 3px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
     z-index: 1000;
 }
 
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 4rem;
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
 }
 
-.logo {
-    height: 3.5em;
-    width: 3.5em;
+footer h5.text-in-fotter {
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
 
-.menu-button {
-    font-size: 2.5em;
-    color: yellow;
-    cursor: pointer;
+footer a {
+    color: #A2D2FF;
+    transition: color 0.3s ease;
 }
 
-.menu-button-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
+footer a:hover {
+    color: white;
 }
 
-.title {
-    flex: 1;
-    text-align: center;
-    font-size: 40px;
-    color: yellow;
-    margin: 0;
+/* Responsiveness */
+.container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-container, .explanation-container {
+        margin-bottom: 20px;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
 }

@@ -8,22 +8,26 @@ body {
 }
 
 .card {
-    border: 2px solid #A2D2FF;
+    border: 0.125rem solid #A2D2FF;
     background-color: #2f2f2f;
     text-align: center;
     color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     width: 30rem;
     height: 20rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.margin-good {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 .card .card-title {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.changeColor{
+.changeColor {
     filter: invert(1);
 }
 
@@ -41,15 +45,16 @@ a.textInNavBar:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Priorität vor anderen Elementen */
+    z-index: 1000;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 48em) {
     .form-container, .explanation-container {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
-    h1.title-nutrition {
-        font-size: 2rem;
+    .hero h1 {
+        font-size: 1.25rem;
     }
 
     .lead {
@@ -68,7 +73,7 @@ a.hover-effects {
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: +4rem;
 }
 
 .d-flex {
@@ -77,7 +82,7 @@ a.hover-effects {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(162, 210, 255, 0.7);
+    box-shadow: 0 0 1rem rgba(162, 210, 255, 0.7);
 }
 
 .card .btn-primary {
@@ -102,10 +107,10 @@ a.hover-effects {
 }
 
 .homeButton {
-    padding: 20px;
+    padding: 1.25rem;
     width: 20%;
     height: 20%;
-    margin: 10px;
+    margin: 0.625rem;
     background-image: url("icones/iconizer-bxs-home.svg");
     background-repeat: no-repeat;
     background-color: black;
@@ -118,8 +123,8 @@ p {
 }
 
 .homeButton-wrapper {
-    width: 20px;  /* Erhöhe die Breite des Buttons */
-    height: 20px; /* Erhöhe die Höhe des Buttons */
+    width: 20px;
+    height: 20px;
     display: inline-block;
     position: relative;
 }
@@ -127,7 +132,7 @@ p {
 .picture {
     width: 70%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .nav-link:hover {
@@ -136,7 +141,7 @@ p {
 }
 
 .content {
-    padding: 20px;
+    padding: 1.25rem;
     max-width: 90%;
     margin: 0 auto;
     margin-top: 4%;
@@ -162,18 +167,18 @@ p {
 }
 
 .plans {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .plans h2 {
     font-size: 2rem;
     color: #A2D2FF;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #A2D2FF;
+    margin-bottom: 1.25rem;
+    border-bottom: 0.125rem solid #A2D2FF;
 }
 
 .plans p {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .plans ul {
@@ -183,10 +188,10 @@ p {
 
 .plans ul li {
     background-color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(162, 210, 255, 0.5);
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.3125rem rgba(162, 210, 255, 0.5);
 }
 
 .plans ul li strong {
@@ -195,12 +200,12 @@ p {
 
 footer.footer {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: #A2D2FF;
     background-color: #121212;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 3px solid #A2D2FF;
+    padding: 1.25rem;
+    margin-top: 3.125rem;
+    border-top: 0.1875rem solid #A2D2FF;
 }
 
 footer.footer p {
@@ -210,11 +215,11 @@ footer.footer p {
 
 .explanation {
     background-color: #1E1E1E;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+    border-radius: 0.625rem;
     max-width: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
     color: #A2D2FF;
     font-size: 1.2rem;
     line-height: 1.6;
@@ -224,7 +229,7 @@ footer.footer p {
     font-size: 2rem;
     color: #A2D2FF;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .explanation p {
@@ -238,11 +243,11 @@ footer.footer p {
     left: 0;
     width: 100%;
     background-color: black;
-    border-bottom: 3px solid #A2D2FF;
+    border-bottom: 0.1875rem solid #A2D2FF;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     z-index: 1000;
 }
 
@@ -277,7 +282,7 @@ footer.footer p {
 }
 
 h5.text-in-fotter {
-    background: linear-gradient(90deg, #A2D2FF, #A2D2FF); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    background: linear-gradient(90deg, #A2D2FF, #A2D2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
