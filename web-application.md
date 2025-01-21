@@ -1,7 +1,6 @@
 # Web application
 
 
-Wie möchten in den shop einen Warenkorb einbauen, wo man dann die Produkte hinzufügen kann.
-Wenn man dann fertig ist mit dem shoppen kann man die Produkte auf einmal bestellen und muss nicht immer auf Amazon gehen und sie in den Warenkorb packen.
+Auf der Seite Produkte kann der Benutzer seine Daten angeben und die perfekten Produkte für ihn werden ihn Vorgeschlagen.
 
-Das Trainingspläne individuel erstellt werden, dass es für jede Person perfekt ist. So auch die Ernährungspläne.
+Auf der Ernährung-und Trainingsseite kann er ebenfalls seine Daten eingeben und der perfekte Trainingsplan und der passende Ernährungsplan werden ihm vorgeschlagen, so auch andersrum
