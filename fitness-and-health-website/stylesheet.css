@@ -504,3 +504,10 @@ h5.text-in-fotter
     -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
 }
+
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+}

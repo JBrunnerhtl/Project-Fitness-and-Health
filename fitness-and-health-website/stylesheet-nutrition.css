@@ -34,7 +34,9 @@ a.textInNavBar:hover {
 .title-nutrition {
     font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
     font-weight: bold;
-    color: #A2D2FF;
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lead {
@@ -132,6 +134,9 @@ footer a:hover {
 
     h1.title-nutrition {
         font-size: 2rem;
+        background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .lead {
