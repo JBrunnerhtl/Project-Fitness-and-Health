@@ -20,9 +20,6 @@ img.styleForImgInAboutUs
         margin-bottom: 20px;
     }
 
-    h1.title-nutrition {
-        font-size: 2rem;
-    }
 
     .lead {
         font-size: 1rem;
@@ -291,4 +288,13 @@ h1.h1-in-about-us
     text-align: center;
     font-size: xxx-large;
     font-family: 'Quicksand';
+    margin-top: 7%;
 }
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 8%;
+    }
+
+}
+
