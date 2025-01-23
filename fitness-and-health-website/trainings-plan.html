@@ -48,13 +48,90 @@
     </div>
 </nav>
 
+<!-- Header Container -->
 <div class="container mt-5 pt-5">
     <!-- Header Section -->
     <header class="hero text-center">
         <h1>Trainingspläne</h1>
         <p class="lead">Individuelle Trainingspläne für ältere Menschen und Personen mit Beeinträchtigungen, um Gesundheit und Wohlbefinden zu fördern.</p>
     </header>
+</div>
 
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Column with Form -->
+        <div class="col-md-6">
+            <div class="form-container mx-auto" style="max-width: 500px;">
+                <h2 class="text-center text-dark">Trainingsformular</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="weight" class="form-label text-dark">Gewicht (kg)</label>
+                        <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="height" class="form-label text-dark">Größe (cm)</label>
+                        <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="height" class="form-label text-dark">Alter (in Jahren)</label>
+                        <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="activity-level" class="form-label text-dark">Geschlecht</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="" disabled selected>Wähle dein Geschlecht</option>
+                            <option value="Männlich">Männlich</option>
+                            <option value="Weiblich">Weiblich</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="activity-level" class="form-label text-dark">Aktivitätslevel</label>
+                        <select class="form-select" id="activity-level" required>
+                            <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
+                            <option value="low">Niedrig</option>
+                            <option value="moderate">Mittel</option>
+                            <option value="high">Hoch</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="disabilities" class="form-label text-dark">Weitere Einschränkungen</label>
+                        <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" class="btn btn-custom w-100" onclick="calculateCalories()" style = "color: black">Absenden</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Column with Explanation -->
+        <div class="col-md-6 col-12">
+            <div class="explanation-container bg-light p-4 rounded">
+                <h3 class="text-dark mb-3">Wie funktioniert es?</h3>
+                <p class="text-muted">
+                    Dieses Formular hilft Ihnen, personalisierte Trainingspläne zu erstellen:
+                </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item bg-transparent">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
+                    <li class="list-group-item bg-transparent">2. Wählen Sie Ihr Aktivitätslevel</li>
+                    <li class="list-group-item bg-transparent">3. Teilen Sie uns weitere Einschränkungen mit</li>
+                </ul>
+                <p class="text-muted">
+                    Nach dem Absenden erstellen wir einen maßgeschneiderten Trainingsplan, der auf Ihre Bedürfnisse abgestimmt ist.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Container -->
+<div class="container mt-5">
     <!-- Main Content -->
     <main>
         <section class="plans mb-5">
@@ -82,6 +159,7 @@
     </main>
 </div>
 
+<!-- Cards Container -->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <!-- Cards Section -->
@@ -105,6 +183,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="container explanation">
     <h2>Wieso Pläne für Ältere und Beeinträchtigte?</h2>

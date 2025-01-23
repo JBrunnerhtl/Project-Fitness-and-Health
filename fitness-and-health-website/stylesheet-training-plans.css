@@ -16,6 +16,7 @@ body {
     width: 30rem;
     height: 20rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 4rem;
 }
 
 .margin-good {
@@ -151,14 +152,14 @@ p {
     font-size: 3rem;
     color: #A2D2FF;
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 3%; /* Reduziert den Abstand */
 }
 
 .hero h1 {
-    margin-top: 2.5rem;
+    margin-top: 1rem; /* Weniger Abstand oben */
     font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Weniger Abstand unten */
 }
 
 .hero p {
@@ -167,13 +168,13 @@ p {
 }
 
 .plans {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .plans h2 {
     font-size: 2rem;
     color: #A2D2FF;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     border-bottom: 0.125rem solid #A2D2FF;
 }
 
@@ -189,7 +190,7 @@ p {
 .plans ul li {
     background-color: #333;
     padding: 0.625rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.8rem;
     border-radius: 0.625rem;
     box-shadow: 0 0 0.3125rem rgba(162, 210, 255, 0.5);
 }
@@ -321,4 +322,28 @@ a.hover-effects:hover
     .hero p {
         font-size: 1rem; /* Kleinere Schriftgröße für den Beschreibungstext */
     }
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: #BDE0FE;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #A9D0F8;
+    transition: background-color 0.3s ease;
+}
+/* Responsiveness */
+.container {
+    padding: 20px;
 }
