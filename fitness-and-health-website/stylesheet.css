@@ -18,15 +18,11 @@ html, body{
 
 .MainPage.picture{
     max-width: 100%;
-
 }
 .images{
-
     padding: 150px;
     position: relative;
     overflow: hidden;
-
-
 }
 .MainPage{
     display: flex;
@@ -35,25 +31,21 @@ html, body{
     overflow: hidden;
     z-index: 1;
     background-color: black;
-
 }
 
 .headersTop{
     color: yellow;
     font-weight: bold;
-    font-family: Arial, serif;
+    font-family: merriweather, sans-serif;
     font-style: normal;
     text-decoration: underline;
     font-size: 50px;
 }
 
 .svg{
-
     width: 80px;
     height: 80px;
-
 }
-
 
 .horizontalYellowLine{
     width: 100%;
@@ -61,31 +53,24 @@ html, body{
     background-color: yellow;
 }
 
-
-
-
-
 #headlinetrans{
     position: relative;
     overflow: hidden;
     height: 20vh;
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: merriweather, sans-serif;
 }
 
 .headLine {
-
     padding-top: 8%;
     text-align: center;
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
-    // text-shadow: 2px 2px 5px ;
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-size: 300%;
     font-weight: bold;
-    font-family: 'Quicksand', 'Arial', sans-serif;
-    <!--animation: flyIn 2s ease-out forwards;-->
+    font-family: merriweather, sans-serif;
 }
 
 @keyframes flyIn {
@@ -109,7 +94,7 @@ h2 {
     color: whitesmoke;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: "Georgia", serif;
+    font-family: merriweather, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -122,8 +107,7 @@ h2 {
     white-space: nowrap;
     text-transform: uppercase;
     transform: translateX(0);
-    font-family: "Georgia";
-
+    font-family: merriweather, sans-serif;
 }
 
 .quote3{
@@ -135,10 +119,9 @@ h2 {
     transform: translateX(0);
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: "Georgia";
-
-
+    font-family: merriweather, sans-serif;
 }
+
 .quote4{
     position: absolute;
     left: -100%;
@@ -148,8 +131,7 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: "Georgia";
-
+    font-family: merriweather, sans-serif;
 }
 
 .quote5{
@@ -161,15 +143,12 @@ h2 {
     color: whitesmoke;
     transform: translateX(0);
     text-transform: uppercase;
-    font-family: "Georgia";
-
+    font-family: merriweather, sans-serif;
 }
 
-
 .quotes {
-
     position: relative;
-    height: 250px; /* Höhe der Zitate */
+    height: 250px;
     overflow: hidden;
 }
 
@@ -205,35 +184,27 @@ h2 {
         opacity: 0;
         transform: translateX(-50%);
     }
-
 }
-
 
 .set1.quote2 { animation: flyInFromLeft 100s linear infinite ; animation-delay: 0s; }
 .set1.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 1s; }
 .set1.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 2s; }
 .set1.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 3s; }
 
-
 .set2.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 25s; }
 .set2.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 26s; }
 .set2.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 27s; }
 .set2.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 28s; }
-
 
 .set3.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 50s; }
 .set3.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 51s; }
 .set3.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 52s; }
 .set3.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 53s; }
 
-
 .set4.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 75s; }
 .set4.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 76s; }
 .set4.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 77s; }
 .set4.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 78s; }
-
-
-
 
 .borderStyle
 {
@@ -241,7 +212,6 @@ h2 {
     border-radius: 10px;
     border-collapse: collapse;
 }
-
 
 .homeButtonWrapper {
     width: 20px;
@@ -258,10 +228,7 @@ h2 {
     background-color: black;
     border-style: hidden;
     background-size: contain;
-
 }
-
-
 
 .homeButton:hover {
     transition: background-color 0.75s ease, color 1s ease;
@@ -280,19 +247,17 @@ h2 {
     animation: occor 3s linear;
 }
 .pictureOfMan{
-    
     max-width: 150%;
     height: 100%;
     width: 100%;
     border-radius: 10px;
     opacity: 0.7;
-
 }
 .h2onSite{
     position: absolute;
     margin-top: 0;
     font-size: 200%;
-
+    font-family: merriweather, sans-serif;
 }
 
 @keyframes occor {
@@ -304,7 +269,6 @@ h2 {
     }
 }
 
-
 table#tableInMain
 {
     background-color: black;
@@ -315,13 +279,13 @@ p#\@InTableInMain
 {
     color: white;
     font-weight: bold;
-    font-family: Calibri, serif;
+    font-family: merriweather, sans-serif;
     font-size: larger;
 }
 p.normalTextInTableInMain
 {
     color: yellow;
-    font-family: Calibri, serif;
+    font-family: merriweather, sans-serif;
     font-size: large;
     padding: 0px;
     margin: 0px;
@@ -337,12 +301,10 @@ p.normalTextInTableInMain:hover
 @keyframes changeColorAndSize {
     from
     {
-
         font-size: larger;
     }
     to
     {
-
         font-size: larger;
     }
 }
@@ -353,10 +315,9 @@ td.tdInMain
     padding: 0px;
 }
 
-
 .headerOfText{
     color: bisque;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: merriweather, sans-serif;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 2%;
@@ -364,27 +325,25 @@ td.tdInMain
     text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px, rgba(255, 255, 255, 0.6) 0px 0px 20px;
 }
 
-
 .pictureContainer{
     display: flex;
     animation: occor 3s linear;
-
 }
 .navbar {
-    background-color: #333333; /* Dunkles Grau */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+    background-color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 20%;
 }
 
 .navbar-nav .nav-link img {
-    filter: invert(1); /* Macht schwarze Icons weiß, sodass sie sichtbar sind */
+    filter: invert(1);
 }
 
 .navbar-fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Priorität vor anderen Elementen */
+    z-index: 1000;
 }
 .pictureOfMan{
     margin-top: 5%;
@@ -402,7 +361,7 @@ td.tdInMain
 }
 .h2onSite{
     margin-bottom: 1%;
-    font-family: Georgia;
+    font-family: merriweather, sans-serif;
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px black;
@@ -414,8 +373,7 @@ td.tdInMain
 .textContent{
     margin-top: 8%;
     font-size: 110%;
-    
-
+    font-family: merriweather, sans-serif;
 }
 .h2Box{
     display: inline-block;
@@ -434,6 +392,7 @@ td.tdInMain
     font-size: 150%;
     margin: 0;
     line-height: 1.5;
+    font-family: merriweather, sans-serif;
 }
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(50%); }
@@ -444,6 +403,7 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
+    font-family: merriweather, sans-serif;
 }
 
 @keyframes transition-color-in-nav {
@@ -454,11 +414,10 @@ a.textInNavBar
     }
     to
     {
-        background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-        -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-        -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+        background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
 }
 
 a.textInNavBar:hover
@@ -466,12 +425,10 @@ a.textInNavBar:hover
     animation: 0.5s transition-color-in-nav forwards;
 }
 
-
-
 a.hover-effects
 {
     font-size: medium;
-
+    font-family: merriweather, sans-serif;
 }
 
 a.hover-effects:hover
@@ -497,12 +454,12 @@ a.hover-effects:hover
     }
 }
 
-
 h5.text-in-fotter
 {
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: merriweather, sans-serif;
 }
 
 @media (max-width: 768px) {
