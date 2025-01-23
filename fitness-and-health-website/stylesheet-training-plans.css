@@ -310,3 +310,15 @@ a.hover-effects:hover
         font-size: large;
     }
 }
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Kleiner als vorher */
+        margin-top: 1rem; /* Weniger Abstand oben */
+        margin-bottom: 1.5rem; /* Weniger Abstand unten */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Kleinere Schriftgröße für den Beschreibungstext */
+    }
+}
