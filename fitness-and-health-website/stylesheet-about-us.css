@@ -170,48 +170,12 @@ td.heightAndWidthForTdInAboutUs
     margin: 0;
 }
 
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    border-right: 3px solid yellow;
-    transition: transform 1s ease-in-out;
-    z-index: 999;
-}
-
-
-.menu-button:hover + .sidebar,
-.sidebar:hover {
-    transform: translateX(250px);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px;
-}
 
 .li-items-in-sidebar {
     margin-left: 5%;
 }
 
-.text-in-sidebar {
-    color: white;
-    font-size: large;
-    font-family: Arial, serif;
-    background-image: linear-gradient(to left, yellow 50%, black 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: background-position 1s ease, color 1s ease;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
+
 
 .text-in-sidebar:hover {
     background-position: right bottom;
