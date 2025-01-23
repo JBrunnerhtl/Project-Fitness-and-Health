@@ -353,13 +353,6 @@ td.tdInMain
     padding: 0px;
 }
 
-a.styleForEmailInMain
-{
-    color: white;
-    font-family: Calibri, serif;
-    text-decoration: underline;
-
-}
 
 .headerOfText{
     color: bisque;
@@ -510,4 +503,11 @@ h5.text-in-fotter
     background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
     -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+}
+
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
 }
