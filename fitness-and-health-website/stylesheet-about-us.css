@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 h2.headersInAboutUs
 {
-    font-family: Arial, serif;
+    font-family: merriweather, sans-serif;
     font-size: 50px;
     color: yellow;
     text-align: center;
@@ -19,7 +19,6 @@ img.styleForImgInAboutUs
     .form-container, .explanation-container {
         margin-bottom: 20px;
     }
-
 
     .lead {
         font-size: 1rem;
@@ -43,7 +42,6 @@ button.styleForButtonInAboutUsLeft
     animation: slideInFromRight 5s forwards;
 }
 
-
 button.styleForButtonInAboutUsRight
 {
     background-color: black;
@@ -56,23 +54,20 @@ button.styleForButtonInAboutUsRight
     margin-bottom: 5%;
     animation: slideInFromLeft 5s forwards;
 }
+
 button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
 {
     border: 3px solid #AFD9FE;
-
-
 }
 
 p.styleForPInAboutUs
 {
     color: white;
-    font-family: Arial, serif;
+    font-family: merriweather, sans-serif;
     font-size: larger;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0;
-
-
 }
 
 table.tableStyleInAboutUs
@@ -80,23 +75,22 @@ table.tableStyleInAboutUs
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-
 }
+
 p.styleForPInAboutUsWritingTextLeft
 {
     color: white;
-    font-family: Arial, serif;
+    font-family: merriweather, sans-serif;
     font-size: larger;
     padding-left: 5%;
     text-align: left;
     animation: slideInFromRight 5s forwards;
 }
 
-
 p.styleForPInAboutUsWritingTextRight
 {
     color: white;
-    font-family: Arial, serif;
+    font-family: merriweather, sans-serif;
     font-size: larger;
     padding-right: 5%;
     text-align: right;
@@ -107,8 +101,6 @@ td.heightAndWidthForTdInAboutUs
 {
     width: 15%;
 }
-
-
 
 @keyframes slideInFromRight {
     from {
@@ -121,7 +113,6 @@ td.heightAndWidthForTdInAboutUs
     }
 }
 
-
 @keyframes slideInFromLeft {
     from {
         opacity: 0;
@@ -133,11 +124,9 @@ td.heightAndWidthForTdInAboutUs
     }
 }
 
-
 .toFixflex{
     justify-items: left;
 }
-
 
 .picture{
     width: 70%; !important;
@@ -145,16 +134,12 @@ td.heightAndWidthForTdInAboutUs
     margin-bottom: 20px;
 }
 
-
 .navbar-fixed {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000; /* Priorität vor anderen Elementen */
 }
-
-
-
 
 .menu-button-wrapper {
     display: flex;
@@ -170,12 +155,9 @@ td.heightAndWidthForTdInAboutUs
     margin: 0;
 }
 
-
 .li-items-in-sidebar {
     margin-left: 5%;
 }
-
-
 
 .text-in-sidebar:hover {
     background-position: right bottom;
@@ -185,7 +167,7 @@ td.heightAndWidthForTdInAboutUs
 a.hover-effects
 {
     font-size: medium;
-
+    font-family: merriweather, sans-serif;
 }
 
 a.hover-effects:hover
@@ -209,8 +191,7 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-
-
+    font-family: merriweather, sans-serif;
 }
 
 @keyframes transition-color-in-nav {
@@ -225,7 +206,6 @@ a.textInNavBar
         -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
         -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     }
-
 }
 
 a.textInNavBar:hover
@@ -251,7 +231,7 @@ h1.h1-in-about-us
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     text-align: center;
     font-size: xxx-large;
-    font-family: 'Quicksand';
+    font-family: merriweather, sans-serif;
     margin-top: 7%;
 }
 
@@ -259,6 +239,4 @@ h1.h1-in-about-us
     body{
         padding-top: 8%;
     }
-
 }
-
