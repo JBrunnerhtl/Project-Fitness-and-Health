@@ -1,16 +1,24 @@
 @startuml
-actor Kunde as "👤 Kunde"
+left to right direction
 
-rectangle "Unsere Webseite" {
-  usecase Trainingsplaene as "Trainingspläne empfangen"
-  usecase Ernaehrungsplaene as "Ernährungspläne empfangen"
-  usecase AmazonLink as "Auf Amazon gelinkt werden"
+rectangle "Unsere Webseite" as WebseiteSystem {
+  usecase Vorschlaege as "Produktvorschläge erhalten"
+  usecase Trainingsplaene as "Trainingspläne generieren"
+  usecase Ernaehrungsplaene as "Ernährungspläne generieren"
 }
 
-Kunde --> Trainingsplaene
-Kunde --> Ernaehrungsplaene
-Kunde --> AmazonLink
+actor Kunde as "👤 Kunde"
+actor Webseite as "🌐 Webseite"
 
+ Kunde --> Vorschlaege
+ Kunde --> Trainingsplaene
+ Kunde --> Ernaehrungsplaene
 
+ Webseite --> Vorschlaege
+ Webseite --> Trainingsplaene
+ Webseite --> Ernaehrungsplaene
 
 @enduml
+
+
+
