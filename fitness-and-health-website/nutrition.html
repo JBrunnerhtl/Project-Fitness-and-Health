@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet-nutrition.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="Calculator.js"></script>
     <title>Ernährung</title>
 </head>
 <body style="background-color: black; overflow: auto; margin: 0; padding: 0;">
@@ -76,6 +77,20 @@
                     </div>
 
                     <div class="mb-3">
+                        <label for="height" class="form-label text-dark">Alter (in Jahren)</label>
+                        <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="activity-level" class="form-label text-dark">Geschlecht</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="" disabled selected>Wähle dein Geschlecht</option>
+                            <option value="Männlich">Männlich</option>
+                            <option value="Weiblich">Weiblich</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
                         <label for="activity-level" class="form-label text-dark">Aktivitätslevel</label>
                         <select class="form-select" id="activity-level" required>
                             <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
@@ -90,8 +105,14 @@
                         <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
                     </div>
 
+                    <div class="mb-3">
+                        <label for="result" class="form-label text-dark">Dein Kalorienbedarf pro Tag</label>
+                        <input type="text" class="form-control" id="result" placeholder="z. B. 1730 Kalorien" readonly>
+                    </div>
+
                     <!-- Submit Button -->
-                    <button type="submit" class="btn btn-custom w-100">Absenden</button>
+                    <button type="button" class="btn btn-custom w-100" onclick="calculateCalories()">Absenden</button>
+
                 </form>
             </div>
         </div>
@@ -128,7 +149,7 @@
         <div class="col-lg-8 col-md-6 col-12">
             <div class="card shadow">
                 <div class="card-body bg-dark text-light">
-                    <h5 class="card-title" style="color: #A2D2FF;">Beispielhafte Mahlzeiten</h5>
+                    <h5 class="card-title" style="color: #A2D2FF; margin-right: 2%">Beispielhafte Mahlzeiten</h5>
                     <div class="table-responsive" style="overflow-x: auto;">
                         <table class="table table-dark table-striped m-0">
                             <thead>
