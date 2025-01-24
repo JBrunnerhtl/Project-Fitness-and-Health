@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 h2.headersInAboutUs
 {
-    font-family: merriweather, sans-serif;
     font-size: 50px;
     color: yellow;
     text-align: center;
@@ -63,7 +62,7 @@ button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:ho
 p.styleForPInAboutUs
 {
     color: white;
-    font-family: merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: larger;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -80,7 +79,7 @@ table.tableStyleInAboutUs
 p.styleForPInAboutUsWritingTextLeft
 {
     color: white;
-    font-family: merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: larger;
     padding-left: 5%;
     text-align: left;
@@ -90,7 +89,7 @@ p.styleForPInAboutUsWritingTextLeft
 p.styleForPInAboutUsWritingTextRight
 {
     color: white;
-    font-family: merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: larger;
     padding-right: 5%;
     text-align: right;
@@ -167,7 +166,7 @@ td.heightAndWidthForTdInAboutUs
 a.hover-effects
 {
     font-size: medium;
-    font-family: merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.hover-effects:hover
@@ -191,7 +190,7 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-    font-family: sans-serif;
+    font-family: Arial ,sans-serif;
 }
 
 @keyframes transition-color-in-nav {
@@ -231,7 +230,7 @@ h1.h1-in-about-us
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     text-align: center;
     font-size: xxx-large;
-    font-family: sans-serif;
+    font-family: Arial ,sans-serif;
     margin-top: 7%;
 }
 

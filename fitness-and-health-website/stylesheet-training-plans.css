@@ -3,8 +3,8 @@
 body {
     background-color: black;
     margin: 0;
-    font-family: merriweather, sans-serif;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 .card {
@@ -17,15 +17,18 @@ body {
     height: 20rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 4rem;
+    font-family: Arial, sans-serif;
 }
 
 .margin-good {
     margin-left: 10rem;
     margin-right: 10rem;
 }
+
 .card .card-title {
     font-size: 2rem;
     font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .changeColor {
@@ -36,7 +39,7 @@ a.textInNavBar {
     color: white;
     font-size: large;
     transition: color 0.3s ease;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -48,6 +51,7 @@ a.textInNavBar:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
+    font-family: Arial, sans-serif;
 }
 
 @media (max-width: 48em) {
@@ -61,6 +65,7 @@ a.textInNavBar:hover {
 
     .lead {
         font-size: 1rem;
+        font-family: Arial, sans-serif;
     }
 
     .navbar-nav {
@@ -70,12 +75,14 @@ a.textInNavBar:hover {
 
 a.hover-effects {
     font-size: medium;
+    font-family: Arial, sans-serif;
 }
 
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
     margin-bottom: +4rem;
+    font-family: Arial, sans-serif;
 }
 
 .d-flex {
@@ -92,6 +99,7 @@ a.hover-effects {
     color: black;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif;
 }
 
 .card .btn-primary:hover {
@@ -118,10 +126,12 @@ a.hover-effects {
     background-color: black;
     border-style: hidden;
     background-size: contain;
+    font-family: Arial, sans-serif;
 }
 
 p {
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 .homeButton-wrapper {
@@ -147,6 +157,7 @@ p {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 4%;
+    font-family: Arial, sans-serif;
 }
 
 .hero {
@@ -154,6 +165,7 @@ p {
     color: #A2D2FF;
     text-align: center;
     margin-bottom: 3%; /* Reduziert den Abstand */
+    font-family: Arial, sans-serif;
 }
 
 .hero h1 {
@@ -161,15 +173,18 @@ p {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem; /* Weniger Abstand unten */
+    font-family: Arial, sans-serif;
 }
 
 .hero p {
     font-size: 1.2rem;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 .plans {
     margin-bottom: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
 .plans h2 {
@@ -186,6 +201,7 @@ p {
 .plans ul {
     list-style-type: none;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .plans ul li {
@@ -208,11 +224,13 @@ footer.footer {
     padding: 1.25rem;
     margin-top: 3.125rem;
     border-top: 0.1875rem solid #A2D2FF;
+    font-family: Arial, sans-serif;
 }
 
 footer.footer p {
     margin: 0;
     color: #A2D2FF;
+    font-family: Arial, sans-serif;
 }
 
 .explanation {
@@ -225,6 +243,7 @@ footer.footer p {
     color: #A2D2FF;
     font-size: 1.2rem;
     line-height: 1.6;
+    font-family: Arial, sans-serif;
 }
 
 .explanation h2 {
@@ -232,11 +251,13 @@ footer.footer p {
     color: #A2D2FF;
     text-align: center;
     margin-bottom: 0.625rem;
+    font-family: Arial, sans-serif;
 }
 
 .explanation p {
     text-align: justify;
     color: #D3D3D3;
+    font-family: Arial, sans-serif;
 }
 
 .top-bar {
@@ -251,6 +272,7 @@ footer.footer p {
     justify-content: space-between;
     padding: 0.625rem 1.25rem;
     z-index: 1000;
+    font-family: Arial, sans-serif;
 }
 
 .logo-wrapper {
@@ -268,6 +290,7 @@ footer.footer p {
     font-size: 2.5em;
     color: #A2D2FF;
     cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
 .menu-button-wrapper {
@@ -281,34 +304,30 @@ footer.footer p {
     text-align: center;
     color: #A2D2FF;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 h5.text-in-fotter {
     background: linear-gradient(90deg, #A2D2FF, #A2D2FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Arial, sans-serif;
 }
 
-
-a.hover-effects
-{
+a.hover-effects {
     font-size: medium;
-
+    font-family: Arial, sans-serif;
 }
 
-a.hover-effects:hover
-{
+a.hover-effects:hover {
     animation: 0.5s change-font-size forwards;
 }
 
 @keyframes change-font-size {
-    from
-    {
+    from {
         font-size: medium;
-
     }
-    to
-    {
+    to {
         font-size: large;
     }
 }
@@ -318,10 +337,12 @@ a.hover-effects:hover
         font-size: 2.5rem; /* Kleiner als vorher */
         margin-top: 1rem; /* Weniger Abstand oben */
         margin-bottom: 1.5rem; /* Weniger Abstand unten */
+        font-family: Arial, sans-serif;
     }
 
     .hero p {
         font-size: 1rem; /* Kleinere Schriftgröße für den Beschreibungstext */
+        font-family: Arial, sans-serif;
     }
 }
 
@@ -331,6 +352,7 @@ a.hover-effects:hover
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
 }
 
 .btn-custom {
@@ -338,13 +360,16 @@ a.hover-effects:hover
     color: #000;
     font-size: 1rem;
     font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .btn-custom:hover {
     background-color: #A9D0F8;
     transition: background-color 0.3s ease;
 }
+
 /* Responsiveness */
 .container {
     padding: 20px;
+    font-family: Arial, sans-serif;
 }

@@ -5,7 +5,7 @@ html, body{
     padding: 0;
     overflow-x: hidden;
     background-color: black;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .custom-container{
@@ -61,7 +61,7 @@ html, body{
 .headersTop{
     color: yellow;
     font-weight: bold;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
     font-style: normal;
     text-decoration: underline;
     font-size: 50%;
@@ -106,7 +106,7 @@ html, body{
 .picture-header{
     font-size: 4rem !important;
     color:#BDE0FE;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 
 }
 
@@ -200,7 +200,7 @@ h1.styleForHeader
     text-align: center;
     font-size: 75px;
     text-decoration: underline;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
 
 }
 
@@ -275,7 +275,7 @@ a.text-in-sidebar
 {
     color: white;
     font-size: large;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
 
     background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
     background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
@@ -296,7 +296,7 @@ a.text-in-sidebar:hover
 .text-in-sidebar {
     color: white;
     font-size: large;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
     background-image: linear-gradient(to left, yellow 50%, black 50%);
     background-size: 200% 100%;
     background-position: left bottom;

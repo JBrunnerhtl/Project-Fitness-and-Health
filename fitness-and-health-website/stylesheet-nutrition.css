@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@300;400;700&display=swap');
 
 /* Global Styles */
 body {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: black;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
 a.textInNavBar {
     color: white;
     font-size: large;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -36,9 +36,9 @@ a.textInNavBar:hover {
     font-size: xxx-large; /* Dynamic font size for all screens */
     font-weight: bold;
     background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-   -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .lead {
@@ -168,7 +168,6 @@ footer a:hover {
 }
 
 
-
 a.hover-effects
 {
     font-size: medium;
@@ -191,4 +190,3 @@ a.hover-effects:hover
         font-size: large;
     }
 }
-
