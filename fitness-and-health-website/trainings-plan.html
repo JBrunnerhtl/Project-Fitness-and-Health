@@ -103,8 +103,18 @@
                         <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
                     </div>
 
+
+                    <div class="mb-3">
+                        <label for="activity-level" class="form-label text-dark">Ziel</label>
+                        <select class="form-select" id="fitness-goal" required>
+                            <option value="" disabled selected>Wähle dein Ziel</option>
+                            <option value="low">Gewicht halten</option>
+                            <option value="moderate">Abnehmen</option>
+                            <option value="high">Muskelaufbau</option>
+                        </select>
+                    </div>
                     <!-- Submit Button -->
-                    <button type="button" class="btn btn-custom w-100" onclick="calculateCalories()" style = "color: black">Absenden</button>
+                    <button type="button" class="btn btn-custom w-100" style = "color: black">Absenden</button>
 
                 </form>
             </div>
