@@ -16,6 +16,7 @@ body {
 a.textInNavBar {
     color: white;
     font-size: large;
+    font-family: sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -32,11 +33,12 @@ a.textInNavBar:hover {
 
 /* Hero Section */
 .title-nutrition {
-    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
+    font-size: xxx-large; /* Dynamic font size for all screens */
     font-weight: bold;
     background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: sans-serif;
 }
 
 .lead {

@@ -191,7 +191,7 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
-    font-family: merriweather, sans-serif;
+    font-family: sans-serif;
 }
 
 @keyframes transition-color-in-nav {
@@ -231,7 +231,7 @@ h1.h1-in-about-us
     -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
     text-align: center;
     font-size: xxx-large;
-    font-family: merriweather, sans-serif;
+    font-family: sans-serif;
     margin-top: 7%;
 }
 

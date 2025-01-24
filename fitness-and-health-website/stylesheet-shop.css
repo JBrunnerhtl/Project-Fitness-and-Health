@@ -106,6 +106,7 @@ html, body{
 .picture-header{
     font-size: 4rem !important;
     color:#BDE0FE;
+    font-family: sans-serif;
 
 }
 
@@ -355,6 +356,7 @@ a.textInNavBar
 {
     color: white;
     font-size: large;
+    font-family: sans-serif;
 }
 
 @keyframes transition-color-in-nav {
