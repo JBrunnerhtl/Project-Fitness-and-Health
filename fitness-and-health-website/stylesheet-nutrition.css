@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Arial:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: black;
+    font-family: 'Merriweather', sans-serif;
+    background-color: #F6F3EF;
     margin: 0;
     padding: 0;
-    color: #A2D2FF;
+    color: #6AA84F;
 }
 
 .changeColor {
@@ -14,13 +14,12 @@ body {
 }
 
 a.textInNavBar {
-    color: white;
+    color: #F6E8D5;
     font-size: large;
-    font-family: 'Arial', sans-serif;
 }
 
 a.textInNavBar:hover {
-    color: #A2D2FF;
+    color: #6AA84F;
     transition: color 0.3s ease;
 }
 
@@ -33,27 +32,26 @@ a.textInNavBar:hover {
 
 /* Hero Section */
 .title-nutrition {
-    font-size: xxx-large; /* Dynamic font size for all screens */
+    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
     font-weight: bold;
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Arial', sans-serif;
+    color: #6AA84F;
 }
 
 .lead {
     font-size: 1.25rem;
     margin-bottom: 20px;
+    color: #6AA84F;
 }
 
 /* Card Styles */
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #8B5A2B;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     padding: 0;
-
+    background-color: #F6E8D5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -62,66 +60,66 @@ a.textInNavBar:hover {
 }
 
 .card th, .card td {
-    border: 1px solid #ddd;
+    border: 1px solid #8B5A2B;
     padding: 10px;
+    color: #F6E8D5;
 }
 
 .card th {
-    background-color: #A2D2FF;
-    color: white;
+    background-color: #6AA84F;
+    color: #F6E8D5;
 }
 
 .card .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #2f2f2f;
+    background-color: #EDEDE9;
 }
 
 /* Form Styles */
 .form-container {
-    background-color: #fff;
+    background-color: #F6E8D5;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .explanation-container {
-    background-color: #f8f9fa;
+    background-color: #F6E8D5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-custom {
-    background-color: #BDE0FE;
-    color: #000;
+    background-color: #6AA84F;
+    color: #F6E8D5;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .btn-custom:hover {
-    background-color: #A9D0F8;
+    background-color: #556B2F;
     transition: background-color 0.3s ease;
 }
 
 /* Footer */
 footer {
-    background-color: black;
-    color: white;
+    background-color: #8B5A2B;
+    color: #F6E8D5;
     padding: 20px 0;
+    border-radius: 10px;
 }
 
 footer h5.text-in-fotter {
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F6E8D5;
     font-size: 1.5rem;
 }
 
 footer a {
-    color: #A2D2FF;
+    color: #A2C4C9;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: white;
+    color: #F6E8D5;
 }
 
 /* Responsiveness */
@@ -136,9 +134,7 @@ footer a:hover {
 
     h1.title-nutrition {
         font-size: 2rem;
-        background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #6AA84F;
     }
 
     .lead {
@@ -154,7 +150,6 @@ footer a:hover {
     overflow-x: auto;
 }
 
-
 .table {
     margin-bottom: 0;
     word-break: break-word;
@@ -167,26 +162,34 @@ footer a:hover {
     text-align: left; /* Aligns text to the left for readability */
 }
 
-
-a.hover-effects
-{
+a.hover-effects {
     font-size: medium;
-
 }
 
-a.hover-effects:hover
-{
+a.hover-effects:hover {
     animation: 0.5s change-font-size forwards;
 }
 
 @keyframes change-font-size {
-    from
-    {
+    from {
         font-size: medium;
-
     }
-    to
-    {
+    to {
         font-size: large;
     }
+}
+
+.text-color
+{
+    color: #4A4A4A;
+}
+
+.contrast
+{
+    background-color: #2A1A14;
+}
+
+.card-title
+{
+    color: #ffffff
 }

@@ -10,12 +10,12 @@
     <script src="Calculator.js"></script>
     <title>Ernährung</title>
 </head>
-<body style="background-color: black; overflow: auto; margin: 0; padding: 0;">
+<body style="background-color: #F9F4E6; overflow: auto; margin: 0; padding: 0;">
 <!-- Sticky Top Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black" >
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast" >
     <div class="container-fluid">
 
-            <img src="icones/new-logo-gredient-no-text.png" alt="Home" width="50" height="50">
+        <img src="icones/logo-green-no-text.png" alt="Home" width="50" height="50">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="index.html">
-                        <img src="icones/bxs-home.svg" class = "changeColor" alt="Shop" width="20" height="20"> Home
+                        <img src="icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> Home
                     </a>
                 </li>
                 <li class="nav-item">
@@ -54,33 +54,33 @@
 
 <section class="text-center py-5" style="margin-top: 5%">
     <h1 class="title-nutrition">Ernährungspläne</h1>
-    <p class="text-light lead">Individuelle Empfehlungen für ältere Menschen und Menschen mit Behinderungen.</p>
+    <p class="lead text-color">Individuelle Empfehlungen für ältere Menschen und Menschen mit Behinderungen.</p>
 </section>
 
 <div class="container mt-5">
     <div class="row">
         <!-- Left Column with Form -->
         <div class="col-md-6">
-            <div class="form-container mx-auto" style="max-width: 500px;">
-                <h2 class="text-center text-dark">Ernährungsformular</h2>
+            <div class="form-container mx-auto" style="max-width: 500px; background-color: #F6E8D5;">
+                <h2 class="text-center" style= "color: #6AA84F;">Ernährungsformular</h2>
                 <form>
                     <div class="mb-3">
-                        <label for="weight" class="form-label text-dark">Gewicht (kg)</label>
+                        <label for="weight" class="form-label" style="color: #6AA84F;">Gewicht (kg)</label>
                         <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label text-dark">Größe (cm)</label>
+                        <label for="height" class="form-label" style="color: #6AA84F;">Größe (cm)</label>
                         <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label text-dark">Alter (in Jahren)</label>
+                        <label for="height" class="form-label " style="color: #6AA84F;">Alter (in Jahren)</label>
                         <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label text-dark">Geschlecht</label>
+                        <label for="activity-level" class="form-label " style="color: #6AA84F;">Geschlecht</label>
                         <select class="form-select" id="gender" required>
                             <option value="" disabled selected>Wähle dein Geschlecht</option>
                             <option value="Männlich">Männlich</option>
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label text-dark">Aktivitätslevel</label>
+                        <label for="activity-level" class="form-label" style="color: #6AA84F;">Aktivitätslevel</label>
                         <select class="form-select" id="activity-level" required>
                             <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
                             <option value="low">Niedrig</option>
@@ -99,12 +99,12 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="disabilities" class="form-label text-dark">Weitere Einschränkungen</label>
+                        <label for="disabilities" class="form-label " style="color: #6AA84F;" >Weitere Einschränkungen</label>
                         <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
                     </div>
 
                     <div class="mb-3">
-                        <label for="result" class="form-label text-dark">Dein Kalorienbedarf pro Tag</label>
+                        <label for="result" class="form-label ">Dein Kalorienbedarf pro Tag</label>
                         <input type="text" class="form-control" id="result" placeholder="z. B. 1730 Kalorien" readonly>
                     </div>
 
@@ -116,16 +116,16 @@
         </div>
 
         <!-- Right Column with Explanation -->
-        <div class="col-md-6 col-12">
-            <div class="explanation-container bg-light p-4 rounded">
-                <h3 class="text-dark mb-3">Wie funktioniert es?</h3>
+        <div class="col-md-6 col-12" >
+                <div class="explanation-container p-4 rounded" style="background-color: #F6E8D5;">
+                <h3 class="mb-3" style="color: #6AA84F;">Wie funktioniert es?</h3>
                 <p class="text-muted">
                     Dieses Formular hilft Ihnen, personalisierte Ernährungspläne zu erstellen:
                 </p>
                 <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item bg-transparent">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
-                    <li class="list-group-item bg-transparent">2. Wählen Sie Ihr Aktivitätslevel</li>
-                    <li class="list-group-item bg-transparent">3. Teilen Sie uns weitere Einschränkungen mit</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Wählen Sie Ihr Aktivitätslevel</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Teilen Sie uns weitere Einschränkungen mit</li>
                 </ul>
                 <p class="text-muted">
                     Nach dem Absenden erstellen wir einen maßgeschneiderten Ernährungsplan, der auf Ihre Bedürfnisse abgestimmt ist.
@@ -141,13 +141,13 @@
     <div class="row mb-5 gy-4">
         <div class="col-lg-4 col-md-6 col-12">
             <h2 class="title">Diabetes</h2>
-            <p class="text-light">Eine ausgewogene Ernährung ist für Menschen mit Diabetes von entscheidender Bedeutung. Es ist wichtig, den Blutzuckerspiegel stabil zu halten, indem man Lebensmittel mit einem niedrigen glykämischen Index (GI) bevorzugt. Diese Lebensmittel erhöhen den Blutzuckerspiegel langsamer und sind besser für die langfristige Blutzuckerregulation.</p>
-            <p class="text-light">Empfohlene Lebensmittel: Vollkornprodukte, Hülsenfrüchte, Gemüse, mageres Fleisch und gesunde Fette. Zuckerhaltige Lebensmittel und raffinierte Kohlenhydrate sollten vermieden werden.</p>
+            <p class="text-color">Eine ausgewogene Ernährung ist für Menschen mit Diabetes von entscheidender Bedeutung. Es ist wichtig, den Blutzuckerspiegel stabil zu halten, indem man Lebensmittel mit einem niedrigen glykämischen Index (GI) bevorzugt. Diese Lebensmittel erhöhen den Blutzuckerspiegel langsamer und sind besser für die langfristige Blutzuckerregulation.</p>
+            <p class="text-color">Empfohlene Lebensmittel: Vollkornprodukte, Hülsenfrüchte, Gemüse, mageres Fleisch und gesunde Fette. Zuckerhaltige Lebensmittel und raffinierte Kohlenhydrate sollten vermieden werden.</p>
         </div>
         <div class="col-lg-8 col-md-6 col-12">
             <div class="card shadow">
                 <div class="card-body bg-dark text-light">
-                    <h5 class="card-title" style="color: #A2D2FF; margin-right: 2%">Beispielhafte Mahlzeiten</h5>
+                    <h5 class="card-title" style="margin-right: 2%">Beispielhafte Mahlzeiten</h5>
                     <div class="table-responsive" style="overflow-x: auto;">
                         <table class="table table-dark table-striped m-0" style="table-layout: auto; width: 100%;">
                             <thead>
@@ -185,13 +185,13 @@
     <div class="row mb-5 gy-4">
         <div class="col-lg-4 col-md-6 col-12">
             <h2 class="title">Mobilitätsprobleme</h2>
-            <p class="text-light">Menschen mit Mobilitätseinschränkungen benötigen eine ballaststoffreiche Ernährung, um die Verdauung zu fördern und das Risiko von Verstopfungen zu verringern. Zudem sollte der Fokus auf einer ausreichenden Zufuhr von Nährstoffen wie Eisen, Vitamin D und Kalzium liegen, um Knochen und Gelenke zu stärken.</p>
-            <p class="text-light">Empfohlene Lebensmittel: Vollkornprodukte, Hülsenfrüchte, grüne Blattgemüse, mageres Fleisch, Fisch und Milchprodukte. Vermeiden Sie stark verarbeitete Lebensmittel, die oft wenig Nährstoffe enthalten.</p>
+            <p class="text-color">Menschen mit Mobilitätseinschränkungen benötigen eine ballaststoffreiche Ernährung, um die Verdauung zu fördern und das Risiko von Verstopfungen zu verringern. Zudem sollte der Fokus auf einer ausreichenden Zufuhr von Nährstoffen wie Eisen, Vitamin D und Kalzium liegen, um Knochen und Gelenke zu stärken.</p>
+            <p class="text-color">Empfohlene Lebensmittel: Vollkornprodukte, Hülsenfrüchte, grüne Blattgemüse, mageres Fleisch, Fisch und Milchprodukte. Vermeiden Sie stark verarbeitete Lebensmittel, die oft wenig Nährstoffe enthalten.</p>
         </div>
         <div class="col-lg-8 col-md-6 col-12">
             <div class="card shadow">
                 <div class="card-body bg-dark text-light">
-                    <h5 class="card-title" style="color: #A2D2FF;">Beispielhafte Mahlzeiten</h5>
+                    <h5 class="card-title">Beispielhafte Mahlzeiten</h5>
                     <div class="table-responsive" style="overflow-x: auto;">
                         <table class="table table-dark table-striped m-0">
                             <thead>
@@ -229,13 +229,13 @@
     <div class="row mb-5 gy-4">
         <div class="col-lg-4 col-md-6 col-12">
             <h2 class="title">Bluthochdruck</h2>
-            <p class="text-light">Für Menschen mit Bluthochdruck ist eine salzarme Ernährung von großer Bedeutung. Es ist wichtig, auf eine ausreichende Aufnahme von Kalium, Magnesium und Kalzium zu achten, da diese Mineralstoffe helfen, den Blutdruck zu regulieren.</p>
-            <p class="text-light">Empfohlene Lebensmittel: Obst, Gemüse, fettarme Milchprodukte, mageres Fleisch und Nüsse. Reduzieren Sie den Salzgehalt in der Ernährung und bevorzugen Sie frische statt verarbeiteter Lebensmittel.</p>
+            <p class="text-color">Für Menschen mit Bluthochdruck ist eine salzarme Ernährung von großer Bedeutung. Es ist wichtig, auf eine ausreichende Aufnahme von Kalium, Magnesium und Kalzium zu achten, da diese Mineralstoffe helfen, den Blutdruck zu regulieren.</p>
+            <p class="text-color">Empfohlene Lebensmittel: Obst, Gemüse, fettarme Milchprodukte, mageres Fleisch und Nüsse. Reduzieren Sie den Salzgehalt in der Ernährung und bevorzugen Sie frische statt verarbeiteter Lebensmittel.</p>
         </div>
         <div class="col-lg-8 col-md-6 col-12">
             <div class="card shadow">
                 <div class="card-body bg-dark text-light">
-                    <h5 class="card-title" style="color: #A2D2FF;">Beispielhafte Mahlzeiten</h5>
+                    <h5 class="card-title">Beispielhafte Mahlzeiten</h5>
                     <div class="table-responsive" style="overflow-x: auto;">
                         <table class="table table-dark table-striped m-0">
                             <thead>
@@ -277,27 +277,27 @@
 
 <div class="container my-" style = "margin-top: 5%; margin-bottom: 5%">
 
-    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Unsere Welt</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
 
                     <ul class="list-unstyled mb-4">
                         <li>
-                            <a href="shop.html" class="text-white hover-effects">Produkte</a>
+                            <a href="shop.html" class="hover-effects" style="color: #ffffff ;">Produkte</a>
                         </li>
                         <li>
-                            <a href="trainings-plan.html" class="text-white hover-effects">Trainingspläne</a>
+                            <a href="trainings-plan.html" class="hover-effects" style="color: #ffffff;">Trainingspläne</a>
                         </li>
                         <li>
-                            <a href="nutrition.html" class="text-white hover-effects">Ernährungspläne</a>
+                            <a href="nutrition.html" class="hover-effects" style="color: #ffffff;">Ernährungspläne</a>
                         </li>
                         <li>
-                            <a href="about-us.html" class="text-white hover-effects">Über uns</a>
+                            <a href="about-us.html" class="hover-effects" style="color: #ffffff;">Über uns</a>
                         </li>
                     </ul>
                 </div>
@@ -329,7 +329,7 @@
                 </div>
                 <!--Grid column-->
                 <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="icones/new-logo-gredient-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                    <img src="icones/logo-green-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
                 </div>
             </div>
             <!--Grid row-->
