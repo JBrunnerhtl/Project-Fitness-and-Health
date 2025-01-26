@@ -10,9 +10,11 @@
 </head>
 <body>
 <!-- Sticky Top Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style="background-color: black;">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast" >
     <div class="container-fluid">
-        <img src="icones/new-logo-gredient-no-text.png" alt="Home" width="50" height="50">
+
+        <img src="icones/logo-green-no-text.png" alt="Home" width="50" height="50">
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,7 +26,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link textInNavBar" href="shop.html">
+                    <a class="nav-link textInNavBar"  href="shop.html">
                         <img src="icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> Produkte
                     </a>
                 </li>
@@ -40,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="about-us.html">
-                        <img src="icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20"> Über uns
+                        <img src="icones/bxs-group.svg"  class="changeColor" alt="Über uns" width="20" height="20"> Über uns
                     </a>
                 </li>
             </ul>
@@ -49,38 +51,35 @@
 </nav>
 
 <!-- Header Container -->
-<div class="container mt-5 pt-5">
-    <!-- Header Section -->
-    <header class="hero text-center">
-        <h1 style = "font-family: sans-serif">Trainingspläne</h1>
-        <p class="lead">Individuelle Trainingspläne für ältere Menschen und Personen mit Beeinträchtigungen, um Gesundheit und Wohlbefinden zu fördern.</p>
-    </header>
-</div>
+<section class="text-center py-5" style="margin-top: 5%">
+    <h1 class="title-training">Trainingspläne</h1>
+    <p class="lead text-color">Individuelle Trainingspläne für ältere Menschen und Personen mit Beeinträchtigungen, um Gesundheit und Wohlbefinden zu fördern</p>
+</section>
 
 <div class="container mt-5">
     <div class="row">
         <!-- Left Column with Form -->
         <div class="col-md-6">
             <div class="form-container mx-auto" style="max-width: 500px;">
-                <h2 class="text-center text-dark">Trainingsformular</h2>
+                <h2 class="text-center t"  style="color: #6AA84F;">Trainingsformular</h2>
                 <form>
                     <div class="mb-3">
-                        <label for="weight" class="form-label text-dark">Gewicht (kg)</label>
+                        <label for="weight" class="form-label" style="color: #6AA84F;">Gewicht (kg)</label>
                         <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label text-dark">Größe (cm)</label>
+                        <label for="height" class="form-label" style="color: #6AA84F;"> Größe (cm)</label>
                         <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label text-dark">Alter (in Jahren)</label>
+                        <label for="height" class="form-label " style="color: #6AA84F;">Alter (in Jahren)</label>
                         <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label text-dark">Geschlecht</label>
+                        <label for="activity-level" class="form-label " style="color: #6AA84F;">Geschlecht</label>
                         <select class="form-select" id="gender" required>
                             <option value="" disabled selected>Wähle dein Geschlecht</option>
                             <option value="Männlich">Männlich</option>
@@ -89,7 +88,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label text-dark">Aktivitätslevel</label>
+                        <label for="activity-level" class="form-label " style="color: #6AA84F;">Aktivitätslevel</label>
                         <select class="form-select" id="activity-level" required>
                             <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
                             <option value="low">Niedrig</option>
@@ -99,13 +98,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="disabilities" class="form-label text-dark">Weitere Einschränkungen</label>
+                        <label for="disabilities" class="form-label " style="color: #6AA84F;">Weitere Einschränkungen</label>
                         <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
                     </div>
 
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label text-dark">Ziel</label>
+                        <label for="activity-level" class="form-label " style="color: #6AA84F;">Ziel</label>
                         <select class="form-select" id="fitness-goal" required>
                             <option value="" disabled selected>Wähle dein Ziel</option>
                             <option value="low">Gewicht halten</option>
@@ -122,15 +121,15 @@
 
         <!-- Right Column with Explanation -->
         <div class="col-md-6 col-12">
-            <div class="explanation-container bg-light p-4 rounded">
-                <h3 class="text-dark mb-3">Wie funktioniert es?</h3>
+            <div class="explanation-container p-4 rounded">
+                <h3 class="mb-3" style="color: #6AA84F;">Wie funktioniert es?</h3>
                 <p class="text-muted">
                     Dieses Formular hilft Ihnen, personalisierte Trainingspläne zu erstellen:
                 </p>
                 <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item bg-transparent">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
-                    <li class="list-group-item bg-transparent">2. Wählen Sie Ihr Aktivitätslevel</li>
-                    <li class="list-group-item bg-transparent">3. Teilen Sie uns weitere Einschränkungen mit</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Wählen Sie Ihr Aktivitätslevel</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Teilen Sie uns weitere Einschränkungen mit</li>
                 </ul>
                 <p class="text-muted">
                     Nach dem Absenden erstellen wir einen maßgeschneiderten Trainingsplan, der auf Ihre Bedürfnisse abgestimmt ist.
@@ -147,21 +146,21 @@
         <section class="plans mb-5">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Pläne für ältere Menschen</h2>
-                    <p>Sanfte Übungen, um Mobilität, Kraft und Wohlbefinden zu verbessern:</p>
+                    <h2 style="color: #6AA84F;">Pläne für ältere Menschen</h2>
+                    <p class="text-color">Sanfte Übungen, um Mobilität, Kraft und Wohlbefinden zu verbessern:</p>
                     <ul>
-                        <li><strong>Gelenkfreundliches Training:</strong> Schonende Bewegungen, um die Gelenke zu entlasten.</li>
-                        <li><strong>Balance-Übungen:</strong> Fördert die Standfestigkeit und Sturzprophylaxe.</li>
-                        <li><strong>Leichtes Krafttraining:</strong> Unterstützt den Erhalt der Muskelgesundheit.</li>
+                        <li class="text-color"><strong>Gelenkfreundliches Training:</strong> Schonende Bewegungen, um die Gelenke zu entlasten.</li>
+                        <li class="text-color"><strong>Balance-Übungen:</strong> Fördert die Standfestigkeit und Sturzprophylaxe.</li>
+                        <li class="text-color"><strong>Leichtes Krafttraining:</strong> Unterstützt den Erhalt der Muskelgesundheit.</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2>Pläne für beeinträchtigte Menschen</h2>
-                    <p>Individuelle Übungen, die verschiedene Einschränkungen berücksichtigen:</p>
+                    <h2 style="color: #6AA84F;">Pläne für beeinträchtigte Menschen</h2>
+                    <p class="text-color">Individuelle Übungen, die verschiedene Einschränkungen berücksichtigen:</p>
                     <ul>
-                        <li><strong>Stuhlübungen:</strong> Übungen, die im Sitzen durchgeführt werden können.</li>
-                        <li><strong>Mobilitätstraining:</strong> Hilft, die Bewegungsfreiheit zu verbessern.</li>
-                        <li><strong>Individuelle Anpassungen:</strong> Programme, die speziell auf die Bedürfnisse abgestimmt sind.</li>
+                        <li class="text-color"><strong>Stuhlübungen:</strong> Übungen, die im Sitzen durchgeführt werden können.</li>
+                        <li class="text-color"><strong>Mobilitätstraining:</strong> Hilft, die Bewegungsfreiheit zu verbessern.</li>
+                        <li class="text-color"><strong>Individuelle Anpassungen:</strong> Programme, die speziell auf die Bedürfnisse abgestimmt sind.</li>
                     </ul>
                 </div>
             </div>
@@ -195,34 +194,34 @@
 </div>
 
 
-<div class="container explanation">
-    <h2>Wieso Pläne für Ältere und Beeinträchtigte?</h2>
-    <p>Die Bedürfnisse älterer Menschen und beeinträchtigter Personen unterscheiden sich häufig von denen jüngerer oder gesunder Personen. Individuelle Trainingspläne helfen dabei, Mobilität, Kraft und Lebensqualität zu fördern, während Verletzungen und Überbelastungen vermieden werden. Es ist wichtig, diese Gruppen zu unterstützen, um einen aktiven und gesunden Lebensstil zu gewährleisten.</p>
+<div class=" container explanation-container">
+    <h2 style="color: #6AA84F">Wieso Pläne für Ältere und Beeinträchtigte?</h2>
+    <p class="text-color">Die Bedürfnisse älterer Menschen und beeinträchtigter Personen unterscheiden sich häufig von denen jüngerer oder gesunder Personen. Individuelle Trainingspläne helfen dabei, Mobilität, Kraft und Lebensqualität zu fördern, während Verletzungen und Überbelastungen vermieden werden. Es ist wichtig, diese Gruppen zu unterstützen, um einen aktiven und gesunden Lebensstil zu gewährleisten.</p>
 </div>
 
-<div class="container my-" style = "margin-top: 5%; margin-bottom: 5%">
+<div class="container " style = "margin-top: 5%; margin-bottom: 5%">
 
-    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Unsere Welt</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
 
                     <ul class="list-unstyled mb-4">
                         <li>
-                            <a href="shop.html" class="text-white hover-effects">Produkte</a>
+                            <a href="shop.html" class="hover-effects" style="color: #ffffff ;">Produkte</a>
                         </li>
                         <li>
-                            <a href="trainings-plan.html" class="text-white hover-effects">Trainingspläne</a>
+                            <a href="trainings-plan.html" class="hover-effects" style="color: #ffffff;">Trainingspläne</a>
                         </li>
                         <li>
-                            <a href="nutrition.html" class="text-white hover-effects">Ernährungspläne</a>
+                            <a href="nutrition.html" class="hover-effects" style="color: #ffffff;">Ernährungspläne</a>
                         </li>
                         <li>
-                            <a href="about-us.html" class="text-white hover-effects">Über uns</a>
+                            <a href="about-us.html" class="hover-effects" style="color: #ffffff;">Über uns</a>
                         </li>
                     </ul>
                 </div>
@@ -252,12 +251,14 @@
                     </div>
 
                 </div>
+                <!--Grid column-->
                 <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="icones/new-logo-gredient-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                    <img src="icones/logo-green-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
                 </div>
             </div>
-
+            <!--Grid row-->
         </div>
+        <!-- Grid container -->
 
     </footer>
 

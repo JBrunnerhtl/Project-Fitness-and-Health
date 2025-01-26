@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 body {
-    background-color: black;
+    background-color: #F9F4E6;
     margin: 0;
-    color: white;
-    font-family: Arial, sans-serif;
+    font-family: Merriweather, sans-serif;
 }
 
 .card {
-    border: 0.125rem solid #A2D2FF;
-    background-color: #2f2f2f;
+    border: 0.125rem solid #6AA84F;
+    background-color: #2A1A14;
     text-align: center;
-    color: white;
+    color: #6AA84F;
     border-radius: 1.25rem;
     width: 30rem;
     height: 20rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 4rem;
-    font-family: Arial, sans-serif;
 }
 
 .margin-good {
@@ -28,23 +26,14 @@ body {
 .card .card-title {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Arial, sans-serif;
 }
 
 .changeColor {
     filter: invert(1);
 }
 
-a.textInNavBar {
-    color: white;
-    font-size: large;
-    transition: color 0.3s ease;
-    font-family: Arial, sans-serif;
-}
 
-a.textInNavBar:hover {
-    color: #A2D2FF;
-}
+
 
 .navbar-fixed {
     position: fixed;
@@ -75,14 +64,14 @@ a.textInNavBar:hover {
 
 a.hover-effects {
     font-size: medium;
-    font-family: Arial, sans-serif;
+
 }
 
 .card .card-text {
     margin-top: 4rem;
     font-size: 1.2rem;
     margin-bottom: +4rem;
-    font-family: Arial, sans-serif;
+    color: #F6E8D5;
 }
 
 .d-flex {
@@ -91,15 +80,14 @@ a.hover-effects {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 1rem rgba(162, 210, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card .btn-primary {
-    background-color: #A2D2FF;
+    background-color: #6AA84F;
     color: black;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: Arial, sans-serif;
 }
 
 .card .btn-primary:hover {
@@ -126,12 +114,10 @@ a.hover-effects {
     background-color: black;
     border-style: hidden;
     background-size: contain;
-    font-family: Arial, sans-serif;
 }
 
 p {
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .homeButton-wrapper {
@@ -157,7 +143,7 @@ p {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 4%;
-    font-family: Arial, sans-serif;
+
 }
 
 .hero {
@@ -165,7 +151,6 @@ p {
     color: #A2D2FF;
     text-align: center;
     margin-bottom: 3%; /* Reduziert den Abstand */
-    font-family: Arial, sans-serif;
 }
 
 .hero h1 {
@@ -173,25 +158,22 @@ p {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem; /* Weniger Abstand unten */
-    font-family: Arial, sans-serif;
 }
 
 .hero p {
     font-size: 1.2rem;
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .plans {
     margin-bottom: 1.5rem;
-    font-family: Arial, sans-serif;
 }
 
 .plans h2 {
     font-size: 2rem;
-    color: #A2D2FF;
+    color: #6AA84F;
     margin-bottom: 1.5rem;
-    border-bottom: 0.125rem solid #A2D2FF;
+    border-bottom: 0.125rem solid #6AA84F;
 }
 
 .plans p {
@@ -201,79 +183,17 @@ p {
 .plans ul {
     list-style-type: none;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 .plans ul li {
-    background-color: #333;
+    background-color: #F6E8D5;
     padding: 0.625rem;
     margin-bottom: 0.8rem;
     border-radius: 0.625rem;
-    box-shadow: 0 0 0.3125rem rgba(162, 210, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.plans ul li strong {
-    color: #A2D2FF;
-}
 
-footer.footer {
-    text-align: center;
-    font-size: 1rem;
-    color: #A2D2FF;
-    background-color: #121212;
-    padding: 1.25rem;
-    margin-top: 3.125rem;
-    border-top: 0.1875rem solid #A2D2FF;
-    font-family: Arial, sans-serif;
-}
-
-footer.footer p {
-    margin: 0;
-    color: #A2D2FF;
-    font-family: Arial, sans-serif;
-}
-
-.explanation {
-    background-color: #1E1E1E;
-    padding: 1.25rem;
-    margin: 1.25rem auto;
-    border-radius: 0.625rem;
-    max-width: 80%;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
-    color: #A2D2FF;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
-}
-
-.explanation h2 {
-    font-size: 2rem;
-    color: #A2D2FF;
-    text-align: center;
-    margin-bottom: 0.625rem;
-    font-family: Arial, sans-serif;
-}
-
-.explanation p {
-    text-align: justify;
-    color: #D3D3D3;
-    font-family: Arial, sans-serif;
-}
-
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    border-bottom: 0.1875rem solid #A2D2FF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.625rem 1.25rem;
-    z-index: 1000;
-    font-family: Arial, sans-serif;
-}
 
 .logo-wrapper {
     display: flex;
@@ -289,8 +209,7 @@ footer.footer p {
 .menu-button {
     font-size: 2.5em;
     color: #A2D2FF;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
+    cursor: pointer
 }
 
 .menu-button-wrapper {
@@ -299,29 +218,9 @@ footer.footer p {
     margin-left: 1em;
 }
 
-.title {
-    flex: 1;
-    text-align: center;
-    color: #A2D2FF;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-h5.text-in-fotter {
-    background: linear-gradient(90deg, #A2D2FF, #A2D2FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Arial, sans-serif;
-}
 
-a.hover-effects {
-    font-size: medium;
-    font-family: Arial, sans-serif;
-}
 
-a.hover-effects:hover {
-    animation: 0.5s change-font-size forwards;
-}
 
 @keyframes change-font-size {
     from {
@@ -337,39 +236,97 @@ a.hover-effects:hover {
         font-size: 2.5rem; /* Kleiner als vorher */
         margin-top: 1rem; /* Weniger Abstand oben */
         margin-bottom: 1.5rem; /* Weniger Abstand unten */
-        font-family: Arial, sans-serif;
     }
 
     .hero p {
         font-size: 1rem; /* Kleinere Schriftgröße für den Beschreibungstext */
-        font-family: Arial, sans-serif;
     }
 }
 
-/* Form Styles */
-.form-container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: Arial, sans-serif;
-}
-
-.btn-custom {
-    background-color: #BDE0FE;
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-}
-
-.btn-custom:hover {
-    background-color: #A9D0F8;
-    transition: background-color 0.3s ease;
-}
 
 /* Responsiveness */
 .container {
     padding: 20px;
-    font-family: Arial, sans-serif;
+}
+
+
+.contrast
+{
+    background-color: #2A1A14;
+}
+
+.text-color
+{
+    color: #4A4A4A;
+}
+
+a.textInNavBar {
+    color: #F6E8D5;
+    font-size: large;
+    font-family: Merriweather, sans-serif;
+}
+
+a.textInNavBar:hover {
+    color: #6AA84F;
+    transition: color 0.3s ease;
+}
+
+.title-training {
+    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
+    font-weight: bold;
+    color: #6AA84F;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    color: #F6E8D5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+footer h5.text-in-fotter {
+    color: #F6E8D5;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2C4C9;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6E8D5;
+}
+
+.form-container {
+    background-color: #F6E8D5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explanation-container {
+    background-color: #F6E8D5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: #6AA84F;
+    color: #F6E8D5;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #556B2F;
+    transition: background-color 0.3s ease;
+}
+
+strong{
+    color: #6AA84F;;
 }

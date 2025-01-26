@@ -106,7 +106,7 @@ html, body{
 }
 .picture-header{
     font-size: 4rem !important;
-    color:#BDE0FE;
+    color: #6AA84F;
     font-family: Arial, sans-serif;
 
 }
@@ -318,8 +318,7 @@ a.textInNavBar:hover {
     transition: color 0.3s ease;
 }
 
-footer {
-    background-color: #8B5A2B;
+footer{
     color: #F6E8D5;
     padding: 20px 0;
     border-radius: 10px;

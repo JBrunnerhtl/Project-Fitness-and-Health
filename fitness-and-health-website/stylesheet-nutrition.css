@@ -45,7 +45,7 @@ a.textInNavBar:hover {
 
 /* Card Styles */
 .card {
-    border: 1px solid #8B5A2B;
+    border: 1px solid #2A1A14;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ a.textInNavBar:hover {
 }
 
 .card th, .card td {
-    border: 1px solid #8B5A2B;
+    border: 1px solid #2A1A14;;
     padding: 10px;
     color: #F6E8D5;
 }
@@ -102,7 +102,6 @@ a.textInNavBar:hover {
 
 /* Footer */
 footer {
-    background-color: #8B5A2B;
     color: #F6E8D5;
     padding: 20px 0;
     border-radius: 10px;
