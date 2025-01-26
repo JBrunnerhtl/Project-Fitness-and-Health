@@ -8,10 +8,7 @@ html, body {
     font-family: 'Merriweather', sans-serif;
 }
 
-.index{
-    background-size: cover;
-    background-color: black;
-}
+
 
 * {
     box-sizing: border-box;

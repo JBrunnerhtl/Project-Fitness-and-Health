@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="index" style="background-color: black">
+<body style="background-color: #F9F4E6">
 
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed" style = "background-color: black">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast" >
     <div class="container-fluid">
 
-            <img src="icones/new-logo-gredient-no-text.png" alt="Home" width="50" height="50">
+        <img src="icones/logo-green-no-text.png" alt="Home" width="50" height="50">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="index.html">
-                        <img src="icones/bxs-home.svg" class = "changeColor" alt="Shop" width="20" height="20"> Home
+                        <img src="icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> Home
                     </a>
                 </li>
                 <li class="nav-item">
@@ -53,7 +53,7 @@
     </div>
 </nav>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide full-width-carousel" data-bs-ride="carousel" style="pointer-events: none; background-color: black">
+<div id="carouselExampleSlidesOnly" class="carousel slide full-width-carousel" data-bs-ride="carousel" style="pointer-events: none; background-color: #F9F4E6 ">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="image-container">
@@ -116,10 +116,10 @@
 
 
 
-<div class="top-search-products">
+<div class="top-search-products" style="background-color: #F9F4E6">
     <br>
     <br>
-    <h1 style="text-align: center; color: #D3D3D3">
+    <h1 class="title-shop" style="text-align: center;">
         Produkte
     </h1>
 
@@ -341,20 +341,20 @@
         <!-- Linke Spalte mit dem Formular -->
         <div class="col-md-6">
             <div class="form-container mx-auto" style="max-width: 500px;">
-                <h2 class="text-center text-dark">Gesundheitsformular</h2>
+                <h2 class="text-center " style="color: #6AA84F;" >Gesundheitsformular</h2>
                 <form>
                     <div class="mb-3">
-                        <label for="problem" class="form-label text-dark">Gesundheitliches Problem</label>
+                        <label for="problem" class="form-label" style="color: #6AA84F;">Gesundheitliches Problem</label>
                         <input type="text" class="form-control" id="problem" placeholder="Beschreibe dein Problem" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="max-price" class="form-label text-dark">Maximaler Preis</label>
+                        <label for="max-price" class="form-label" style="color: #6AA84F;">Maximaler Preis</label>
                         <input type="number" class="form-control" id="max-price" placeholder="z. B. 100" min="0" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="category" class="form-label text-dark">Kategorie</label>
+                        <label for="category" class="form-label " style="color: #6AA84F;">Kategorie</label>
                         <select class="form-select" id="category" required>
                             <option value="" disabled selected>Wähle eine Kategorie</option>
                             <option value="medizin">Supplemente</option>
@@ -371,15 +371,15 @@
 
         <!-- Rechte Spalte mit der Erklärung -->
         <div class="col-md-6">
-            <div class="explanation-container bg-light p-4 rounded">
-                <h3 class="text-dark mb-3">Wie funktioniert es?</h3>
+            <div class="explanation-container p-4 rounded">
+                <h3 class="mb-3" style="color: #6AA84F;">Wie funktioniert es?</h3>
                 <p class="text-muted">
                     Unser Gesundheitsformular hilft Ihnen, passende Lösungen für Ihre gesundheitlichen Anliegen zu finden:
                 </p>
                 <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item bg-transparent">1. Beschreiben Sie Ihr gesundheitliches Problem</li>
-                    <li class="list-group-item bg-transparent">2. Geben Sie Ihr Budget an</li>
-                    <li class="list-group-item bg-transparent">3. Wählen Sie die passende Kategorie</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">1. Beschreiben Sie Ihr gesundheitliches Problem</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Geben Sie Ihr Budget an</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Wählen Sie die passende Kategorie</li>
                 </ul>
                 <p class="text-muted">
                     Nach dem Absenden analysieren wir Ihre Angaben und stellen Ihnen maßgeschneiderte Empfehlungen zur Verfügung.
@@ -392,27 +392,27 @@
 
 <div class="container my-" style = "margin-top: 5%; margin-bottom: 5%">
 
-    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Unsere Welt</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
 
                     <ul class="list-unstyled mb-4">
                         <li>
-                            <a href="shop.html" class="text-white hover-effects">Produkte</a>
+                            <a href="shop.html" class="hover-effects" style="color: #ffffff ;">Produkte</a>
                         </li>
                         <li>
-                            <a href="trainings-plan.html" class="text-white hover-effects">Trainingspläne</a>
+                            <a href="trainings-plan.html" class="hover-effects" style="color: #ffffff;">Trainingspläne</a>
                         </li>
                         <li>
-                            <a href="nutrition.html" class="text-white hover-effects">Ernährungspläne</a>
+                            <a href="nutrition.html" class="hover-effects" style="color: #ffffff;">Ernährungspläne</a>
                         </li>
                         <li>
-                            <a href="about-us.html" class="text-white hover-effects">Über uns</a>
+                            <a href="about-us.html" class="hover-effects" style="color: #ffffff;">Über uns</a>
                         </li>
                     </ul>
                 </div>
@@ -442,12 +442,14 @@
                     </div>
 
                 </div>
+                <!--Grid column-->
                 <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="icones/new-logo-gredient-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                    <img src="icones/logo-green-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
                 </div>
             </div>
-
+            <!--Grid row-->
         </div>
+        <!-- Grid container -->
 
     </footer>
 

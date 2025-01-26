@@ -4,8 +4,9 @@ html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: black;
-    font-family: Arial, sans-serif;
+    background-color: #F9F4E6;
+    font-family: Merriweather, sans-serif;
+    background-size: cover;
 }
 
 .custom-container{
@@ -110,11 +111,7 @@ html, body{
 
 }
 
-.horizontalYellowLine{
-    width: 100%;
-    height: 1px;
-    background-color: yellow;
-}
+
 
 .logo{
     display: flex;
@@ -132,18 +129,7 @@ html, body{
     font-family: Arial, sans-serif;
 }
 
-.headLine {
 
-    top: 10%;
-    text-align: center;
-    color: yellow;
-    text-shadow: 2px 2px 5px rgba(204, 153, 0, 0.8);
-    text-transform: uppercase;
-    font-size: 300%;
-    font-weight: bold;
-
-<!--animation: flyIn 2s ease-out forwards;-->
-}
 
 html, body{
     margin: 0;
@@ -181,28 +167,9 @@ html, body{
     margin-bottom: 20px;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    background-color: #1E1E1E;
-    left: -250px;
-    width: 250px;
-    z-index: 1050;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-}
 
-h1.styleForHeader
-{
-    flex-grow: 1.5;
-    clear: left;
-    color: yellow;
-    text-align: center;
-    font-size: 75px;
-    text-decoration: underline;
-    font-family: Arial, sans-serif;
 
-}
+
 
 
 
@@ -263,101 +230,14 @@ h1.styleForHeader
     left: 90%;
 }
 
-li.li-items-in-sidebar
-{
-    margin-left: 5%;
-}
 
 
-
-
-a.text-in-sidebar
-{
-    color: white;
-    font-size: large;
-    font-family: Arial, sans-serif;
-
-    background-image: linear-gradient(to left, yellow 50%, black 50%); /* Gradient von Gelb zu Schwarz */
-    background-size: 200% 100%; /* Vergrößert das Hintergrundbild für die Animation */
-    background-position: left bottom; /* Startet den Hintergrund ganz rechts */
-    transition: background-position 1s ease, color 1s ease; /* Übergang der Hintergrundposition */
-}
-
-a.text-in-sidebar:hover
-{
-    background-position: right bottom; /* Bewegt den Farbverlauf nach links */
-    color: black; /* Ändert die Textfarbe auf Schwarz */
-}
-
-.li-items-in-sidebar {
-    margin-left: 5%;
-}
-
-.text-in-sidebar {
-    color: white;
-    font-size: large;
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(to left, yellow 50%, black 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: background-position 1s ease, color 1s ease;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
-
-.text-in-sidebar:hover {
-    background-position: right bottom;
-    color: black;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    border-right: 3px solid yellow;
-    transition: transform 1s ease-in-out;
-    z-index: 999;
-}
-
-
-.menu-button:hover + .sidebar,
-.sidebar:hover {
-    transform: translateX(250px);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px;
-}
-
-.menu-button {
-    font-size: 2.5em;
-    color: yellow;
-    cursor: pointer;
-}
-
-.menu-button-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 2.5em;
-}
 
 .changeColor{
     filter: invert(1);
 }
 
-a.textInNavBar
-{
-    color: white;
-    font-size: large;
-    font-family: sans-serif;
-}
+
 
 @keyframes transition-color-in-nav {
     from
@@ -374,15 +254,7 @@ a.textInNavBar
 
 }
 
-a.textInNavBar:hover
-{
-    animation: 0.5s transition-color-in-nav forwards;
-}
-a.hover-effects
-{
-    font-size: medium;
 
-}
 .full-width-carousel {
     width: 100%;
 
@@ -399,25 +271,8 @@ a.hover-effects
     width: 100%;
 }
 
-.form-container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.btn-custom {
-    background-color: #BDE0FE;
-    color: #000;
-}
-.btn-custom:hover {
-    background-color: #A9D0F8;
-}
-h5.text-in-fotter
-{
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
-}
+
+
 @media (max-width: 768px) {
     .form-container, .explanation-container {
         margin-bottom: 20px;
@@ -434,4 +289,77 @@ h5.text-in-fotter
     .navbar-nav {
         text-align: center;
     }
+}
+
+.title-shop{
+    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
+    font-weight: bold;
+    color: #6AA84F;
+}
+
+.contrast
+{
+    background-color: #2A1A14;
+}
+
+.text-color
+{
+    color: #4A4A4A;
+}
+
+a.textInNavBar {
+    color: #F6E8D5;
+    font-size: large;
+    font-family: Merriweather, sans-serif;
+}
+
+a.textInNavBar:hover {
+    color: #6AA84F;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: #8B5A2B;
+    color: #F6E8D5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+footer h5.text-in-fotter {
+    color: #F6E8D5;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2C4C9;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6E8D5;
+}
+
+.form-container {
+    background-color: #F6E8D5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explanation-container {
+    background-color: #F6E8D5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: #6AA84F;
+    color: #F6E8D5;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #556B2F;
+    transition: background-color 0.3s ease;
 }
