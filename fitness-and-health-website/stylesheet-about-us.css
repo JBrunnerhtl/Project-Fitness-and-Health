@@ -35,7 +35,7 @@ button.styleForButtonInAboutUsLeft
 
     border: 3px solid white;
     border-radius: 10px;
-    transition: 1s border;
+
     margin-bottom: 5%;
     margin-top: 5%;
     animation: slideInFromRight 5s forwards;
@@ -48,12 +48,17 @@ button.styleForButtonInAboutUsRight
 
     border: 3px solid white;
     border-radius: 10px;
-    transition: 1s border;
+
     margin-top: 5%;
     margin-bottom: 5%;
     animation: slideInFromLeft 5s forwards;
 }
 
+button.styleForButtonInAboutUsRight, button.styleForButtonInAboutUsLeft
+{
+    pointer-events: none;
+    cursor: default;
+}
 
 
 p.styleForPInAboutUs
