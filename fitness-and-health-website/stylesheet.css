@@ -74,6 +74,27 @@ html, body {
     margin-bottom: 2%;
     margin-top: 7%;
 }
+.hero {
+    background: #dcebf7;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.testimonials {
+    background: #f0f8ff;
+    padding: 3rem 2rem;
+}
+.testimonial-card {
+    border: none;
+    background: transparent;
+}
+.icon-card {
+    transition: transform 0.3s;
+}
+.icon-card:hover {
+    transform: scale(1.05);
+}
+
 
 @keyframes flyIn {
     0% {
