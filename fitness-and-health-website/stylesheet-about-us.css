@@ -9,7 +9,7 @@ h2.headersInAboutUs
 img.styleForImgInAboutUs
 {
     width: 100%;
-    background-color: black;
+    background-color: #6AA84F;
     padding: 0;
     margin: 0;
 }
@@ -30,7 +30,7 @@ img.styleForImgInAboutUs
 
 button.styleForButtonInAboutUsLeft
 {
-    background-color: black;
+    background-color: #6AA84F;
     padding: 0px;
 
     border: 3px solid white;
@@ -43,7 +43,7 @@ button.styleForButtonInAboutUsLeft
 
 button.styleForButtonInAboutUsRight
 {
-    background-color: black;
+    background-color: #6AA84F;
     padding: 0px;
 
     border: 3px solid white;
@@ -54,15 +54,12 @@ button.styleForButtonInAboutUsRight
     animation: slideInFromLeft 5s forwards;
 }
 
-button.styleForButtonInAboutUsLeft:hover, button.styleForButtonInAboutUsRight:hover
-{
-    border: 3px solid #AFD9FE;
-}
+
 
 p.styleForPInAboutUs
 {
-    color: white;
-    font-family: Arial, sans-serif;
+    color: #F9F4E6;
+
     font-size: larger;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -78,8 +75,6 @@ table.tableStyleInAboutUs
 
 p.styleForPInAboutUsWritingTextLeft
 {
-    color: white;
-    font-family: Arial, sans-serif;
     font-size: larger;
     padding-left: 5%;
     text-align: left;
@@ -88,8 +83,6 @@ p.styleForPInAboutUsWritingTextLeft
 
 p.styleForPInAboutUsWritingTextRight
 {
-    color: white;
-    font-family: Arial, sans-serif;
     font-size: larger;
     padding-right: 5%;
     text-align: right;
@@ -158,10 +151,6 @@ td.heightAndWidthForTdInAboutUs
     margin-left: 5%;
 }
 
-.text-in-sidebar:hover {
-    background-position: right bottom;
-    color: black;
-}
 
 a.hover-effects
 {
@@ -186,12 +175,7 @@ a.hover-effects:hover
     }
 }
 
-a.textInNavBar
-{
-    color: white;
-    font-size: large;
-    font-family: Arial ,sans-serif;
-}
+
 
 @keyframes transition-color-in-nav {
     from
@@ -207,35 +191,67 @@ a.textInNavBar
     }
 }
 
-a.textInNavBar:hover
-{
-    animation: 0.5s transition-color-in-nav forwards;
-}
+
 
 .changeColor{
     filter: invert(1);
 }
 
-h5.text-in-fotter
-{
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
-}
+
 
 h1.h1-in-about-us
 {
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE); /* Gradient-Farben */
-    -webkit-background-clip: text; /* Clippt den Hintergrund auf den Text */
-    -webkit-text-fill-color: transparent; /* Macht den Text selbst transparent */
+
     text-align: center;
-    font-size: xxx-large;
-    font-family: Arial ,sans-serif;
     margin-top: 7%;
+    font-size: calc(2.5rem + 1vw);
+    font-weight: bold;
+    color: #6AA84F;
 }
 
 @media (max-width: 768px) {
     body{
         padding-top: 8%;
     }
+}
+
+.text-color
+{
+    color: #4A4A4A;
+}
+
+.contrast
+{
+    background-color: #2A1A14;
+}
+
+a.textInNavBar {
+    color: #F6E8D5;
+    font-size: large;
+}
+
+a.textInNavBar:hover {
+    color: #6AA84F;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: #8B5A2B;
+    color: #F6E8D5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+footer h5.text-in-fotter {
+    color: #F6E8D5;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2C4C9;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6E8D5;
 }
