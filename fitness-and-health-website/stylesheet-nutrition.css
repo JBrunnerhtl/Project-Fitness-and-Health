@@ -41,6 +41,7 @@ a.textInNavBar:hover {
     font-size: 1.25rem;
     margin-bottom: 20px;
     color: #6AA84F;
+    font-weight: lighter;
 }
 
 /* Card Styles */
