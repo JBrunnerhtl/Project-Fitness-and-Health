@@ -449,15 +449,13 @@ a.textInNavBar:hover {
 }
 
 
-a.hover-effects
-{
+a.hover-effects {
     font-size: medium;
-    font-family: Arial, sans-serif;
+    color: white;
 }
 
-a.hover-effects:hover
-{
-    animation: 0.5s change-font-size forwards;
+a.hover-effects:hover {
+    color: #6AA84F;
 }
 
 @keyframes change-font-size {

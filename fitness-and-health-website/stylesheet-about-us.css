@@ -157,27 +157,15 @@ td.heightAndWidthForTdInAboutUs
 }
 
 
-a.hover-effects
-{
+
+
+a.hover-effects {
     font-size: medium;
-    font-family: Arial, sans-serif;
+    color: white;
 }
 
-a.hover-effects:hover
-{
-    animation: 0.5s change-font-size forwards;
-}
-
-@keyframes change-font-size {
-    from
-    {
-        font-size: medium;
-
-    }
-    to
-    {
-        font-size: large;
-    }
+a.hover-effects:hover {
+    color: #6AA84F;
 }
 
 

@@ -3,7 +3,6 @@
 /* Global Styles */
 body {
     font-family: 'Merriweather', sans-serif;
-    background-color: #F6F3EF;
     margin: 0;
     padding: 0;
     color: #6AA84F;
@@ -103,7 +102,6 @@ a.textInNavBar:hover {
 
 /* Footer */
 footer {
-    color: #F6E8D5;
     padding: 20px 0;
     border-radius: 10px;
 }
@@ -113,14 +111,6 @@ footer h5.text-in-fotter {
     font-size: 1.5rem;
 }
 
-footer a {
-    color: #A2C4C9;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #F6E8D5;
-}
 
 /* Responsiveness */
 .container {
@@ -164,10 +154,11 @@ footer a:hover {
 
 a.hover-effects {
     font-size: medium;
+    color: white;
 }
 
 a.hover-effects:hover {
-    animation: 0.5s change-font-size forwards;
+    color: #6AA84F;
 }
 
 @keyframes change-font-size {

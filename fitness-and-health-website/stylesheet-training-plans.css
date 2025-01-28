@@ -64,7 +64,11 @@ body {
 
 a.hover-effects {
     font-size: medium;
+    color: white;
+}
 
+a.hover-effects:hover {
+    color: #6AA84F;
 }
 
 .card .card-text {

@@ -1,59 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 body {
-    background-color: black !important;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Merriweather, sans-serif;
+    background-color: #F9F4E6;
 }
-.hero h1 {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #A2D2FF;
+
+html
+{
+    font-family: Merriweather, sans-serif;
 }
+
+
 .changeColor {
     filter: invert(1);
-}
-
-a.textInNavBar {
-    color: white;
-    font-size: large;
-    font-family: Arial, sans-serif;
-}
-
-a.textInNavBar:hover {
-    color: #A2D2FF;
-    transition: color 0.3s ease;
-}
-
-.navbar-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-}
-
-footer h5.text-in-fotter {
-    background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
-}
-
-footer a {
-    color: #A2D2FF;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: white;
 }
 
 /* Responsiveness */
@@ -84,14 +44,92 @@ footer a:hover {
     padding: 15px;
     text-align: left;
     border: 1px solid #ddd;
-    font-family: Arial, sans-serif;
+    color: #F6E8D5;;
 }
+
+
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #2f2f2f;
 }
 
-.table thead {
-    background-color: #A2D2FF;
+.table thead th {
+    background-color: #6AA84F;
+    color: #F6E8D5;
+}
+
+
+
+footer {
+    color: #F6E8D5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+footer h5.text-in-fotter {
+    color: #F6E8D5;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2C4C9;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6E8D5;
+}
+
+.contrast
+{
+    background-color: #2A1A14;
+}
+
+.text-color
+{
+    color: #4A4A4A;
+}
+
+a.textInNavBar {
+    color: #F6E8D5;
+    font-size: large;
+    font-family: Merriweather, sans-serif;
+}
+
+a.textInNavBar:hover {
+    color: #6AA84F;
+    transition: color 0.3s ease;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a.hover-effects {
+    font-size: medium;
     color: white;
+    font-family: Merriweather, sans-serif;
+}
+
+a.hover-effects:hover {
+    color: #6AA84F;
+}
+
+@keyframes change-font-size {
+    from {
+        font-size: medium;
+    }
+    to {
+        font-size: large;
+    }
+}
+
+.title-disabled-old{
+    font-size: calc(2.5rem + 1vw);
+    font-weight: bold;
+    color: #6AA84F;
+    font-family: Merriweather, sans-serif;
 }

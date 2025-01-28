@@ -362,3 +362,12 @@ footer a:hover {
     background-color: #556B2F;
     transition: background-color 0.3s ease;
 }
+
+a.hover-effects {
+    font-size: medium;
+    color: white;
+}
+
+a.hover-effects:hover {
+    color: #6AA84F;
+}
