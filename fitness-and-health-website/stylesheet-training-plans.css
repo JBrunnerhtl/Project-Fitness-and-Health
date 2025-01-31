@@ -24,7 +24,7 @@ body {
 }
 
 .card .card-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
@@ -70,9 +70,9 @@ a.hover-effects:hover {
 
 .card .card-text {
     margin-top: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: +4rem;
-    color: #F6E8D5;
+    color: #6AA84F;
 }
 
 .d-flex {
@@ -85,6 +85,7 @@ a.hover-effects:hover {
 }
 
 .card .btn-primary {
+    margin-top: 1rem;
     background-color: #6AA84F;
     color: black;
     border: none;
