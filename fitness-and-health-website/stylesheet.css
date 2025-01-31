@@ -5,7 +5,7 @@ html, body {
     padding: 0;
     background-color: #F9F4E6; /* Light beige background */
     overflow-x: hidden;
-    font-family: 'Merriweather', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -118,7 +118,7 @@ h2 {
     color: whitesmoke;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1.5rem;
 }
 
