@@ -22,35 +22,6 @@ html, body {
     position: relative;
     overflow: hidden;
 }
-.MainPage{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: black;
-   padding-bottom: 3.5%;
-}
-
-.headersTop{
-    color: yellow;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    font-style: normal;
-    text-decoration: underline;
-    font-size: 50px;
-}
-
-.svg{
-    width: 80px;
-    height: 80px;
-}
-
-.horizontalYellowLine{
-    width: 100%;
-    height: 1px;
-    background-color: yellow;
-}
 
 #headlinetrans{
     position: relative;
@@ -97,20 +68,6 @@ html, body {
 }
 
 
-@keyframes flyIn {
-    0% {
-        left: -100%;
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        left: 50%;
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-}
 
 h2 {
     position: absolute;
@@ -122,221 +79,12 @@ h2 {
     font-size: 1.5rem;
 }
 
-.quote2{
-    position: absolute;
-    left: -100%;
-    text-align: center;
-    color: whitesmoke;
-    overflow: hidden;
-    white-space: nowrap;
-    text-transform: uppercase;
-    transform: translateX(0);
-    font-family: Arial, sans-serif;
-}
-
-.quote3{
-    position: absolute;
-    right: -100%;
-    margin-top: 5%;
-    color: whitesmoke;
-    overflow: hidden;
-    transform: translateX(0);
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-}
-
-.quote4{
-    position: absolute;
-    left: -100%;
-    margin-top: 10%;
-    transform: translateX(0);
-    color: whitesmoke;
-    overflow: hidden;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-}
-
-.quote5{
-    position: absolute;
-    right: -100%;
-    margin-top: 15%;
-    overflow: hidden;
-    white-space: nowrap;
-    color: whitesmoke;
-    transform: translateX(0);
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-}
-
-.quotes {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
-
-@keyframes flyInFromRight {
-    0%{
-        right: -100%;
-        opacity: 0;
-    }
-    3%,20% {
-        right: 50%;
-        opacity: 1;
-        transform: translateX(50%);
-    }
-    22%,100% {
-        right: 150%;
-        opacity: 0;
-        transform: translateX(50%);
-    }
-}
-@keyframes flyInFromLeft {
-    0% {
-        left: -100%;
-        opacity: 0;
-    }
-    3%,25% {
-        left: 50%;
-        opacity: 1;
-        transform: translateX(-50%);
-    }
-
-    30%,100% {
-        left: 150%;
-        opacity: 0;
-        transform: translateX(-50%);
-    }
-}
-
-.set1.quote2 { animation: flyInFromLeft 100s linear infinite ; animation-delay: 0s; }
-.set1.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 1s; }
-.set1.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 2s; }
-.set1.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 3s; }
-
-.set2.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 25s; }
-.set2.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 26s; }
-.set2.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 27s; }
-.set2.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 28s; }
-
-.set3.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 50s; }
-.set3.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 51s; }
-.set3.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 52s; }
-.set3.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 53s; }
-
-.set4.quote2 { animation: flyInFromLeft 100s linear infinite; animation-delay: 75s; }
-.set4.quote3 { animation: flyInFromRight 100s linear infinite; animation-delay: 76s; }
-.set4.quote4 { animation: flyInFromLeft 100s linear infinite; animation-delay: 77s; }
-.set4.quote5 { animation: flyInFromRight 100s linear infinite; animation-delay: 78s; }
 
 .borderStyle
 {
     border: 5px solid lightgrey;
     border-radius: 10px;
     border-collapse: collapse;
-}
-
-.homeButtonWrapper {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    position: relative;
-}
-
-.homeButton {
-    background-image: url("icones/iconizer-bxs-home.svg");
-    padding: 20px;
-    margin: 10px;
-    background-repeat: no-repeat;
-    background-color: black;
-    border-style: hidden;
-    background-size: contain;
-}
-
-.homeButton:hover {
-    transition: background-color 0.75s ease, color 1s ease;
-    background-image: url("icones/bxs-home.svg");
-    background-color: yellow;
-    background-repeat: no-repeat;
-}
-
-.pictureContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    height: 100%;
-    position: relative;
-    animation: occor 3s linear;
-}
-.pictureOfMan{
-    max-width: 150%;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    opacity: 0.7;
-}
-.h2onSite{
-    position: absolute;
-    margin-top: 0;
-    font-size: 200%;
-    font-family: Arial, sans-serif;
-}
-
-@keyframes occor {
-    0%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-table#tableInMain
-{
-    background-color: black;
-    width: 100%;
-    margin-top: 10%;
-}
-p#\@InTableInMain
-{
-    color: white;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    font-size: larger;
-}
-p.normalTextInTableInMain
-{
-    color: yellow;
-    font-family: Arial, sans-serif;
-    font-size: large;
-    padding: 0px;
-    margin: 0px;
-    transition: color 1s;
-}
-
-p.normalTextInTableInMain:hover
-{
-    color: white;
-    animation: 3s changeColorAndSize forwards;
-}
-
-@keyframes changeColorAndSize {
-    from
-    {
-        font-size: larger;
-    }
-    to
-    {
-        font-size: larger;
-    }
-}
-
-td.tdInMain
-{
-    margin: 0px;
-    padding: 0px;
 }
 
 .headerOfText{
@@ -369,31 +117,7 @@ td.tdInMain
     width: 100%;
     z-index: 1000;
 }
-.pictureOfMan{
-    margin-top: 5%;
-    width: 50%;
-    left: 50%;
-    border-radius: 30% 70% 70% 30% / 30% 22% 78% 70%;
-    opacity: 0.8;
 
-    transition: transform 1s ease, box-shadow 1s ease, border-radius 1s ease;
-    box-shadow: 0 4px 15px black;
-}
-
-.pictureOfMan:hover{
-    transform: scale(1.1);
-}
-.h2onSite{
-    margin-bottom: 1%;
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
-}
-.h2onSite:hover {
-    color: yellow;
-    font-size: 2.01rem;
-}
 .textContent{
     font-size: 1.2rem;
     color: #4A4A4A;
@@ -419,10 +143,6 @@ td.tdInMain
     line-height: 1.5;
     font-family: Arial, sans-serif;
 }
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(50%); }
-    100% { opacity: 1; transform: translateY(0)}
-}
 
 a.textInNavBar {
     color: #F6E8D5;
@@ -432,20 +152,6 @@ a.textInNavBar {
 a.textInNavBar:hover {
     color: #6AA84F;
     transition: color 0.3s ease;
-}
-
-@keyframes transition-color-in-nav {
-    from
-    {
-        background: black;
-
-    }
-    to
-    {
-        background: linear-gradient(90deg, #A2D2FF, #BDE0FE);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 
 
@@ -458,17 +164,7 @@ a.hover-effects:hover {
     color: #6AA84F;
 }
 
-@keyframes change-font-size {
-    from
-    {
-        font-size: medium;
 
-    }
-    to
-    {
-        font-size: large;
-    }
-}
 
 @media only screen and (max-width: 768px) {
     .headLine{
@@ -512,4 +208,15 @@ footer a:hover {
 .text-color
 {
     color: #4A4A4A;
+}
+
+.btn-custom-head
+{
+    background-color: #6AA84F;
+
+}
+
+.btn-custom-head:hover
+{
+    background-color: #556B2F;
 }
