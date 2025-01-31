@@ -2,13 +2,13 @@
 
 body {
     margin: 0;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #F9F4E6;
 }
 
 html
 {
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -93,7 +93,7 @@ footer a:hover {
 a.textInNavBar {
     color: #F6E8D5;
     font-size: large;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -111,7 +111,7 @@ a.textInNavBar:hover {
 a.hover-effects {
     font-size: medium;
     color: white;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.hover-effects:hover {
@@ -131,5 +131,5 @@ a.hover-effects:hover {
     font-size: calc(2.5rem + 1vw);
     font-weight: bold;
     color: #6AA84F;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }

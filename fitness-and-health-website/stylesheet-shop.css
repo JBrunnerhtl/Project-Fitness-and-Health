@@ -5,7 +5,7 @@ html, body{
     padding: 0;
     overflow-x: hidden;
     background-color: #F9F4E6;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
     background-size: cover;
 }
 
@@ -310,7 +310,7 @@ html, body{
 a.textInNavBar {
     color: #F6E8D5;
     font-size: large;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.textInNavBar:hover {

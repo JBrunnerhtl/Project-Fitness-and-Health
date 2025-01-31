@@ -2,7 +2,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Merriweather', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #6AA84F;
@@ -15,7 +15,7 @@ body {
 a.textInNavBar {
     color: #F6E8D5;
     font-size: large;
-    font-family: sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -35,7 +35,7 @@ a.textInNavBar:hover {
     font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
     font-weight: bold;
     color: #6AA84F;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .lead {
@@ -157,7 +157,7 @@ footer h5.text-in-fotter {
 a.hover-effects {
     font-size: medium;
     color: white;
-    font-family: sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 a.hover-effects:hover {
@@ -176,7 +176,7 @@ a.hover-effects:hover {
 .text-color
 {
     color: #4A4A4A;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .contrast
@@ -190,5 +190,5 @@ a.hover-effects:hover {
 }
 option.style-for-text-in-options
 {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }

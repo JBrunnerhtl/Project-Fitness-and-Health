@@ -3,12 +3,12 @@
 body {
     background-color: #F9F4E6;
     margin: 0;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .card {
     border: 0.125rem solid #6AA84F;
-    background-color: #2A1A14;
+    background-color: #F6E8D5;
     text-align: center;
     color: #6AA84F;
     border-radius: 1.25rem;
@@ -31,9 +31,6 @@ body {
 .changeColor {
     filter: invert(1);
 }
-
-
-
 
 .navbar-fixed {
     position: fixed;
@@ -267,7 +264,7 @@ p {
 a.textInNavBar {
     color: #F6E8D5;
     font-size: large;
-    font-family: Merriweather, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 a.textInNavBar:hover {
@@ -278,6 +275,7 @@ a.textInNavBar:hover {
 .title-training {
     font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
     font-weight: bold;
+    margin-top: 1rem;
     color: #6AA84F;
 }
 
