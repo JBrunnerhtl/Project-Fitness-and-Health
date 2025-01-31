@@ -62,45 +62,45 @@
         <!-- Left Column with Form -->
         <div class="col-md-6">
             <div class="form-container mx-auto" style="max-width: 500px; background-color: #F6E8D5;">
-                <h2 class="text-center" style= "color: #6AA84F;">Ernährungsformular</h2>
+                <h2 class="text-center" style= "color: #6AA84F; font-family: sans-serif">Ernährungsformular</h2>
                 <form>
                     <div class="mb-3">
-                        <label for="weight" class="form-label" style="color: #6AA84F;">Gewicht (kg)</label>
-                        <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required>
+                        <label for="weight" class="form-label" style="color: #6AA84F; font-family: sans-serif">Gewicht (kg)</label>
+                        <input type="number" class="form-control" id="weight" placeholder="z. B. 70" min="0" required style="font-family: sans-serif">
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label" style="color: #6AA84F;">Größe (cm)</label>
-                        <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required>
+                        <label for="height" class="form-label" style="color: #6AA84F; font-family: sans-serif">Größe (cm)</label>
+                        <input type="number" class="form-control" id="height" placeholder="z. B. 175" min="0" required style="font-family: sans-serif">
                     </div>
 
                     <div class="mb-3">
-                        <label for="height" class="form-label " style="color: #6AA84F;">Alter (in Jahren)</label>
-                        <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required>
+                        <label for="height" class="form-label " style="color: #6AA84F; font-family: sans-serif">Alter (in Jahren)</label>
+                        <input type="number" class="form-control" id="age" placeholder="z. B. 20" min="0" required style="font-family: sans-serif">
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label " style="color: #6AA84F;">Geschlecht</label>
+                        <label for="activity-level" class="form-label " style="color: #6AA84F; font-family: sans-serif">Geschlecht</label>
                         <select class="form-select" id="gender" required>
-                            <option value="" disabled selected>Wähle dein Geschlecht</option>
-                            <option value="Männlich">Männlich</option>
-                            <option value="Weiblich">Weiblich</option>
+                            <option value="" disabled selected class = "style-for-text-in-options">Wähle dein Geschlecht</option>
+                            <option value="Männlich" class = "style-for-text-in-options">Männlich</option>
+                            <option value="Weiblich" class="style-for-text-in-options">Weiblich</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
                         <label for="activity-level" class="form-label" style="color: #6AA84F;">Aktivitätslevel</label>
                         <select class="form-select" id="activity-level" required>
-                            <option value="" disabled selected>Wähle dein Aktivitätslevel</option>
-                            <option value="low">Niedrig</option>
-                            <option value="moderate">Mittel</option>
-                            <option value="high">Hoch</option>
+                            <option value="" disabled selected class = "style-for-text-in-options" >Wähle dein Aktivitätslevel</option>
+                            <option value="low" class = "style-for-text-in-options">Niedrig</option>
+                            <option value="moderate" class = "style-for-text-in-options">Mittel</option>
+                            <option value="high" class = "style-for-text-in-options">Hoch</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
-                        <label for="result" class="form-label ">Dein Kalorienbedarf pro Tag</label>
-                        <input type="text" class="form-control" id="result" placeholder="z. B. 1730 Kalorien" readonly>
+                        <label for="result" class="form-label " style = "font-family: sans-serif">Dein Kalorienbedarf pro Tag</label>
+                        <input type="text" class="form-control" id="result" placeholder="z. B. 1730 Kalorien" readonly style="font-family: sans-serif">
                     </div>
 
                     <!-- Submit Button -->
@@ -113,16 +113,16 @@
         <!-- Right Column with Explanation -->
         <div class="col-md-6 col-12" >
                 <div class="explanation-container p-4 rounded" style="background-color: #F6E8D5;">
-                <h3 class="mb-3" style="color: #6AA84F;">Wie funktioniert es?</h3>
-                <p class="text-muted">
+                <h3 class="mb-3" style="color: #6AA84F; font-family: sans-serif">Wie funktioniert es?</h3>
+                <p class="text-muted" style="font-family: sans-serif">
                     Dieses Formular hilft Ihnen, personalisierte Ernährungspläne zu erstellen:
                 </p>
                 <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Wählen Sie Ihr Aktivitätslevel</li>
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Teilen Sie uns weitere Einschränkungen mit</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F; font-family: sans-serif">1. Geben Sie Ihr Gewicht und Ihre Größe an</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F; font-family: sans-serif">2. Wählen Sie Ihr Aktivitätslevel</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F; font-family: sans-serif">3. Teilen Sie uns weitere Einschränkungen mit</li>
                 </ul>
-                <p class="text-muted">
+                <p class="text-muted" style="font-family: sans-serif;">
                     Nach dem Absenden erstellen wir einen maßgeschneiderten Ernährungsplan, der auf Ihre Bedürfnisse abgestimmt ist.
                 </p>
             </div>
@@ -275,7 +275,7 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5; font-family: sans-serif">Unsere Welt</h5>
 
                     <ul class="list-unstyled mb-4">
                         <li>
@@ -298,7 +298,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Karriere</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="font-family: sans-serif">Karriere</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -310,7 +310,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Kontaktiere uns</h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="font-family: sans-serif">Kontaktiere uns</h5>
 
                     <div class="form-outline form-white mb-4">
                         <a href = "mailto:brunnerjan1102@gmail.com" class = "styleForEmailInMain hover-effects">Klicke hier</a>
