@@ -38,4 +38,5 @@ function calculateCalories() {
     // Den berechneten Kalorienbedarf in das "result"-Feld setzen
     resultField.value = calories.toFixed(2) + " Kalorien"; // Ausgabe mit zwei Dezimalstellen
     console.log(calories)
+    return calories;
 }
