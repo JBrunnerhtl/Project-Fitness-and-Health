@@ -64,12 +64,12 @@ a.textInNavBar:hover {
 .card th, .card td {
     border: 1px solid #2A1A14;;
     padding: 10px;
-    color: #F6E8D5;
+    color: #ffffff;
 }
 
 .card th {
     background-color: #6AA84F;
-    color: #F6E8D5;
+    color: #ffffff;
 }
 
 .card .table-striped tbody tr:nth-of-type(odd) {
