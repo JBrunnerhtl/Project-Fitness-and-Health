@@ -5,17 +5,21 @@ function loadTable() {
 
     let container = document.createElement("div");
     container.className = "container my-5";
-    container.style.width = "100%";
+
     // Setze den HTML-Inhalt dynamisch
     container.innerHTML = `
     <!-- Diabetes -->
     <div class="row mb-5 gy-4" >
        
+       <div class="col-lg-4 col-md-6 col-12">
+            <h2 class="title">Dein Ernährungsplan</h2>
+            <p class="text-color">Der Plan hilft dir perfekt dein Ziel zur erreichen und dies macht er auch noch genussvoll</p>
+
        
+        </div>
         <div class="col-lg-8 col-md-6 col-12">
             <div class="card shadow">
                 <div class="card-body bg-dark text-light">
-                    <h5 class="card-title" style="margin-right: 2%">Dein Ehrnährungsplan</h5>
                     <div class="table-responsive" style="overflow-x: auto;">
                         <table class="table table-dark table-striped m-0" style="table-layout: auto; width: 100%;">
                             <thead>
