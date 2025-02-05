@@ -8,5 +8,10 @@ document.addEventListener('DocumentContentLoaded', () =>{  // dom takes a look t
         const maxPrice = document.getElementById('max-price').value;
         const category = document.getElementById('category').value;
 
+        const USER_DATA = {
+            problem,
+            maxPrice,
+            category
+        }
     })
 });
