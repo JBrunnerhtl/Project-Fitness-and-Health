@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet-nutrition.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <script src="Calculator.js"></script>
+    <script src = "Loader.js"></script>
     <title>Ernährung</title>
 </head>
 <body style="background-color: #F9F4E6; overflow: auto; margin: 0; padding: 0;">
@@ -104,15 +105,13 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="button" class="btn btn-custom w-100" onclick="calculateCalories()" style = "color: black">Absenden</button>
+                    <button type="button" class="btn btn-custom w-100" onclick="loadTable()" style = "color: black">Absenden</button>
 
                 </form>
             </div>
         </div>
 
-        <table>
 
-        </table>
         <!-- Right Column with Explanation -->
         <div class="col-md-6 col-12" >
                 <div class="explanation-container p-4 rounded" style="background-color: #F6E8D5;">
@@ -133,8 +132,14 @@
     </div>
 </div>
 
+<div>
 
-<div class="container my-5">
+</div>
+
+
+
+
+<div class="container my-5" id = "firstTable">
     <!-- Diabetes -->
     <div class="row mb-5 gy-4">
         <div class="col-lg-4 col-md-6 col-12">
