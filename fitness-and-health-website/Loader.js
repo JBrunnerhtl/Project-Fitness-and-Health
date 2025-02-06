@@ -1,65 +1,83 @@
 function loadTable() {
+    const totalCalories = calculateCalories();
+
+    // Check if the totalCalories is valid
+    if (isNaN(totalCalories) || totalCalories <= 0) {
+        alert("Bitte geben Sie gültige Werte ein!");
+        return;
+    }
 
 
-    const calories = calculateCalories(); // Falls diese Funktion benötigt wird
+    const proteinPercentage = 0.30;
+    const fatPercentage = 0.25;
+    const carbPercentage = 0.40;
+    const fiberPercentage = 0.05;
+
+    const proteinCalories = totalCalories * proteinPercentage;
+    const fatCalories = totalCalories * fatPercentage;
+    const carbCalories = totalCalories * carbPercentage;
+    const fiberCalories = totalCalories * fiberPercentage;
+
 
     let container = document.createElement("div");
     container.className = "container my-5";
 
-    // Setze den HTML-Inhalt dynamisch
-    container.innerHTML = `
-    <!-- Diabetes -->
-    <div class="row mb-5 gy-4" >
-       
-       <div class="col-lg-4 col-md-6 col-12">
-            <h2 class="title">Dein Ernährungsplan</h2>
-            <p class="text-color">Der Plan hilft dir perfekt dein Ziel zur erreichen und dies macht er auch noch genussvoll</p>
 
-       
-        </div>
-        <div class="col-lg-8 col-md-6 col-12">
-            <div class="card shadow">
-                <div class="card-body bg-dark text-light">
-                    <div class="table-responsive" style="overflow-x: auto;">
-                        <table class="table table-dark table-striped m-0" style="table-layout: auto; width: 100%;">
-                            <thead>
-                                <tr>
-                                    <th style="white-space: nowrap;">Mahlzeit</th>
-                                    <th style="white-space: nowrap;">Beispiel</th>
-                                    <th style="white-space: nowrap;">Hinweis</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="white-space: nowrap;">Frühstück</td>
-                                    <td>Haferbrei mit Mandeln und Beeren</td>
-                                    <td>Haferflocken haben einen niedrigen GI und bieten langanhaltende Energie.</td>
-                                </tr>
-                                <tr>
-                                    <td style="white-space: nowrap;">Mittagessen</td>
-                                    <td>Gegrilltes Hähnchen mit Quinoa und Gemüse</td>
-                                    <td>Quinoa ist eine ausgezeichnete Quelle für komplexe Kohlenhydrate und Ballaststoffe.</td>
-                                </tr>
-                                <tr>
-                                    <td style="white-space: nowrap;">Abendessen</td>
-                                    <td>Gebratener Lachs mit Zucchini-Nudeln</td>
-                                    <td>Omega-3-Fettsäuren im Lachs unterstützen die Herzgesundheit.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+    container.innerHTML = `
+        <div class="row mb-5 gy-4">
+            <div class="col-12"> 
+                <div class="card shadow">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-center mb-4">Täglicher Kalorienbedarf und Nährstoffverteilung</h5>
+                        <div class="table-responsive"> 
+                            <table class="table table-dark table-striped m-0 w-100"> 
+                                <thead>
+                                    <tr>
+                                        <th style="white-space: nowrap;">Nährstoff</th>
+                                        <th style="white-space: nowrap;">Kalorien</th>
+                                        <th style="white-space: nowrap;">Prozent</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Gesamtkalorien</td>
+                                        <td>${totalCalories.toFixed(0)} kcal</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Protein</td>
+                                        <td>${proteinCalories.toFixed(0)} kcal</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Fett</td>
+                                        <td>${fatCalories.toFixed(0)} kcal</td>
+                                        <td>25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Kohlenhydrate</td>
+                                        <td>${carbCalories.toFixed(0)} kcal</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Ballaststoffe</td>
+                                        <td>${fiberCalories.toFixed(0)} kcal</td>
+                                        <td>5%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     `;
 
-    // Finde das Element mit der ID "firstTable"
+
     let firstTable = document.getElementById("firstTable");
 
-    // Falls das Element existiert, füge den neuen Container davor ein
+
     if (firstTable) {
-        console.log('yes')
         firstTable.parentNode.insertBefore(container, firstTable);
     }
 }
