@@ -28,6 +28,7 @@ note top of WebseiteSystem
 Kunde fragt an(Pläne, Produktvorschläge),
 Webseite generiert per API passende Pläne oder Produkte.
 Bei einem Ernährungsplan wird auch der perfekte Trainingsplan mitgegeben
+Auf der Produkt Webseite werden mithilfe der Daten vom Kunden auch die passenden Produkte vorgeschlagen.
 
 
 end note
