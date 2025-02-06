@@ -8,23 +8,27 @@ rectangle "Unsere Webseite" as WebseiteSystem {
 }
 
 actor Kunde as "👤 Kunde"
-actor Webseite as "🌐 Webseite"
+
 
  Kunde --> Vorschlaege
  Kunde --> Trainingsplaene
  Kunde --> Ernaehrungsplaene
 
-Vorschlaege --> Webseite
- Webseite <-- Trainingsplaene
- Webseite <-- Ernaehrungsplaene
- Trainingsplaene <-- Ernaehrungsplaene
- Ernaehrungsplaene <-- Trainingsplaene
+
+
+Trainingsplaene --> Kunde
+Ernaehrungsplaene --> Kunde
+Vorschlaege --> Kunde
+
+Trainingsplaene <-- Ernaehrungsplaene
+Ernaehrungsplaene <-- Trainingsplaene
 
 
 note top of WebseiteSystem
 Kunde fragt an(Pläne, Produktvorschläge),
 Webseite generiert per API passende Pläne oder Produkte.
-Bei einen Ernährungsplan wird auch der perfekte Trainingsplan mitgegeben
+Bei einem Ernährungsplan wird auch der perfekte Trainingsplan mitgegeben
+
 
 end note
 @enduml

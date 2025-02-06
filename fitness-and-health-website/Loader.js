@@ -1,12 +1,19 @@
 function loadTable() {
+    // Überprüfe, ob calculateCalories existiert
+    if (typeof calculateCalories !== "function") {
+        console.error("Fehler: Die Funktion calculateCalories() existiert nicht!");
+        return;
+    }
+
     const totalCalories = calculateCalories();
 
     // Check if the totalCalories is valid
     if (isNaN(totalCalories) || totalCalories <= 0) {
-        alert("Bitte geben Sie gültige Werte ein!");
+        console.error("Fehler: Ungültige Kalorienanzahl:", totalCalories);
         return;
     }
 
+    console.log("Berechnete Kalorien:", totalCalories);
 
     const proteinPercentage = 0.30;
     const fatPercentage = 0.25;
@@ -18,10 +25,15 @@ function loadTable() {
     const carbCalories = totalCalories * carbPercentage;
     const fiberCalories = totalCalories * fiberPercentage;
 
+    let container = document.getElementById('writeTable');
 
-    let container = document.createElement("div");
+    // Überprüfe, ob das Element existiert
+    if (!container) {
+        console.error("Fehler: Element mit ID 'writeTable' nicht gefunden!");
+        return;
+    }
+
     container.className = "container my-5";
-
 
     container.innerHTML = `
         <div class="row mb-5 gy-4">
@@ -73,11 +85,5 @@ function loadTable() {
         </div>
     `;
 
-
-    let firstTable = document.getElementById("firstTable");
-
-
-    if (firstTable) {
-        firstTable.parentNode.insertBefore(container, firstTable);
-    }
+    console.log("Tabelle erfolgreich generiert.");
 }
