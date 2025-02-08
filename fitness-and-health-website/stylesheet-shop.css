@@ -190,7 +190,12 @@ footer a:hover {
     font-size: 1rem;
     font-weight: bold;
 }
-
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
 .btn-custom:hover {
     background-color: #556B2F;
     transition: background-color 0.3s ease;
