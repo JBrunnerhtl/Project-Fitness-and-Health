@@ -35,19 +35,25 @@ document.addEventListener('DocumentContentLoaded', () =>{  // dom takes a look t
             const response = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `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`,
+                    'Authorization': `Bearer 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`,
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     model: 'gpt-3.5-turbo',
-                    prompt: `User: Ich habe ein Problem mit ${USER_DATA.problem}. Ich möchte, dass es möglich ist, eine Lösung zu finden, die nicht mehr als ${USER_DATA.maxPrice} Euro kostet und in der Kategorie ${USER_DATA.category} liegt. \n\nAusgangslage:`,
-                    max_tokens: 1000
+                    messages: [
+                        { role: 'system', content: 'Du bist ein hilfreicher Assistent.' },
+                        { role: 'user', content: `Ich habe ein Problem mit ${USER_DATA.problem}. Ich möchte eine Lösung, die nicht mehr als ${USER_DATA.maxPrice} Euro kostet und in der Kategorie ${USER_DATA.category} liegt.` }
+                    ]
+                    ,max_tokens: 1000
                 })
             });
-            const result = await response.json()
-        .
-            response.json();
-            console.log(result);
+            if (!response.ok){
+                Error(`HTTP-Fehler! Status: ${response.status}`);
+            }
+
+            const result = await response.json();
+            console.log('Antwort der KI:', result.choices[0].message.content);
+            alert(`KI-Antwort: ${result.choices[0].message.content}`);
         } catch (error) {
             console.error(error);
             alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später nochmal.');
