@@ -1,10 +1,10 @@
 
 const apiKey = "824f5b8c655b400a99d93a9f4e841ed0"; // Ersetze dies mit deinem echten API-Schlüssel
-const query = "pasta"; // Suchbegriff für das Rezept
+const query = 50; // Suchbegriff für das Rezept
 const header = "recipes";
 
 async function getRecipes() {
-    const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/${header}/complexSearch?maxProtein=${query}&apiKey=${apiKey}`;
 
     try {
         const response = await fetch(url);
