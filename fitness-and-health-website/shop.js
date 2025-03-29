@@ -14,4 +14,4 @@ fetch('https://rapidapi.com/ltdbilgisam/api/ai-workout-planner-exercise-fitness-
     .catch(err => console.log(err));
 console.log(options)
 
-console.log('warum geht keine commit')
+console.log('warum geht keine commit');
