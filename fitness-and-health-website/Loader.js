@@ -1,5 +1,5 @@
 function loadTable() {
-    // Überprüfe, ob calculateCalories existiert
+
     if (typeof calculateCalories !== "function") {
         console.error("Fehler: Die Funktion calculateCalories() existiert nicht!");
         return;
@@ -7,7 +7,7 @@ function loadTable() {
 
     const totalCalories = calculateCalories();
 
-    // Check if the totalCalories is valid
+
     if (isNaN(totalCalories) || totalCalories <= 0) {
         console.error("Fehler: Ungültige Kalorienanzahl:", totalCalories);
         return;
@@ -25,9 +25,14 @@ function loadTable() {
     const carbCalories = totalCalories * carbPercentage;
     const fiberCalories = totalCalories * fiberPercentage;
 
+
+    const proteinGrams = (proteinCalories / 4).toFixed(1);
+    const fatGrams = (fatCalories / 9).toFixed(1);
+    const carbGrams = (carbCalories / 4).toFixed(1);
+    const fiberGrams = (fiberCalories / 2).toFixed(1);
     let container = document.getElementById('writeTable');
 
-    // Überprüfe, ob das Element existiert
+
     if (!container) {
         console.error("Fehler: Element mit ID 'writeTable' nicht gefunden!");
         return;
@@ -46,7 +51,7 @@ function loadTable() {
                                 <thead>
                                     <tr>
                                         <th style="white-space: nowrap;">Nährstoff</th>
-                                        <th style="white-space: nowrap;">Kalorien</th>
+                                        <th style="white-space: nowrap;">Empfohlene Menge</th>
                                         <th style="white-space: nowrap;">Prozent</th>
                                     </tr>
                                 </thead>
@@ -58,22 +63,22 @@ function loadTable() {
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Protein</td>
-                                        <td>${proteinCalories.toFixed(0)} kcal</td>
+                                        <td>${proteinGrams}g (${proteinCalories.toFixed(0)} kcal)</td>
                                         <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Fett</td>
-                                        <td>${fatCalories.toFixed(0)} kcal</td>
+                                        <td>${fatGrams}g (${fatCalories.toFixed(0)} kcal)</td>
                                         <td>25%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Kohlenhydrate</td>
-                                        <td>${carbCalories.toFixed(0)} kcal</td>
+                                        <td>${carbGrams}g (${carbCalories.toFixed(0)} kcal)</td>
                                         <td>40%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Ballaststoffe</td>
-                                        <td>${fiberCalories.toFixed(0)} kcal</td>
+                                        <td>${fiberGrams}g (${fiberCalories.toFixed(0)} kcal)</td>
                                         <td>5%</td>
                                     </tr>
                                 </tbody>
