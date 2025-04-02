@@ -125,8 +125,8 @@
     <div class="row">
         <div class="col-md-6">
             <div class="form-container mx-auto" style="max-width: 500px;">
-                <h2 class="text-center " style="color: #6AA84F;" >Gesundheitsformular</h2>
-                <form>
+                <h2 class="text-center" style="color: #6AA84F;">Gesundheitsformular</h2>
+                <form id="healthForm">
                     <div class="mb-3">
                         <label for="problem" class="form-label" style="color: #6AA84F;">Gesundheitliches Problem</label>
                         <input type="text" class="form-control" id="problem" placeholder="Beschreibe dein Problem" required>
@@ -138,16 +138,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="category" class="form-label " style="color: #6AA84F;">Kategorie</label>
+                        <label for="category" class="form-label" style="color: #6AA84F;">Kategorie</label>
                         <select class="form-select" id="category" required>
                             <option value="" disabled selected>Wähle eine Kategorie</option>
                             <option value="supplemente">Supplemente</option>
                             <option value="fitness">Fitnessgeräte</option>
                             <option value="ernaehrung">Ernährungspläne</option>
                         </select>
-                    </div>
-                    <div class="invalid-feedback">
-                        Bitte wählen Sie eine Kategorie aus
                     </div>
                     <button type="submit" class="btn btn-custom w-100">Absenden</button>
                 </form>
@@ -164,111 +161,42 @@
                     <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Geben Sie Ihr Budget an</li>
                     <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Wählen Sie die passende Kategorie</li>
                 </ul>
-                <p class="text-muted">
-                    Nach dem Absenden analysieren wir Ihre Angaben und stellen Ihnen maßgeschneiderte Empfehlungen zur Verfügung.
-                </p>
             </div>
         </div>
     </div>
 </div>
+
+
 <div class="container mt-5">
-    <h2 class="text-center mb-4" style="color: #6AA84F;">Unsere Top-Produkte</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <h2 class="text-center mb-4" style="color: #6AA84F;">Passende Produkte</h2>
+    <div id="filter-info" class="mb-4 text-center" style="display: none;">
+        <p class="text-muted">Angezeigt: <span id="filter-criteria"></span></p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="products-container">
 
-        <div class="col">
-            <div class="card h-100">
-                <img src="icones/product1.jpg" class="card-img-top" alt="Produkt 1">
-                <div class="card-body">
-                    <h5 class="card-title">Produkt 1</h5>
-                    <p class="card-text">Kurze Beschreibung zu Produkt 1 – ideal für Ihre Gesundheit und Fitness.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">
-                        Mehr erfahren
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="icones/product2.jpg" class="card-img-top" alt="Produkt 2">
-                <div class="card-body">
-                    <h5 class="card-title">Produkt 2</h5>
-                    <p class="card-text">Kurze Beschreibung zu Produkt 2 – perfekt zur Unterstützung Ihres Trainings.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">
-                        Mehr erfahren
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="icones/product3.jpg" class="card-img-top" alt="Produkt 3">
-                <div class="card-body">
-                    <h5 class="card-title">Produkt 3</h5>
-                    <p class="card-text">Kurze Beschreibung zu Produkt 3 – unterstützt Ihre Ernährung und Ihren Lifestyle.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">
-                        Mehr erfahren
-                    </button>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
 
-<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="productModal1Label">Produkt 1 Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+                <h5 class="modal-title" id="productModalLabel">Produktdetails</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Hier finden Sie detaillierte Informationen zu Produkt 1, seinen Vorteilen, Inhaltsstoffen und Anwendungshinweisen.</p>
-                <img src="icones/product1.jpg" class="img-fluid" alt="Produkt 1">
+                <img src="" class="img-fluid mb-3" id="modalProductImage" alt="Produktbild">
+                <h4 id="modalProductTitle"></h4>
+                <p id="modalProductDescription"></p>
+                <p class="text-success fw-bold" id="modalProductPrice"></p>
+                <div class="rating">
+                    <span class="badge bg-warning text-dark" id="modalProductRating"></span>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-                <button type="button" class="btn btn-primary">In den Warenkorb</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="productModal2Label">Produkt 2 Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-            </div>
-            <div class="modal-body">
-                <p>Detaillierte Informationen zu Produkt 2. Erfahren Sie mehr über seine Vorteile und Einsatzmöglichkeiten.</p>
-                <img src="icones/product2.jpg" class="img-fluid" alt="Produkt 2">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-                <button type="button" class="btn btn-primary">In den Warenkorb</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="productModal3Label">Produkt 3 Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-            </div>
-            <div class="modal-body">
-                <p>Hier finden Sie alle Details zu Produkt 3, von den Inhaltsstoffen bis zu den Anwendungshinweisen.</p>
-                <img src="icones/product3.jpg" class="img-fluid" alt="Produkt 3">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-                <button type="button" class="btn btn-primary">In den Warenkorb</button>
+                <button type="button" class="btn btn-primary add-to-cart">In den Warenkorb</button>
             </div>
         </div>
     </div>
