@@ -5,7 +5,15 @@ function loadTable() {
         return;
     }
 
-    const totalCalories = calculateCalories();
+    const result = calculateCalories();
+    const totalCalories = result.calories;
+    const isValid = result.isValid;
+
+
+    if (!isValid) {
+        console.error("Formular enthält ungültige Eingaben. Bitte korrigieren Sie die markierten Felder.");
+        return;
+    }
 
 
     if (isNaN(totalCalories) || totalCalories <= 0) {
@@ -25,11 +33,6 @@ function loadTable() {
     const carbCalories = totalCalories * carbPercentage;
     const fiberCalories = totalCalories * fiberPercentage;
 
-
-    const proteinGrams = (proteinCalories / 4).toFixed(1);
-    const fatGrams = (fatCalories / 9).toFixed(1);
-    const carbGrams = (carbCalories / 4).toFixed(1);
-    const fiberGrams = (fiberCalories / 2).toFixed(1);
     let container = document.getElementById('writeTable');
 
 
@@ -51,7 +54,7 @@ function loadTable() {
                                 <thead>
                                     <tr>
                                         <th style="white-space: nowrap;">Nährstoff</th>
-                                        <th style="white-space: nowrap;">Empfohlene Menge</th>
+                                        <th style="white-space: nowrap;">Kalorien</th>
                                         <th style="white-space: nowrap;">Prozent</th>
                                     </tr>
                                 </thead>
@@ -63,22 +66,22 @@ function loadTable() {
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Protein</td>
-                                        <td>${proteinGrams}g (${proteinCalories.toFixed(0)} kcal)</td>
+                                        <td>${proteinCalories.toFixed(0)} kcal</td>
                                         <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Fett</td>
-                                        <td>${fatGrams}g (${fatCalories.toFixed(0)} kcal)</td>
+                                        <td>${fatCalories.toFixed(0)} kcal</td>
                                         <td>25%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Kohlenhydrate</td>
-                                        <td>${carbGrams}g (${carbCalories.toFixed(0)} kcal)</td>
+                                        <td>${carbCalories.toFixed(0)} kcal</td>
                                         <td>40%</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Ballaststoffe</td>
-                                        <td>${fiberGrams}g (${fiberCalories.toFixed(0)} kcal)</td>
+                                        <td>${fiberCalories.toFixed(0)} kcal</td>
                                         <td>5%</td>
                                     </tr>
                                 </tbody>
@@ -89,6 +92,9 @@ function loadTable() {
             </div>
         </div>
     `;
+
+
+    container.scrollIntoView({ behavior: 'smooth' });
 
     console.log("Tabelle erfolgreich generiert.");
 }
