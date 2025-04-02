@@ -7,7 +7,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Produkte von der API laden
+
     fetch('https://fakestoreapi.com/products?limit=3')
         .then(res => res.json())
         .then(products => {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `;
             });
 
-            // Event-Listener für Details-Buttons
+
             document.querySelectorAll('.view-details').forEach(button => {
                 button.addEventListener('click', function() {
                     const productId = this.getAttribute('data-product-id');
@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-    // Warenkorb-Funktion
+
     document.querySelector('.add-to-cart').addEventListener('click', function() {
         const productId = this.getAttribute('data-product-id');
         alert(`Produkt ${productId} wurde zum Warenkorb hinzugefügt`);
     });
 
-    // Formular-Validierung
+
     document.getElementById('healthForm').addEventListener('submit', function(e) {
         e.preventDefault();
         const problem = document.getElementById('problem').value;
@@ -75,6 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         alert('Formular erfolgreich abgesendet!');
-        // Hier könntest du die Daten an dein Backend senden
+
     });
 });
