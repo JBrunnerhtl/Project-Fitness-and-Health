@@ -63,10 +63,11 @@
 ## 📈 5. Feedback vom Betreuer / Lehrer (danach selbst einzugeben!)
 
 **Positiv:**  
-- …  
+- API eingebunden bei Ernährungspläne und Trainingspläne
+- Farbe passt als vorher
 
-**Verbesserungsvorschläge:**  
-- …
+**Verbesserungsvorschläge:**
+- Bild hinzufügen auf startseite(oder das Bild von unten nach oben schieben, damit es lebendiger ist)
 
 ---
 
@@ -74,15 +75,14 @@
 
 - HTML / CSS / JavaScript   
 - Git (GitHub)  
+- Bootstrap (Bootstrap)
+- Fake Store API
 
 
 ---
 
 ## 📅 7. Nächste Schritte / Ausblick für den nächsten Sprint
 
-> Beispiel:  
-> - Startseiteninhalt fertigstellen  
-> - Mobile-Design implementieren  
-> - Registrierung per E-Mail bestätigen
-
+> Seite lebendiger machen(Bilder)  
+> API besser implementieren
 ---
