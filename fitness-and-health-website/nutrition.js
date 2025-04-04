@@ -9,7 +9,7 @@ async function getRecipesForProtein() {
         proteins *= 1.6;
     }
     else if(activityLevel === "high") {
-        proteins *= 2.2;
+        proteins *= 2;
     }
     console.log(proteins);
     const header = "recipes";
