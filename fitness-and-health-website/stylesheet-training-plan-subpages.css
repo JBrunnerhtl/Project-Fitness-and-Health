@@ -6,11 +6,9 @@ body {
     background-color: #F9F4E6;
 }
 
-html
-{
+html {
     font-family: Arial, sans-serif;
 }
-
 
 .changeColor {
     filter: invert(1);
@@ -44,21 +42,22 @@ html
     padding: 15px;
     text-align: left;
     border: 1px solid #ddd;
-    color: #F6E8D5;;
+    color: #4A2C2A; /* Braun wie die Navbar */
+    background-color: #F6E8D5; /* Neuer Hintergrund für alle Zeilen */
 }
 
-
-
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #2f2f2f;
+    background-color: #F6E8D5; /* Einheitlicher Hintergrund */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #F6E8D5; /* Einheitlicher Hintergrund für gerade Zeilen */
 }
 
 .table thead th {
     background-color: #6AA84F;
     color: #F6E8D5;
 }
-
-
 
 footer {
     color: #F6E8D5;
@@ -80,13 +79,11 @@ footer a:hover {
     color: #F6E8D5;
 }
 
-.contrast
-{
+.contrast {
     background-color: #2A1A14;
 }
 
-.text-color
-{
+.text-color {
     color: #4A4A4A;
 }
 
@@ -127,7 +124,7 @@ a.hover-effects:hover {
     }
 }
 
-.title-disabled-old{
+.title-disabled-old {
     font-size: calc(2.5rem + 1vw);
     font-weight: bold;
     color: #6AA84F;
