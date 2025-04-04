@@ -110,7 +110,7 @@
                     <textarea class="form-control" id="additional-info" rows="3" placeholder="z. B. Allergien, Unverträglichkeiten oder spezielle Ernährungsbedürfnisse" style="font-family: sans-serif"></textarea>
                 </div>
 
-                <button type="button" class="btn btn-custom w-100" onclick="loadTable()" style="color: black">Absenden</button>
+                <button type="button" class="btn btn-custom w-100" onclick="loadTable(), getRecipesForProtein()" style="color: black">Absenden</button>
             </form>
         </div>
 
@@ -139,6 +139,10 @@
 
 </div>
 
+
+<div id = "foodTable">
+
+</div>
 
 
 <div class="container my-5">
