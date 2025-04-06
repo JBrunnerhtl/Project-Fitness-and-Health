@@ -23,9 +23,12 @@ async function getRecipesForProtein() {
         }
         const data = await response.json();
         console.log(data); // Rezepte ausgeben
-        const container = document.getElementById('foodTable');
+        const container = document.getElementById('foodTableForProteins');
         data.results.forEach(recipe => { // Result is the array of recipes
-
+            const div = document.createElement('div');
+            const image = document.createElement("img");
+            image.src = recipe.image;
+            container.appendChild(image);
         })
     } catch (error) {
         console.error("API-Fehler:", error);
