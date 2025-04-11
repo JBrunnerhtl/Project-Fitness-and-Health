@@ -26,9 +26,10 @@ async function getRecipesForProtein() {
         const container = document.getElementById('foodTableForProteins');
         data.results.forEach(recipe => { // Result is the array of recipes
             const div = document.createElement('div');
-            const image = document.createElement("img");
-            image.src = recipe.image;
-            container.appendChild(image);
+            const p = document.createElement("p");
+            p.innerHTML = recipe.title;
+            div.appendChild(p);
+            container.appendChild(div);
         })
     } catch (error) {
         console.error("API-Fehler:", error);
