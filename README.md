@@ -10,7 +10,6 @@ Project Fitness and Health is a web application designed to help individuals mai
 - **Fitness Tracking**: Log workouts, monitor progress, and track fitness goals.
 - **Nutrition Guidance**: Access meal plans, calorie tracking, and nutritional advice.
 - **Interactive Tools**: Tools such as BMI calculators, step trackers, and more.
-- **Customizable Profiles**: Personalize your fitness journey with user-specific goals and preferences.
 
 ## Technologies Used
 
