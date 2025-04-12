@@ -33,10 +33,10 @@ html, body {
 
 .headLine {
     text-align: center;
-    background-color: #6AA84F;
+    color: white;
+    background-color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
     font-size: calc(2.5rem + 1vw);
     font-weight: bold;
     margin-bottom: 2%;
@@ -68,7 +68,112 @@ html, body {
 }
 
 
+.hero-with-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.carousel-background .carousel-item {
+    height: 100vh;
+}
+
+.carousel-background .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.btn-custom-head {
+    background-color: #6AA84F;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.btn-custom-head:hover {
+    background-color: #5a9342;
+}
+
+.icon-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: white;
+}
+
+.icon-card:hover {
+    transform: translateY(-10px);
+}
+
+.contrast {
+    background-color: #1A1A1A !important;
+}
+
+.textInNavBar {
+    color: #F6E8D5 !important;
+    font-weight: lighter;
+}
+
+.textInNavBar:hover {
+    color: #6AA84F !important;
+}
+
+.changeColor {
+    filter: invert(89%) sepia(12%) saturate(459%) hue-rotate(329deg) brightness(99%) contrast(93%);
+}
+
+.changeColor:hover {
+    filter: invert(70%) sepia(41%) saturate(476%) hue-rotate(47deg) brightness(91%) contrast(86%);
+}
+
+.hover-effects {
+    color: #F6E8D5;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.hover-effects:hover {
+    color: #6AA84F;
+}
+
+.styleForEmailInMain {
+    color: #F6E8D5;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.text-in-fotter {
+    color: #F6E8D5 !important;
+}
+
+.headLine {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 h2 {
     position: absolute;
     text-align: center;
