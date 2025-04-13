@@ -2,21 +2,19 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Shop</title>
-
+    <title data-translate="true">Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet-shop.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <script src = "shop.js"></script>
+    <script src="shop.js"></script>
+    <script src="translate.js"></script>
 </head>
 <body style="background-color: #F9F4E6">
 
-
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast" >
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast">
     <div class="container-fluid">
-
         <img src="icones/logo-green-no-text.png" alt="Home" width="50" height="50">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,46 +24,57 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="index.html">
-                        <img src="icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> Home
+                        <img src="icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20">
+                        <span data-translate="true">Home</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link textInNavBar"  href="shop.html">
-                        <img src="icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> Produkte
+                    <a class="nav-link textInNavBar" href="shop.html">
+                        <img src="icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20">
+                        <span data-translate="true">Produkte</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="nutrition.html">
-                        <img src="icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                        <img src="icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20">
+                        <span data-translate="true">Ernährungspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="trainings-plan.html">
-                        <img src="icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                        <img src="icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20">
+                        <span data-translate="true">Trainingspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="about-us.html">
-                        <img src="icones/bxs-group.svg"  class="changeColor" alt="Über uns" width="20" height="20"> Über uns
+                        <img src="icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20">
+                        <span data-translate="true">Über uns</span>
                     </a>
+                </li>
+                <!-- Sprachauswahl Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-translate="true">Sprache</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLanguageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide full-width-carousel" data-bs-ride="carousel" style=" background-color: #F9F4E6 ">
+<div id="carouselExampleSlidesOnly" class="carousel slide full-width-carousel" data-bs-ride="carousel" style="background-color: #F9F4E6">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="image-container">
                 <img src="icones/shop-picture.jpg" class="img">
                 <div class="image-text">
-                    <h1 class="picture-header">
-                        Willkommen
-                    </h1>
-                    <h2 class="picture-subheader">
-                        Fitness&Health Produkte
-                    </h2>
+                    <h1 class="picture-header" data-translate="true">Willkommen</h1>
+                    <h2 class="picture-subheader" data-translate="true">Fitness&Health Produkte</h2>
                 </div>
             </div>
         </div>
@@ -73,12 +82,8 @@
             <div class="image-container">
                 <img src="icones/background-for-shop-weights.jpg" class="img">
                 <div class="image-text">
-                    <h1 class="picture-header">
-                        Willkommen
-                    </h1>
-                    <h2 class="picture-subheader">
-                        Fitness&Health Produkte
-                    </h2>
+                    <h1 class="picture-header" data-translate="true">Willkommen</h1>
+                    <h2 class="picture-subheader" data-translate="true">Fitness&Health Produkte</h2>
                 </div>
             </div>
         </div>
@@ -86,12 +91,8 @@
             <div class="image-container">
                 <img src="icones/shop-background-picture-runners-and-weights.jpg" class="img">
                 <div class="image-text">
-                    <h1 class="picture-header">
-                        Willkommen
-                    </h1>
-                    <h2 class="picture-subheader">
-                        Fitness&Health Produkte
-                    </h2>
+                    <h1 class="picture-header" data-translate="true">Willkommen</h1>
+                    <h2 class="picture-subheader" data-translate="true">Fitness&Health Produkte</h2>
                 </div>
             </div>
         </div>
@@ -99,90 +100,79 @@
             <div class="image-container">
                 <img src="icones/background-shop-letters.jpg" class="img">
                 <div class="image-text">
-                    <h1 class="picture-header">
-                        Willkommen
-                    </h1>
-                    <h2 class="picture-subheader" style = "font-family: sans-serif">
-                        Fitness&Health Produkte
-                    </h2>
+                    <h1 class="picture-header" data-translate="true">Willkommen</h1>
+                    <h2 class="picture-subheader" style="font-family: sans-serif" data-translate="true">Fitness&Health Produkte</h2>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
 <div class="top-search-products" style="background-color: #F9F4E6">
-    <br>
-    <br>
-    <h1 class="title-shop" style="text-align: center;">
-        Produkte
-    </h1>
-
+    <br><br>
+    <h1 class="title-shop" style="text-align: center;" data-translate="true">Produkte</h1>
 </div>
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="form-container mx-auto" style="max-width: 500px;">
-                <h2 class="text-center" style="color: #6AA84F;">Gesundheitsformular</h2>
+                <h2 class="text-center" style="color: #6AA84F;" data-translate="true">Gesundheitsformular</h2>
                 <form id="healthForm">
                     <div class="mb-3">
-                        <label for="problem" class="form-label" style="color: #6AA84F;">Gesundheitliches Problem</label>
-                        <input type="text" class="form-control" id="problem" placeholder="Beschreibe dein Problem" required>
+                        <label for="problem" class="form-label" style="color: #6AA84F;" data-translate="true">Gesundheitliches Problem</label>
+                        <input type="text" class="form-control" id="problem" placeholder="Beschreibe dein Problem" required data-translate="true" data-translate-attr="placeholder">
                     </div>
 
                     <div class="mb-3">
-                        <label for="max-price" class="form-label" style="color: #6AA84F;">Maximaler Preis</label>
-                        <input type="number" class="form-control" id="max-price" placeholder="z. B. 100" min="0" required>
+                        <label for="max-price" class="form-label" style="color: #6AA84F;" data-translate="true">Maximaler Preis</label>
+                        <input type="number" class="form-control" id="max-price" placeholder="z. B. 100" min="0" required data-translate="true" data-translate-attr="placeholder">
                     </div>
 
                     <div class="mb-3">
-                        <label for="category" class="form-label" style="color: #6AA84F;">Kategorie</label>
+                        <label for="category" class="form-label" style="color: #6AA84F;" data-translate="true">Kategorie</label>
                         <select class="form-select" id="category" required>
-                            <option value="" disabled selected>Wähle eine Kategorie</option>
-                            <option value="supplemente">Supplemente</option>
-                            <option value="fitness">Fitnessgeräte</option>
-                            <option value="ernaehrung">Ernährungspläne</option>
+                            <option value="" disabled selected data-translate="true">Wähle eine Kategorie</option>
+                            <option value="supplemente" data-translate="true">Supplemente</option>
+                            <option value="fitness" data-translate="true">Fitnessgeräte</option>
+                            <option value="ernaehrung" data-translate="true">Ernährungspläne</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-custom w-100">Absenden</button>
+                    <button type="submit" class="btn btn-custom w-100" data-translate="true">Absenden</button>
                 </form>
             </div>
         </div>
         <div class="col-md-6">
             <div class="explanation-container p-4 rounded">
-                <h3 class="mb-3" style="color: #6AA84F;">Wie funktioniert es?</h3>
-                <p class="text-muted">
+                <h3 class="mb-3" style="color: #6AA84F;" data-translate="true">Wie funktioniert es?</h3>
+                <p class="text-muted" data-translate="true">
                     Unser Gesundheitsformular hilft Ihnen, passende Lösungen für Ihre gesundheitlichen Anliegen zu finden:
                 </p>
                 <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">1. Beschreiben Sie Ihr gesundheitliches Problem</li>
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">2. Geben Sie Ihr Budget an</li>
-                    <li class="list-group-item bg-transparent" style="color: #6AA84F;">3. Wählen Sie die passende Kategorie</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;" data-translate="true">1. Beschreiben Sie Ihr gesundheitliches Problem</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;" data-translate="true">2. Geben Sie Ihr Budget an</li>
+                    <li class="list-group-item bg-transparent" style="color: #6AA84F;" data-translate="true">3. Wählen Sie die passende Kategorie</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-
 <div class="container mt-5">
-    <h2 class="text-center mb-4" style="color: #6AA84F;">Passende Produkte</h2>
+    <h2 class="text-center mb-4" style="color: #6AA84F;" data-translate="true">Passende Produkte</h2>
     <div id="filter-info" class="mb-4 text-center" style="display: none;">
-        <p class="text-muted">Angezeigt: <span id="filter-criteria"></span></p>
+        <p class="text-muted" data-translate="true">Angezeigt: <span id="filter-criteria"></span></p>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4" id="products-container">
-
+        <!-- Produkte werden dynamisch eingefügt -->
     </div>
 </div>
-
 
 <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="productModalLabel">Produktdetails</h5>
+                <h5 class="modal-title" id="productModalLabel" data-translate="true">Produktdetails</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -195,64 +185,44 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-                <button type="button" class="btn btn-primary add-to-cart">In den Warenkorb</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-translate="true">Schließen</button>
+                <button type="button" class="btn btn-primary add-to-cart" data-translate="true">In den Warenkorb</button>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container my-" style = "margin-top: 5%; margin-bottom: 5%">
-
-    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+<div class="container my-" style="margin-top: 5%; margin-bottom: 5%">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;" data-translate="true">Unsere Welt</h5>
                     <ul class="list-unstyled mb-4">
-                        <li>
-                            <a href="shop.html" class="hover-effects" >Produkte</a>
-                        </li>
-                        <li>
-                            <a href="trainings-plan.html" class="hover-effects" >Trainingspläne</a>
-                        </li>
-                        <li>
-                            <a href="nutrition.html" class="hover-effects">Ernährungspläne</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html" class="hover-effects">Über uns</a>
-                        </li>
+                        <li><a href="shop.html" class="hover-effects" data-translate="true">Produkte</a></li>
+                        <li><a href="trainings-plan.html" class="hover-effects" data-translate="true">Trainingspläne</a></li>
+                        <li><a href="nutrition.html" class="hover-effects" data-translate="true">Ernährungspläne</a></li>
+                        <li><a href="about-us.html" class="hover-effects" data-translate="true">Über uns</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Karriere</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter" data-translate="true">Karriere</h5>
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" class="hover-effects">Jobs</a>
-                        </li>
+                        <li><a href="#!" class="hover-effects" data-translate="true">Jobs</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Kontaktiere uns</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter" data-translate="true">Kontaktiere uns</h5>
                     <div class="form-outline form-white mb-4">
-                        <a href = "mailto:brunnerjan1102@gmail.com" class = "styleForEmailInMain hover-effects">Klicke hier</a>
-
+                        <a href="mailto:brunnerjan1102@gmail.com" class="styleForEmailInMain hover-effects" data-translate="true">Klicke hier</a>
                     </div>
-
                 </div>
-                <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="icones/logo-green-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <img src="icones/logo-green-no-text.png" class="bg-image hover-overlay ripple shadow-1-strong rounded" style="width: 50%">
                 </div>
             </div>
         </div>
-
     </footer>
-
 </div>
 </body>
 </html>
