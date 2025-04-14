@@ -111,7 +111,7 @@ a.hover-effects:hover {
     width: 20%;
     height: 20%;
     margin: 0.625rem;
-    background-image: url("icones/iconizer-bxs-home.svg");
+    background-image: url("../icones/iconizer-bxs-home.svg");
     background-repeat: no-repeat;
     background-color: black;
     border-style: hidden;
