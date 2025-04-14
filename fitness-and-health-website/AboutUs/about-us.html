@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet-about-us.css">
-
+    <script src="../All/translate.js"></script>
     <title>Über uns</title>
 </head>
-<body style = "background-color: #F9F4E6; overflow-x: hidden; font-family: Arial, sans-serif">
+<body style="background-color: #F9F4E6; overflow-x: hidden; font-family: Arial, sans-serif">
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast" >
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast">
     <div class="container-fluid">
-
         <img src="../icones/logo-green-no-text.png" alt="Home" width="50" height="50">
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,35 +21,44 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Mainpage/index.html">
-                        <img src="../icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> Home
+                        <img src="../icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> <span data-translate="true">Home</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link textInNavBar"  href="../Shop/shop.html">
-                        <img src="../icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> Produkte
+                    <a class="nav-link textInNavBar" href="../Shop/shop.html">
+                        <img src="../icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> <span data-translate="true">Produkte</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Nutrition/nutrition.html">
-                        <img src="../icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                        <img src="../icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20"> <span data-translate="true">Ernährungspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Training/trainings-plan.html">
-                        <img src="../icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                        <img src="../icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20"> <span data-translate="true">Trainingspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="about-us.html">
-                        <img src="../icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20"> Über uns
+                        <img src="../icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20"> <span data-translate="true">Über uns</span>
                     </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-translate="true">Sprache</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLanguageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('de')"><span data-translate="true">Deutsch</span></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"><span data-translate="true">English</span></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<h1 class = "h1-in-about-us">Über uns</h1>
+<h1 class="h1-in-about-us"><span data-translate="true">Über uns</span></h1>
 <!-- Team Members Section -->
 <div class="container mt-5">
     <!-- Jan -->
@@ -59,13 +66,12 @@
         <div class="col-md-4 text-center">
             <button class="btn styleForButtonInAboutUsLeft">
                 <img src="../icones/JanBild.png" alt="Jan picture" class="styleForImgInAboutUs img-fluid rounded mb-3">
-                <p class="styleForPInAboutUs">Jan Brunner<br>Projektleiter</p>
+                <p class="styleForPInAboutUs"><span data-translate="true">Jan Brunner</span><br><span data-translate="true">Projektleiter</span></p>
             </button>
         </div>
         <div class="col-md-8">
             <p class="styleForPInAboutUsWritingTextLeft text-color">
-                Ich bin Jan Brunner, 15 Jahre alt und leite dieses Projekt zusammen mit meinen Schulkollegen. <br>
-                In meiner Freizeit beschäftige ich mich mit Webprogrammierung, sowie auch C# und C Programmierung.
+                <span data-translate="true">Ich bin Jan Brunner, 15 Jahre alt und leite dieses Projekt zusammen mit meinen Schulkollegen. In meiner Freizeit beschäftige ich mich mit Webprogrammierung, sowie auch C# und C Programmierung.</span>
             </p>
         </div>
     </div>
@@ -74,15 +80,13 @@
     <div class="row align-items-center mb-5 flex-md-row-reverse">
         <div class="col-md-4 text-center">
             <button class="btn styleForButtonInAboutUsRight">
-                <img src="icones/LorenzBild.JPG" alt="Lorenz picture" class="styleForImgInAboutUs img-fluid rounded mb-3">
-                <p class="styleForPInAboutUs">Lorenz Parzer<br>Stellvertretender<br>Projektleiter</p>
+                <img src="../icones/LorenzBild.jpg" alt="Lorenz picture" class="styleForImgInAboutUs img-fluid rounded mb-3">
+                <p class="styleForPInAboutUs"><span data-translate="true">Lorenz Parzer</span><br><span data-translate="true">Stellvertretender Projektleiter</span></p>
             </button>
         </div>
         <div class="col-md-8">
             <p class="styleForPInAboutUsWritingTextRight text-color">
-                Ich bin Lorenz Parzer, 16 Jahre alt und wohne in Österreich und ein Schüler und angehender Softwareentwickler an der HTL Leonding.<br>
-                In meiner Freizeit trainiere ich gerne, also gehe ins Fitnessstudio, versuche mich zu verbessern in allen Facetten. <br>
-                Ich liebe es zu Programmieren und besuche gerne die HTL Leonding.
+                <span data-translate="true">Ich bin Lorenz Parzer, 16 Jahre alt und wohne in Österreich und ein Schüler und angehender Softwareentwickler an der HTL Leonding. In meiner Freizeit trainiere ich gerne, also gehe ins Fitnessstudio, versuche mich zu verbessern in allen Facetten. Ich liebe es zu Programmieren und besuche gerne die HTL Leonding.</span>
             </p>
         </div>
     </div>
@@ -92,14 +96,12 @@
         <div class="col-md-4 text-center">
             <button class="btn styleForButtonInAboutUsLeft">
                 <img src="../icones/ErnadPhoto.jpg" alt="Ernad picture" class="styleForImgInAboutUs img-fluid rounded mb-3">
-                <p class="styleForPInAboutUs">Ernad Music<br>Mitarbeiter</p>
+                <p class="styleForPInAboutUs"><span data-translate="true">Ernad Music</span><br><span data-translate="true">Mitarbeiter</span></p>
             </button>
         </div>
         <div class="col-md-8">
             <p class="styleForPInAboutUsWritingTextLeft text-color">
-                Mein Name ist Ernad Music und ich bin Schüler der HTL Leonding und einer der Entwickler dieser Website. <br>
-                Ich bin 16 und ursprünglich in Bosnien geboren. <br>
-                Meine großen Hobbys sind das Coden in C# und das Erlernen neuer Dinge über das Programmieren.
+                <span data-translate="true">Mein Name ist Ernad Music und ich bin Schüler der HTL Leonding und einer der Entwickler dieser Website. Ich bin 16 und ursprünglich in Bosnien geboren. Meine großen Hobbys sind das Coden in C# und das Erlernen neuer Dinge über das Programmieren.</span>
             </p>
         </div>
     </div>
@@ -109,82 +111,48 @@
         <div class="col-md-4 text-center">
             <button class="btn styleForButtonInAboutUsRight">
                 <img src="../icones/MarioBild.jpg" alt="Mario picture" class="styleForImgInAboutUs img-fluid rounded mb-3">
-                <p class="styleForPInAboutUs">Mario Solomun<br>Mitarbeiter</p>
+                <p class="styleForPInAboutUs"><span data-translate="true">Mario Solomun</span><br><span data-translate="true">Mitarbeiter</span></p>
             </button>
         </div>
         <div class="col-md-8">
             <p class="styleForPInAboutUsWritingTextRight text-color">
-                Mein Name ist Mario Solomun und ich bin Teil der Entwickler von dieser Webseite. <br>
-                Ich bin Schüler an der HTL Leonding und besuche momentan den zweiten Jahrgang vom Zweig Informatik. <br>
-                Ich bin 16 Jahre alt und zu meinen Hobbies zählen das Programmieren und ich verbringe sehr gerne Zeit mit Freunden und Familie.
+                <span data-translate="true">Mein Name ist Mario Solomun und ich bin Teil der Entwickler von dieser Webseite. Ich bin Schüler an der HTL Leonding und besuche momentan den zweiten Jahrgang vom Zweig Informatik. Ich bin 16 Jahre alt und zu meinen Hobbies zählen das Programmieren und ich verbringe sehr gerne Zeit mit Freunden und Familie.</span>
             </p>
         </div>
     </div>
 </div>
 
-<div class="container my-" style = "margin-top: 5%; margin-bottom: 5%">
-
-    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-        <!-- Grid container -->
+<div class="container my-" style="margin-top: 5%; margin-bottom: 5%">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <div class="container p-4">
-            <!--Grid row-->
             <div class="row">
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;"><span data-translate="true">Unsere Welt</span></h5>
                     <ul class="list-unstyled mb-4">
-                        <li>
-                            <a href="../Shop/shop.html" class="hover-effects" >Produkte</a>
-                        </li>
-                        <li>
-                            <a href="../Training/trainings-plan.html" class="hover-effects" >Trainingspläne</a>
-                        </li>
-                        <li>
-                            <a href="../Nutrition/nutrition.html" class="hover-effects">Ernährungspläne</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html" class="hover-effects">Über uns</a>
-                        </li>
+                        <li><a href="../Shop/shop.html" class="hover-effects"><span data-translate="true">Produkte</span></a></li>
+                        <li><a href="../Training/trainings-plan.html" class="hover-effects"><span data-translate="true">Trainingspläne</span></a></li>
+                        <li><a href="../Nutrition/nutrition.html" class="hover-effects"><span data-translate="true">Ernährungspläne</span></a></li>
+                        <li><a href="about-us.html" class="hover-effects"><span data-translate="true">Über uns</span></a></li>
                     </ul>
                 </div>
-                <!--Grid column-->
-
-
-
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Karriere</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter"><span data-translate="true">Karriere</span></h5>
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" class="hover-effects">Jobs</a>
-                        </li>
+                        <li><a href="#!" class="hover-effects"><span data-translate="true">Jobs</span></a></li>
                     </ul>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter">Kontaktiere uns</h5>
-
+                    <h5 class="text-uppercase mb-4 text-in-fotter"><span data-translate="true">Kontaktiere uns</span></h5>
                     <div class="form-outline form-white mb-4">
-                        <a href = "mailto:brunnerjan1102@gmail.com" class = "styleForEmailInMain hover-effects">Klicke hier</a>
-
+                        <a href="mailto:brunnerjan1102@gmail.com" class="styleForEmailInMain hover-effects"><span data-translate="true">Klicke hier</span></a>
                     </div>
-
                 </div>
-                <!--Grid column-->
-                <div class = "col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <img src="../icones/logo-green-no-text.png" class = "bg-image hover-overlay ripple shadow-1-strong rounded" style = "width: 50%">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <img src="../icones/logo-green-no-text.png" class="bg-image hover-overlay ripple shadow-1-strong rounded" style="width: 50%">
                 </div>
             </div>
-            <!--Grid row-->
         </div>
-        <!-- Grid container -->
-
     </footer>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
