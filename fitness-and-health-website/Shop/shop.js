@@ -105,35 +105,45 @@ function createProductCard(product, price) {
 
 
 function showProductDetails(productId) {
-    const allProducts = Array.from(document.querySelectorAll('.view-details'))
-        .map(button => {
-            return {
-                id: button.dataset.productId,
-                title: button.closest('.card').querySelector('.card-title').textContent,
-                image: button.closest('.card').querySelector('img').src,
-                description: button.closest('.card').querySelector('.card-text').textContent,
-                price: button.closest('.card').querySelector('.text-success').textContent
-            };
-        });
-
-    const product = allProducts.find(p => p.id === productId);
-
-    if (!product) {
-        console.error('Produkt nicht gefunden');
-        return;
-    }
+    const product = allProductsData.find(p => p.product_id === productId);
+    if (!product) return;
 
 
-    const modalTitle = document.getElementById('modalProductTitle');
-    const modalImage = document.getElementById('modalProductImage');
-    const modalDescription = document.getElementById('modalProductDescription');
-    const modalPrice = document.getElementById('modalProductPrice');
-
-    modalTitle.textContent = product.title;
-    modalImage.src = product.image;
-    modalDescription.textContent = product.description.replace('...', ''); // Vollständige Beschreibung
-    modalPrice.textContent = product.price;
+    document.getElementById('modalProductTitle').textContent = product.product_title;
+    document.getElementById('modalProductImage').src =
+        product.product_photos?.[0] || 'https://via.placeholder.com/400';
+    document.getElementById('modalProductDescription').textContent =
+        product.product_description || 'Keine Beschreibung verfügbar';
+    document.getElementById('modalProductPrice').textContent =
+        product.offer?.price || 'Preis auf Anfrage';
 
 
     document.querySelector('#productModal .add-to-cart').style.display = 'none';
+
+
+    const buyLink = document.getElementById('buyLink');
+    const buyLinkText = document.getElementById('buyLinkText');
+
+    if (product.offer?.offer_page_url) {
+
+        buyLink.href = product.offer.offer_page_url;
+        buyLinkText.textContent = product.offer.store_name
+            ? `Bei ${product.offer.store_name} kaufen`
+            : 'Zum Shop';
+        buyLink.style.display = 'inline-block';
+
+
+        if (product.offer.store_favicon) {
+            buyLink.innerHTML = `
+        <img src="${product.offer.store_favicon}" 
+             height="16" 
+             class="me-2" 
+             alt="${product.offer.store_name || 'Shop'}">
+        ${buyLinkText.textContent}
+      `;
+        }
+    } else {
+
+        buyLink.style.display = 'none';
+    }
 }
