@@ -1,80 +1,63 @@
-function calculateCalories() {
-    const weight = parseFloat(document.getElementById('weight').value);
-    const height = parseFloat(document.getElementById('height').value);
-    const age = parseInt(document.getElementById('age').value);
-    const gender = document.getElementById('gender').value;
-    const activityLevel = document.getElementById('activity-level').value;
-
+function validateNutritionForm() {
+    // Select all relevant form elements
+    const weightInput = document.getElementById('weight');
+    const heightInput = document.getElementById('height');
+    const ageInput = document.getElementById('age');
+    const genderSelect = document.getElementById('gender');
+    const activitySelect = document.getElementById('activity-level');
 
     const formElements = [
-        document.getElementById('weight'),
-        document.getElementById('height'),
-        document.getElementById('age'),
-        document.getElementById('gender'),
-        document.getElementById('activity-level')
+        weightInput,
+        heightInput,
+        ageInput,
+        genderSelect,
+        activitySelect
     ];
 
+    // --- Clear previous validation states ---
     formElements.forEach(element => {
-        element.classList.remove('is-invalid');
+        if (element) { // Check if element exists before accessing classList
+            element.classList.remove('is-invalid');
+        }
     });
 
     let isValid = true;
 
-
+    // --- Input Validation ---
+    // Weight
+    const weight = parseFloat(weightInput.value);
     if (!weight || isNaN(weight) || weight < 20 || weight > 300) {
-        document.getElementById('weight').classList.add('is-invalid');
+        weightInput.classList.add('is-invalid');
         isValid = false;
     }
 
+    // Height
+    const height = parseFloat(heightInput.value);
     if (!height || isNaN(height) || height < 50 || height > 250) {
-        document.getElementById('height').classList.add('is-invalid');
+        heightInput.classList.add('is-invalid');
         isValid = false;
     }
 
+    // Age
+    const age = parseInt(ageInput.value);
     if (!age || isNaN(age) || age < 1 || age > 120) {
-        document.getElementById('age').classList.add('is-invalid');
+        ageInput.classList.add('is-invalid');
         isValid = false;
     }
 
-    if (!gender) {
-        document.getElementById('gender').classList.add('is-invalid');
+    // Gender
+    if (!genderSelect.value) { // Check if a value is selected
+        genderSelect.classList.add('is-invalid');
         isValid = false;
     }
 
-    if (!activityLevel) {
-        document.getElementById('activity-level').classList.add('is-invalid');
+    // Activity Level
+    if (!activitySelect.value) { // Check if a value is selected
+        activitySelect.classList.add('is-invalid');
         isValid = false;
     }
+    // Note: No validation needed for 'additional-info' as it's free text
 
-    let calories = 0;
-
-    console.log(weight);
-    console.log(height);
-    console.log(age);
-    console.log(gender);
-    console.log(activityLevel);
-    console.log("Form is valid:", isValid);
-
-
-    if (isValid) {
-        if (gender === 'Männlich') {
-            calories = 10 * weight + 6.25 * height - 5 * age + 5;
-        } else {
-            calories = 10 * weight + 6.25 * height - 5 * age - 161;
-        }
-
-        switch (activityLevel) {
-            case 'low':
-                calories *= 1.2;
-                break;
-            case 'moderate':
-                calories *= 1.55;
-                break;
-            case 'high':
-                calories *= 1.725;
-                break;
-        }
-    }
-
-    return { calories: calories, isValid: isValid };
+    console.log("Form validation result:", isValid);
+    return isValid;
 }

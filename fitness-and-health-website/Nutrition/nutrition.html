@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheet-nutrition.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <script src="Calculator.js"></script>
-    <script src = "Loader.js"></script>
-    <script src = "nutrition.js"></script>
-    <script src = "../All/translate.js"></script>
+    <script src="Loader.js"></script>
+    <script src="nutrition.js"></script>
+    <script src="../All/translate.js"></script>
     <title>Ernährung</title>
 
 </head>
@@ -120,7 +120,7 @@
                     <span data-translate="true"><textarea class="form-control" id="additional-info" rows="3" placeholder="z. B. Allergien, Unverträglichkeiten oder spezielle Ernährungsbedürfnisse" style="font-family: sans-serif"></textarea></span>
                 </div>
 
-                <button type="button" class="btn btn-custom w-100" onclick="loadTable(), getRecipesForProtein()" style="color: black"><span data-translate="true">Absenden</span></button>
+                <button type="button" class="btn btn-custom w-100" onclick="getNutritionPlanFromAI()" style="color: black"><span data-translate="true">Absenden</span></button>
             </form>
         </div>
 
@@ -146,11 +146,6 @@
 
 
 <div id = "writeTable">
-
-</div>
-
-
-<div id = "foodTableForProteins">
 
 </div>
 
