@@ -325,3 +325,68 @@ footer a:hover {
 {
     background-color: #556B2F;
 }
+
+/* disclaimer css */
+
+#disclaimerModal .modal-content {
+    background-color: #2A1A14;
+    color: #F6E8D5;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+#disclaimerModal .modal-header {
+    border-bottom: 1px solid #444;
+    padding: 1rem 1.5rem;
+}
+
+#disclaimerModal .modal-title {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+#disclaimerModal .modal-body {
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+#disclaimerModal .modal-body strong {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Modal Footer */
+#disclaimerModal .modal-footer {
+    border-top: 1px solid #444;
+    background-color: #2A1A14;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+}
+
+
+#acceptDisclaimerBtn {
+    background-color: #6AA84F;
+    border-color: #6AA84F;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+
+#acceptDisclaimerBtn:hover {
+    background-color: #5a9342;
+    border-color: #558b2f;
+    color: #ffffff;
+}
+
+
+.modal-backdrop {
+    opacity: 0.65 !important;
+}
