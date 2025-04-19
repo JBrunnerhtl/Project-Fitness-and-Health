@@ -14,12 +14,13 @@
     <link rel="icon" href="../icones/favicon-32x32.png" type="image/png">
 
     <title>FitnessAndHealth</title>
+
 </head>
 
 <body style="background-color: #F9F4E6">
 
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed ">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed">
     <div class="container-fluid">
         <img src="../icones/logo-green-no-text.png" alt="Home" width="50" height="50">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,41 +32,43 @@
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="index.html">
                         <img src="../icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20">
-                        <span data-translate="true">Startseite</span>
+                        <span class="translate-text" data-key="home">Startseite</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Shop/shop.html">
                         <img src="../icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20">
-                        <span data-translate="true">Produkte</span>
+                        <span class="translate-text" data-key="products">Produkte</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Nutrition/nutrition.html">
                         <img src="../icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20">
-                        <span data-translate="true"> Ernährungspläne</span>
+                        <span class="translate-text" data-key="nutrition">Ernährungspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../Training/trainings-plan.html">
                         <img src="../icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20">
-                        <span data-translate="true">Trainingspläne</span>
+                        <span class="translate-text" data-key="training">Trainingspläne</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textInNavBar" href="../AboutUs/about-us.html">
                         <img src="../icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20">
-                        <span data-translate="true">Über uns</span>
+                        <span class="translate-text" data-key="about">Über uns</span>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span data-translate="true">Sprache</span>
+                        <span class="translate-text" data-key="language">Sprache</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLanguageDropdown">
                         <li><a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a></li>
                         <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">Français</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Español</a></li>
                     </ul>
                 </li>
             </ul>
@@ -73,9 +76,7 @@
     </div>
 </nav>
 
-
 <div class="hero-with-carousel">
-    <!-- Karussell im Hintergrund -->
     <div class="carousel-background">
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -92,17 +93,13 @@
         </div>
     </div>
 
-
-    <!-- Hero-Inhalt über dem Karussell -->
     <div class="hero-content">
-        <h1 class="headLine display-4"><span data-translate="true">Willkommen bei Fitness & Health</span></h1>
-        <p class="lead" style="font-weight: lighter; max-width: 600px;"><span data-translate="true">Individuelle Lösungen
-      für ein besseres Wohlbefinden – egal in welchem Alter.</span></p>
+        <h1 class="headLine display-4"><span class="translate-text" data-key="welcome">Willkommen bei Fitness & Health</span></h1>
+        <p class="lead" style="font-weight: lighter; max-width: 600px;"><span class="translate-text" data-key="solutions">Individuelle Lösungen für ein besseres Wohlbefinden – egal in welchem Alter.</span></p>
         <button class="btn btn-primary btn-custom-head btn-lg" onclick="document.location = 'nutrition.html'"><span
-                data-translate="true">Starte jetzt</span></button>
+                class="translate-text" data-key="start">Starte jetzt</span></button>
     </div>
 </div>
-
 
 <div class="container my-5">
     <div class="row text-center">
@@ -113,9 +110,8 @@
                     <path
                             d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
                 </svg>
-                <h5 class="card-title" style="color: #6AA84F"><span data-translate="true">Individuelle Pläne</span></h5>
-                <p class="card-text"><span data-translate="true">Erhalte Trainings- und Ernährungspläne, die genau auf deine
-        Bedürfnisse abgestimmt sind.</span></p>
+                <h5 class="card-title" style="color: #6AA84F"><span class="translate-text" data-key="plans">Individuelle Pläne</span></h5>
+                <p class="card-text"><span class="translate-text" data-key="plans_desc">Erhalte Trainings- und Ernährungspläne, die genau auf deine Bedürfnisse abgestimmt sind.</span></p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
@@ -125,8 +121,8 @@
                     <path fill-rule="evenodd"
                           d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14" />
                 </svg>
-                <h5 class="card-title" style="color: #6AA84F"><span data-translate="true">Einfacher Support</span></h5>
-                <p class="card-text"><span data-translate="true">Unser Team unterstützt dich bei jedem Schritt auf deinem Weg.</span>
+                <h5 class="card-title" style="color: #6AA84F"><span class="translate-text" data-key="support">Einfacher Support</span></h5>
+                <p class="card-text"><span class="translate-text" data-key="support_desc">Unser Team unterstützt dich bei jedem Schritt auf deinem Weg.</span>
                 </p>
             </div>
         </div>
@@ -137,14 +133,12 @@
                     <path fill-rule="evenodd"
                           d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0" />
                 </svg>
-                <h5 class="card-title" style="color: #6AA84F"><span data-translate="true">Nachhaltige Ergebnisse</span></h5>
-                <p class="card-text"><span data-translate="true">Verbessere deine Gesundheit langfristig und spüre die
-        Veränderung.</span></p>
+                <h5 class="card-title" style="color: #6AA84F"><span class="translate-text" data-key="results">Nachhaltige Ergebnisse</span></h5>
+                <p class="card-text"><span class="translate-text" data-key="results_desc">Verbessere deine Gesundheit langfristig und spüre die Veränderung.</span></p>
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="container my-5" style="margin-top: 5%; margin-bottom: 5%">
     <footer class="text-center text-lg-start border mt-xl-5 pt-4 "
@@ -152,37 +146,37 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter"><span data-translate="true">Unsere Welt</span></h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter"><span class="translate-text" data-key="our_world">Unsere Welt</span></h5>
                     <ul class="list-unstyled mb-4">
                         <li>
-                            <a href="../Shop/shop.html" class="hover-effects"><span data-translate="true">Produkte</span></a>
+                            <a href="../Shop/shop.html" class="hover-effects"><span class="translate-text" data-key="products">Produkte</span></a>
                         </li>
                         <li>
                             <a href="../Training/trainings-plan.html" class="hover-effects"><span
-                                    data-translate="true">Trainingspläne</span></a>
+                                    class="translate-text" data-key="training">Trainingspläne</span></a>
                         </li>
                         <li>
                             <a href="../Nutrition/nutrition.html" class="hover-effects"><span
-                                    data-translate="true">Ernährungspläne</span></a>
+                                    class="translate-text" data-key="nutrition">Ernährungspläne</span></a>
                         </li>
                         <li>
-                            <a href="../AboutUs/about-us.html" class="hover-effects"><span data-translate="true">Über uns</span></a>
+                            <a href="../AboutUs/about-us.html" class="hover-effects"><span class="translate-text" data-key="about">Über uns</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter"><span data-translate="true">Karriere</span></h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter"><span class="translate-text" data-key="career">Karriere</span></h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!" class="hover-effects"><span data-translate="true">Jobs</span></a>
+                            <a href="#!" class="hover-effects"><span class="translate-text" data-key="jobs">Jobs</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 text-in-fotter"><span data-translate="true">Kontaktiere uns</span></h5>
+                    <h5 class="text-uppercase mb-4 text-in-fotter"><span class="translate-text" data-key="contact">Kontaktiere uns</span></h5>
                     <div class="form-outline form-white mb-4">
                         <a href="mailto:brunnerjan1102@gmail.com" class="styleForEmailInMain hover-effects"><span
-                                data-translate="true">Klicke hier</span></a>
+                                class="translate-text" data-key="click_here">Klicke hier</span></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -198,24 +192,22 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="disclaimerModalLabel"><span data-translate="true">Wichtiger Hinweis</span></h5>
+                <h5 class="modal-title" id="disclaimerModalLabel"><span class="translate-text" data-key="disclaimer_title">Wichtiger Hinweis</span></h5>
             </div>
             <div class="modal-body">
-                <p><span data-translate="true">Die auf dieser Website bereitgestellten Informationen, einschließlich Ernährungs- und Trainingspläne sowie Produktempfehlungen, werden teilweise durch künstliche Intelligenz generiert und dienen ausschließlich zu Informations- und Bildungszwecken.</span></p>
-                <p><span data-translate="true">Diese Informationen stellen keine medizinische Beratung, Diagnose oder Behandlung dar und sind kein Ersatz für die Konsultation mit qualifiziertem Fachpersonal (Ärzte, registrierte Ernährungsberater usw.).</span></p>
-                <p><span data-translate="true">Konsultieren Sie immer einen Arzt oder einen anderen qualifizierten Gesundheitsdienstleister, bevor Sie gesundheitliche Entscheidungen treffen oder Änderungen an Ihrer Ernährung, Ihrem Trainingsprogramm oder Ihrer Supplementierung vornehmen.</span></p>
-                <p><strong><span data-translate="true">Die Nutzung der Website und der hierin enthaltenen Informationen erfolgt auf Ihr eigenes Risiko. Die Betreiber dieser Website übernehmen keine Haftung für Ergebnisse, die sich aus der Nutzung der bereitgestellten Informationen ergeben.</span></strong></p>
+                <p><span class="translate-text" data-key="disclaimer_1">Die auf dieser Website bereitgestellten Informationen, einschließlich Ernährungs- und Trainingspläne sowie Produktempfehlungen, werden teilweise durch künstliche Intelligenz generiert und dienen ausschließlich zu Informations- und Bildungszwecken.</span></p>
+                <p><span class="translate-text" data-key="disclaimer_2">Diese Informationen stellen keine medizinische Beratung, Diagnose oder Behandlung dar und sind kein Ersatz für die Konsultation mit qualifiziertem Fachpersonal (Ärzte, registrierte Ernährungsberater usw.).</span></p>
+                <p><span class="translate-text" data-key="disclaimer_3">Konsultieren Sie immer einen Arzt oder einen anderen qualifizierten Gesundheitsdienstleister, bevor Sie gesundheitliche Entscheidungen treffen oder Änderungen an Ihrer Ernährung, Ihrem Trainingsprogramm oder Ihrer Supplementierung vornehmen.</span></p>
+                <p><strong><span class="translate-text" data-key="disclaimer_4">Die Nutzung der Website und der hierin enthaltenen Informationen erfolgt auf Ihr eigenes Risiko. Die Betreiber dieser Website übernehmen keine Haftung für Ergebnisse, die sich aus der Nutzung der bereitgestellten Informationen ergeben.</span></strong></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" id="acceptDisclaimerBtn"><span data-translate="true">Ich verstehe und akzeptiere</span></button>
+                <button type="button" class="btn" id="acceptDisclaimerBtn"><span class="translate-text" data-key="accept">Ich verstehe und akzeptiere</span></button>
             </div>
         </div>
     </div>
 </div>
 
-<script src="../All/detected.js"></script>
 <script src="../All/translate.js"></script>
 <script src="disclaimer.js"></script>
 </body>
-
 </html>
