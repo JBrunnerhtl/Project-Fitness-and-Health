@@ -1,89 +1,76 @@
-// translate.js
+let currentLanguage = 'de';
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    applyLanguage();
-});
-
-
-function setLanguage(lang) {
-    localStorage.setItem('selectedLanguage', lang);
-    translatePage(lang);
+async function setLanguage(lang) {
+    currentLanguage = lang;
+    await translatePage();
 }
 
 
-async function translatePage(targetLang) {
-    const elements = document.querySelectorAll('[data-translate="true"]');
-    const microsoftApiKey = '5df1f52fd4mshc8d2ad2b5cf104bp1de614jsn051b11ab2c0a';
-    const yandexApiKey = '5df1f52fd4mshc8d2ad2b5cf104bp1de614jsn051b11ab2c0a';
+async function translatePage() {
+    const elements = document.querySelectorAll('.translate-text');
+    const texts = Array.from(elements).map(el => el.textContent.trim());
+    const uniqueTexts = [...new Set(texts)];
 
 
-    for (const element of elements) {
-        if (!element.dataset.original) {
-            element.dataset.original = element.textContent.trim();
+    const translations = await translateTexts(uniqueTexts, 'de', currentLanguage);
+
+
+    elements.forEach(element => {
+        const originalText = element.textContent.trim();
+        if (translations[originalText]) {
+            element.textContent = translations[originalText];
         }
-        const originalText = element.dataset.original;
+    });
+}
 
 
-        if (!originalText) continue;
+async function translateTexts(texts, sourceLang, targetLang) {
+    const translationMap = {};
 
 
+    if (sourceLang === targetLang) {
 
-        const detectedLang = await detectLanguage(originalText, yandexApiKey);
-        if (!detectedLang) {
-            console.warn("Sprache konnte nicht erkannt werden. Übersetzung übersprungen.");
+        texts.forEach(text => translationMap[text] = text);
+        return translationMap;
+    }
+
+    for (const text of texts) {
+
+        if (!text.trim()) {
+            translationMap[text] = text;
             continue;
         }
 
 
+        if (encodeURIComponent(text).length > 450) {
+            translationMap[text] = text;
+            continue;
+        }
 
-        if (detectedLang !== targetLang) {
-            try {
-                element.textContent = await translateWithMicrosoft(originalText, detectedLang, targetLang, microsoftApiKey);
-            } catch (error) {
-                console.error("Übersetzung fehlgeschlagen:", error);
+        try {
+            const apiUrl = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`;
+            const response = await fetch(apiUrl);
+
+            if (!response.ok) {
+                translationMap[text] = text;
+                continue;
             }
-        } else {
-            console.log("Text ist bereits in der Zielsprache. Keine Übersetzung nötig.");
+
+            const data = await response.json();
+            translationMap[text] = data.responseData?.translatedText || text;
+
+        } catch (error) {
+
+            translationMap[text] = text;
         }
     }
+
+    return translationMap;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
 
-async function translateWithMicrosoft(text, sourceLang, targetLang, apiKey) {
-    const url = 'https://microsoft-translator-text.p.rapidapi.com/translate?api-version=3.0&to=' + targetLang +
-        '&from=' + sourceLang;
-
-
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json',
-            'x-rapidapi-key': apiKey,
-            'x-rapidapi-host': 'microsoft-translator-text.p.rapidapi.com'
-        },
-        body: JSON.stringify([{
-            "Text": text
-        }])
-    };
-
-
-    try {
-        const response = await fetch(url, options);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        return data[0].translations[0].text;
-    } catch (error) {
-        console.error("Microsoft Translation API error:", error);
-        return text;
-    }
-}
-
-
-function applyLanguage() {
-    const savedLang = localStorage.getItem('selectedLanguage') || 'de';
-    document.documentElement.lang = savedLang;
-    translatePage(savedLang);
-}
+    const savedLanguage = localStorage.getItem('language') || 'de';
+    setLanguage(savedLanguage);
+});
