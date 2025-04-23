@@ -1,9 +1,15 @@
 let currentLanguage = 'de';
 
 
-async function setLanguage(lang) {
+function setLanguage(lang) {
     currentLanguage = lang;
-    await translatePage();
+    localStorage.setItem('language', lang); // Sprache speichern
+
+    // Alle Elemente mit data-key übersetzen
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        element.textContent = translations[lang][key] || key; // Fallback, falls Übersetzung fehlt
+    });
 }
 
 
@@ -69,8 +75,7 @@ async function translateTexts(texts, sourceLang, targetLang) {
     return translationMap;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-
+document.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('language') || 'de';
     setLanguage(savedLanguage);
 });
