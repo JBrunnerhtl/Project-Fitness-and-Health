@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('darkModeIcon').src = "../icones/bx--sun.png";
         document.getElementById('darkModeText').textContent = "Light Mode";
 
+
+
         // Cards initial anpassen
         document.querySelectorAll('.card, .form-container, .explanation-container').forEach(card => {
             card.style.backgroundColor = '#2d2d2d';
