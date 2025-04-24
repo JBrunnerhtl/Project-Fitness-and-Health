@@ -9,6 +9,32 @@ html, body {
 }
 
 
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode footer {
+    background-color: #1e1e1e !important;
+    color: #f8f9fa;
+}
+
+body.dark-mode .textInNavBar,
+body.dark-mode .nav-link {
+    color: #f8f9fa !important;
+}
+
+/* Button Animation */
+#darkModeToggle {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.05);
+}
 
 * {
     box-sizing: border-box;
