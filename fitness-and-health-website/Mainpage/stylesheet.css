@@ -9,7 +9,101 @@ html, body {
 }
 
 
+/* ===== DARK MODE GLOBAL STYLES ===== */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+}
 
+/* ===== BACKGROUND ELEMENTS ===== */
+body.dark-mode .hero-with-carousel,
+body.dark-mode .carousel-background,
+body.dark-mode .container {
+    background-color: #121212 !important;
+}
+
+/* ===== NAVBAR ===== */
+body.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .textInNavBar {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .textInNavBar:hover {
+    color: #6AA84F !important;
+}
+
+/* ===== HERO SECTION ===== */
+
+
+body.dark-mode .headLine,
+body.dark-mode .lead {
+    color: #ffffff !important;
+
+}
+
+/* ===== CARDS ===== */
+body.dark-mode .icon-card {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .card-title {
+    color: #6AA84F !important;
+}
+
+body.dark-mode .card-text {
+    color: #b0b0b0 !important;
+}
+
+/* ===== FOOTER ===== */
+body.dark-mode footer {
+    background-color: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .text-in-fotter {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .hover-effects {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .hover-effects:hover {
+    color: #6AA84F !important;
+}
+
+/* ===== MODAL ===== */
+body.dark-mode .modal-content {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #444 !important;
+}
+
+/* ===== BUTTONS ===== */
+body.dark-mode .btn-custom-head {
+    background-color: #6AA84F !important;
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(106, 168, 79, 0.5);
+}
+
+/* ===== DARK MODE TOGGLE ===== */
+body.dark-mode #darkModeToggle img {
+    filter: invert(1);
+}
+
+body.dark-mode #darkModeText {
+    color: #e0e0e0 !important;
+}
 * {
     box-sizing: border-box;
 }

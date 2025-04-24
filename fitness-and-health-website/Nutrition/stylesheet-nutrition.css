@@ -12,6 +12,95 @@ body {
     filter: invert(1);
 }
 
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .textInNavBar {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .textInNavBar:hover {
+    color: #6AA84F !important;
+}
+
+body.dark-mode .card {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card-title {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .card-text {
+    color: #b0b0b0;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0;
+}
+
+body.dark-mode .text-color {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .text-muted {
+    color: #a0a0a0 !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: transparent;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode .btn-custom {
+    background-color: #5a8f3d;
+    color: #fff;
+}
+
+body.dark-mode .btn-custom:hover {
+    background-color: #4a7a2f;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+#darkModeToggle img {
+    transition: transform 0.3s ease;
+}
+
+#darkModeToggle:hover img {
+    transform: rotate(20deg);
+}
 a.textInNavBar {
     color: #F6E8D5;
     font-size: large;

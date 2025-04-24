@@ -8,7 +8,154 @@ html, body{
     font-family: Arial, sans-serif;
     background-size: cover;
 }
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
 
+/* Navbar im Dark Mode */
+body.dark-mode .navbar.contrast {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .textInNavBar {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .textInNavBar:hover {
+    color: #6AA84F !important;
+}
+
+/* Formulare und Cards */
+body.dark-mode .form-container,
+body.dark-mode .explanation-container {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .form-label,
+body.dark-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #6AA84F !important;
+    box-shadow: 0 0 0 0.25rem rgba(106, 168, 79, 0.25) !important;
+}
+
+/* Buttons */
+body.dark-mode .btn-custom {
+    background-color: #5a8f3d !important;
+    color: #fff !important;
+}
+
+body.dark-mode .btn-custom:hover {
+    background-color: #4a7a2f !important;
+}
+
+/* Produktkarten */
+body.dark-mode .card {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .card-title {
+    color: #6AA84F !important;
+}
+
+body.dark-mode .card-text {
+    color: #b0b0b0 !important;
+}
+
+/* Listen */
+body.dark-mode .list-group-item {
+    background-color: transparent !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Footer */
+body.dark-mode footer.contrast {
+    background-color: #1a1a1a !important;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode footer a {
+    color: #a0a0a0 !important;
+}
+
+body.dark-mode footer a:hover {
+    color: #6AA84F !important;
+}
+
+/* Carousel */
+body.dark-mode .carousel {
+    background-color: #121212 !important;
+}
+
+/* Modal */
+body.dark-mode .modal-content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #444 !important;
+}
+
+body.dark-mode .product-title {
+    color: #6AA84F !important;
+    text-shadow: 0 0 8px rgba(106, 168, 79, 0.5);
+}
+
+
+body.dark-mode .top-search-products {
+    background-color: #121212 !important;
+}
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+#darkModeToggle img {
+    transition: transform 0.3s ease;
+    filter: invert(0.8);
+}
+
+#darkModeToggle:hover img {
+    transform: rotate(20deg);
+}
+
+body.dark-mode #darkModeToggle img {
+    filter: invert(1);
+}
 .custom-container{
     display: flex;
     align-items: center;

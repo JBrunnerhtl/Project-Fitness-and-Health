@@ -54,13 +54,22 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span data-translate="true">Sprache</span>
+                    <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="translate-text" data-key="language">Sprache</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLanguageDropdown">
                         <li><a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a></li>
                         <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">Français</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Español</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <button id="darkModeToggle" class="btn btn-link nav-link textInNavBar">
+                        <img src="../icones/bx--moon.png" id="darkModeIcon" width="20" height="20">
+                        <span id="darkModeText">Dark Mode</span>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -221,5 +230,7 @@
     </footer>
 
 </div>
+
+<script src="../All/darkmode.js"></script>
 </body>
 </html>

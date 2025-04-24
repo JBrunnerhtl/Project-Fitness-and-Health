@@ -8,7 +8,86 @@ img.styleForImgInAboutUs
     padding: 0;
     margin: 0;
 }
+/* Dark Mode Grundlagen */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
 
+/* Navbar im Dark Mode */
+body.dark-mode .navbar.contrast {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .textInNavBar {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .textInNavBar:hover {
+    color: #6AA84F !important;
+}
+
+/* Überschriften */
+body.dark-mode .h1-in-about-us {
+    color: #6AA84F !important;
+}
+
+/* Team-Mitglieder Karten */
+body.dark-mode .styleForButtonInAboutUsLeft,
+body.dark-mode .styleForButtonInAboutUsRight {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .styleForPInAboutUs {
+    color: #e0e0e0 !important;
+}
+
+/* Textabschnitte */
+body.dark-mode .text-color {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .styleForPInAboutUsWritingTextLeft,
+body.dark-mode .styleForPInAboutUsWritingTextRight {
+    color: #e0e0e0 !important;
+}
+
+/* Footer */
+body.dark-mode footer.contrast {
+    background-color: #1a1a1a !important;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode .text-in-fotter {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .hover-effects {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .hover-effects:hover {
+    color: #6AA84F !important;
+}
+
+
+body.dark-mode .styleForImgInAboutUs {
+    filter: brightness(0.9);
+    border: 2px solid #444 !important;
+}
+
+
+body.dark-mode #darkModeToggle img {
+    filter: invert(1);
+}
+
+body.dark-mode #darkModeText {
+    color: #e0e0e0 !important;
+}
 @media (max-width: 768px) {
     .form-container, .explanation-container {
         margin-bottom: 20px;
