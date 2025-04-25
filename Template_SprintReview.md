@@ -63,11 +63,12 @@
 ## 📈 5. Feedback vom Betreuer / Lehrer (danach selbst einzugeben!)
 
 **Positiv:**  
-- API eingebunden bei Ernährungspläne und Trainingspläne
-- Farbe passt als vorher
+- API 
 
 **Verbesserungsvorschläge:**
-- Bild hinzufügen auf startseite(oder das Bild von unten nach oben schieben, damit es lebendiger ist)
+- Bild nicht passend bei produkte
+- Noch nicht login
+- Darkmode ist nicht System abhängig
 
 ---
 
@@ -84,6 +85,7 @@
 
 ## 📅 7. Nächste Schritte / Ausblick für den nächsten Sprint
 
-> Seite lebendiger machen(Bilder)  
-> API besser implementieren
+> Affiliate LInks
+> allgemeines darkmode(mdn)
+> bild bei shop nicht passend
 ---
