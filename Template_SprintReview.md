@@ -1,7 +1,7 @@
 # 🧾 Sprint Review – Schülerprojekt Web (HTL 2. Klasse)
 
-## 📅 4.4.2025
-<!-- z. B. 04.04.2025 -->
+## 📅 25.4.2025
+<!-- z. B. 0.04.2025 -->
 
 ---
 
@@ -18,8 +18,8 @@
 ---
 
 ## 📌 Sprint-Zeitraum  
-24.1 - 4.4.2025
-<!-- z. B. 25.03.2025 – 04.04.2025 -->
+4.4.2025 - 25.4.2025
+
 
 ---
 
@@ -27,8 +27,8 @@
 <!-- Welche Ziele hatte das Team für diesen Sprint? -->
 
   
-> - Farbkombination ändern
-> - keine verschiedenen Größen und Schriftarten
+> - API einbauen
+> - Bild auf Startseite hinzufügen
 
 
 ---
@@ -37,8 +37,8 @@
 
 | #  | Aufgabe / Story                             | Status        | Kurzbeschreibung                         |
 |----|---------------------------------------------|---------------|------------------------------------------|
-| 1  | Farbkombination ändern                      | ✅ Erledigt    | Änderung auf grün und weiß               |
-| 2  | keine verschiedenen Größen und Schriftarten | ✅ Erledigt    | alle auf sans serif                      |
+| 1  | API besser einbauen                         | ✅ Erledigt    | Änderung auf grün und weiß               |
+| 2  | Bild auf Startseite hinzufügen | ✅ Erledigt    | alle auf sans serif                      |
 
 
 ---
@@ -46,7 +46,7 @@
 ## ❌ 3. Was wurde nicht erledigt und warum?
 
 
-> -  Die API wurde noch nicht vollständig umgesetzt. Wir haben zwar schon eine gefunden, jedoch funktioniert sie noch nicht richtig.
+> -  Sprach API noch nicht so gut
 
 ---
 
@@ -77,6 +77,7 @@
 - Git (GitHub)  
 - Bootstrap (Bootstrap)
 - Fake Store API
+- Gemini API
 
 
 ---
