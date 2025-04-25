@@ -2,7 +2,7 @@
 const API_OPTIONS = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '5df1f52fd4mshc8d2ad2b5cf104bp1de614jsn051b11ab2c0a', // Hier deinen Key eintragen
+        'X-RapidAPI-Key': '5e3ee329abmsha7c07675e6393b6p13eea0jsnd88b9973abdf', // Hier deinen Key eintragen
         'X-RapidAPI-Host': 'real-time-product-search.p.rapidapi.com'
     }
 };
