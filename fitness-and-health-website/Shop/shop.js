@@ -1,4 +1,4 @@
-
+let allProductsData = [];
 const API_OPTIONS = {
     method: 'GET',
     headers: {
@@ -37,7 +37,10 @@ async function loadProducts(query, maxPrice = "") {
         const url = `https://real-time-product-search.p.rapidapi.com/search?q=${encodeURIComponent(query)}&country=de&language=de`;
         const response = await fetch(url, API_OPTIONS);
         const data = await response.json();
+        data.data.products.forEach((product) => {
+            allProductsData.push(product);
 
+        })
         if (!response.ok) throw new Error(data.message || 'Fehler beim Abrufen der Produkte');
 
         displayProducts(data.data.products, maxPrice);
@@ -105,6 +108,7 @@ function createProductCard(product, price) {
 
 
 function showProductDetails(productId) {
+    console.log(allProductsData);
     const product = allProductsData.find(p => p.product_id === productId);
     if (!product) return;
 
