@@ -16,3 +16,7 @@ Project Fitness and Health is a web application designed to help individuals mai
 - **HTML**: For structuring the application layout and content.
 - **CSS**: For styling and providing an engaging user experience.
 - **JavaScript**: For interactivity and dynamic functionality.
+
+
+## Link to website
+- [website](https://jbrunnerhtl.github.io/Project-Fitness-and-Health/fitness-and-health-website/Mainpage/)
