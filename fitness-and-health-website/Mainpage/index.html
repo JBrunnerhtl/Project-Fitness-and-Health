@@ -146,12 +146,9 @@
     </div>
 </div>
 <button id="login">Login</button>
-<button id="logout" style="display:none;">Logout</button>
-<div id="user-info" style="display:none;">
-    <span id="user-name"></span>
-    <img id="user-pic" src="" />
-</div>
-
+<button id="logout" style="display: none;">Logout</button>
+<div id="user-info"></div>
+<script type="module" src="/src/main.js"></script>
 <div class="container my-5" style="margin-top: 5%; margin-bottom: 5%">
     <footer class="text-center text-lg-start border mt-xl-5 pt-4 "
             style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); background-color: #2A1A14">
@@ -219,10 +216,50 @@
     </div>
 </div>
 
-<script src="../All/translate.js"></script>
-<script src="disclaimer.js"></script>
-<script src="../All/darkmode.js"></script>
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-<script type="module" src="../All/auth.js"></script>
+<script type="module" src="../All/Auth/auth0-service.js"></script>
+<script type="module" src="../Mainpage/disclaimer.js"></script>
+<script type="module" src="../All/translate.js"></script>
+<script type="module" src="../All/darkmode.js"></script>
+<script type="module">
+    import { initAuth0, getAuth0Client } from "../All/Auth/auth0-service.js";
+
+    const loginBtn = document.getElementById("login");
+    const logoutBtn = document.getElementById("logout");
+    const userInfo = document.getElementById("user-info");
+
+    (async () => {
+        const auth0 = await initAuth0();
+        updateUI(auth0);
+
+        loginBtn.addEventListener("click", () => {
+            auth0.loginWithRedirect();
+        });
+
+        logoutBtn.addEventListener("click", () => {
+            auth0.logout({
+                logoutParams: {
+                    returnTo: window.location.origin,
+                },
+            });
+        });
+    })();
+
+
+    async function updateUI(auth0) {
+        const isLoggedIn = await auth0.isAuthenticated();
+
+        loginBtn.style.display = isLoggedIn ? "none" : "block";
+        logoutBtn.style.display = isLoggedIn ? "block" : "none";
+
+        if (isLoggedIn) {
+            const user = await auth0.getUser();
+            userInfo.innerHTML = `
+          <h3>${user.name}</h3>
+          <p>${user.email}</p>
+          <img src="${user.picture}" width="50">
+        `;
+        }
+    }
+</script>
 </body>
 </html>

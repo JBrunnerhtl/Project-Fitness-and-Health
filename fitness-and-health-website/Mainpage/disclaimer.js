@@ -49,3 +49,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+import { initAuth0, getAuth0Client } from "All/Auth/auth0-service";
+
+
+const loginBtn = document.getElementById("login");
+const logoutBtn = document.getElementById("logout");
+const userInfo = document.getElementById("user-info");
+
+
+(async () => {
+    const auth0 = await initAuth0();
+    updateUI(auth0);
+
+
+    loginBtn.addEventListener("click", () => {
+        auth0.loginWithRedirect();
+    });
+
+    logoutBtn.addEventListener("click", () => {
+        auth0.logout({
+            logoutParams: {
+                returnTo: window.location.origin,
+            },
+        });
+    });
+})();
+
+
+async function updateUI(auth0) {
+    const isLoggedIn = await auth0.isAuthenticated();
+
+    loginBtn.style.display = isLoggedIn ? "none" : "block";
+    logoutBtn.style.display = isLoggedIn ? "block" : "none";
+
+    if (isLoggedIn) {
+        const user = await auth0.getUser();
+        userInfo.innerHTML = `
+      <h3>${user.name}</h3>
+      <p>${user.email}</p>
+      <img src="${user.picture}" width="50">
+    `;
+    } else {
+        userInfo.innerHTML = "Nicht eingeloggt";
+    }
+}
