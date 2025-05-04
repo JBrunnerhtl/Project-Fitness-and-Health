@@ -1,4 +1,4 @@
-//auth0 service
+
 import { createAuth0Client } from '@auth0/auth0-spa-js';
 import { auth0Config } from './auth0-config.js';
 
