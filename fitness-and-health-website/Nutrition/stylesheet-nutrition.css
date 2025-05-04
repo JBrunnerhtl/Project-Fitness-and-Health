@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #6AA84F;
+    background-color: #F9F4E6;
 }
 
 @media (prefers-color-scheme: dark) {
