@@ -12,7 +12,7 @@
             crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../icones/favicon-32x32.png" type="image/png">
-
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
     <title>FitnessAndHealth</title>
 
 </head>
@@ -213,47 +213,8 @@
 <script type="module" src="../All/Auth/auth0-service.js"></script>
 <script type="module" src="../Mainpage/disclaimer.js"></script>
 <script type="module" src="../All/translate.js"></script>
-
-<script type="module">
-    import { initAuth0, getAuth0Client } from "../All/Auth/auth0-service.js";
-
-    const loginBtn = document.getElementById("login");
-    const logoutBtn = document.getElementById("logout");
-    const userInfo = document.getElementById("user-info");
-
-    (async () => {
-        const auth0 = await initAuth0();
-        updateUI(auth0);
-
-        loginBtn.addEventListener("click", () => {
-            auth0.loginWithRedirect();
-        });
-
-        logoutBtn.addEventListener("click", () => {
-            auth0.logout({
-                logoutParams: {
-                    returnTo: window.location.origin,
-                },
-            });
-        });
-    })();
+<script src="../Mainpage/disclaimer.js"></script>
 
 
-    async function updateUI(auth0) {
-        const isLoggedIn = await auth0.isAuthenticated();
-
-        loginBtn.style.display = isLoggedIn ? "none" : "block";
-        logoutBtn.style.display = isLoggedIn ? "block" : "none";
-
-        if (isLoggedIn) {
-            const user = await auth0.getUser();
-            userInfo.innerHTML = `
-          <h3>${user.name}</h3>
-          <p>${user.email}</p>
-          <img src="${user.picture}" width="50">
-        `;
-        }
-    }
-</script>
 </body>
 </html>
