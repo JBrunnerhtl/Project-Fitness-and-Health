@@ -64,19 +64,10 @@ html, body{
         background-color: #4a7a2f;
     }
 
-    footer.contrast {
-        background-color: #1a1a1a;
-        border-top: 1px solid #333;
+    footer {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0;
     }
-
-    footer a {
-        color: #b0b0b0;
-    }
-
-    footer a:hover {
-        color: #6AA84F;
-    }
-
 
     .card {
         background-color: #2d2d2d;
@@ -245,7 +236,6 @@ a.textInNavBar:hover {
 }
 
 footer{
-    color: #F6E8D5;
     padding: 20px 0;
     border-radius: 10px;
 }
@@ -255,14 +245,7 @@ footer h5.text-in-fotter {
     font-size: 1.5rem;
 }
 
-footer a {
-    color: #A2C4C9;
-    transition: color 0.3s ease;
-}
 
-footer a:hover {
-    color: #F6E8D5;
-}
 
 .form-container {
     background-color: #F6E8D5;

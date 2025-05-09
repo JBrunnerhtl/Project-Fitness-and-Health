@@ -7,6 +7,7 @@ body {
 .navbar {
     background-color: #2A1A14;
 }
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212 !important;
@@ -14,9 +15,8 @@ body {
     }
 
     .hero-with-carousel,
-    .carousel-background,
-    .container {
-        background-color: #121212 !important;
+    .carousel-background{
+        background-color: #121212;
     }
 
     .navbar {
@@ -54,9 +54,13 @@ body {
 
     footer {
         background-color: #1a1a1a !important;
-        border-color: #333 !important;
+        color: #e0e0e0;
     }
 
+    .container-footer
+    {
+        background-color: #1a1a1a; !important;
+    }
     .text-in-fotter {
         color: #e0e0e0 !important;
     }
@@ -237,7 +241,6 @@ html, body {
 
 .hover-effects {
     color: #F6E8D5;
-    text-decoration: none;
     font-weight: lighter;
 }
 
@@ -251,9 +254,7 @@ html, body {
     font-weight: lighter;
 }
 
-.text-in-fotter {
-    color: #F6E8D5 !important;
-}
+
 
 .headLine {
     font-weight: bold;
@@ -370,25 +371,7 @@ a.hover-effects:hover {
     }
 }
 
-footer {
-    color: #F6E8D5;
-    padding: 20px 0;
-    border-radius: 10px;
-}
 
-footer h5.text-in-fotter {
-    color: #F6E8D5;
-    font-size: 1.5rem;
-}
-
-footer a {
-    color: #A2C4C9;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #F6E8D5;
-}
 
 .contrast
 {
@@ -474,4 +457,30 @@ footer a:hover {
 
 .modal-backdrop {
     opacity: 0.65 !important;
+}
+
+/* Footer */
+
+footer {
+    color: #F6E8D5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+footer h5.text-in-fotter {
+    color: #F6E8D5;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #A2C4C9;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6E8D5;
+}
+
+.text-in-fotter {
+    color: #F6E8D5 !important;
 }
