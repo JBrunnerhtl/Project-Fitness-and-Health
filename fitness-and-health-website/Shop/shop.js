@@ -2,7 +2,7 @@ let allProductsData = [];
 const API_OPTIONS = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '5e3ee329abmsha7c07675e6393b6p13eea0jsnd88b9973abdf', // Hier deinen Key eintragen
+        'X-RapidAPI-Key': '97e4f4d119msh97f5a1b0b13597bp181c37jsn8dd0583bd943', // Hier deinen Key eintragen
         'X-RapidAPI-Host': 'real-time-product-search.p.rapidapi.com'
     }
 };
@@ -36,6 +36,7 @@ async function loadProducts(query, maxPrice = "") {
     try {
         const url = `https://real-time-product-search.p.rapidapi.com/search?q=${encodeURIComponent(query)}&country=de&language=de`;
         const response = await fetch(url, API_OPTIONS);
+        console.log(response);
         const data = await response.json();
         data.data.products.forEach((product) => {
             allProductsData.push(product);
