@@ -90,12 +90,9 @@ img.styleForImgInAboutUs
         border-top: 1px solid #333;
     }
 
-    .text-in-fotter {
-        color: #e0e0e0 !important;
-    }
 
     .hover-effects {
-        color: #b0b0b0 !important;
+        color: #ffffff !important;
     }
 
     .hover-effects:hover {
