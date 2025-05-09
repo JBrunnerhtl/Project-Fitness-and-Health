@@ -19,6 +19,7 @@ body {
         background-color: #1a1a1a !important;
     }
 
+
     .navbar .nav-link,
     .navbar .textInNavBar {
         color: #e0e0e0 !important;
@@ -56,10 +57,27 @@ body {
     .form-control,
     .form-select,
     .form-control:focus,
-    .form-select:focus {
+    .form-select:focus{
         background-color: #333;
         color: #fff;
         border-color: #555;
+    }
+
+    input.form-control::placeholder,
+    textarea.form-control::placeholder,
+    option.form-control::placeholder
+    {
+        color: #757575;
+        opacity: 1;
+    }
+
+    select.form-select {
+        color: white;
+    }
+
+
+    select.form-select:invalid {
+        color: grey;
     }
 
     footer {
@@ -81,7 +99,11 @@ body {
     .card th {
         background-color: #5a8f3d;
     }
+
+
 }
+
+
 .changeColor {
     filter: invert(1);
 }
@@ -293,4 +315,10 @@ option.style-for-text-in-options
 .form-control.is-invalid ~ .invalid-feedback,
 .form-select.is-invalid ~ .invalid-feedback {
     display: block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
