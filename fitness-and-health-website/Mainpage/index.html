@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../icones/favicon-32x32.png" type="image/png">
     <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-    <!--<script src="../All/Auth/auth0.js"></script>-->
     <title>FitnessAndHealth</title>
 
 </head>
@@ -73,8 +72,8 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link textInNavBar" href="#" id="login-button">
-                        <img src="../icones/login-picture.svg" class="changeColor" alt="Über uns" width="20" height="20">
+                    <a class="nav-link textInNavBar" href="">
+                        <img src="../icones/login-picture.svg" class="changeColor" alt="Login" width="20" height="20">
                         <span class="translate-text" data-key="login">Login</span>
                     </a>
                 </li>
@@ -236,37 +235,11 @@
     </div>
 </div>
 
+<script type="module" src="../All/Auth/auth0-service.js"></script>
 <script type="module" src="../Mainpage/disclaimer.js"></script>
 <script type="module" src="../All/translate.js"></script>
 <script src="../Mainpage/disclaimer.js"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", async () => {
 
-        if (typeof createAuth0Client === "undefined") {
-            console.error("Auth0 SDK wurde nicht geladen.");
-            return;
-        }
-
-        const auth0 = await createAuth0Client({
-            domain: "dev-mxq3wnna1k2lh5ot.us.auth0.com",
-            client_id: "X57y86qMIx3CaxUgYzMcSNOB8fxkRLAX",
-            authorizationParams: {
-                redirect_uri: window.location.origin,
-                audience: "fitness-and-health-api"
-            }
-        });
-
-        document.getElementById("login-button").addEventListener("click", (e) => {
-            e.preventDefault();
-            auth0.loginWithRedirect();
-        });
-
-        if (window.location.search.includes("code=") && window.location.search.includes("state=")) {
-            await auth0.handleRedirectCallback();
-            window.history.replaceState({}, document.title, "/");
-        }
-    });
-</script>
 </body>
 </html>
