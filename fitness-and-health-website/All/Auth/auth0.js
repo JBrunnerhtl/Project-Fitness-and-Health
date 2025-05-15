@@ -1,3 +1,4 @@
+
 import { auth0Config } from './config.js'; // Assuming config.js is in the same directory as auth0.js
 
 let auth0Client;
@@ -9,27 +10,30 @@ const LOGIN_BUTTON_ID = "login-button"; // The ID of the <span> inside the <a> t
 const initializeAuth0Client = async () => {
     if (auth0Client) return auth0Client; // Already initialized
 
-    try {
-        // Access createAuth0Client from the global scope (provided by the CDN script)
-        if (typeof createAuth0Client === 'undefined') {
-            console.error("Auth0 SDK (createAuth0Client) not found. Ensure the CDN script for Auth0 is loaded before this script (auth0.js).");
-            throw new Error("Auth0 SDK not loaded");
-        }
 
-        auth0Client = await createAuth0Client({
-            domain: auth0Config.domain,
-            clientId: auth0Config.clientId,
-            authorizationParams: {
-                redirect_uri: auth0Config.redirectUri,
-                // audience: auth0Config.audience, // Uncomment if you have an audience for API access
-            },
-            cacheLocation: 'localstorage' // Persists login state across browser sessions
-        });
+    try {
+        // **** THIS IS THE KEY CHANGE ****
+        if (window.auth0 && typeof window.auth0.createAuth0Client === 'function') {
+            console.log("Attempting to initialize Auth0 client using window.auth0.createAuth0Client");
+            auth0Client = await window.auth0.createAuth0Client({ // Use the namespaced version
+                domain: auth0Config.domain,
+                clientId: auth0Config.clientId,
+                authorizationParams: {
+                    redirect_uri: auth0Config.redirectUri,
+                },
+                cacheLocation: 'localstorage'
+            });
+        } else {
+            console.error("Auth0 SDK (window.auth0.createAuth0Client) not found. Ensure the CDN script for Auth0 is loaded and executed before this script.");
+            throw new Error("Auth0 SDK not loaded correctly");
+        }
+        // **** END OF KEY CHANGE ****
+
         console.log("Auth0 client initialized successfully.");
         return auth0Client;
     } catch (error) {
         console.error("Auth0 Client Initialization Error:", error);
-        throw error; // Re-throw to be caught by calling function
+        throw error;
     }
 };
 
@@ -184,11 +188,8 @@ const mainAuth = async () => {
     }
 };
 
-// Ensure mainAuth is called after the DOM is fully loaded
-// This is crucial for document.getElementById to work correctly.
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', mainAuth);
 } else {
-    // DOMContentLoaded has already fired
     mainAuth();
 }
