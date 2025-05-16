@@ -1,5 +1,10 @@
-
-import { auth0Config } from './config.js';
+const auth0Config = {
+    domain: "dev-3hh4wwvbhoxgpjpc.us.auth0.com",
+    clientId: "41JRf64iWCFy2UTpsWAjIXqmVEB9fV40",
+    audience: undefined,
+    redirectUri:"http://localhost:5500/fitness-and-health-website/Mainpage/",
+    logoutRedirectUri: "http://localhost:5500/fitness-and-health-website/Mainpage/"
+};
 
 let auth0Client;
 const LOGIN_BUTTON_ID = "login-button";
@@ -116,9 +121,9 @@ const performLogin = async (event) => {
     }
     try {
         console.log("Attempting login with popup...");
-        await auth0Client.loginWithPopup();
+        await auth0Client.loginWithRedirect();
         console.log("Login popup action initiated/completed.");
-        await updateUI();
+
     } catch (error) {
         console.error("Login Error:", error);
 
@@ -153,6 +158,7 @@ const performLogout = (event) => {
 
 
 const mainAuth = async () => {
+    console.log("Nega")
     try {
         await initializeAuth0Client();
         await handleAuth0Redirect();
