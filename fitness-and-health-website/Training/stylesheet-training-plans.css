@@ -4,128 +4,11 @@ body {
     background-color: #F9F4E6;
     margin: 0;
     font-family: Arial, sans-serif;
+    color: #333; /* Standardtextfarbe für Light-Mode */
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
 
-    .navbar.contrast {
-        background-color: #1a1a1a;
-        border-bottom: 1px solid #333;
-    }
 
-    .navbar .nav-link,
-    .navbar .textInNavBar {
-        color: #e0e0e0;
-    }
 
-    .navbar .nav-link:hover,
-    .navbar .textInNavBar:hover {
-        color: #6AA84F;
-    }
-
-    .title-training {
-        color: #6AA84F;
-    }
-
-    .text-color {
-        color: #b0b0b0;
-    }
-
-    .form-container,
-    .explanation-container {
-        background-color: #2d2d2d;
-        color: #e0e0e0;
-    }
-
-    .form-label,
-    .t {
-        color: #6AA84F;
-    }
-
-    .form-control,
-    .form-select {
-        background-color: #333;
-        color: #fff;
-        border-color: #555;
-    }
-
-    .form-control::placeholder {
-        color: #aaa;
-    }
-
-    .form-control:focus,
-    .form-select:focus {
-        background-color: #333;
-        color: #fff;
-        border-color: #6AA84F;
-        box-shadow: 0 0 0 0.25rem rgba(106, 168, 79, 0.25);
-    }
-
-    .text-muted {
-        color: #aaa;
-    }
-
-    ul li,
-    .list-group-item {
-        color: #e0e0e0;
-    }
-
-    .list-group-item.bg-transparent {
-        background-color: transparent;
-    }
-
-    .card {
-        background-color: #2d2d2d;
-        border-color: #444;
-    }
-
-    .card-title {
-        color: #6AA84F;
-    }
-
-    .card-text {
-        color: #b0b0b0;
-    }
-
-    .btn-custom {
-        background-color: #5a8f3d;
-        color: #fff;
-    }
-
-    .btn-custom:hover {
-        background-color: #4a7a2f;
-    }
-
-    .btn-primary {
-        background-color: #6AA84F;
-        border-color: #6AA84F;
-    }
-
-    footer.contrast {
-        background-color: #1a1a1a;
-        border-top: 1px solid #333;
-    }
-
-    .text-in-fotter {
-        color: #e0e0e0;
-    }
-
-    .hover-effects {
-        color: #b0b0b0;
-    }
-
-    .hover-effects:hover {
-        color: #6AA84F;
-    }
-
-    .plans ul li {
-        background-color: #2d2d2d;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    }
-}
 .card {
     border: 0.125rem solid #6AA84F;
     background-color: #F6E8D5;
@@ -239,7 +122,7 @@ a.hover-effects:hover {
 }
 
 p {
-    color: white;
+    color: #333;
 }
 
 .homeButton-wrapper {
@@ -265,26 +148,25 @@ p {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 4%;
-
 }
 
 .hero {
     font-size: 3rem;
     color: #A2D2FF;
     text-align: center;
-    margin-bottom: 3%; /* Reduziert den Abstand */
+    margin-bottom: 3%;
 }
 
 .hero h1 {
-    margin-top: 1rem; /* Weniger Abstand oben */
+    margin-top: 1rem;
     font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem; /* Weniger Abstand unten */
+    margin-bottom: 1.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: white;
+    color: #333;
 }
 
 .plans {
@@ -300,6 +182,7 @@ p {
 
 .plans p {
     margin-bottom: 0.625rem;
+    color: #333;
 }
 
 .plans ul {
@@ -313,9 +196,8 @@ p {
     margin-bottom: 0.8rem;
     border-radius: 0.625rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
-
-
 
 .logo-wrapper {
     display: flex;
@@ -340,45 +222,27 @@ p {
     margin-left: 1em;
 }
 
-
-
-
-
-@keyframes change-font-size {
-    from {
-        font-size: medium;
-    }
-    to {
-        font-size: large;
-    }
-}
-
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem; /* Kleiner als vorher */
-        margin-top: 1rem; /* Weniger Abstand oben */
-        margin-bottom: 1.5rem; /* Weniger Abstand unten */
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero p {
-        font-size: 1rem; /* Kleinere Schriftgröße für den Beschreibungstext */
+        font-size: 1rem;
     }
 }
 
-
-/* Responsiveness */
 .container {
     padding: 20px;
 }
 
-
-.contrast
-{
+.contrast {
     background-color: #2A1A14;
 }
 
-.text-color
-{
+.text-color {
     color: #4A4A4A;
 }
 
@@ -394,7 +258,7 @@ a.textInNavBar:hover {
 }
 
 .title-training {
-    font-size: calc(2.5rem + 1vw); /* Dynamic font size for all screens */
+    font-size: calc(2.5rem + 1vw);
     font-weight: bold;
     margin-top: 1rem;
     color: #6AA84F;
@@ -403,6 +267,7 @@ a.textInNavBar:hover {
 .lead {
     font-size: 1.25rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 footer {
@@ -450,6 +315,111 @@ footer a:hover {
     transition: background-color 0.3s ease;
 }
 
-strong{
-    color: #6AA84F;;
+strong {
+    color: #6AA84F;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212 !important;
+        color: #e0e0e0;
+    }
+
+    .navbar {
+        background-color: #1a1a1a !important;
+    }
+
+
+    .navbar .nav-link,
+    .navbar .textInNavBar {
+        color: #e0e0e0 !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .textInNavBar:hover {
+        color: #6AA84F !important;
+    }
+
+    .title-nutrition,
+    .lead {
+        color: #e0e0e0 !important;
+    }
+
+    .form-container,
+    .explanation-container {
+        background-color: #2d2d2d !important;
+        color: #e0e0e0;
+    }
+
+    .text-color {
+        color: #e0e0e0 !important;
+    }
+
+    .text-muted {
+        color: #a0a0a0 !important;
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        color: #e0e0e0 !important;
+    }
+
+    .form-control,
+    .form-select,
+    .form-control:focus,
+    .form-select:focus{
+        background-color: #333;
+        color: #fff;
+        border-color: #555;
+    }
+
+    input.form-control::placeholder,
+    textarea.form-control::placeholder
+    {
+        color: #757575;
+        opacity: 1;
+    }
+
+    select.form-select {
+        color: white;
+    }
+
+
+    select.form-select:invalid {
+        color: white;
+    }
+
+    footer {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0;
+    }
+
+
+    .card {
+        background-color: #2d2d2d;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+
+    .card th, .card td {
+        color: #e0e0e0 !important;
+    }
+
+    .card th {
+        background-color: #5a8f3d;
+    }
+
+
+    /* Allgemeine Textfarben */
+    .title-training,
+    .text-color,
+    .text-muted,
+    p,
+    .card-text,
+    .plans p,
+    .plans ul li,
+    .explanation-container p,
+    .lead {
+        color: #e0e0e0 ;
+    }
 }
