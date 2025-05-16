@@ -116,9 +116,9 @@ const performLogin = async (event) => {
     }
     try {
         console.log("Attempting login with popup...");
-        await auth0Client.loginWithPopup();
+        await auth0Client.loginWithRedirect();
         console.log("Login popup action initiated/completed.");
-        await updateUI();
+
     } catch (error) {
         console.error("Login Error:", error);
 
