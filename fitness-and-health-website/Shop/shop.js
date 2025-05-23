@@ -8,17 +8,18 @@ const API_OPTIONS = {
 };
 
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (e ) => {
     loadProducts('fitness');
     loadProducts('fitness products');
     loadProducts('Suplements');
 
-
-    document.getElementById('submit-button').addEventListener('click', applyFilters);
+    e.preventDefault()
+    document.getElementById('submit-button').addEventListener('click', () => applyFilters(e));
 });
 
 
-function applyFilters() {
+function applyFilters(event) {
+    event.preventDefault();
     const inputPrice = document.getElementById('max-price').value;
     const inputCategory = document.getElementById('category').value;
     const container = document.getElementById('products-container');
