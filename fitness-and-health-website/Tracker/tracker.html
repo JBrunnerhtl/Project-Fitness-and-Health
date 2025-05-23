@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fortschritts-Tracker</title>
+    <link rel="icon" href="../icones/favicon-32x32.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tracker.css">
+    <link href="tracker.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed contrast">
+    <div class="container-fluid">
+        <img src="../icones/logo-green-no-text.png" alt="Home" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="../Mainpage/index.html">
+                        <img src="../icones/bxs-home.svg" class="changeColor" alt="Shop" width="20" height="20"> Startseite
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="../Shop/shop.html">
+                        <img src="../icones/bx-shopping-bag.svg" class="changeColor" alt="Shop" width="20" height="20"> Produkte
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="../Nutrition/nutrition.html">
+                        <img src="../icones/bx-baguette.svg" class="changeColor" alt="Ernährungspläne" width="20" height="20"> Ernährungspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="trainings-plan.html">
+                        <img src="../icones/bx-run.svg" class="changeColor" alt="Trainingspläne" width="20" height="20"> Trainingspläne
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="../AboutUs/about-us.html">
+                        <img src="../icones/bxs-group.svg" class="changeColor" alt="Über uns" width="20" height="20"> Über uns
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle textInNavBar" href="#" id="navbarLanguageDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="translate-text" data-key="language">Sprache</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLanguageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">Français</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Español</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textInNavBar" href="">
+                        <img src="../icones/login-picture.svg" class="changeColor" alt="Login" width="20" height="20">
+                        <span class="translate-text" data-key="login">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container tracker-container" >
+    <div class="tracker-grid" id="tableForWeeks">
+        <!-- Header Row -->
+        <script src="../Tracker/tracker.js"></script>
+
+    </div>
+
+    <div class="text-center mt-4">
+
+    </div>
+</div>
+<!-- Header Container -->
+<section class="text-center py-5" style="margin-top: 5%">
+    <h1 class="title-training">Fortschritts-Tracker</h1>
+    <p class="lead text-color">Verfolgen Sie Ihre täglichen Aktivitäten und Fortschritte</p>
+</section>
+
+<div class="container my-" style="margin-top: 5%; margin-bottom: 5%">
+    <footer class="text-center text-lg-start border mt-xl-5 pt-4 contrast" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 text-in-fotter" style="color: #F6E8D5;">Unsere Welt</h5>
+                    <ul class="list-unstyled mb-4">
+                        <li>
+                            <a href="../Shop/shop.html" class="hover-effects">Produkte</a>
+                        </li>
+                        <li>
+                            <a href="../Training/trainings-plan.html" class="hover-effects">Trainingspläne</a>
+                        </li>
+                        <li>
+                            <a href="../Nutrition/nutrition.html" class="hover-effects">Ernährungspläne</a>
+                        </li>
+                        <li>
+                            <a href="../AboutUs/about-us.html" class="hover-effects">Über uns</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 text-in-fotter">Karriere</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="hover-effects">Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 text-in-fotter">Kontaktiere uns</h5>
+                    <div class="form-outline form-white mb-4">
+                        <a href="mailto:brunnerjan1102@gmail.com" class="styleForEmailInMain hover-effects">Klicke hier</a>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <img src="../icones/logo-green-no-text.png" class="bg-image hover-overlay ripple shadow-1-strong rounded" style="width: 50%">
+                </div>
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    </footer>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

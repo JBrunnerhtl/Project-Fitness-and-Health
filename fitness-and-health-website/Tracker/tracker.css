@@ -1,0 +1,120 @@
+.tracker-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212 !important;
+        color: #e0e0e0;
+    }
+
+    .hero-with-carousel,
+    .carousel-background{
+        background-color: #121212;
+    }
+
+    .navbar {
+        background-color: #1a1a1a !important;
+        border-bottom: 1px solid #333;
+    }
+
+    .navbar .nav-link,
+    .navbar .textInNavBar {
+        color: #e0e0e0 !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .textInNavBar:hover {
+        color: #6AA84F !important;
+    }
+
+    .headLine,
+    .lead {
+        color: #ffffff !important;
+    }
+
+
+    footer {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0;
+    }
+
+    .container-footer
+    {
+        background-color: #1a1a1a; !important;
+    }
+    .text-in-fotter {
+        color: #e0e0e0 !important;
+    }
+
+    .hover-effects {
+        color: #ffffff !important;
+    }
+
+
+    .btn-custom-head {
+        background-color: #6AA84F !important;
+        color: #fff !important;
+        box-shadow: 0 0 10px rgba(106, 168, 79, 0.5);
+    }
+}
+.tracker-header {
+    color: #6AA84F;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tracker-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.tracker-day {
+    font-weight: bold;
+    color: #6AA84F;
+    padding: 8px;
+}
+
+.tracker-checkbox {
+    text-align: center;
+}
+
+.tracker-score {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.tracker-label {
+    font-weight: bold;
+    color: #6AA84F;
+    text-align: center;
+    padding: 8px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: #6AA84F;
+}
+
+.btn-custom {
+    background-color: #6AA84F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #5a9342;
+    color: white;
+}
