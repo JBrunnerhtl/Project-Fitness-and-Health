@@ -90,11 +90,11 @@ function createProductCard(product, price) {
              alt="${product.product_title}" 
              style="height: 200px; object-fit: contain;">
         <div class="card-body d-flex flex-column">
-          <h5 class="card-title">${product.product_title}</h5>
-          <p class="card-text text-muted">${(product.product_description || 'Keine Beschreibung verfügbar').substring(0, 80)}...</p>
+          <h5 class="card-title translate-text">${product.product_title}</h5>
+          <p class="card-text text-muted translate-text">${(product.product_description || 'Keine Beschreibung verfügbar').substring(0, 80)}...</p>
           <div class="mt-auto">
-            <p class="text-success fw-bold">${price ? `${price.toFixed(2)} €` : 'Preis auf Anfrage'}</p>
-            <button class="btn btn-outline-primary view-details" 
+            <p class="text-success fw-bold translate-text">${price ? `${price.toFixed(2)} €` : 'Preis auf Anfrage'}</p>
+            <button class="btn btn-outline-primary view-details translate-text" 
                     data-product-id="${product.product_id}"
                     data-bs-toggle="modal" 
                     data-bs-target="#productModal">
