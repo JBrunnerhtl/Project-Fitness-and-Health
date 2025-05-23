@@ -158,7 +158,6 @@ const performLogout = (event) => {
 
 
 const mainAuth = async () => {
-    console.log("Nega")
     try {
         await initializeAuth0Client();
         await handleAuth0Redirect();
