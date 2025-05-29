@@ -1,11 +1,12 @@
-async function getNutritionPlanFromAI() {
-    const weight = parseFloat(document.getElementById("weight").value);
-    const height = parseFloat(document.getElementById("height").value);
-    const age = parseInt(document.getElementById("age").value, 10);
-    const gender = document.getElementById("gender").value;
-    const activityLevel = document.getElementById("activity-level").value;
-    const additionalInfo = document.getElementById("additional-info").value;
+async function getTrainingsPlanFromAI() {
 
+    const weight = parseFloat(document.getElementById("weight").value) || 70; // Standard: 70kg
+    const height = parseFloat(document.getElementById("height").value) || 170; // Standard: 170cm
+    const age = parseInt(document.getElementById("age").value, 10) || 30; // Standard: 30 Jahre
+    const gender = document.getElementById("gender").value || "male"; // Standard: männlich
+    const activityLevel = document.getElementById("activity-level").value || "low"; // Standard: niedrig
+    const additionalInfo = document.getElementById("disabilities").value || "Nothing";
+    console.log("check");
     const userData = {
         weight,
         height,
@@ -24,8 +25,8 @@ async function getNutritionPlanFromAI() {
         plan_duration_weeks: 4 // Beispielwert - an die API-Anforderungen anpassen
     };
 
-    const apiKey = 'DEIN_API_KEY'; // Ersetze das durch deinen API-Key
-    const apiUrl = 'API_ENDPOINT_URL'; // Ersetze das durch die tatsächliche URL deiner API
+    const apiKey = '97e4f4d119msh97f5a1b0b13597bp181c37jsn8dd0583bd943'; // Ersetze das durch deinen API-Key
+    const apiUrl = 'exercises-by-api-ninjas.p.rapidapi.com'; // Ersetze das durch die tatsächliche URL deiner API
     const statusMessageDiv = document.getElementById('statusMessage');
     const writeTableDiv = document.getElementById('writeTable');
 

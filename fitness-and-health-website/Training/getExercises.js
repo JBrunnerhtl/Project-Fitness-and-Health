@@ -6,6 +6,6 @@ const options = {
         'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
     }
 };
-
+/*
 fetch(url, options)
-    .then(response => console.log(response.json()))
+    .then(response => console.log(response.json()))*/
