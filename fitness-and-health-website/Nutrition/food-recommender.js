@@ -211,18 +211,18 @@ function displayFoodTable(usdaDataArray, totalRequested, foodTableContainer) {
             <div class="col-12">
                 <div class="card shadow">
                     <div class="card-body bg-dark text-light"> 
-                        <h5 class="card-title text-center mb-4" style="color: #ffffff;">Empfohlene Lebensmittel (Nährwerte pro 100g)</h5>
-                        <p class="text-center text-white-50 small">Es konnten Daten für ${usdaDataArray.length} von ${totalRequested} Empfehlungen gefunden werden. Ergebnisse basieren auf der besten Übereinstimmung in der USDA-Datenbank.</p>
+                        <h5 class="card-title text-center mb-4" style="color: #ffffff;" class = "translate-text">Empfohlene Lebensmittel (Nährwerte pro 100g)</h5>
+                        <p class="text-center text-white-50 small" class = "translate-text">Es konnten Daten für ${usdaDataArray.length} von ${totalRequested} Empfehlungen gefunden werden. Ergebnisse basieren auf der besten Übereinstimmung in der USDA-Datenbank.</p>
                         <div class="table-responsive">
                             <table class="table table-dark table-striped table-hover m-0 w-100"> 
                                 <thead class="thead-light"> 
                                     <tr>
-                                        <th>Empfehlung (AI)</th>
-                                        <th>USDA Eintrag</th>
-                                        <th>Kalorien (kcal)</th>
-                                        <th>Protein (g)</th>
-                                        <th>Fett (g)</th>
-                                        <th>Kohlenhydrate (g)</th>
+                                        <th class = "translate-text">Empfehlung (AI)</th>
+                                        <th class = "translate-text">USDA Eintrag</th>
+                                        <th class = "translate-text">Kalorien (kcal)</th>
+                                        <th class = "translate-text">Protein (g)</th>
+                                        <th class = "translate-text">Fett (g)</th>
+                                        <th class = "translate-text">Kohlenhydrate (g)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -231,12 +231,12 @@ function displayFoodTable(usdaDataArray, totalRequested, foodTableContainer) {
     usdaDataArray.forEach(food => {
         tableHTML += `
             <tr>
-                <td>${food.originalName}</td>
-                <td>${food.usdaName}</td>
-                <td>${food.calories !== 'N/A' ? Number(food.calories).toFixed(0) : 'N/A'}</td>
-                <td>${food.protein !== 'N/A' ? Number(food.protein).toFixed(1) : 'N/A'}</td>
-                <td>${food.fat !== 'N/A' ? Number(food.fat).toFixed(1) : 'N/A'}</td>
-                <td>${food.carbs !== 'N/A' ? Number(food.carbs).toFixed(1) : 'N/A'}</td>
+                <td class = "translate-text">${food.originalName}</td>
+                <td class = "translate-text">${food.usdaName}</td>
+                <td class = "translate-text">${food.calories !== 'N/A' ? Number(food.calories).toFixed(0) : 'N/A'}</td>
+                <td class = "translate-text">${food.protein !== 'N/A' ? Number(food.protein).toFixed(1) : 'N/A'}</td>
+                <td class = "translate-text">${food.fat !== 'N/A' ? Number(food.fat).toFixed(1) : 'N/A'}</td>
+                <td class = "translate-text">${food.carbs !== 'N/A' ? Number(food.carbs).toFixed(1) : 'N/A'}</td>
             </tr>
         `;
     });
