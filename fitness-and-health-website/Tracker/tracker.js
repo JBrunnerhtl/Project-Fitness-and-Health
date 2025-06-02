@@ -1,88 +1,69 @@
+document.addEventListener('DOMContentLoaded', createWeeklyTracker);
+
 function createWeeklyTracker() {
-    const container = document.createElement('div');
-    container.className = 'tracker-container';
+    const saveContainer = document.getElementById('tableForWeeks');
+    saveContainer.innerHTML = ''; // Vorherigen Inhalt entfernen
 
+    // Bootstrap Table mit voller Breite
+    const table = document.createElement('table');
+    table.className = 'table table-bordered text-center align-middle w-100';
 
-    const header = document.createElement('h2');
-    header.className = 'tracker-header';
-    header.textContent = 'Wochen-Tracker';
-    container.appendChild(header);
-
-
-    const grid = document.createElement('div');
-    grid.className = 'tracker-grid';
-
-
-    const days = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
-    const activities = ['Training', 'Lesen', 'Wasser'];
-
-
-    const dayLabel = document.createElement('div');
-    dayLabel.className = 'tracker-label';
-    dayLabel.textContent = 'Tag';
-    grid.appendChild(dayLabel);
-
-    activities.forEach(activity => {
-        const activityLabel = document.createElement('div');
-        activityLabel.className = 'tracker-label';
-        activityLabel.textContent = activity;
-        grid.appendChild(activityLabel);
-    });
-
-    const scoreLabel = document.createElement('div');
-    scoreLabel.className = 'tracker-label';
-    scoreLabel.textContent = 'Punkte';
-    grid.appendChild(scoreLabel);
-
-
+    // Tabellenkopf
+    const thead = document.createElement('thead');
+    const headRow = document.createElement('tr');
+    const days = ['Tag', 'Training', 'Lesen', 'Wasser', 'Punkte'];
     days.forEach(day => {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = day;
+        headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
 
-        const dayCell = document.createElement('div');
-        dayCell.className = 'tracker-day';
-        dayCell.textContent = day;
-        grid.appendChild(dayCell);
+    // Tabellenkörper
+    const tbody = document.createElement('tbody');
+    const weekDays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+    weekDays.forEach(weekDay => {
+        const row = document.createElement('tr');
 
+        // Tag
+        const dayCell = document.createElement('td');
+        dayCell.textContent = weekDay;
+        dayCell.className = 'fw-bold text-success';
+        row.appendChild(dayCell);
 
-        activities.forEach(() => {
-            const checkboxCell = document.createElement('div');
-            checkboxCell.className = 'tracker-checkbox';
-
+        // Aktivitäten
+        for (let i = 0; i < 3; i++) {
+            const activityCell = document.createElement('td');
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
+            checkbox.className = 'form-check-input';
+            activityCell.appendChild(checkbox);
+            row.appendChild(activityCell);
+        }
 
-            checkboxCell.appendChild(checkbox);
-            grid.appendChild(checkboxCell);
-        });
-
-
-        const scoreCell = document.createElement('div');
-        scoreCell.className = 'tracker-score';
-
+        // Punkte
+        const scoreCell = document.createElement('td');
         const scoreInput = document.createElement('input');
         scoreInput.type = 'text';
-        scoreInput.className = 'form-control';
+        scoreInput.className = 'form-control text-center';
         scoreInput.placeholder = '0/10';
-
         scoreCell.appendChild(scoreInput);
-        grid.appendChild(scoreCell);
+        row.appendChild(scoreCell);
+
+        tbody.appendChild(row);
     });
+    table.appendChild(tbody);
 
-
+    // Speichern-Button
     const saveButton = document.createElement('button');
-    saveButton.className = 'btn-tracker';
+    saveButton.className = 'btn btn-success mt-3';
     saveButton.textContent = 'Fortschritt speichern';
-
-
     saveButton.addEventListener('click', () => {
         alert('Fortschritt wurde gespeichert!');
     });
 
-    container.appendChild(grid);
-    container.appendChild(saveButton);
-
-
-    document.body.appendChild(container);
+    saveContainer.appendChild(table);
+    saveContainer.appendChild(saveButton);
 }
-
-
-document.addEventListener('DOMContentLoaded', createWeeklyTracker);
