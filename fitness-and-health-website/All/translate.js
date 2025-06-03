@@ -18,41 +18,37 @@ function setLanguage(lang) {
 }
 
 
+const cleanText = text => text.replace(/►/g, "").trim();
+
 async function translatePage(previousLanguage = "de") {
     const elements = document.querySelectorAll('.translate-text');
-    const texts = Array.from(elements).map(el => el.textContent.trim());
+    const texts = Array.from(elements).map(el => cleanText(el.textContent));
     const uniqueTexts = [...new Set(texts)];
-
 
     const translations = await translateTexts(uniqueTexts, previousLanguage, currentLanguage);
 
-
     elements.forEach(element => {
-        const originalText = element.textContent.trim();
+        let originalText = cleanText(element.textContent);
         if (translations[originalText]) {
             element.textContent = translations[originalText];
         }
     });
 }
 
-
 async function translateTexts(texts, sourceLang, targetLang) {
     const translationMap = {};
 
-
     if (sourceLang === targetLang) {
-
         texts.forEach(text => translationMap[text] = text);
         return translationMap;
     }
 
-    for (const text of texts) {
-
-        if (!text.trim()) {
+    for (let text of texts) {
+        text = cleanText(text);
+        if (!text) {
             translationMap[text] = text;
             continue;
         }
-
 
         if (encodeURIComponent(text).length > 450) {
             translationMap[text] = text;
@@ -69,10 +65,8 @@ async function translateTexts(texts, sourceLang, targetLang) {
             }
 
             const data = await response.json();
-            translationMap[text] = data.responseData?.translatedText || text;
-            console.log(translationMap[text]);
+            translationMap[text] = cleanText(data.responseData?.translatedText || text);
         } catch (error) {
-
             translationMap[text] = text;
         }
     }

@@ -54,34 +54,34 @@ function loadTable(nutritionData) {
                             <table class="table table-dark table-striped m-0 w-100">
                                 <thead>
                                     <tr>
-                                        <th style="white-space: nowrap;">Nährstoff</th>
-                                        <th style="white-space: nowrap;">Kalorien (kcal)</th>
-                                        <th style="white-space: nowrap;">Prozent (%)</th>
+                                        <th style="white-space: nowrap;" class = "translate-text">Nährstoff</th>
+                                        <th style="white-space: nowrap;" class = "translate-text">Kalorien (kcal)</th>
+                                        <th style="white-space: nowrap; class = "translate-text">Prozent (%)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="white-space: nowrap;">Gesamtkalorien</td>
+                                        <td style="white-space: nowrap;" class = "translate-text">Gesamtkalorien</td>
                                         <td>${totalCalories.toFixed(0)} kcal</td>
                                         <td>100%</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Protein</td>
+                                        <td style="white-space: nowrap;" class = "translate-text">Protein</td>
                                         <td>${proteinCalories.toFixed(0)} kcal</td>
                                         <td>${proteinPercentage}%</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Fett</td>
+                                        <td style="white-space: nowrap;" class = "translate-text">Fett</td>
                                         <td>${fatCalories.toFixed(0)} kcal</td>
                                         <td>${fatPercentage}%</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Kohlenhydrate</td>
+                                        <td style="white-space: nowrap;" class = "translate-text">Kohlenhydrate</td>
                                         <td>${carbCalories.toFixed(0)} kcal</td>
                                         <td>${carbPercentage}%</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Ballaststoffe</td>
+                                        <td style="white-space: nowrap;" class = "translate-text">Ballaststoffe</td>
                                         <td>${fiberCalories.toFixed(0)} kcal</td>
                                         <td>${fiberPercentage}%</td>
                                     </tr>

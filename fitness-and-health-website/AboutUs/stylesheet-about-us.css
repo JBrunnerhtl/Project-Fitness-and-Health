@@ -12,7 +12,7 @@ body {
 }
 
 .h1-in-about-us {
-    color: #6AA84F;
+    color: #e0e0e0;
 }
 
 .styleForButtonInAboutUsLeft,
@@ -63,7 +63,7 @@ img.styleForImgInAboutUs
     }
 
     .h1-in-about-us {
-        color: #6AA84F !important;
+        color: #e0e0e0 !important;
     }
 
     .styleForButtonInAboutUsLeft,
