@@ -436,14 +436,6 @@ strong {
 
 
 
-.plan-results {
-    background-color: #F6E8D5;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 1rem;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 .plan-results h3 {
     color: #6AA84F;
@@ -460,7 +452,7 @@ strong {
 
 @media (prefers-color-scheme: dark) {
     .plan-results {
-        background-color: #2d2d2d;
+        background-color: transparent;
     }
 
     .plan-details {
@@ -473,7 +465,7 @@ strong {
 
 
 .plan-results {
-    background-color: #F6E8D5;
+    background-color: transparent;
     padding: 1.5rem;
     margin: 2rem auto;
     border-radius: 10px;
@@ -525,7 +517,7 @@ strong {
 
 @media (prefers-color-scheme: dark) {
     .plan-results {
-        background-color: #2d2d2d;
+        background-color: transparent;
         border-color: #444;
     }
     .plan-results h3 {
