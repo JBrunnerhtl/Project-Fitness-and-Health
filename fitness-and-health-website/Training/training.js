@@ -40,7 +40,8 @@ async function generateAndDisplayTrainingPlan() {
 
     submitButton.disabled = true;
     statusMessage.textContent = "Trainingsplan wird generiert...";
-    statusMessage.style.color = 'black';
+    statusMessage.style.color = 'white';
+
     planContainer.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Generiere Plan mit AI...</p></div>';
 
     const trainingPrompt = `

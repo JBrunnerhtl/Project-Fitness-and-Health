@@ -539,6 +539,8 @@ strong {
     .list-group-item {
         border-bottom-color: #444;
     }
+
+
 }
 
 
@@ -549,4 +551,9 @@ strong {
     max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+#statusMessage
+{
+    color: white;
 }
