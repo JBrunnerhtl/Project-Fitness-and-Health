@@ -10,7 +10,7 @@ let auth0Client;
 const LOGIN_BUTTON_ID = "login-button";
 
 
-const initializeAuth0Client = async () => {
+export const initializeAuth0Client = async () => {
     if (auth0Client) return auth0Client;
 
 
