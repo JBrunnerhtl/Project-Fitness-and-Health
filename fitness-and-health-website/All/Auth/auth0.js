@@ -159,6 +159,7 @@ const performLogout = (event) => {
 
 const mainAuth = async () => {
     try {
+        console.log("Initializing Auth0 client and handling redirect...");
         await initializeAuth0Client();
         await handleAuth0Redirect();
         await updateUI();
@@ -173,3 +174,4 @@ if (document.readyState === 'loading') {
 } else {
     mainAuth();
 }
+
