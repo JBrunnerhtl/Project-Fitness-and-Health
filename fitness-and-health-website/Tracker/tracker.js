@@ -11,6 +11,13 @@ function initializeActivityManager() {
         }
     });
 }
+function saveActivities() {
+    const headers = Array.from(document.querySelectorAll('thead th'))
+        .map(th => th.textContent)
+        .filter(text => text !== 'Tag' && text !== 'Punkte');
+
+    localStorage.setItem('trackerActivities', JSON.stringify(headers));
+}
 
 function addNewActivity(activityName) {
     const table = document.querySelector('table');
