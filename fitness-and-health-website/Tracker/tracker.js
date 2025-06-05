@@ -1,5 +1,42 @@
 document.addEventListener('DOMContentLoaded', createWeeklyTracker);
 
+function initializeActivityManager() {
+    const addActivityBtn = document.getElementById('addActivityBtn');
+    const newActivityInput = document.getElementById('newActivityInput');
+
+    addActivityBtn.addEventListener('click', () => {
+        if (newActivityInput.value.trim()) {
+            addNewActivity(newActivityInput.value.trim());
+            newActivityInput.value = '';
+        }
+    });
+}
+
+function addNewActivity(activityName) {
+    const table = document.querySelector('table');
+    const headerRow = table.querySelector('thead tr');
+
+
+    const newHeader = document.createElement('th');
+    newHeader.scope = 'col';
+    newHeader.textContent = activityName;
+    headerRow.insertBefore(newHeader, headerRow.lastElementChild); // Vor "Punkte" einfügen
+
+
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+        const activityCell = document.createElement('td');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'form-check-input';
+        activityCell.appendChild(checkbox);
+        row.insertBefore(activityCell, row.lastElementChild); // Vor Punkte-Zelle einfügen
+    });
+
+
+    saveActivities();
+}
+
 function createWeeklyTracker() {
     const saveContainer = document.getElementById('tableForWeeks');
     saveContainer.innerHTML = ''; // Vorherigen Inhalt entfernen
