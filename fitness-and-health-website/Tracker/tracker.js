@@ -1,113 +1,177 @@
-document.addEventListener('DOMContentLoaded', createWeeklyTracker);
+document.addEventListener('DOMContentLoaded', () => {
+    initializeTracker();
+});
 
-function initializeActivityManager() {
-    const addActivityBtn = document.getElementById('addActivityBtn');
-    const newActivityInput = document.getElementById('newActivityInput');
-
-    addActivityBtn.addEventListener('click', () => {
-        if (newActivityInput.value.trim()) {
-            addNewActivity(newActivityInput.value.trim());
-            newActivityInput.value = '';
-        }
-    });
-}
-function saveActivities() {
-    const headers = Array.from(document.querySelectorAll('thead th'))
-        .map(th => th.textContent)
-        .filter(text => text !== 'Tag' && text !== 'Punkte');
-
-    localStorage.setItem('trackerActivities', JSON.stringify(headers));
+function initializeTracker() {
+    createWeeklyTable();
+    setupEventListeners();
 }
 
-function addNewActivity(activityName) {
-    const table = document.querySelector('table');
-    const headerRow = table.querySelector('thead tr');
+function createWeeklyTable() {
+    const tableContainer = document.getElementById('tableForWeeks');
+    if (!tableContainer) return;
 
-
-    const newHeader = document.createElement('th');
-    newHeader.scope = 'col';
-    newHeader.textContent = activityName;
-    headerRow.insertBefore(newHeader, headerRow.lastElementChild); // Vor "Punkte" einfügen
-
-
-    const rows = table.querySelectorAll('tbody tr');
-    rows.forEach(row => {
-        const activityCell = document.createElement('td');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'form-check-input';
-        activityCell.appendChild(checkbox);
-        row.insertBefore(activityCell, row.lastElementChild); // Vor Punkte-Zelle einfügen
+    const table = createElement('table', {
+        className: 'table table-bordered'
     });
 
+    const thead = createElement('thead');
+    const headerRow = createTableHeader();
+    thead.appendChild(headerRow);
 
-    saveActivities();
+    const tbody = createElement('tbody');
+    createTableBody(tbody);
+
+    table.append(thead, tbody);
+    tableContainer.appendChild(table);
 }
 
-function createWeeklyTracker() {
-    const saveContainer = document.getElementById('tableForWeeks');
-    saveContainer.innerHTML = ''; // Vorherigen Inhalt entfernen
+function createTableHeader() {
+    const headerRow = createElement('tr');
 
-    // Bootstrap Table mit voller Breite
-    const table = document.createElement('table');
-    table.className = 'table table-bordered text-center align-middle w-100';
-
-    // Tabellenkopf
-    const thead = document.createElement('thead');
-    const headRow = document.createElement('tr');
-    const days = ['Tag', 'Training', 'Lesen', 'Wasser', 'Punkte'];
-    days.forEach(day => {
-        const th = document.createElement('th');
-        th.scope = 'col';
-        th.textContent = day;
-        headRow.appendChild(th);
+    // Standard-Spalten
+    const headers = ['Tag', 'Training', 'Lesen', 'Wasser', 'Punkte'];
+    headers.forEach(text => {
+        const th = createElement('th', {
+            scope: 'col',
+            textContent: text,
+            className: 'text-center'
+        });
+        headerRow.appendChild(th);
     });
-    thead.appendChild(headRow);
-    table.appendChild(thead);
 
-    // Tabellenkörper
-    const tbody = document.createElement('tbody');
-    const weekDays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
-    weekDays.forEach(weekDay => {
-        const row = document.createElement('tr');
+    return headerRow;
+}
+
+function createTableBody(tbody) {
+    const weekdays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+
+    weekdays.forEach(day => {
+        const row = createElement('tr');
 
         // Tag
-        const dayCell = document.createElement('td');
-        dayCell.textContent = weekDay;
-        dayCell.className = 'fw-bold text-success';
+        const dayCell = createElement('td', {
+            textContent: day,
+            className: 'text-center'
+        });
         row.appendChild(dayCell);
 
-        // Aktivitäten
+        // Standard-Aktivitäten (Training, Lesen, Wasser)
         for (let i = 0; i < 3; i++) {
-            const activityCell = document.createElement('td');
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.className = 'form-check-input';
-            activityCell.appendChild(checkbox);
-            row.appendChild(activityCell);
+            const cell = createElement('td', {
+                className: 'text-center'
+            });
+            const checkbox = createElement('input', {
+                type: 'checkbox',
+                className: 'form-check-input'
+            });
+            cell.appendChild(checkbox);
+            row.appendChild(cell);
         }
 
-        // Punkte
-        const scoreCell = document.createElement('td');
-        const scoreInput = document.createElement('input');
-        scoreInput.type = 'text';
-        scoreInput.className = 'form-control text-center';
-        scoreInput.placeholder = '0/10';
-        scoreCell.appendChild(scoreInput);
-        row.appendChild(scoreCell);
+
+        const pointsCell = createElement('td', {
+            className: 'text-center'
+        });
+        const pointsInput = createElement('input', {
+            type: 'text',
+            className: 'form-control mx-auto',
+            value: '0',
+            style: 'width: 60px;'
+        });
+        pointsCell.appendChild(pointsInput);
+        row.appendChild(pointsCell);
 
         tbody.appendChild(row);
     });
-    table.appendChild(tbody);
+}
 
-    // Speichern-Button
-    const saveButton = document.createElement('button');
-    saveButton.className = 'btn btn-success mt-3';
-    saveButton.textContent = 'Fortschritt speichern';
-    saveButton.addEventListener('click', () => {
-        alert('Fortschritt wurde gespeichert!');
+function setupEventListeners() {
+    const addButton = document.getElementById('addGoalBtn');
+    const inputField = document.getElementById('newGoalInput');
+
+    if (addButton && inputField) {
+        addButton.addEventListener('click', () => {
+            handleNewGoal(inputField);
+        });
+
+        inputField.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                handleNewGoal(inputField);
+            }
+        });
+    }
+}
+
+function handleNewGoal(inputField) {
+    const goalName = inputField.value.trim();
+    if (goalName) {
+        addNewGoal(goalName);
+        inputField.value = '';
+    }
+}
+
+function addNewGoal(goalName) {
+    const table = document.querySelector('table');
+    if (!table) return;
+
+
+    const headerRow = table.querySelector('thead tr');
+    const pointsHeader = headerRow.lastElementChild;
+    const newHeader = createElement('th', {
+        scope: 'col',
+        textContent: goalName,
+        className: 'text-center'
+    });
+    headerRow.insertBefore(newHeader, pointsHeader);
+
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+        const pointsCell = row.lastElementChild;
+        const newCell = createElement('td', {
+            className: 'text-center'
+        });
+        const checkbox = createElement('input', {
+            type: 'checkbox',
+            className: 'form-check-input'
+        });
+        newCell.appendChild(checkbox);
+        row.insertBefore(newCell, pointsCell);
     });
 
-    saveContainer.appendChild(table);
-    saveContainer.appendChild(saveButton);
+    saveGoals();
+}
+
+function createElement(tag, options = {}) {
+    const element = document.createElement(tag);
+    Object.entries(options).forEach(([key, value]) => {
+        if (key === 'style') {
+            element.style.cssText = value;
+        } else {
+            element[key] = value;
+        }
+    });
+    return element;
+}
+
+function saveGoals() {
+    const table = document.querySelector('table');
+    if (!table) return;
+
+    const headers = Array.from(table.querySelectorAll('thead th'))
+        .map(th => th.textContent)
+        .filter(text => text !== 'Tag' && text !== 'Punkte');
+
+    localStorage.setItem('trackerGoals', JSON.stringify(headers));
+}
+
+function loadGoals() {
+    const savedGoals = localStorage.getItem('trackerGoals');
+    if (savedGoals) {
+        JSON.parse(savedGoals).forEach(goal => {
+            if (goal !== 'Training' && goal !== 'Lesen' && goal !== 'Wasser') {
+                addNewGoal(goal);
+            }
+        });
+    }
 }

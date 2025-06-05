@@ -209,3 +209,44 @@ footer a:hover {
 .text-in-fotter {
     color: #F6E8D5 !important;
 }
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+#newActivityInput {
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+}
+
+#addActivityBtn {
+    transition: all 0.3s ease;
+}
+
+#addActivityBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table-responsive {
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-check-input {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
