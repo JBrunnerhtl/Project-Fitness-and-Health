@@ -56,7 +56,7 @@ function createTableBody(tbody) {
         });
         row.appendChild(dayCell);
 
-        // Standard-Aktivitäten (Training, Lesen, Wasser)
+
         for (let i = 0; i < 3; i++) {
             const cell = createElement('td', {
                 className: 'text-center'
