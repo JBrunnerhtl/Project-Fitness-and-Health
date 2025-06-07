@@ -2,8 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTracker();
 });
 
-function initializeTracker() {
-    createWeeklyTable();
+async function initializeTracker() {
+    const userId = await getCurrentUserId(); // Diese Funktion musst du implementieren
+    if (!userId) {
+        alert('Bitte melden Sie sich an, um den Tracker zu nutzen');
+        return;
+    }
+
+    // Lade gespeicherte Daten
+    const savedData = await loadTrackerData(userId);
+    if (savedData) {
+        // Stelle gespeicherte Daten wieder her
+        restoreTrackerData(savedData);
+    } else {
+        // Erstelle neue Tabelle
+        createWeeklyTable();
+    }
+
     setupEventListeners();
 }
 
@@ -103,13 +118,6 @@ function setupEventListeners() {
     }
 }
 
-function handleNewGoal(inputField) {
-    const goalName = inputField.value.trim();
-    if (goalName) {
-        addNewGoal(goalName);
-        inputField.value = '';
-    }
-}
 
 function addNewGoal(goalName) {
     const table = document.querySelector('table');
@@ -173,5 +181,94 @@ function loadGoals() {
                 addNewGoal(goal);
             }
         });
+    }
+}
+function restoreTrackerData(data) {
+    const tableContainer = document.getElementById('tableForWeeks');
+    if (!tableContainer) return;
+
+    // Erstelle Tabelle mit gespeicherten Daten
+    const table = createElement('table', {
+        className: 'table table-bordered'
+    });
+
+    // Header erstellen
+    const thead = createElement('thead');
+    const headerRow = createTableHeader(data.goals);
+    thead.appendChild(headerRow);
+
+    // Body erstellen
+    const tbody = createElement('tbody');
+    createTableBody(tbody, data.entries);
+
+    table.append(thead, tbody);
+    tableContainer.appendChild(table);
+}
+
+function saveCurrentTrackerState() {
+    const table = document.querySelector('table');
+    if (!table) return;
+
+    const data = {
+        goals: getGoalsFromTable(),
+        entries: getEntriesFromTable()
+    };
+
+    // Speichere in der Datenbank
+    saveTrackerData(currentUserId, data);
+}
+
+function getGoalsFromTable() {
+    const headers = Array.from(document.querySelectorAll('thead th'));
+    return headers
+        .map(th => th.querySelector('span')?.textContent || th.textContent)
+        .filter(text => text !== 'Tag' && text !== 'Punkte');
+}
+
+function getEntriesFromTable() {
+    const rows = Array.from(document.querySelectorAll('tbody tr'));
+    return rows.map(row => {
+        const cells = Array.from(row.children);
+        return {
+            day: cells[0].textContent,
+            goals: cells.slice(1, -1).map(cell => ({
+                checked: cell.querySelector('input[type="checkbox"]').checked
+            })),
+            points: cells[cells.length - 1].querySelector('input').value
+        };
+    });
+}
+
+// Füge Event-Listener für Änderungen hinzu
+function setupEventListeners() {
+    const tableElement = document.getElementById('tableForWeeks');
+    if (tableElement) {
+        tableElement.addEventListener('change', () => {
+            saveCurrentTrackerState();
+        });
+    }
+
+    const addButton = document.getElementById('addGoalBtn');
+    const inputField = document.getElementById('newGoalInput');
+
+    if (addButton && inputField) {
+        addButton.addEventListener('click', () => {
+            handleNewGoal(inputField);
+        });
+
+        inputField.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                handleNewGoal(inputField);
+            }
+        });
+    }
+}
+
+function handleNewGoal(inputField) {
+    const goalName = inputField.value.trim();
+    if (goalName) {
+        addNewGoal(goalName);
+        inputField.value = '';
+        saveCurrentTrackerState();
     }
 }
