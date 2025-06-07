@@ -1,25 +1,13 @@
+let currentUserId = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeTracker();
 });
 
-async function initializeTracker() {
-    const userId = await getCurrentUserId(); // Diese Funktion musst du implementieren
-    if (!userId) {
-        alert('Bitte melden Sie sich an, um den Tracker zu nutzen');
-        return;
-    }
-
-    // Lade gespeicherte Daten
-    const savedData = await loadTrackerData(userId);
-    if (savedData) {
-        // Stelle gespeicherte Daten wieder her
-        restoreTrackerData(savedData);
-    } else {
-        // Erstelle neue Tabelle
-        createWeeklyTable();
-    }
-
+function initializeTracker() {
+    createWeeklyTable();
     setupEventListeners();
+    loadGoals(); // Lade gespeicherte Ziele aus dem localStorage
 }
 
 function createWeeklyTable() {
@@ -71,7 +59,7 @@ function createTableBody(tbody) {
         });
         row.appendChild(dayCell);
 
-
+        // Standard-Aktivitäten (Training, Lesen, Wasser)
         for (let i = 0; i < 3; i++) {
             const cell = createElement('td', {
                 className: 'text-center'
@@ -83,7 +71,6 @@ function createTableBody(tbody) {
             cell.appendChild(checkbox);
             row.appendChild(cell);
         }
-
 
         const pointsCell = createElement('td', {
             className: 'text-center'
@@ -116,13 +103,28 @@ function setupEventListeners() {
             }
         });
     }
+
+    // Füge Event-Listener für Änderungen hinzu
+    document.addEventListener('change', (event) => {
+        if (event.target.matches('input[type="checkbox"]') ||
+            event.target.matches('input[type="text"]')) {
+            saveTableState();
+        }
+    });
 }
 
+function handleNewGoal(inputField) {
+    const goalName = inputField.value.trim();
+    if (goalName) {
+        addNewGoal(goalName);
+        inputField.value = '';
+        saveTableState();
+    }
+}
 
 function addNewGoal(goalName) {
     const table = document.querySelector('table');
     if (!table) return;
-
 
     const headerRow = table.querySelector('thead tr');
     const pointsHeader = headerRow.lastElementChild;
@@ -146,8 +148,6 @@ function addNewGoal(goalName) {
         newCell.appendChild(checkbox);
         row.insertBefore(newCell, pointsCell);
     });
-
-    saveGoals();
 }
 
 function createElement(tag, options = {}) {
@@ -162,113 +162,67 @@ function createElement(tag, options = {}) {
     return element;
 }
 
-function saveGoals() {
-    const table = document.querySelector('table');
-    if (!table) return;
-
-    const headers = Array.from(table.querySelectorAll('thead th'))
-        .map(th => th.textContent)
-        .filter(text => text !== 'Tag' && text !== 'Punkte');
-
-    localStorage.setItem('trackerGoals', JSON.stringify(headers));
-}
-
-function loadGoals() {
-    const savedGoals = localStorage.getItem('trackerGoals');
-    if (savedGoals) {
-        JSON.parse(savedGoals).forEach(goal => {
-            if (goal !== 'Training' && goal !== 'Lesen' && goal !== 'Wasser') {
-                addNewGoal(goal);
-            }
-        });
-    }
-}
-function restoreTrackerData(data) {
-    const tableContainer = document.getElementById('tableForWeeks');
-    if (!tableContainer) return;
-
-    // Erstelle Tabelle mit gespeicherten Daten
-    const table = createElement('table', {
-        className: 'table table-bordered'
-    });
-
-    // Header erstellen
-    const thead = createElement('thead');
-    const headerRow = createTableHeader(data.goals);
-    thead.appendChild(headerRow);
-
-    // Body erstellen
-    const tbody = createElement('tbody');
-    createTableBody(tbody, data.entries);
-
-    table.append(thead, tbody);
-    tableContainer.appendChild(table);
-}
-
-function saveCurrentTrackerState() {
+function saveTableState() {
     const table = document.querySelector('table');
     if (!table) return;
 
     const data = {
         goals: getGoalsFromTable(),
-        entries: getEntriesFromTable()
+        entries: getTableEntries()
     };
 
-    // Speichere in der Datenbank
-    saveTrackerData(currentUserId, data);
+    localStorage.setItem('trackerData', JSON.stringify(data));
 }
 
 function getGoalsFromTable() {
     const headers = Array.from(document.querySelectorAll('thead th'));
     return headers
-        .map(th => th.querySelector('span')?.textContent || th.textContent)
+        .map(th => th.textContent)
         .filter(text => text !== 'Tag' && text !== 'Punkte');
 }
 
-function getEntriesFromTable() {
+function getTableEntries() {
     const rows = Array.from(document.querySelectorAll('tbody tr'));
     return rows.map(row => {
         const cells = Array.from(row.children);
         return {
             day: cells[0].textContent,
-            goals: cells.slice(1, -1).map(cell => ({
-                checked: cell.querySelector('input[type="checkbox"]').checked
-            })),
+            checkboxes: Array.from(row.querySelectorAll('input[type="checkbox"]'))
+                .map(cb => cb.checked),
             points: cells[cells.length - 1].querySelector('input').value
         };
     });
 }
 
-// Füge Event-Listener für Änderungen hinzu
-function setupEventListeners() {
-    const tableElement = document.getElementById('tableForWeeks');
-    if (tableElement) {
-        tableElement.addEventListener('change', () => {
-            saveCurrentTrackerState();
-        });
-    }
+function loadGoals() {
+    const savedData = localStorage.getItem('trackerData');
+    if (savedData) {
+        const data = JSON.parse(savedData);
 
-    const addButton = document.getElementById('addGoalBtn');
-    const inputField = document.getElementById('newGoalInput');
-
-    if (addButton && inputField) {
-        addButton.addEventListener('click', () => {
-            handleNewGoal(inputField);
-        });
-
-        inputField.addEventListener('keypress', (event) => {
-            if (event.key === 'Enter') {
-                handleNewGoal(inputField);
+        // Füge gespeicherte Ziele hinzu
+        data.goals.forEach(goal => {
+            if (!['Training', 'Lesen', 'Wasser'].includes(goal)) {
+                addNewGoal(goal);
             }
         });
-    }
-}
 
-function handleNewGoal(inputField) {
-    const goalName = inputField.value.trim();
-    if (goalName) {
-        addNewGoal(goalName);
-        inputField.value = '';
-        saveCurrentTrackerState();
+
+        const rows = document.querySelectorAll('tbody tr');
+        data.entries.forEach((entry, rowIndex) => {
+            const row = rows[rowIndex];
+            if (row) {
+                const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+                entry.checkboxes.forEach((checked, cbIndex) => {
+                    if (checkboxes[cbIndex]) {
+                        checkboxes[cbIndex].checked = checked;
+                    }
+                });
+
+                const pointsInput = row.querySelector('input[type="text"]');
+                if (pointsInput) {
+                    pointsInput.value = entry.points;
+                }
+            }
+        });
     }
 }
