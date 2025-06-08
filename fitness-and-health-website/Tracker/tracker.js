@@ -79,7 +79,8 @@ function createTableBody(tbody) {
             type: 'text',
             className: 'form-control mx-auto',
             value: '0',
-            style: 'width: 60px;'
+            style: 'width: 60px;',
+            readOnly: true,
         });
         pointsCell.appendChild(pointsInput);
         row.appendChild(pointsCell);
@@ -106,11 +107,31 @@ function setupEventListeners() {
 
     // Füge Event-Listener für Änderungen hinzu
     document.addEventListener('change', (event) => {
-        if (event.target.matches('input[type="checkbox"]') ||
-            event.target.matches('input[type="text"]')) {
+        if (event.target.matches('input[type="checkbox"]')) {
+
+
+            const row = event.target.closest('tr');
+            const checked = event.target.checked;
+            addOrSubtractPoints(checked, row);
+
             saveTableState();
         }
     });
+}
+
+function addOrSubtractPoints(checked, row) {
+    const pointsInput = row.querySelector('input[type="text"]');
+    let currentPoints = parseInt(pointsInput.value) || 0;
+
+    if (checked) {
+        currentPoints += 1; // Punkte hinzufügen
+    } else {
+        currentPoints -= 1; // Punkte abziehen
+    }
+
+    pointsInput.value = currentPoints.toString();
+
+
 }
 
 function handleNewGoal(inputField) {
