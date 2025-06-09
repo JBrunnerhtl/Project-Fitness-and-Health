@@ -92,15 +92,32 @@ function createTableBody(tbody) {
 function setupEventListeners() {
     const addButton = document.getElementById('addGoalBtn');
     const inputField = document.getElementById('newGoalInput');
-
+    const deleteButton = document.getElementById('deleteGoalBtn');
+    const deleteInputField = document.getElementById('deleteGoalInput');
     if (addButton && inputField) {
         addButton.addEventListener('click', () => {
-            handleNewGoal(inputField);
+            handleNewGoal(inputField.value.trim());
+            inputField.value = '';
         });
 
         inputField.addEventListener('keypress', (event) => {
             if (event.key === 'Enter') {
-                handleNewGoal(inputField);
+                handleNewGoal(inputField.value.trim());
+                inputField.value = '';
+            }
+        });
+    }
+
+    if(deleteButton && deleteInputField) {
+        deleteButton.addEventListener('click', () => {
+            deleteGoal(deleteInputField.value.trim());
+            deleteInputField.value = '';
+        });
+
+        deleteInputField.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                deleteGoal(deleteInputField.value.trim());
+                deleteInputField.value = '';
             }
         });
     }
@@ -119,6 +136,32 @@ function setupEventListeners() {
     });
 }
 
+function deleteGoal(goalName) {
+    let table = document.querySelector('table'); // get table
+    if (!table) return; // If no table found, exit the function
+
+    const columns = Array.from(table.querySelectorAll('thead th')); // Get the header columns
+    const deleteColumn = columns.filter(c => c.textContent === goalName)[0]; // Find the column to delete
+    const deleteIndex = columns.indexOf(deleteColumn); // get the index of the column to delete
+    const rows = table.querySelectorAll('tbody tr'); // Get all rows
+    if (deleteIndex === -1) { // If the column is not found, exit the function
+        console.error(`Ziel "${goalName}" nicht gefunden.`);
+        return;
+    }
+
+    for (let i = 0; i < rows.length; i++) { // iterate through each row
+        const row = rows[i];
+        const cells = row.querySelectorAll('td'); // Get all cells in the row
+        if (cells.length > deleteIndex) {
+            cells[deleteIndex].remove(); // Remove the cell in the specified column
+        } else {
+            console.error(`Ziel "${goalName}" nicht in Zeile ${i + 1} gefunden.`);
+        }
+    }
+    deleteColumn.remove(); // Remove the header column
+    saveTableState(); // Update the localStorage
+}
+
 function addOrSubtractPoints(checked, row) {
     const pointsInput = row.querySelector('input[type="text"]');
     let currentPoints = parseInt(pointsInput.value) || 0;
@@ -135,7 +178,7 @@ function addOrSubtractPoints(checked, row) {
 }
 
 function handleNewGoal(inputField) {
-    const goalName = inputField.value.trim();
+    const goalName = inputField;
     if (goalName) {
         addNewGoal(goalName);
         inputField.value = '';
