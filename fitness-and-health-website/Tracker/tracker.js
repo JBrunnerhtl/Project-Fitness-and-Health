@@ -32,8 +32,14 @@ function createWeeklyTable() {
 function createTableHeader() {
     const headerRow = createElement('tr');
 
-    // Standard-Spalten
-    const headers = ['Tag', 'Training', 'Lesen', 'Wasser', 'Punkte'];
+    const translations = {
+        de: ['Tag', 'Training', 'Lesen', 'Wasser', 'Punkte'],
+        en: ['Day', 'Workout', 'Reading', 'Water', 'Points'],
+        fr: ['Jour', 'Entraînement', 'Lecture', 'Eau', 'Points'],
+        es: ['Día', 'Entrenamiento', 'Lectura', 'Agua', 'Puntos']
+    };
+    const lang = localStorage.getItem('language') || 'de';
+    const headers = translations[lang] || translations['de'];
     headers.forEach(text => {
         const th = createElement('th', {
             scope: 'col',
@@ -47,7 +53,15 @@ function createTableHeader() {
 }
 
 function createTableBody(tbody) {
-    const weekdays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+    const weekdayTranslations = {
+        de: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
+        en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        fr: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
+        es: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
+    };
+
+    const lang = localStorage.getItem('language') || 'de';
+    const weekdays = weekdayTranslations[lang] || weekdayTranslations['de'];
 
     weekdays.forEach(day => {
         const row = createElement('tr');
