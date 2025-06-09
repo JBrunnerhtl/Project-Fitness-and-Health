@@ -134,6 +134,27 @@ function setupEventListeners() {
             saveTableState();
         }
     });
+    const resetButton = document.getElementById('resetButton');
+    if (resetButton) {
+        resetButton.addEventListener('click', () => {
+                resetTracker();
+        });
+    }
+
+
+}
+function recalculatePoints(row) {
+    const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+    const pointsInput = row.querySelector('input[type="text"]');
+    let points = 0;
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            points += 1;
+        }
+    });
+
+    pointsInput.value = points.toString();
 }
 
 function deleteGoal(goalName) {
@@ -153,7 +174,8 @@ function deleteGoal(goalName) {
         const row = rows[i];
         const cells = row.querySelectorAll('td'); // Get all cells in the row
         if (cells.length > deleteIndex) {
-            cells[deleteIndex].remove(); // Remove the cell in the specified column
+            cells[deleteIndex].remove();// Remove the cell in the specified column
+            recalculatePoints(row);
         } else {
             console.error(`Ziel "${goalName}" nicht in Zeile ${i + 1} gefunden.`);
         }
@@ -176,7 +198,48 @@ function addOrSubtractPoints(checked, row) {
 
 
 }
+function resetTracker() {
 
+    localStorage.removeItem('trackerData');
+
+
+    const table = document.querySelector('table');
+    if (!table) return;
+
+
+    const headerRow = table.querySelector('thead tr');
+    const headers = headerRow.querySelectorAll('th');
+    headers.forEach((header, index) => {
+
+        if (index > 4) {
+            header.remove();
+        }
+    });
+
+
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+
+        const cells = row.querySelectorAll('td');
+        cells.forEach((cell, index) => {
+            if (index > 4) {
+                cell.remove();
+            }
+        });
+
+
+        const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+
+
+        const pointsInput = row.querySelector('input[type="text"]');
+        if (pointsInput) {
+            pointsInput.value = '0';
+        }
+    });
+}
 function handleNewGoal(inputField) {
     const goalName = inputField;
     if (goalName) {
