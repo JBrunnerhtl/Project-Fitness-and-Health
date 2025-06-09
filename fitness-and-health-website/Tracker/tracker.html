@@ -86,19 +86,27 @@
 </section>
 <div class="container mb-4">
     <div class="card p-3">
-        <h4 class="translate-text">Neues Ziel hinzufügen</h4>
-        <div class="input-group mb-3">
-            <input type="text" id="newGoalInput" class="form-control translate-text" placeholder="Neues Ziel eingeben">
-            <button class="btn btn-success translate-text" id="addGoalBtn" type="button">Ziel Hinzufügen</button>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="translate-text mb-0">Ziel-Verwaltung</h4>
+            <button id="resetButton" class="btn btn-outline-danger btn-sm translate-text">
+                <i class="bi bi-trash"></i> Reset
+            </button>
         </div>
-    </div>
-</div>
-<div class="container mb-4">
-    <div class="card p-3">
-        <h4 class="translate-text">Ziel entfernen</h4>
-        <div class="input-group mb-3">
-            <input type="text" id="deleteGoalInput" class="form-control translate-text" placeholder="Neues Ziel eingeben">
-            <button class="btn btn-success translate-text" id="deleteGoalBtn" type="button">Ziel entfernen</button>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label translate-text">Neues Ziel hinzufügen</label>
+                <div class="input-group">
+                    <input type="text" id="newGoalInput" class="form-control translate-text" placeholder="Neues Ziel eingeben">
+                    <button class="btn btn-success translate-text" id="addGoalBtn" type="button">Hinzufügen</button>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label translate-text">Ziel entfernen</label>
+                <div class="input-group">
+                    <input type="text" id="deleteGoalInput" class="form-control translate-text" placeholder="Ziel eingeben">
+                    <button class="btn btn-warning translate-text" id="deleteGoalBtn" type="button">Entfernen</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
