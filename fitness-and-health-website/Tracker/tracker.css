@@ -57,7 +57,7 @@ html, body
     {
         background-color: #1a1a1a; !important;
     }
-    .text-in-fotter {
+    .text-in-footer {
         color: #e0e0e0 !important;
     }
 
@@ -192,7 +192,7 @@ footer {
     background: #1a1a1a; !important;
 }
 
-footer h5.text-in-fotter {
+footer h5.text-in-footer {
     color: #F6E8D5;
     font-size: 1.5rem;
 }
@@ -206,7 +206,7 @@ footer a:hover {
     color: #6AA84F !important;
 }
 
-.text-in-fotter {
+.text-in-footer {
     color: #F6E8D5 !important;
 }
 
