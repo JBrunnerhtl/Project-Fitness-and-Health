@@ -322,3 +322,58 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/*dishes*/
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card .card-body {
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.recipe-card .card-title {
+    color: #6AA84F !important;
+    font-weight: bold;
+}
+
+.recipe-card .btn-primary {
+    background-color: #6AA84F;
+    border-color: #6AA84F;
+    color: white;
+}
+.recipe-card .btn-primary:hover {
+    background-color: #556B2F;
+    border-color: #556B2F;
+}
+
+@media (prefers-color-scheme: dark) {
+    .recipe-card {
+        background-color: #2d2d2d !important;
+        border-color: #444 !important;
+    }
+    .recipe-card .card-body {
+        background-color: #2d2d2d !important;
+        color: #e0e0e0 !important;
+    }
+    .recipe-card .card-title {
+        color: #81c784 !important;
+    }
+    .recipe-card .text-muted {
+        color: #a0a0a0 !important;
+    }
+    .recipe-card .text-warning {
+        color: #ffab40 !important;
+    }
+
+    #recipeButtonContainer .btn-success {
+    }
+}
