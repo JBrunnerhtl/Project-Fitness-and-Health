@@ -225,7 +225,7 @@ function resetTracker() {
     const headers = headerRow.querySelectorAll('th');
     headers.forEach((header, index) => {
 
-        if (index > 4) {
+        if (index > 3 && index !== headers.length - 1) {
             header.remove();
         }
     });
@@ -236,7 +236,8 @@ function resetTracker() {
 
         const cells = row.querySelectorAll('td');
         cells.forEach((cell, index) => {
-            if (index > 4) {
+
+            if (index > 3 && index !== cells.length - 1) {
                 cell.remove();
             }
         });
