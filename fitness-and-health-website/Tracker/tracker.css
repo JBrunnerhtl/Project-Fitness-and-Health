@@ -75,6 +75,59 @@ html, body
         color: #fff !important;
         box-shadow: 0 0 10px rgba(106, 168, 79, 0.5);
     }
+
+
+    table,
+    .table-responsive table,
+    #tableForWeeks table {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0 !important;
+        border-color: #333 !important;
+    }
+
+    th, td {
+        background-color: #232323 !important;
+        color: #e0e0e0 !important;
+        border-color: #333 !important;
+    }
+
+    thead th {
+        background-color: #121212 !important;
+        color: #6AA84F !important;
+        border-bottom: 2px solid #6AA84F !important;
+    }
+
+    tr {
+        border-bottom: 1px solid #333 !important;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #181818 !important;
+    }
+
+    .tracker-score {
+        background-color: #232323 !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #333 !important;
+    }
+
+    input.input-fields {
+        background-color: #232323 !important;
+        color: #e0e0e0 !important;
+
+
+    }
+    input::placeholder {
+        color: #e0e0e0 !important;
+    }
+
+    div.display-container{
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+    }
+    div.main-display-container{
+        border: 2px solid #6AA84F !important;
+    }
 }
 .tracker-header {
     color: #6AA84F;

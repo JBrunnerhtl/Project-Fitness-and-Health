@@ -84,8 +84,8 @@
     <h1 class="title-training translate-text">Fortschritts-Tracker</h1>
     <p class="lead text-color translate-text">Verfolgen Sie Ihre täglichen Aktivitäten und Fortschritte</p>
 </section>
-<div class="container mb-4">
-    <div class="card p-3">
+<div class="container mb-4 main-display-container">
+    <div class="card p-3 display-container">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4 class="translate-text mb-0">Ziel-Verwaltung</h4>
             <button id="resetButton" class="btn btn-outline-danger btn-sm translate-text">
@@ -93,17 +93,17 @@
             </button>
         </div>
         <div class="row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 display-container">
                 <label class="form-label translate-text">Neues Ziel hinzufügen</label>
                 <div class="input-group">
-                    <input type="text" id="newGoalInput" class="form-control translate-text" placeholder="+">
+                    <input type="text" id="newGoalInput" class="form-control translate-text input-fields" placeholder="+">
                     <button class="btn btn-success translate-text" id="addGoalBtn" type="button">Hinzufügen</button>
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <label class="form-label translate-text">Ziel entfernen</label>
                 <div class="input-group">
-                    <input type="text" id="deleteGoalInput" class="form-control translate-text" placeholder="-">
+                    <input type="text" id="deleteGoalInput" class="form-control translate-text input-fields" placeholder="-">
                     <button class="btn btn-warning translate-text" id="deleteGoalBtn" type="button">Entfernen</button>
                 </div>
             </div>
