@@ -73,8 +73,8 @@ async function translateTexts(texts, sourceLang, targetLang) {
 
     return translationMap;
 }
-/*
+
 document.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('language') || 'de';
     setLanguage(savedLanguage);
-});*/
+});
