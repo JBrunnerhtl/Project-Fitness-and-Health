@@ -2,19 +2,20 @@ let allProductsData = [];
 const API_OPTIONS = {
     method: 'GET',
     headers: {
-        'x-rapidapi-key': 'b352de66demsh93516071b983af6p1ba4f8jsn565f856633d8',
+        'x-rapidapi-key': '3f38b4d85emshce72a2514e6bb6ap119024jsn99fd518e82a1',
         'x-rapidapi-host': 'real-time-product-search.p.rapidapi.com'
     }
 };
 
 
-document.addEventListener('DOMContentLoaded', (e ) => {
+document.addEventListener('DOMContentLoaded', (e) => {
+
     loadProducts('fitness');
     loadProducts('fitness products');
     loadProducts('Suplements');
 
-    e.preventDefault()
-    document.getElementById('submit-button').addEventListener('click', () => applyFilters(e));
+    e.preventDefault();
+    document.getElementById('submit-button').addEventListener('click', applyFilters);
 });
 
 
@@ -25,49 +26,59 @@ function applyFilters(event) {
     const container = document.getElementById('products-container');
     container.innerHTML = "";
 
+
+    let filteredProducts = [];
     if (inputCategory === "supplemente") {
-        loadProducts('Suplements', inputPrice);
+        filteredProducts = allProductsData.filter(p =>
+            (p.product_category && p.product_category.toLowerCase().includes('supplement'))
+        );
+    } else if (inputCategory === "fitness") {
+        filteredProducts = allProductsData.filter(p =>
+            (p.product_category && p.product_category.toLowerCase().includes('fitness'))
+        );
     } else {
-        loadProducts('fitness', inputPrice);
-        loadProducts('fitness products', inputPrice);
+        filteredProducts = allProductsData;
     }
+
+    displayProducts(filteredProducts, inputPrice);
 }
 
-async function loadProducts(query, maxPrice = "") {
+async function loadProducts(query) {
     try {
         const url = `https://real-time-product-search.p.rapidapi.com/search?q=${encodeURIComponent(query)}&country=de&language=de`;
         const response = await fetch(url, API_OPTIONS);
-        console.log(response);
         const data = await response.json();
-        data.data.products.forEach((product) => {
-            allProductsData.push(product);
-
-        })
         if (!response.ok) throw new Error(data.message || 'Fehler beim Abrufen der Produkte');
 
-        displayProducts(data.data.products, maxPrice);
+        data.data.products.forEach((product) => {
+            if (!allProductsData.some(p => p.product_id === product.product_id)) {
+                allProductsData.push(product);
+            }
+        });
+
+        displayProducts(allProductsData);
     } catch (err) {
         console.error('Fehler:', err);
-
     }
 }
 
-
 function displayProducts(products, maxPrice) {
     const container = document.getElementById('products-container');
+    container.innerHTML = "";
 
     products.forEach(product => {
         const price = parseProductPrice(product);
 
 
-        if (maxPrice && price > parseFloat(maxPrice)) {
-            console.log(`Produkt ${product.product_title} ist teurer als ${maxPrice}`);
-            return;
+        if (maxPrice) {
+            const max = parseFloat(maxPrice);
+            if (isNaN(price) || price < (max - 10) || price > (max + 10)) {
+                return;
+            }
         }
 
         container.innerHTML += createProductCard(product, price);
     });
-
 
     document.querySelectorAll('.view-details').forEach(button => {
         button.addEventListener('click', () => showProductDetails(button.dataset.productId));

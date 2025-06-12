@@ -1,6 +1,6 @@
 
 const GEMINI_API_KEY_TRAINING = "AIzaSyCmASFgvCtxB2Q1JN6lC-jOHQ0PlCNhXOw";
-const EXERCISEDB_RAPIDAPI_KEY = "5e3ee329abmsha7c07675e6393b6p13eea0jsnd88b9973abdf";
+const EXERCISEDB_RAPIDAPI_KEY = "b352de66demsh93516071b983af6p1ba4f8jsn565f856633d8";
 const EXERCISEDB_RAPIDAPI_HOST = "exercisedb.p.rapidapi.com";
 
 const GEMINI_API_URL_TRAINING = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY_TRAINING}`;
