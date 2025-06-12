@@ -2,8 +2,8 @@ let allProductsData = [];
 const API_OPTIONS = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '97e4f4d119msh97f5a1b0b13597bp181c37jsn8dd0583bd943', // Hier deinen Key eintragen
-        'X-RapidAPI-Host': 'real-time-product-search.p.rapidapi.com'
+        'x-rapidapi-key': 'b352de66demsh93516071b983af6p1ba4f8jsn565f856633d8',
+        'x-rapidapi-host': 'real-time-product-search.p.rapidapi.com'
     }
 };
 
