@@ -117,34 +117,35 @@
                     <div class="mb-3">
                         <label for="gender" class="form-label translate-text" data-key="form-gender-label" style="color: #6AA84F;">Geschlecht</label>
                         <select class="form-select" id="gender" required>
-                            <option value="" disabled selected data-key="form-gender-placeholder">Wähle dein Geschlecht</option>
-                            <option value="Männlich" data-key="gender-male">Männlich</option>
-                            <option value="Weiblich" data-key="gender-female">Weiblich</option>
+                            <option value="" disabled selected data-key="form-gender-placeholder" class="translate-text">Wähle dein Geschlecht</option>
+                            <option value="Männlich" class="translate-text" data-key="gender-male">Männlich</option>
+                            <option value="Weiblich" class="translate-text" data-key="gender-female">Weiblich</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
-                        <label for="activity-level" class="form-label translate-text" data-key="form-activity-label" style="color: #6AA84F;">Aktivitätslevel</label>
-                        <select class="form-select" id="activity-level" required>
-                            <option value="" disabled selected data-key="form-activity-placeholder">Wähle dein Aktivitätslevel</option>
-                            <option value="low" data-key="activity-low">Niedrig</option>
-                            <option value="moderate" data-key="activity-moderate">Mittel</option>
-                            <option value="high" data-key="activity-high">Hoch</option>
+                        <label for="activity" class="form-label translate-text" data-key="form-activity-label" style="color: #6AA84F;">Aktivitätslevel</label>
+                        <select class="form-select" id="activity" required>
+                            <option value="" disabled selected data-key="form-activity-placeholder" class="translate-text">Wähle dein Aktivitätslevel</option>
+                            <option value="niedrig" class="translate-text" data-key="activity-low">Niedrig</option>
+                            <option value="mittel" class="translate-text" data-key="activity-medium">Mittel</option>
+                            <option value="hoch" class="translate-text" data-key="activity-high">Hoch</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
                         <label for="disabilities" class="form-label translate-text" data-key="form-disabilities-label" style="color: #6AA84F;">Weitere Einschränkungen</label>
-                        <input type="text" class="form-control" id="disabilities" placeholder="z. B. Mobilitätseinschränkungen">
+                        <input type="text" class="form-control translate-text" id="disabilities" data-key="form-disabilities-placeholder" placeholder="z. B. Mobilitätseinschränkungen">
+
                     </div>
 
                     <div class="mb-3">
                         <label for="fitness-goal" class="form-label translate-text" data-key="form-goal-label" style="color: #6AA84F;">Ziel</label>
                         <select class="form-select" id="fitness-goal" required>
-                            <option value="" disabled selected data-key="form-goal-placeholder">Wähle dein Ziel</option>
-                            <option value="low" data-key="goal-maintain-weight">Gewicht halten</option>
-                            <option value="moderate" data-key="goal-lose-weight">Abnehmen</option>
-                            <option value="high" data-key="goal-build-muscle">Muskelaufbau</option>
+                            <option value="" disabled selected data-key="form-goal-placeholder" class="translate-text">Wähle dein Ziel</option>
+                            <option value="low" class="translate-text" data-key="goal-maintain-weight">Gewicht halten</option>
+                            <option value="moderate" class="translate-text" data-key="goal-lose-weight">Abnehmen</option>
+                            <option value="high" class="translate-text" data-key="goal-build-muscle">Muskelaufbau</option>
                         </select>
                     </div>
 
