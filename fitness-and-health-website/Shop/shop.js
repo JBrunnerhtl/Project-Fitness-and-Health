@@ -8,24 +8,24 @@ const API_OPTIONS = {
 };
 
 
-document.addEventListener('DOMContentLoaded', (e) => {
-
+document.addEventListener('DOMContentLoaded', () => {
     loadProducts('fitness');
     loadProducts('fitness products');
     loadProducts('Suplements');
 
-    e.preventDefault();
-    document.getElementById('submit-button').addEventListener('click', applyFilters);
+    console.log("Hallo");
+
+    document.getElementById('submit-button').addEventListener('click', (e) => {
+        console.log('Filter button clicked');
+        applyFilters(e);
+    });
 });
-
-
 function applyFilters(event) {
-    event.preventDefault();
-    const inputPrice = document.getElementById('max-price').value;
-    const inputCategory = document.getElementById('category').value;
+    if (event) event.preventDefault();
+    const inputPrice = document.getElementById('max-price').value || 1000000;
+    const inputCategory = document.getElementById('category').value || '';
     const container = document.getElementById('products-container');
     container.innerHTML = "";
-
 
     let filteredProducts = [];
     if (inputCategory === "supplemente") {
@@ -39,7 +39,7 @@ function applyFilters(event) {
     } else {
         filteredProducts = allProductsData;
     }
-
+    console.log(filteredProducts);
     displayProducts(filteredProducts, inputPrice);
 }
 
@@ -164,3 +164,4 @@ function showProductDetails(productId) {
         buyLink.style.display = 'none';
     }
 }
+
