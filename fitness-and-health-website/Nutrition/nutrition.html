@@ -122,29 +122,29 @@
                         <span data-translate="true" class = "translate-text">Geschlecht</span>
                     </label>
                     <select class="form-select" id="gender" required style="font-family: sans-serif">
-                        <option value="" disabled selected>Wähle dein Geschlecht</option>
-                        <option value="Männlich">Männlich</option>
-                        <option value="Weiblich">Weiblich</option>
+                        <option value="" disabled selected>Wähle dein Geschlecht class = "translate-text"</option>
+                        <option value="Männlich" class = "translate-text">Männlich</option>
+                        <option value="Weiblich" class = "translate-text">Weiblich</option>
                     </select>
                     <div class="invalid-feedback">
-                        <span data-translate="true">Bitte wählen Sie ein Geschlecht aus.</span>
+                        <span data-translate="true" class = "translate-text">Bitte wählen Sie ein Geschlecht aus.</span>
                     </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="activity-level" class="form-label" style="color: #6AA84F;"><span data-translate="true">Aktivitätslevel</span></label>
                     <select class="form-select" id="activity-level" required>
-                        <option value="" disabled selected class="style-for-text-in-options"><span data-translate="true">Wähle dein Aktivitätslevel</span></option>
-                        <option value="low" class="style-for-text-in-options"><span data-translate="true">Niedrig</span></option>
-                        <option value="moderate" class="style-for-text-in-options"><span data-translate="true">Mittel</span></option>
-                        <option value="high" class="style-for-text-in-options"><span data-translate="true">Hoch</span></option>
+                        <option value="" disabled selected class="style-for-text-in-options"><span data-translate="true" class = "translate-text">Wähle dein Aktivitätslevel</span></option>
+                        <option value="low" class="style-for-text-in-options translate-text"><span data-translate="true">Niedrig</span></option>
+                        <option value="moderate" class="style-for-text-in-options translate-text"><span data-translate="true">Mittel</span></option>
+                        <option value="high" class="style-for-text-in-options translate-text"><span data-translate="true">Hoch</span></option>
                     </select>
-                    <div class="invalid-feedback"><span data-translate="true">Bitte wählen Sie ein Aktivitätslevel aus.</span></div>
+                    <div class="invalid-feedback translate-text"><span data-translate="true">Bitte wählen Sie ein Aktivitätslevel aus.</span></div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="additional-info" class="form-label" style="color: #6AA84F; font-family: sans-serif"><span data-translate="true">Zusätzliche Informationen</span></label>
-                    <span data-translate="true"><textarea class="form-control" id="additional-info" rows="3" placeholder="z. B. Allergien, Unverträglichkeiten oder spezielle Ernährungsbedürfnisse" style="font-family: sans-serif"></textarea></span>
+                    <label for="additional-info" class="form-label translate-text" style="color: #6AA84F; font-family: sans-serif"><span data-translate="true">Zusätzliche Informationen</span></label>
+                    <span data-translate="true"><textarea class="form-control translate-text" id="additional-info" rows="3" placeholder="z. B. Allergien, Unverträglichkeiten oder spezielle Ernährungsbedürfnisse" style="font-family: sans-serif"></textarea></span>
                 </div>
 
                 <button type="button" id="submitBtn" class="btn btn-custom w-100" onclick="getNutritionPlanFromAI()" style="color: black"><span data-translate="true">Absenden</span></button>
