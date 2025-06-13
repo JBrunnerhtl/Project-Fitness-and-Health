@@ -18,7 +18,7 @@ const CATEGORY_KEYWORDS = {
 const API_OPTIONS = {
     method: 'GET',
     headers: {
-        'x-rapidapi-key': '4a3b481255msh943c59b750ca015p1df121jsn60f6a8ecc158',
+        'x-rapidapi-key': '166de1233dmsh2426edc83cd18d6p1e52b7jsn6b79513b15d5',
         'x-rapidapi-host': 'real-time-product-search.p.rapidapi.com'
     }
 };
